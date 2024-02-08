@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+text
+-----------------------------------------------------*/
+.c-text-right {
+  text-align: right;
+}
+.c-text-center {
+  text-align: center;
+}
+
+.c-text-darkyellow {
+  color: inc.$theme-color-darkyellow;
+}
+.c-text-gold {
+  color: inc.$theme-color-gold;
+}
+.c-text-small {
+  @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+}
+.c-text-underline {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.c-text-icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: contain;
+    &.-shopicon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

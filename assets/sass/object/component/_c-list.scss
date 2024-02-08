@@ -1,0 +1,249 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+list
+-----------------------------------------------------*/
+.c-list-std {
+  column-count: 2;
+  @include inc.mq(tab) {
+    column-count: 1;
+  }
+  &__item {
+    line-height: 1.6;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 0.8rem;
+    @include inc.mq(tab) {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+.c-list-dot {
+  padding-left: 1.5em;
+  position: relative;
+  &__item {
+    line-height: 1.6;
+    &::before {
+      content: '・';
+      //margin-left: -1.5em;
+      position: absolute;
+      left: 0.1em;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.2em;
+    }
+  }
+}
+
+.c-list-num {
+  padding-left: 1.5em;
+  counter-reset: listnum;
+  &__item {
+    line-height: 1.6;
+    counter-increment: listnum;
+    &::before {
+      content: counter(listnum)'.';
+      margin-left: -1.5em;
+      display: inline-block;
+      width: 1.5em;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.2em;
+    }
+  }
+}
+
+.c-list-kome {
+  padding-left: 1.5em;
+  counter-reset: listnum;
+  &__item {
+    line-height: 1.6;
+    counter-increment: listnum;
+    &::before {
+      content: '※';
+      margin-left: -1.5em;
+      display: inline-block;
+      width: 1.5em;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.2em;
+    }
+  }
+}
+
+.c-list-dl {
+  border-top: 1px solid inc.$theme-color-yellow;
+  @include inc.sizingRem(font-size, full, 16px, wsp, 14px);
+  @include inc.mq(tab) {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+  > dt {
+    padding-top: 1em;
+    line-height: 1.4;
+    @include inc.mq(tab) {
+      padding: 1em 1em 1em 0;
+      border-bottom: 1px solid inc.$theme-color-yellow;
+    }
+  }
+  > dd {
+    line-height: 1.4;
+    border-bottom: 1px solid inc.$theme-color-yellow;
+    padding: .5em 0 1em;
+    @include inc.mq(tab) {
+      padding: 1em 0;
+    }
+  }
+  &.-recruit {
+    > dt {
+      padding: 1em 0 0 1em;
+      line-height: 1.8;
+      @include inc.mq(tab) {
+        padding: 1em 1em 1em 2em;
+      }
+    }
+    > dd {
+      padding: .5em 1em 1em;
+      line-height: 1.8;
+      @include inc.mq(tab) {
+        padding: 1em 2em 1em 0;
+      }
+    }
+    > dt:nth-last-child(2) {
+      @include inc.mq(tab) {
+        border-bottom: none;
+      }
+    }
+    > dd:last-child {
+      border-bottom: none;
+    }
+  }
+  &.-noBorder {
+    border: none;
+    > dt {
+      border: none;
+      padding-top: .5em;
+      @include inc.mq(tab) {
+        padding: .5em 1em .5em 0;
+      }
+    }
+    > dd {
+      border: none;
+      padding-top: .5em;
+      @include inc.mq(tab) {
+        padding: .5em 1em .5em 0;
+      }
+    }
+  }
+}
+
+
+.c-list-news {
+  &__item {
+    
+    & + & {
+      margin-top: 2.4em;
+    }
+    
+    @include inc.mq(tab) {
+      display: grid;
+      grid-template-columns: 125px minmax(0,1fr);
+    }
+  }
+  
+  &__date {
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+  }
+  &__conts {
+    @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+}
+
+.c-list-time {
+  color: inc.$theme-color-gold;
+  display: grid;
+  grid-template-columns: 6em  minmax(0,1fr);
+  line-height: 1.5;
+  gap: 0 1em;
+
+  dt {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: '';
+      height: 1px;
+      flex-grow: 1;
+      margin-left: 1em;
+      background : linear-gradient(to right, currentColor, currentColor 1px, transparent 1px, transparent 4px) repeat-x left top / 4px 1px;
+      display: block;
+    }
+  }
+}
+
+.c-list-category {
+  display: flex;
+  flex-wrap: wrap;
+  @include inc.sizing(gap, full, 12px, sp, 6px);
+  &__item {
+    font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
+    color: inc.$theme-color-gold!important;
+    background: inc.$theme-color-lightyellow;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 0.8rem;
+    padding: 0.3em 0.8rem;
+    &.-act {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
+  &.-newsDate {
+    margin-top: 16px;
+    &__item {
+      border-radius: 1rem;
+      padding: 0.65em 1rem;
+    }
+  }
+  &.tab-traffic-report {
+    .traffic-report {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
+  &.tab-communitybase {
+    .communitybase {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
+  &.tab-shopinfo {
+    .shopinfo {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
+  &.tab-topics {
+    .topics {
+      background: inc.$theme-color-gold;
+      color: inc.$base-color!important;
+    }
+  }
+}
+
+
+.c-list-form {
+  @include inc.sizingRem(font-size, full, 16px, wsp, 14px);
+  > dt {
+    margin-bottom: .5rem;
+  }
+  > dd {
+  }
+  > dd + dt {
+    margin-top: 40px;
+  }
+}
+

@@ -1,0 +1,49 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+spacer
+-----------------------------------------------------*/
+.l-spacer {
+  &.-large {
+    @include inc.sizing(padding-top, full, 120px, sps, 64px);
+    &.-both {
+      @include inc.sizing(padding-bottom, full, 120px, sps, 64px);
+    }
+  }
+  &.-medium {
+    @include inc.sizing(padding-top, full, 80px, sps, 32px);
+    &.-both {
+      @include inc.sizing(padding-bottom, full, 80px, sps, 32px);
+    }
+    &.-s {
+      @include inc.sizing(padding-top, full, 40px, sps, 24px);
+      &.-both {
+        @include inc.sizing(padding-bottom, full, 40px, sps, 24px);
+      }
+    }
+  }
+  
+  &.-small {
+    @include inc.sizing(padding-top, full, 30px, sps, 16px);
+    &.-both {
+      @include inc.sizing(padding-bottom, full, 30px, sps, 16px);
+    }
+    &.-s {
+      @include inc.sizing(padding-top, full, 12px, sps, 6px);
+      &.-both {
+        @include inc.sizing(padding-bottom, full, 12px, sps, 6px);
+      }
+    }
+  }
+
+  &.-em1 {
+    margin-top: 1rem;
+  }
+  &.-em2 {
+    margin-top: 2rem;
+  }
+  &.-em3 {
+    margin-top: 3rem;
+  }
+}
+

@@ -1,0 +1,99 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+post
+-----------------------------------------------------*/
+.p-post-list {
+  display: grid;
+  //@include inc.sizing(gap, full, 32px, sp, 16px);
+  gap: clamp(48px, 1.27vw + 11.3px, 64px) clamp(16px, 1.27vw + 11.3px, 32px);
+  
+  @include inc.mq(lap) {
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+  
+  &__item {
+    &__more {
+      //margin-top: 2em;
+      display: block;
+      @include inc.mq(tab) {
+        //margin-top: 0;
+        display: flex;
+        justify-content: end;
+      }
+    }
+  }
+}
+
+.p-post-card {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  
+  @include inc.mq(lap) {
+    flex-direction: column;
+  }
+  
+  
+  &__img {
+    width: 45%;
+    @include inc.mq(lap) {
+      width: 100%;
+    }
+    
+    img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+    
+  }
+  &__text {
+    width: 50%;
+    @include inc.mq(lap) {
+      width: 100%;
+      margin-top: .5em;
+    }
+  }
+  
+  &__cat {
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    background: inc.$theme-color-gold;
+    padding: .2em .5em;
+    line-height: 1.3;
+    color: #FFF;
+    width: fit-content;
+    
+    @include inc.mq(lap) {
+      max-width: 90%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: auto;
+      padding: 0 1em .5em 0;
+      color: inc.$theme-color-gold;
+      background: #FFF;
+      z-index: 2;
+    }
+  }
+  &__date {
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    display: block;
+    margin: 8px 0;
+    line-height: 1;
+  }
+  &__title {
+    @include inc.sizingRem(font-size, full, 16px, sp, 13px);
+    line-height: 1.7;
+    margin-bottom: .5em;
+  }
+  &__info {
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    color: inc.$base-color;
+    background: inc.$theme-color-gold;;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 0.8rem;
+    padding: 0.3em 0.8rem;
+  }
+}

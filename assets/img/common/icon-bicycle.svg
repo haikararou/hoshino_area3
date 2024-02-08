@@ -1,0 +1,12 @@
+<svg id="グループ_10156" data-name="グループ 10156" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_24332" data-name="長方形 24332" width="28" height="28" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_10155" data-name="グループ 10155" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="パス_7733" data-name="パス 7733" d="M14,0A14,14,0,1,1,0,14,14,14,0,0,1,14,0" transform="translate(0 0)" fill="#20a7d1"/>
+    <path id="パス_7734" data-name="パス 7734" d="M19.246,11.067a3.6,3.6,0,0,0-3.557,3.088H14.171l2-5.143H9.656L10.61,6.56a1.113,1.113,0,0,1,.921-.63h1.54V4.895h-1.54A2.14,2.14,0,0,0,9.651,6.18L7.715,11.16a3.6,3.6,0,1,0,.958.374l.585-1.5H14.67l-2,5.143h3.019a3.6,3.6,0,1,0,3.557-4.111m-9.775,3.6a2.585,2.585,0,1,1-2.6-2.57,2.5,2.5,0,0,1,.463.039l-.907,2.342.958.372.907-2.342a2.567,2.567,0,0,1,1.18,2.159m9.773,2.566a2.571,2.571,0,0,1-2.516-2.054h2.516V14.148H16.728a2.569,2.569,0,1,1,2.517,3.084Z" transform="translate(1.005 1.492)" fill="#fff"/>
+    <rect id="長方形_24331" data-name="長方形 24331" width="3.599" height="1.029" transform="translate(15.622 8.443)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+recruit
+-----------------------------------------------------*/
+.p-recruit-list {
+   border-top: 1px solid inc.$theme-color-yellow;
+  
+  &__item {
+    border-bottom: 1px solid inc.$theme-color-yellow;
+    transition: background .3s;
+    position: relative;
+    cursor: pointer;
+    
+    &::before,
+    &::after {
+      content: '';
+      @include inc.sizing(width, full, 32px, sp, 16px);
+      height: 1px;
+      position: absolute;
+      right: 1em;
+      top: 2.1rem;
+      margin: auto;
+      display: block;
+      background: inc.$theme-color-darkyellow;
+      transition: transform .3s;
+      @include inc.mq(lap) {
+        top: 4.2rem;
+        right: 1.5rem;
+      }
+    }
+    &::after {
+      transform: rotate(90deg);
+    }
+    &.-open {
+      background: inc.$theme-color-lightyellow;
+      &::after {
+        transform: rotate(0);
+      }
+    }
+  }
+  &__title {
+    @include inc.sizingRem(font-size, full, 24px, sp, 18px);
+    line-height: 1.6;
+    padding: 1em 3em 1em 1em;
+    position: relative;
+    @include inc.mq(lap) {
+      padding: 2em 5em 2em 2em;
+    }
+  }
+  &__txt {
+    @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+    display: none;
+  }
+}

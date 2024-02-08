@@ -1,0 +1,83 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+p-pagenav
+-----------------------------------------------------*/
+.wp-pagenavi {
+    font-family: p22-mackinac-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding-top: 48px;
+    margin-top: 16px;
+    @include inc.mq(tab) {
+        padding-top: 0;
+        @include inc.sizing(margin-top, wide, 145px, tab, 125px);
+    }
+    @include inc.mq(min) {
+        gap: 1rem;
+    }
+    .current,
+    .page {
+        background: inc.$theme-color-lightyellow;
+        color: inc.$theme-color-black;
+        transition: .5s;
+        text-decoration: none!important;
+        border: none;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 1;
+        border-radius: 8px;
+        display:flex; flex-direction:column; justify-content:center; align-items:center;
+        &.current {
+            background: inc.$theme-color-gold;
+            color: inc.$base-color;
+        }
+    }
+    .previouspostslink,
+    .nextpostslink {
+        background: inc.$theme-color-lightyellow;
+        color: inc.$theme-color-black;
+        position: absolute;
+		width: calc(50% - 0.5rem);
+        max-width: 120px;
+        height: 40px;
+        border-radius: 8px;
+        line-height: 1;
+        display:flex; flex-direction:column; justify-content:center; align-items:center;
+        @include inc.sizingRem(font-size, wide, 16px, sps, 13px);
+        line-height: 1;
+        &:before {
+            content: "<";
+            display: block;
+            position: absolute;
+            left: 1rem;
+            top: 12px;
+            //transform: translate(0%, -50%);
+        }
+    }
+    .nextpostslink {
+        &:before {
+            content: ">";
+            left: auto;
+            right: 1rem;
+        }
+    }
+    .previouspostslink {
+        left: 0;
+        top: 0;
+    }
+    .nextpostslink {
+        right: 0;
+        top: 0;
+    }
+}
+
