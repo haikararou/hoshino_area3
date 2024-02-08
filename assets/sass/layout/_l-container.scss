@@ -50,6 +50,14 @@
     }
     margin: 0 auto;
   }
+  &--primary-s.-l {
+    @include inc.sizing(width, tab, 560px, sp, 330px);
+    max-width: 90%;
+    @include inc.mq(tab) {
+      width: 560px;
+    }
+    margin: 0 auto;
+  }
   &--primary-ss {
     @include inc.sizing(width, tab, 470px, sp, 330px);
     max-width: 90%;

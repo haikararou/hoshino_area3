@@ -1513,7 +1513,7 @@ title
 }
 .c-title-ex-large span {
   display: block;
-  color: #93936A;
+  color: #64640C;
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
   margin-bottom: 0.5rem;
 }
@@ -1525,7 +1525,7 @@ title
 }
 .c-title-large span {
   display: block;
-  color: #93936A;
+  color: #64640C;
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
   margin-bottom: 0.5rem;
 }
@@ -1547,7 +1547,7 @@ title
 }
 .c-title-medium span {
   display: block;
-  color: #93936A;
+  color: #64640C;
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
   margin-bottom: 0.5rem;
 }
@@ -1559,7 +1559,7 @@ title
 }
 .c-title-small span {
   display: block;
-  color: #93936A;
+  color: #64640C;
   font-size: clamp(0.6875rem, 0.16vw + 0.65rem, 0.8125rem);
   margin-bottom: 0.5rem;
 }
@@ -1602,7 +1602,7 @@ title
 }
 
 .c-title-sub {
-  color: #93936A;
+  color: #64640C;
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
   display: block;
   margin-bottom: 12px;
@@ -1677,7 +1677,7 @@ text
 }
 
 .c-text-gold {
-  color: #93936A;
+  color: #64640C;
 }
 
 .c-text-small {
@@ -1840,7 +1840,7 @@ button
   padding: 0;
 }
 .c-button-block.-act {
-  background: #93936A;
+  background: #64640C;
   color: #FFF;
 }
 .c-button-block.-pagenavi {
@@ -1859,7 +1859,7 @@ button
           align-items: center;
 }
 .c-button-block.-submit {
-  background: #93936A;
+  background: #64640C;
   height: 66px;
   width: 100%;
   border: none;
@@ -2235,7 +2235,7 @@ list
 }
 
 .c-list-time {
-  color: #93936A;
+  color: #64640C;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 6em 1em minmax(0, 1fr);
@@ -2272,7 +2272,7 @@ list
 }
 .c-list-category__item {
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
-  color: #93936A !important;
+  color: #64640C !important;
   background: #F8F8F0;
   display: inline-block;
   line-height: 1;
@@ -2280,7 +2280,7 @@ list
   padding: 0.3em 0.8rem;
 }
 .c-list-category__item.-act {
-  background: #93936A;
+  background: #64640C;
   color: #FFF !important;
 }
 .c-list-category.-newsDate {
@@ -2291,19 +2291,19 @@ list
   padding: 0.65em 1rem;
 }
 .c-list-category.tab-traffic-report .traffic-report {
-  background: #93936A;
+  background: #64640C;
   color: #FFF !important;
 }
 .c-list-category.tab-communitybase .communitybase {
-  background: #93936A;
+  background: #64640C;
   color: #FFF !important;
 }
 .c-list-category.tab-shopinfo .shopinfo {
-  background: #93936A;
+  background: #64640C;
   color: #FFF !important;
 }
 .c-list-category.tab-topics .topics {
-  background: #93936A;
+  background: #64640C;
   color: #FFF !important;
 }
 
@@ -2925,7 +2925,7 @@ button
 }
 
 .c-color-gld {
-  color: #93936A;
+  color: #64640C;
 }
 
 .c-color-Dgrn {
@@ -3038,7 +3038,7 @@ post
 }
 .p-post-card__cat {
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
-  background: #93936A;
+  background: #64640C;
   padding: 0.2em 0.5em;
   line-height: 1.3;
   color: #FFF;
@@ -3054,7 +3054,7 @@ post
     top: 0;
     margin: auto;
     padding: 0 1em 0.5em 0;
-    color: #93936A;
+    color: #64640C;
     background: #FFF;
     z-index: 2;
   }
@@ -3079,7 +3079,7 @@ post
 .p-post-card__info {
   font-size: clamp(0.6875rem, 0.16vw + 0.65rem, 0.8125rem);
   color: #FFF;
-  background: #93936A;
+  background: #64640C;
   display: inline-block;
   line-height: 1;
   border-radius: 0.8rem;
@@ -3091,7 +3091,7 @@ post
   line-height: 1;
 }
 .p-post-card__period span {
-  color: #93936A;
+  color: #64640C;
 }
 
 .p-post-tate {
@@ -3620,7 +3620,7 @@ p-pagenav
 }
 .wp-pagenavi .current.current,
 .wp-pagenavi .page.current {
-  background: #93936A;
+  background: #64640C;
   color: #FFF;
 }
 .wp-pagenavi .previouspostslink,
@@ -3706,7 +3706,7 @@ opening
 .p-opening--table th span {
   display: block;
   font-size: clamp(0.625rem, 0.16vw + 0.5875rem, 0.75rem);
-  color: #93936A;
+  color: #64640C;
 }
 .p-opening--table td {
   font-size: clamp(0.875rem, 0.16vw + 0.8375rem, 1rem);
@@ -3721,7 +3721,7 @@ opening
   left: 0;
   z-index: 2;
   color: #fff;
-  background: #93936A;
+  background: #64640C;
   border-bottom: none !important;
   border-left: none !important;
   width: 40vw;
@@ -7192,4 +7192,3 @@ common
   width: 1px;
   overflow: hidden;
 }
-/*# sourceMappingURL=common.css.map */

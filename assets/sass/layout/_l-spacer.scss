@@ -47,3 +47,18 @@ spacer
   }
 }
 
+.-mgB-s {
+  @include inc.sizing(margin-bottom, full, 48px, sps, 24px);
+}
+.-mgB {
+  @include inc.sizing(margin-bottom, full, 64px, sps, 32px);
+}
+.-mgB-m {
+  @include inc.sizing(margin-bottom, full, 80px, sps, 64px);
+}
+.-mgB-l {
+  @include inc.sizing(margin-bottom, full, 128px, sps, 80px);
+}
+.-pgT-s {
+  @include inc.sizing(padding-top, full, 30px, sps, 16px);
+}

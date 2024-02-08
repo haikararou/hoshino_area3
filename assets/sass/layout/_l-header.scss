@@ -18,6 +18,7 @@
     height: auto;
   }
   &__top {
+    min-height: 54px;
     @include inc.sizing(padding-top, full, 30px, sp, 10px);
     @include inc.sizing(padding-bottom, full, 30px, sp, 10px);
     @include inc.sizing(padding-left, full, 50px, sp, 16px);

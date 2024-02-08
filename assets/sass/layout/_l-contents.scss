@@ -8,7 +8,7 @@
   
   
   &--left-title {
-    @include inc.mq(tab) {
+    @include inc.mq(lap) {
       display: grid;
       grid-template-columns: 100px minmax(0, 1fr);
     
@@ -21,7 +21,7 @@
     }
     
     &.-title-large {
-      @include inc.mq(tab) {
+      @include inc.mq(lap) {
       grid-template-columns: 24% minmax(0, 1fr);
       }
     }
@@ -29,26 +29,21 @@
   
   &--ribbon-title {
     overflow: hidden;
-    
+    background: inc.$theme-color-lightyellow;
     @include inc.mq(tab, max) {
       padding-top: 0;
-      
       &.l-spacer {
         padding-top: 0;
       }
     }
-    
-
     &__ribbon {
       color: #FFF;
       padding: .5em 0;
       border-image-source: linear-gradient(inc.$theme-color-darkyellow, inc.$theme-color-darkyellow);
-      
       border-image-slice: 0 fill;
       border-image-outset: 100px 100vw 0;
       text-align: center;
       margin-bottom: 10vw;
-      
       @include inc.mq(tab) {
         padding: 0 .5em 1em;
         margin-bottom: 0;
@@ -56,8 +51,10 @@
         border-image-outset: 100px 0 0;
       }
     }
+    & + .c-border-t {
+      margin-top: 0!important;
+    }
   }
-  
 }
 
 
@@ -139,4 +136,18 @@
     
     
   }
+}
+
+.l-contents-2column + .l-contents-2column {
+  margin-top: 1rem;
+  @include inc.mq(lap) {
+    margin-top: 2rem;
+  }
+}
+
+.held {
+  display: block;
+}
+.held + .held {
+  margin-top: 3rem;
 }

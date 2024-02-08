@@ -29,3 +29,12 @@ today
     }
   }
 }
+
+.post-type-archive-event,
+.page-template-event {
+  .-pagetitile {
+    .c-today {
+      justify-content: flex-start;
+    }
+  }
+}

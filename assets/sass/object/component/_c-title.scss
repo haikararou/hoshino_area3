@@ -52,6 +52,17 @@ title
     color: inc.$theme-color-gold;
     @include inc.sizingRem(font-size, full, 13px, sp, 11px);
     margin-bottom: .5rem;
+    &.tag-b {
+      display: inline-block;
+      color: inc.$base-color;
+      background: inc.$theme-color-black;
+      line-height: 1;
+      text-align: center;
+      padding: .4rem 1rem;
+      border-radius: .8rem;
+      margin: 0 1rem 0 0;
+      vertical-align: bottom;
+    }
   }
 }
 .c-title-icon {
@@ -82,4 +93,14 @@ title
   @include inc.sizingRem(font-size, full, 14px, sp, 12px);
   display: block;
   margin-bottom: 12px;
+}
+
+.-pagetitile {
+  @include inc.sizing(margin-bottom, full, 96px, sps, 48px);
+  .c-title-ex-large {
+    margin-bottom: .3em;
+    span {
+      margin-bottom: .5rem;
+    }
+  }
 }

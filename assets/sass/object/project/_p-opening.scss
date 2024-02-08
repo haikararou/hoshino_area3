@@ -125,7 +125,7 @@ opening
     }
   }
   &--scroll_01 {
-    //overflow: scroll;
+    overflow: scroll;
     @include inc.mq(wsp) {
       overflow: unset;
       height: auto;

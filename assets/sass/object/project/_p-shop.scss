@@ -4,6 +4,12 @@
 /*
 post
 -----------------------------------------------------*/
+// .shopmenu {
+//   width: auto;
+//   @include inc.mq(lap) {
+//     width: 200px;
+//   }
+// }
 .p-shop {
   &-title {
     display: flex;
@@ -14,6 +20,7 @@ post
       height: clamp(70px, 2.39vw + 61px, 100px);
       background: #FFF;
       border: 1px solid #E8E8D8;
+      display:flex; flex-direction:column; justify-content:center; align-items:center;
     }
     &__txt {
       display:flex;
@@ -74,4 +81,13 @@ post
     }
     }
   }
+}
+
+.logo-halnire {
+  margin: 0 auto;
+  @include inc.mq(tab) {
+    margin: 0;
+  }
+  max-width: 270px;
+  @include inc.sizing(width, tab, 270px, sp, 180px);
 }

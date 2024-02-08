@@ -4,8 +4,17 @@
 main
 -----------------------------------------------------*/
 main {
-    @include inc.sizing(padding-top, full, 140px, sp, 90px);
+    @include inc.sizing(padding-top, wsp, 111px, sp, 90px);
+    @include inc.mq(wsp) {
+        @include inc.sizing(padding-top, lap, 132px, wsp, 111px);
+    }
+    @include inc.mq(lap) {
+        @include inc.sizing(padding-top, full, 152px, lap, 132px);
+    }
 }
 .l-main {
     @include inc.sizing(padding-bottom, full, 190px, sp, 80px);
+    &.-cxl {
+        padding-bottom: 0;
+    }
 }

@@ -3,14 +3,20 @@
 /*
 breadcrumb
 -----------------------------------------------------*/
+.pan {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  color: inc.$base-color;
+}
 .c-breadcrumb {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
   @include inc.sizingRem(font-size, full, 14px, sp, 11px);
-  @include inc.sizing(margin-top, full, 35px, sp, 25px);
-  @include inc.sizing(margin-bottom, full, 35px, sp, 25px);
+  @include inc.sizing(padding-top, full, 32px, sp, 24px);
+  @include inc.sizing(margin-bottom, full, 64px, sp, 48px);
   &__item {
     & + &::before {
       content: '';

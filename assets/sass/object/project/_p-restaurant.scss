@@ -6,16 +6,23 @@ restaurant
 .p-restaurant-list {
   display: grid;
   gap: 30px;
-  @include inc.sizing(padding-top, tab, 64px, sps, 32px);
-  @include inc.mq(tab) {
+  @include inc.sizing(padding-top, lap, 64px, sps, 32px);
+  @include inc.mq(lap) {
     padding-top: 0;
     grid-template-columns: repeat(2, minmax(0,1fr));
   }
 }
 
+.p-restaurant-list > li {
+  opacity: 0; /* 全ての項目を最初から表示 */
+  transition: opacity 0.5s ease-in-out;
+}
+.p-restaurant-list > li.fade-in {
+  opacity: 1;
+}
+
 .p-restaurant-card {
   position: relative;
-  
   &__text {
     padding: .5em;
     @include inc.mq(lap) {
@@ -30,7 +37,6 @@ restaurant
       padding: 1.5rem 0;
     }
   }
-  
   &__cat {
     display: block;
     @include inc.sizingRem(font-size, full, 16px, sp, 14px);
@@ -38,8 +44,10 @@ restaurant
   }
   &__name {
     @include inc.sizingRem(font-size, full, 24px, sp, 17px);
+    em {
+      font-weight: normal;
+    }
   }
-  
   &__logo {
     position: absolute;
     @include inc.sizing(top, full, -30px, sp, -17px);
@@ -58,7 +66,6 @@ restaurant
       object-fit: contain;
     }
   }
-  
   &__info {
     //display: grid;
     display: flex;
@@ -70,35 +77,12 @@ restaurant
         width: auto;
       }
     }
-    
-    // @include inc.mq(lap) {
-    //   grid-template-columns: minmax(0,1fr) 8em;
-    // }
   }
-  // &__time {
-  //   padding-left: 2em;
-  //   position: relative;
-    
-  //   &::before {
-  //     content: '';
-  //     width: 1rem;
-  //     height: 1rem;
-  //     display: block;
-  //     position: absolute;
-  //     left: 0;
-  //     top: .5em;
-  //     margin: auto;
-  //     background: url(../img/common/icon-clock-gold.svg) no-repeat center center / contain;
-  //   }
-  // }
-  
   &__more {
     @include inc.mq(lap) {
       padding: .5em 1.9em .5em 2.4em;
     }
   }
-  
-  
   &__wi-fi {
     position: absolute;
     z-index: 2;
@@ -112,10 +96,26 @@ restaurant
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    
     img {
       width: 28px;
       height: auto;
+    }
+  }
+  &.blank {
+    h3.p-restaurant-card__name {
+      em {
+        &::after {
+          content: "";
+          width: 0.6em;
+          height: 0.6em;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 0.3em;
+          margin-top: -4px;
+          color: inherit;
+          background: url(../img/common/icon-outer.svg) no-repeat center center/contain;
+        }
+      }
     }
   }
 }

@@ -94,6 +94,12 @@ post
     margin-left: auto;
     margin-right: auto;
   }
+  .has-text-align-center p {
+    width: 100%;
+  }
+  .c-border p {
+    width: 100%;
+  }
   ul {
     padding-left: 1.3em;
     @include inc.sizing(width, tab, 670px, sp, 330px);
@@ -259,11 +265,13 @@ post
     }
   }
   .p-post-list {
+    
     padding: 0;
     li {
       list-style-type: none;
       h3 + p {
         margin-top: 1rem;
+        display: inline;
       }
     }
     li + li {
@@ -275,4 +283,8 @@ post
       margin-top: 0;
     }
   }
+  .-break-w {
+    max-width: none;
+  }
 }
+

@@ -10,7 +10,6 @@ gmenu
       border: none;
     }
   }
-  
   &__link {
     padding: 1.34em 5%;
     position: relative;
@@ -18,12 +17,10 @@ gmenu
     background: #F8F8F0;
     background-clip: content-box;
     border: 1px solid #FFF;
-    
-    @include inc.mq(lap) {
+    @include inc.mq(tab) {
       border: none;
       padding: 0;
     }
-    
     &::after {
       content: '';
       width: .4em; height: .4em;
@@ -35,12 +32,53 @@ gmenu
       right: 5%;
       margin: auto;
       transform: rotate(45deg);
-      
       @include inc.mq(tab) {
         display: none;
-      } 
+      }
     }
   }
+  &.-home {
+    background: inc.$theme-color-lightyellow;
+    display: flex;
+    flex-direction:column; justify-content:center; align-items:center;
+    @include inc.mq(tab) {
+      @include inc.sizing(height, full, 160px, tab, 120px);
+    }
+    ul {
+      width: 100%;
+      @include inc.mq(tab) {
+        display: flex;
+        @include inc.sizing(width, full, 1470px, sp, 330px);
+        max-width: 90%;
+        margin: 0 auto;
+        border-right: 1px solid #E2E2B9;
+      }
+    }
+    .c-gmenu-primary__item {
+      width: 100%;
+      @include inc.mq(tab) {
+        height: 60px;
+        border-left: 1px solid #E2E2B9;
+        width: calc(100% / 5);
+        display:flex; flex-direction:column; justify-content:center; align-items:center;
+      }
+    }
+    .c-gmenu-primary__link {
+      @include inc.mq(tab) {
+        width: 90%;
+        text-align: center;
+      }
+      &::after {
+        @include inc.mq(tab) {
+          display: none;
+        }
+        @include inc.mq(lap-l) {
+          display: block;
+        }
+      }
+    }
+  }
+
 }
 .c-gmenu-secondary {
   display: grid;

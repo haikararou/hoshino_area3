@@ -17,6 +17,8 @@ $breakpoints: (
   min: 620px,
   tab: 768px,
   lap: 960px,
+  lap-l: 1080px,
+  lap-ll: 1160px,
   desk: 1280px,
   vr: 1366px,
   wide: 1440px,
@@ -38,6 +40,7 @@ $theme-color-yellow: #E8E8D8;
 $theme-color-lightyellow: #F8F8F0;
 $theme-color-darkyellow: #B5B583;
 $theme-color-gold: #93936A;
+$theme-color-gold: #64640C;
 
 $theme-color-darkgreen:  #192203;
 
