@@ -61,7 +61,7 @@ $news_query = new WP_Query( $args );
                 <?php endwhile; ?>
 				</ul>
 				<div class="l-spacer -em3 p-post-list__item__more">
-				<p><a href="<?php echo home_url('/news'); ?>" class="c-button-block -lightyellow -arrow -more"><span>もっと見る</span></a></p>
+				<p><a href="<?php echo home_url('/news'); ?>" class="c-button-block -lightyellow -arrow -more"><span>星野エリアのニュース一覧</span></a></p>
 				</div>
 			</div>
 		</article>

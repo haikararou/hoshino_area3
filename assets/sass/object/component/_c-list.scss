@@ -11,6 +11,9 @@ list
   &__item {
     line-height: 1.6;
     padding:0 1rem;
+    @include inc.mq(tab) {
+      cursor: pointer;
+    }
     @include inc.sizingRem(font-size, full, 14px, wsp, 12px);
     &.active {
       background: inc.$theme-color-lightyellow;
@@ -222,7 +225,11 @@ list
     }
   }
   &.-newsDate {
+    display: block;
     margin-top: 16px;
+    li + li {
+      margin-top: .3rem;
+    }
     &__item {
       border-radius: 1rem;
       padding: 0.65em 1rem;

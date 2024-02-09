@@ -3,7 +3,7 @@
 ?>
 <?php get_header(); ?>
 
-<section class="-tombo-bg">
+
 
 	<div class="l-spacer pan">
 		<div class="l-container--wide">
@@ -62,6 +62,8 @@
 		</div>
 	</section>
 	<?php endif;?>
+
+<section class="-tombo-bg">
 
 	<?php if(have_rows('news')): ?>
 	<section class="l-spacer -medium -both p-tombo__news">
@@ -396,10 +398,12 @@
 </section>
 <?php endif; ?>
 
+<section class="-tombo-bg">
 <div class="l-spacer">
 	<div class="l-container--wide">
 		<?php get_template_part('inc/breadcrumb'); ?>
 	</div>
 </div>
+</section>
 
 <?php get_footer(); ?>

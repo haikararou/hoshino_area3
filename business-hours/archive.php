@@ -16,83 +16,6 @@
 
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">
-        <div class="p-opening--scroll_01">
-        <table class="p-opening--table">
-            <tr>
-                <th class="p-opening--fixed01"></th>
-                <?php
-                    $args = array(
-                        'post_type'=> 'business-hours',
-                        'meta_key' => 'opening_end', //ACFのフィールド名
-                        'order' => 'ASC',
-                        'orderby' => 'date',
-                        'meta_query' => array( // 判定条件…(開始日 >= 今日)or(終了日 >= 今日)
-                        'relation' => 'AND',
-                        array(
-                        'key'     => 'opening_end',
-                        'value'   => $today,
-                        'type'    => 'date',
-                        'compare' => '>=',
-                        ),
-                        ),
-                        'posts_per_page' => -1,
-                    );
-                    $wp_query = new WP_Query( $args );
-                    if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
-                ?>
-                <td class="p-opening--fixed04">
-                    <?php the_title(); ?>
-                </td>
-                <?php endwhile; endif; ?>
-            </tr>
-            <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/tombo-no-yu/" target="_blank"><div class="c-button-arrow">星野温泉 トンボの湯</a></div></th>
-                <?php
-                    global $shop_slug;
-                    $shop_slug = 'tombo-no-yu';
-                    get_template_part('inc/opening2');
-                ?>
-            </tr>
-            <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/sonmin-shokudo/" target="_blank"><div class="c-button-arrow">村民食堂</a></div></th>
-                <?php
-                    global $shop_slug;
-                    $shop_slug = 'sonmin-shokudo';
-                    get_template_part('inc/opening2');
-                ?>
-            </tr>
-            <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/hungryspot/" target="_blank"><div class="c-button-arrow">カフェ ハングリースポット</a></div></th>
-                <?php
-                    global $shop_slug;
-                    $shop_slug = 'hungryspot';
-                    get_template_part('inc/opening2');
-                ?>
-            </tr>
-            <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ikarucafe/" target="_blank"><div class="c-button-arrow">イカルカフェ</a></div></th>
-                <?php
-                    global $shop_slug;
-                    $shop_slug = 'ikarucafe';
-                    get_template_part('inc/opening2');
-                ?>
-            </tr>
-            <tr>
-                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kera-ike-icerink/" target="_blank"><div class="c-button-arrow">ケラ池スケートリンク</a></div></th>
-                <?php
-                    global $shop_slug;
-                    $shop_slug = 'kera-ike-icerink';
-                    get_template_part('inc/opening2');
-                ?>
-            </tr>
-        </table>
-        </div>
-    </div>
-</section>
-
-
-<section class="l-spacer -medium -both">
-	<div class="l-container--primary">
     <h2 class="c-title-large">ハルニレテラス</h2>
         <div class="p-opening--scroll_02">
         <table class="p-opening--table">
@@ -253,6 +176,82 @@
                 ?>
             </tr>
 
+        </table>
+        </div>
+    </div>
+</section>
+
+<section class="l-spacer -medium -both">
+	<div class="l-container--primary">
+        <div class="p-opening--scroll_01">
+        <table class="p-opening--table">
+            <tr>
+                <th class="p-opening--fixed01"></th>
+                <?php
+                    $args = array(
+                        'post_type'=> 'business-hours',
+                        'meta_key' => 'opening_end', //ACFのフィールド名
+                        'order' => 'ASC',
+                        'orderby' => 'date',
+                        'meta_query' => array( // 判定条件…(開始日 >= 今日)or(終了日 >= 今日)
+                        'relation' => 'AND',
+                        array(
+                        'key'     => 'opening_end',
+                        'value'   => $today,
+                        'type'    => 'date',
+                        'compare' => '>=',
+                        ),
+                        ),
+                        'posts_per_page' => -1,
+                    );
+                    $wp_query = new WP_Query( $args );
+                    if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
+                ?>
+                <td class="p-opening--fixed04">
+                    <?php the_title(); ?>
+                </td>
+                <?php endwhile; endif; ?>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/tombo-no-yu/" target="_blank"><div class="c-button-arrow">星野温泉 トンボの湯</a></div></th>
+                <?php
+                    global $shop_slug;
+                    $shop_slug = 'tombo-no-yu';
+                    get_template_part('inc/opening2');
+                ?>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/sonmin-shokudo/" target="_blank"><div class="c-button-arrow">村民食堂</a></div></th>
+                <?php
+                    global $shop_slug;
+                    $shop_slug = 'sonmin-shokudo';
+                    get_template_part('inc/opening2');
+                ?>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/hungryspot/" target="_blank"><div class="c-button-arrow">カフェ ハングリースポット</a></div></th>
+                <?php
+                    global $shop_slug;
+                    $shop_slug = 'hungryspot';
+                    get_template_part('inc/opening2');
+                ?>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ikarucafe/" target="_blank"><div class="c-button-arrow">イカルカフェ</a></div></th>
+                <?php
+                    global $shop_slug;
+                    $shop_slug = 'ikarucafe';
+                    get_template_part('inc/opening2');
+                ?>
+            </tr>
+            <tr>
+                <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kera-ike-icerink/" target="_blank"><div class="c-button-arrow">ケラ池スケートリンク</a></div></th>
+                <?php
+                    global $shop_slug;
+                    $shop_slug = 'kera-ike-icerink';
+                    get_template_part('inc/opening2');
+                ?>
+            </tr>
         </table>
         </div>
     </div>

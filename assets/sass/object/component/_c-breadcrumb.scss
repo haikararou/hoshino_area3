@@ -10,13 +10,14 @@ breadcrumb
   color: inc.$base-color;
 }
 .c-breadcrumb {
+  line-height: 1.6;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
   @include inc.sizingRem(font-size, full, 14px, sp, 11px);
   @include inc.sizing(padding-top, full, 32px, sp, 24px);
-  @include inc.sizing(margin-bottom, full, 64px, sp, 48px);
+  @include inc.sizing(padding-bottom, full, 64px, sp, 48px);
   &__item {
     & + &::before {
       content: '';
@@ -24,15 +25,22 @@ breadcrumb
       height: .4em;
       display: inline-block;
       vertical-align: middle;
-      margin: 0 1em;
+      margin: 0 .5em;
+      @include inc.mq(tab) {
+        margin: 0 1em;
+      }
       border-right: 1px solid;
       border-top: 1px solid;
       transform: translateX(-25%) rotate(45deg);
-    } 
-  }
-  
-  a {
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
+    }
+    &:nth-child(3) {
+      width: 9rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @include inc.mq(tab) {
+        width: 16rem;
+      }
+    }
   }
 }

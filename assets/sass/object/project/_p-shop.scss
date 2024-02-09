@@ -21,6 +21,10 @@ post
       background: #FFF;
       border: 1px solid #E8E8D8;
       display:flex; flex-direction:column; justify-content:center; align-items:center;
+      margin: 0 0 1.5rem;
+      @include inc.mq(tab) {
+        margin: 0;
+      }
     }
     &__txt {
       display:flex;

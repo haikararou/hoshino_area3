@@ -17,7 +17,6 @@
       <video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/harunire_sp.mp4"></video>
       <div class="p-harunire__kv__logo">
       <h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/harunire/logo.svg" alt="ハルニレテラス"></h1>
-		<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
 		</div>
       <div class="p-harunire__kv__news">
         <h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
@@ -50,7 +49,6 @@
   </div>
 </div>
 
-
 	<section class="l-spacer p-harunire__lead">
 		<div class="l-container--primary">
 			<div class="p-harunire__lead__inner">
@@ -59,6 +57,8 @@
 			</h2>
 		</div>
 	</section>
+
+<div class="c-bg-white">
 
   <?php get_template_part('event/list-3-facility'); ?>
 
@@ -84,9 +84,6 @@
               echo $des_list;
             ?>
           </ul>
-          <div class="l-spacer -em2">
-              <a href="<?php echo home_url('/business-hours'); ?>" class="c-button-block -yellow -icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg" width="16" height="16">営業時間</a>
-          </div>
         </div>
         <div class="l-contents--left-title__conts">
           <?php
@@ -149,6 +146,8 @@
   <div class="l-container--wide">
     <?php get_template_part('inc/breadcrumb'); ?>
   </div>
+</div>
+
 </div>
 
 <?php get_footer(); ?>

@@ -124,7 +124,7 @@ footer
   align-items: center;
   
   &__title {
-    @include inc.sizing(width, full, 270px, sp, 170px);
+    @include inc.sizing(width, full, 270px, sp, 135px);
     margin: 0 auto;
     img {
       width: 100%
@@ -153,8 +153,13 @@ footer
   
   &__text {
     width: 270px;
-    margin: 2em auto;
+    margin: 1.5em auto;
+    @include inc.mq(lap) {
+      margin: 2em auto;
+    }
     text-align: left;
+    line-height: 1.6;
+    @include inc.sizingRem(font-size, tab, 16px, sp, 14px);
   }
 }
 .l-footer-map {
@@ -282,6 +287,21 @@ footer
         font-size: 8px;
         &::before {
           display: none;
+        }
+      }
+      a {
+        color: inc.$theme-color-gold;
+      }
+      a[target="_blank"] {
+        &::after {
+          content: "";
+          width: 0.8em;
+          height: 0.8em;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 0.5em;
+          color: inherit;
+          background: url(../img/common/icon-outer_g.svg) no-repeat center center/contain;
         }
       }
     }

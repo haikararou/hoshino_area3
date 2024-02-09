@@ -3,8 +3,6 @@
 ?>
 <?php get_header(); ?>
 
-<section class="-keraike-bg">
-
 	<div class="l-spacer pan">
 		<div class="l-container--wide">
 			<?php get_template_part('inc/breadcrumb'); ?>
@@ -63,18 +61,24 @@
 	</section>
 	<?php endif;?>
 
-	<?php if(have_rows('news')): ?>
+<section class="-keraike-bg">
+
 	<section class="l-spacer -medium -both p-keraike__news">
 		<div class="l-container--primary">
 			<h2 class="c-title-ex-small">ケラ池スケートリンク<br>からのお知らせ</h2>
-			<ul>
-			<?php while(have_rows('news')): the_row(); ?>
-				<li><?php the_sub_field('news_conts'); ?></li>
-			<?php endwhile; ?>
-			</ul>
+			<div class="newsR">
+				<div class="news_txt"><?php the_field('news_txt'); ?></div>
+				<?php if(have_rows('news')): ?>
+				<ul>
+				<?php while(have_rows('news')): the_row(); ?>
+					<li><?php the_sub_field('news_conts'); ?></li>
+				<?php endwhile; ?>
+				</ul>
+				<?php endif; ?>
+			</div>
+			
 		</div>
 	</section>
-	<?php endif; ?>
 
 	<?php $title ="ケラ池の"; get_template_part('event/list-3-facility'); ?>
 
@@ -318,10 +322,12 @@
 </section>
 <?php endif; ?>
 
+<section class="-keraike-bg">
 <div class="l-spacer">
 	<div class="l-container--wide">
 		<?php get_template_part('inc/breadcrumb'); ?>
 	</div>
 </div>
+</section>
 
 <?php get_footer(); ?>

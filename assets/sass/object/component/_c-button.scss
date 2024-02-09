@@ -6,6 +6,7 @@ button
 .c-button-block {
 	display: inline-block;
 	border-radius: inc.size(full, 10px, sp, 5px);
+	@include inc.sizingRem(font-size, full, 16px, sp, 14px);
 	padding: 0 3em;
 	cursor: pointer;
 	height: 40px;
@@ -70,6 +71,9 @@ button
 	}
 	&.-yellow {
 		background: inc.$theme-color-yellow;
+	}
+	&.-fullsize {
+		width: 100%;
 	}
 	&.-more {
 		width: 100%;

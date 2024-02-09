@@ -10,7 +10,7 @@
 
 <section class="l-spacer -medium -both">
   <div class="l-container--primary">
-    <h1 class="c-title-ex-large">駐車場のご案内</h1>
+    <h1 class="c-title-ex-large">駐車場</h1>
   </div>
 </section>
 

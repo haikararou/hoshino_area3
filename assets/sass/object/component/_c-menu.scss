@@ -27,7 +27,8 @@ menu
     @include inc.mq(tab) {
       border: none;
       //height: 100%;
-      height: 152px;
+      //height: 152px;
+      height: 120px;
     }
   }
 
@@ -65,19 +66,24 @@ menu
     border: 1px solid #FFF;
     
     &.-head-drawer {
-      height: 135px;
+      //height: 135px;
+      height: 90px;
       @include inc.mq(tab) {
         height: 100%;
       }
     }
     
     &.-footer {
-      @include inc.sizing(height, full, 200px, sp, 130px);
+      //@include inc.sizing(height, full, 200px, sp, 130px);
+      @include inc.sizing(height, full, 120px, sp, 90px);
     }
 
     .icon {
       display: block;
-      margin-bottom: 1em;
+      margin-bottom: .6em;
+      @include inc.mq(tab) {
+        margin-bottom: 1em;
+      }
       
       img {
         display: block;
@@ -97,7 +103,7 @@ menu
   &.-head-drawer{
     @include inc.mq(tab) {
       grid-auto-flow: column;
-      grid-template-rows: repeat( 3, auto) ; 
+      grid-template-rows: repeat( 3, auto) ;
     }
   }
   &.-footer {

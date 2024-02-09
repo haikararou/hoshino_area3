@@ -105,7 +105,7 @@ $wp_query = new WP_Query( $args );
             <?php wp_reset_query(); ?>
             </ul>
             <div class="l-spacer -em3 p-post-list__item__more">
-            <p><a href="<?php echo home_url('/event'); ?>" class="c-button-block -lightyellow -arrow -more"><span>もっと見る</span></a></p>
+            <p><a href="<?php echo home_url('/event'); ?>" class="c-button-block -lightyellow -arrow -more"><span>星野エリアのイベント一覧</span></a></p>
             </div>
         </article>
     </div>

@@ -131,7 +131,8 @@ tombo
 	}
 	&__lead {
 		color: inc.$base-color;
-		background: linear-gradient(rgb(192, 197, 179) 0%, rgb(76, 90, 42) 30%, rgb(45, 54, 25) 100%);
+		//background: linear-gradient(rgb(192, 197, 179) 0%, rgb(76, 90, 42) 30%, rgb(45, 54, 25) 100%);
+		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(113,118,86,1) 20%, rgba(113,118,86,1) 100%);
 		.l-container--primary {
 			height: 100vh;
 			max-width: 870px;
@@ -180,14 +181,26 @@ tombo
 				margin-bottom: 0;
 			}
 		}
-		ul {
+		.newsR {
 			@include inc.mq(lap) {
 				width: 68.25%;
 				margin-top: .4em;
 			}
+		}
+		.news_txt{
+			width: 100%;
+			//margin-top: .4em;
+		}
+		ul {
+			@include inc.mq(lap) {
+				//width: 68.25%;
+				width: 100%;
+				//margin-top: .4em;
+			}
 			li {
 				position: relative;
 				padding-left: 1.2em;
+				line-height: 1.6;
 				&:before {
 					position: absolute;
 					top: 0;
@@ -196,6 +209,18 @@ tombo
 					height: 1em;
 					content: "＊";
 				}
+				&:not(:last-child) {
+					margin-bottom: .5em;
+				}
+				& + li {
+					margin-top: .6rem;
+				}
+			}
+		}
+		.news_txt + ul {
+			margin-top: 1.5rem;
+			@include inc.mq(lap) {
+				margin-top: 2rem;
 			}
 		}
 	}
@@ -238,7 +263,8 @@ tombo
 	&__howto {
 	}
 	&__faq {
-		background: #8C8C8C;
+		//background: #8C8C8C;
+		background: rgba(60,60,60,.6);
 		.p-faq-list {
 			background-color: inc.$base-color;
 		}

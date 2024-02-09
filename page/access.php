@@ -184,10 +184,16 @@
           <div class="c-tab-contents" id="tab-bike"><!--バイク・自転車-->
             <div class="l-contents-2column">
               <div class="l-contents-2column__block -w-1_2">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/parking.svg">
+                <picture>
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/access/parking.svg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/parking_sp.svg">
+                </picture>
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-bicycle.svg" width="28" height="28" class="icon -bicycle">駐輪場　P1、P2、P3（無料）</span></p>
+                <p><span class="c-text-icon">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-bicycle.svg" width="28" height="28" class="icon -bicycle">
+                  駐輪場　P1、P2、P3（無料）
+                </span></p>
                 <p>P1の駐輪場はP1の中にございます。一般車出口ゲートバーの脇からお入りください。</p>
               </div>
             </div>
@@ -197,23 +203,5 @@
     </article>
   </div>
 </section>
-
-<!-- <section class="l-spacer -medium -both  p-tombo__faq">
-  <div class="l-container--primary">
-    <article class="l-contents--left-title -title-large">
-      <h2 class="c-title-large -vertical l-contents--left-title__title"><span>アクセス</span>よくある質問</h2>
-      <div class="l-contents--left-title__conts">
-        <dl class="p-faq-list">
-          <div class="p-faq-list__item">
-            <dt class="p-faq-list__question">コインロッカーはありますか？</dt>
-            <dd class="p-faq-list__answer">
-              <p>コインロッカーのご用意はございません。軽井沢駅や中軽井沢駅のコインロッカーをご利用ください。</p>
-            </dt>
-          </div>
-        </dl>
-      </div>
-    </article>
-  </div>
-</section> -->
 
 <?php get_footer(); ?>

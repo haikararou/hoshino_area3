@@ -131,7 +131,8 @@ keraike
 	}
 	&__lead {
 		color: inc.$base-color;
-		background: linear-gradient(rgb(193, 198, 198) 0%, rgb(39, 57, 57) 30%, rgb(39, 57, 57) 100%);
+		//background: linear-gradient(rgb(193, 198, 198) 0%, rgb(39, 57, 57) 30%, rgb(39, 57, 57) 100%);
+		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(113,118,86,1) 20%, rgba(113,118,86,1) 100%);
 		.l-container--primary {
 			height: 100vh;
 			max-width: 870px;
@@ -174,20 +175,33 @@ keraike
 		}
 		h2 {
 			@include inc.sizing(font-size, full, 24px, sp, 17px);
+			line-height: 1.6;
 			margin-bottom: 1.5em;
 			@include inc.mq(lap) {
 				width: 29.365%;
 				margin-bottom: 0;
 			}
 		}
-		ul {
+		.newsR {
 			@include inc.mq(lap) {
 				width: 68.25%;
 				margin-top: .4em;
 			}
+		}
+		.news_txt{
+			width: 100%;
+			//margin-top: .4em;
+		}
+		ul {
+			@include inc.mq(lap) {
+				//width: 68.25%;
+				width: 100%;
+				//margin-top: .4em;
+			}
 			li {
 				position: relative;
 				padding-left: 1.2em;
+				line-height: 1.6;
 				&:before {
 					position: absolute;
 					top: 0;
@@ -199,6 +213,15 @@ keraike
 				&:not(:last-child) {
 					margin-bottom: .5em;
 				}
+				& + li {
+					margin-top: .6rem;
+				}
+			}
+		}
+		.news_txt + ul {
+			margin-top: 1.5rem;
+			@include inc.mq(lap) {
+				margin-top: 2rem;
 			}
 		}
 	}
