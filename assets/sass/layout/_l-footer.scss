@@ -177,7 +177,7 @@ footer
 }
 
 .l-footer-important-news {
-  @include inc.sizing(padding-top, full, 72px, sp, 32px);
+  //@include inc.sizing(padding-top, full, 72px, sp, 32px);
   @include inc.sizing(padding-bottom, full, 72px, sp, 32px);
   &__inner {
     @include inc.mq(lap) {

@@ -109,7 +109,7 @@
   </a>
   <?php endif; ?>
 
-<?php if(is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('areamap') || is_page('access') || is_page('parking')): ?>
+<?php if(is_home() || is_front_page() || is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('areamap') || is_page('access') || is_page('parking')): ?>
   <main id="" class="l-main -cxl">
 <?php else: ?>
   <main id="" class="l-main">

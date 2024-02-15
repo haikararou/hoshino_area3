@@ -1,5 +1,5 @@
 <?php global $shop_slug; ?>
-<? $today = date_i18n('Ymd'); ?>
+<?php $today = date_i18n('Ymd'); ?>
 <?php
     $args = array(
         'post_type'=> 'business-hours',

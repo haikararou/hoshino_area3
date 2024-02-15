@@ -33,11 +33,11 @@
     position: fixed;
     top: 0; left: 0; right: 0;
     margin: auto;
-    z-index: 99;
+    //z-index: 99;
     
     @include inc.mq(tab) {
       position: relative;
-      z-index: 98;
+      z-index: 100;
     }
     
   }
@@ -101,6 +101,7 @@
   flex-direction: column-reverse;
   
   position: absolute;
+  z-index: 90;
   top: 100%; left: 0;right: 0;
   margin: auto;
   width: 100%;
@@ -108,7 +109,7 @@
   
   @include inc.mq(tab) {
     position: relative;
-    z-index: 99;
+    z-index: 97;
   }
   @include inc.mq(lap) {
     flex-direction: row;
@@ -124,6 +125,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .c-lang {
+      position: relative;
+      z-index: 99;
+      height: auto;
+      width: 100%;
+      background: inc.$theme-color-lightyellow;
+      @include inc.mq(tab) {
+        //position: relative;
+        text-align: center;
+        height: 32px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width: 200px;
+        border-radius: 6px;
+      }
+    }
     
   }
   &.-fixed {
@@ -259,9 +279,81 @@
   }
   
   &__lang {
-    margin-bottom: 3rem;
+    //margin-bottom: 3rem;
+    padding: 2em 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: inc.$theme-color-lightyellow;
     @include inc.mq(tab) {
       display: none;
     }
+    .c-lang {
+      position: relative;
+      width: 100%;
+    }
   }
+}
+
+.display_selectedItem {
+  width: 100%;
+}
+
+.display_selectedItem3 {
+  position: relative;
+}
+.display_selectedItem3::before {
+			content: '';
+			width: .4em;
+			height: .4em;
+			display: block;
+			position: absolute;
+			left: -1.3em;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			transform: rotate(135deg);
+			border-top: 1px solid currentColor;
+			border-right: 1px solid currentColor;
+		}
+
+
+.select_box {
+  position: inherit;
+  padding: 20px 0 16px;
+  background: inc.$theme-color-lightyellow;
+  @include inc.mq(tab) {
+    position: absolute;
+    top:26px;
+    left:0;
+    width: 100%;
+    padding: 10px 0 16px;
+    border-radius: 6px;
+  }
+}
+.select_box li {
+  cursor: default;
+}
+.select_box li + li {
+  margin-top: 16px;
+}
+html:lang(auto) .display_selectedItem2::after {
+  content:" : JA"
+}
+html:lang(ja) .display_selectedItem2::after {
+  content:" : JA"
+}
+html:lang(en) .display_selectedItem2::after {
+  content:" : EN"
+}
+html:lang(zh-TW) .display_selectedItem2::after {
+  content:" : 繁"
+}
+html:lang(zh-CN) .display_selectedItem2::after {
+  content:" : 簡"
+}
+html:lang(ko) .display_selectedItem2::after {
+  content:" : 韓"
 }

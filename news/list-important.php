@@ -1,4 +1,4 @@
-<div class="c-border-t">
+<div class="c-border-b">
     <div class="l-footer-important-news">
         <div class="l-container--primary">
             <div class="l-footer-important-news__inner">

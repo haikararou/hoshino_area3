@@ -12,7 +12,15 @@ add_theme_support( 'post-thumbnails' );
 この例は、テーマフォルダ内の/css/editor-style.cssに
 ビジュアルエディタ用のCSSを記述し、読み込んでいます。
 -------------------------------------------------------------------------*/
-//add_editor_style(get_template_directory_uri().'/css/editor-style.css' );
+//add_editor_style(get_template_directory_uri().'/assets/css/editor-style.css' );
+//add_editor_style('https://elb-hoshino-area-1086539244.ap-northeast-1.elb.amazonaws.com/wp-content/themes/hoshino-area/assets/css/editor-style.css');
+
+/* 【管理画面】管理画面カスタマイズ用CSSを読込 */
+function admin_css() {
+echo '<link rel="stylesheet" type="text/css" href="https://elb-hoshino-area-1086539244.ap-northeast-1.elb.amazonaws.com/wp-content/themes/hoshino-area/assets/css/editor-style.css">';
+}
+add_action('admin_head', 'admin_css');
+
 
 /* ---------------------------------------------------------------------
 正しいURLを入力しないとログイン画面を表示しないようにする

@@ -111,7 +111,7 @@ list
   > dd {
     line-height: 1.6;
     border-bottom: 1px solid inc.$theme-color-yellow;
-    padding: .5em 0 1em;
+    padding: .5em 0 1em 1rem;
     @include inc.mq(tab) {
       padding: 1em 0;
     }

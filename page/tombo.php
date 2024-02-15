@@ -17,7 +17,7 @@
       <video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_pc.mp4"></video>
       <video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_sp.mp4"></video>
       <div class="p-tombo__kv__logo">
-		<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/logo.svg" alt="星野温泉トンボの湯"></h1>
+		<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/logo.svg" alt="星野温泉 トンボの湯"></h1>
 		<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
 		</div>
       <div class="p-tombo__kv__news">

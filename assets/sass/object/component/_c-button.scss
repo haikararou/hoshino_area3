@@ -125,11 +125,33 @@ button
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		width: 120px;
+		@include inc.mq(tab) {
+			width: auto;
+		}
 		.icon {
 			width: 1em;
 			margin-right: 0.7em;
-			img {
+			display: none;
+			@include inc.mq(tab) {
 				display: block;
+			}
+			// img {
+			// 	display: block;
+			// }
+		}
+		span {
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				left: -10px;
+				top: 50%;
+				transform: translate(0%, -50%);
+				width: 12px;
+				height: 12px;
+				display: block;
+				background: url('/wp-content/themes/hoshino-area/assets/img/common/icon-parking.svg') no-repeat 50% 50% /contain;
 			}
 		}
 	}

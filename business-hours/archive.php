@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<? $today = date_i18n('Ymd'); ?>
+<?php $today = date_i18n('Ymd'); ?>
 
 <section class="l-spacer -medium -both">
 	<div class="l-container--primary">

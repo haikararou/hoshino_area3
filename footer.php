@@ -5,6 +5,8 @@
 ?>
 </main>
 
+<div class="c-bg-white">
+
 <?php if(is_home() || is_front_page()): ?>
   <div class="facility-flex c-bg-white">
     <div class="facility-flex-img">
@@ -12,7 +14,7 @@
       <div class="-home" id="tab-map">
         <ul class="-map_list">
           <li><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></li>
-          <li><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉トンボの湯</a></li>
+          <li><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉 トンボの湯</a></li>
           <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></li>
           <li><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></li>
           <li><a href="<?php echo home_url('/church#picchio'); ?>">ピッキオ</a><br><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a><br><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</li>
@@ -30,7 +32,7 @@
       <div class="home_txt">
         <div class="home_txt_lead">
           <h2 class="c-title-large">星野の森を、散策しよう。</h2>
-          <p>エリア全体をつなぐ、森の中の遊歩道。<br>川の流れに沿うように、文化人の歌碑が点在しています。<br>いつもよりも歩調をゆるめて、思うままに、お過ごしください。</p>
+          <p>豊かな自然に囲まれて、いつもよりも、歩調をゆるめて。<br>温泉、お食事、ショッピング、散策…思うままに、一日をお過ごしください。</p>
         </div>
         <div class="home_flx">
           <figure class="no01">
@@ -185,7 +187,8 @@
 
 </footer>
 
-<?php wp_footer(); ?>
+</div>
 
+<?php wp_footer(); ?>
 </body>
 </html>

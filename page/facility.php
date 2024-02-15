@@ -38,7 +38,7 @@
                 <dl class="p-facility-list">
                   <div class="p-facility-list__item">
                     <div>
-                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉トンボの湯</a></dt>
+                      <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉 トンボの湯</a></dt>
                     </div>
                     <div>
                       <dt class="p-facility-list__dt"><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></dt>
@@ -112,7 +112,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_sp.png">
             <ul class="-map_list">
               <li><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></li>
-              <li><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉トンボの湯</a></li>
+              <li><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉 トンボの湯</a></li>
               <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></li>
               <li><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></li>
               <li><a href="<?php echo home_url('/activity#picchio'); ?>">ピッキオ</a><br><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a><br><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</li>

@@ -8,6 +8,8 @@
   </div>
 </div>
 
+<?php get_template_part('news/list-important'); ?>
+
 <section class="l-spacer -pagetitile">
   <div class="l-container--primary">
     <h1 class="c-title-ex-large">アクセス</h1>
@@ -48,7 +50,7 @@
 
           <div class="c-tab-contents -active" id="tab-car"><!--車-->
             <div class="l-container--primary-s -l p-access-search">
-              <p class="-mgB">カーナビ入力設定は、「長野県北佐久郡軽井沢町長倉2148」、<br>もしくは「星野温泉トンボの湯」で検索ください。</p>
+              <p class="-mgB">カーナビ入力設定は、「長野県北佐久郡軽井沢町長倉2148」、<br>もしくは「星野温泉 トンボの湯」で検索ください。</p>
             </div>
             <div class="-mgB-m">
               <h3 class="c-title-small">東京方面からお越しのお客様</h3>
@@ -88,7 +90,7 @@
               <div class="parent3">
                 <div class="div3-1">JR軽井沢駅<span>北口1番のりば</span></div>
                 <div class="div3-2"><span>約20分</span></div>
-                <div class="div3-3">軽井沢星野エリア<span>「星野温泉トンボの湯」下車</span></div>
+                <div class="div3-3">軽井沢星野エリア<span>「星野温泉 トンボの湯」下車</span></div>
               </div>
             </div>
             <div class="l-contents-2column -mgB-l">
@@ -98,9 +100,9 @@
               </div>
               <div class="l-contents-2column__block -w-1_2">
                 <h3 class="c-title-small">JR軽井沢駅 北口1番のりば</h3>
-                <p>1番のりばから発車するバスは全て「星野温泉トンボの湯」に停車します。</p>
+                <p>1番のりばから発車するバスは全て「星野温泉 トンボの湯」に停車します。</p>
                 <div class="a-list">
-                  <a href="https://www.hoshino-area.jp/contents/uploads/814d3d57541d55ddef37602a5693dd27.pdf" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（星野温泉トンボの湯行き）</span></a>
+                  <a href="https://www.hoshino-area.jp/contents/uploads/814d3d57541d55ddef37602a5693dd27.pdf" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（星野温泉 トンボの湯行き）</span></a>
                 </div>
                 <div class="-bus-noriba">
                   <a href="https://www.google.com/maps/@36.3432916,138.636364,3a,75y,218.54h,75.24t/data=!3m6!1e1!3m4!1sVP-9Bhyi92-5U7U3Wx5GZA!2e0!7i16384!8i8192?authuser=0&entry=ttu" target="_blank">
@@ -117,7 +119,7 @@
                 <a href="https://www.google.com/maps/place/36%C2%B021'40.1%22N+138%C2%B035'19.4%22E/@36.3611238,138.5887211,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3611238!4d138.5887211?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <h3 class="c-title-small">星野温泉トンボの湯 バス停</h3>
+                <h3 class="c-title-small">星野温泉 トンボの湯 バス停</h3>
                 <div class="a-list">
                   <a href="https://www.hoshino-area.jp/contents/uploads/814d3d57541d55ddef37602a5693dd27.pdf#page=2" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（軽井沢駅行き）</span></a>
                 </div>
@@ -192,7 +194,7 @@
               <div class="l-contents-2column__block -w-1_2">
                 <p><span class="c-text-icon">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-bicycle.svg" width="28" height="28" class="icon -bicycle">
-                  駐輪場　P1、P2、P3（無料）
+                  駐輪場（無料）　P1、P2、P3
                 </span></p>
                 <p>P1の駐輪場はP1の中にございます。一般車出口ゲートバーの脇からお入りください。</p>
               </div>

@@ -492,12 +492,11 @@ spacer
   left: 0;
   right: 0;
   margin: auto;
-  z-index: 99;
 }
 @media screen and (min-width: 768px) {
   .l-header__top {
     position: relative;
-    z-index: 98;
+    z-index: 100;
   }
 }
 
@@ -577,6 +576,7 @@ spacer
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   position: absolute;
+  z-index: 90;
   top: 100%;
   left: 0;
   right: 0;
@@ -586,7 +586,7 @@ spacer
 @media screen and (min-width: 768px) {
   .l-header-menu {
     position: relative;
-    z-index: 99;
+    z-index: 97;
   }
 }
 @media screen and (min-width: 960px) {
@@ -614,6 +614,34 @@ spacer
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.l-header-menu__lang .c-lang {
+  position: relative;
+  z-index: 99;
+  height: auto;
+  width: 100%;
+  background: #F8F8F0;
+}
+@media screen and (min-width: 768px) {
+  .l-header-menu__lang .c-lang {
+    text-align: center;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
+    border-radius: 6px;
+  }
 }
 @media screen and (min-width: 768px) {
   .l-header-menu.-fixed {
@@ -781,12 +809,103 @@ spacer
   }
 }
 .l-header-submenu__lang {
-  margin-bottom: 3rem;
+  padding: 2em 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F8F8F0;
 }
 @media screen and (min-width: 768px) {
   .l-header-submenu__lang {
     display: none;
   }
+}
+.l-header-submenu__lang .c-lang {
+  position: relative;
+  width: 100%;
+}
+
+.display_selectedItem {
+  width: 100%;
+}
+
+.display_selectedItem3 {
+  position: relative;
+}
+
+.display_selectedItem3::before {
+  content: "";
+  width: 0.4em;
+  height: 0.4em;
+  display: block;
+  position: absolute;
+  left: -1.3em;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+}
+
+.select_box {
+  position: inherit;
+  padding: 20px 0 16px;
+  background: #F8F8F0;
+}
+@media screen and (min-width: 768px) {
+  .select_box {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 16px;
+    border-radius: 6px;
+  }
+}
+
+.select_box li {
+  cursor: default;
+}
+
+.select_box li + li {
+  margin-top: 16px;
+}
+
+html:lang(auto) .display_selectedItem2::after {
+  content: " : JA";
+}
+
+html:lang(ja) .display_selectedItem2::after {
+  content: " : JA";
+}
+
+html:lang(en) .display_selectedItem2::after {
+  content: " : EN";
+}
+
+html:lang(zh-TW) .display_selectedItem2::after {
+  content: " : 繁";
+}
+
+html:lang(zh-CN) .display_selectedItem2::after {
+  content: " : 簡";
+}
+
+html:lang(ko) .display_selectedItem2::after {
+  content: " : 韓";
 }
 
 /*
@@ -1007,7 +1126,6 @@ footer
 }
 
 .l-footer-important-news {
-  padding-top: clamp(32px, 3.19vw + 20px, 72px);
   padding-bottom: clamp(32px, 3.19vw + 20px, 72px);
 }
 @media screen and (min-width: 960px) {
@@ -1912,13 +2030,37 @@ button
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .c-button-block.-parking {
+    width: auto;
+  }
 }
 .c-button-block.-parking .icon {
   width: 1em;
   margin-right: 0.7em;
+  display: none;
 }
-.c-button-block.-parking .icon img {
+@media screen and (min-width: 768px) {
+  .c-button-block.-parking .icon {
+    display: block;
+  }
+}
+.c-button-block.-parking span {
+  position: relative;
+}
+.c-button-block.-parking span:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  width: 12px;
+  height: 12px;
   display: block;
+  background: url("/wp-content/themes/hoshino-area/assets/img/common/icon-parking.svg") no-repeat 50% 50%/contain;
 }
 
 .wp-pagenavi {
@@ -2187,7 +2329,7 @@ list
 .c-list-dl > dd {
   line-height: 1.6;
   border-bottom: 1px solid #E8E8D8;
-  padding: 0.5em 0 1em;
+  padding: 0.5em 0 1em 1rem;
 }
 @media screen and (min-width: 768px) {
   .c-list-dl > dd {
@@ -5405,7 +5547,7 @@ access
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: clamp(0.875rem, 0.48vw + 0.7625rem, 1.25rem);
+  font-size: clamp(0.75rem, 0.64vw + 0.6rem, 1.25rem);
   line-height: 1.5;
 }
 .div1-1 a.-parking,
@@ -5419,7 +5561,7 @@ access
 .div1-3 span,
 .div1-5 span,
 .div1-7 span {
-  font-size: clamp(0.75rem, 0.32vw + 0.675rem, 1rem);
+  font-size: clamp(0.6875rem, 0.24vw + 0.63125rem, 0.875rem);
 }
 
 .div1-2,
@@ -5427,6 +5569,16 @@ access
 .div1-6 {
   border-bottom: 1px solid black;
   padding: 0.5em;
+  font-size: clamp(0.6875rem, 0.24vw + 0.63125rem, 0.875rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .div1-1,
@@ -5551,7 +5703,7 @@ access
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: clamp(0.875rem, 0.48vw + 0.7625rem, 1.25rem);
+  font-size: clamp(0.75rem, 0.64vw + 0.6rem, 1.25rem);
   line-height: 1.5;
 }
 .div2-1 a.-parking,
@@ -5563,13 +5715,23 @@ access
 .div2-1 span,
 .div2-3 span,
 .div2-5 span {
-  font-size: clamp(0.75rem, 0.32vw + 0.675rem, 1rem);
+  font-size: clamp(0.6875rem, 0.24vw + 0.63125rem, 0.875rem);
 }
 
 .div2-2,
 .div2-4 {
   border-bottom: 1px solid black;
   padding: 0.5em;
+  font-size: clamp(0.6875rem, 0.24vw + 0.63125rem, 0.875rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .div2-1 {
@@ -5667,7 +5829,7 @@ access
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: clamp(0.875rem, 0.48vw + 0.7625rem, 1.25rem);
+  font-size: clamp(0.75rem, 0.64vw + 0.6rem, 1.25rem);
   line-height: 1.5;
 }
 .div3-1 a.-parking,
@@ -5677,12 +5839,22 @@ access
 
 .div3-1 span,
 .div3-3 span {
-  font-size: clamp(0.75rem, 0.32vw + 0.675rem, 1rem);
+  font-size: clamp(0.6875rem, 0.24vw + 0.63125rem, 0.875rem);
 }
 
 .div3-2 {
   border-bottom: 1px solid black;
   padding: 0.5em;
+  font-size: clamp(0.6875rem, 0.24vw + 0.63125rem, 0.875rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .parent4 {
@@ -5980,7 +6152,7 @@ access
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: clamp(0.875rem, 0.48vw + 0.7625rem, 1.25rem);
+  font-size: clamp(0.75rem, 0.64vw + 0.6rem, 1.25rem);
   line-height: 1.5;
 }
 .div4-1 a.-parking,
@@ -5992,7 +6164,7 @@ access
 .div4-1 span,
 .div4-3 span,
 .div4-6 span {
-  font-size: clamp(0.75rem, 0.32vw + 0.675rem, 1rem);
+  font-size: clamp(0.6875rem, 0.24vw + 0.63125rem, 0.875rem);
 }
 
 .div4-2,
@@ -6001,6 +6173,16 @@ access
 .div4-7 {
   border-bottom: 1px solid black;
   padding: 0.5em;
+  font-size: clamp(0.6875rem, 0.24vw + 0.63125rem, 0.875rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .noriba-map {

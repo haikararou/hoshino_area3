@@ -44,6 +44,8 @@ get_header(); ?>
   </div>
 </div>
 
+<div class="c-bg-white">
+
 <section class="p-home__lead l-container--primary">
   <div class="p-home__lead-head">
     <h2>人と自然が文化を織りなす、<br>この森とひとつになる。</h2>
@@ -114,6 +116,8 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
+</div>
 
 <?php get_footer(); ?>
 
