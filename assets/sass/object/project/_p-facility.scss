@@ -73,11 +73,6 @@ facility
 	display: flex;
 	flex-wrap: wrap;
 	&-img {
-		// background-image: url(../img/facility/base.jpg);
-		// background-color: #D7E6AF;
-		// background-position: center center;
-		// background-repeat: no-repeat;
-		// background-size: cover;
 		padding: 0 0%;
 		width: 100%;
 		display: block;
@@ -90,7 +85,7 @@ facility
 		@include inc.sizing(width, full, 1470px, sp, 330px);
 		max-width: 90%;
 		margin: 0 auto;
-		padding: 6rem 0 0 0;
+		padding: 3rem 0;
 		@include inc.mq(tab) {
 			padding: 0;
 		}
@@ -98,216 +93,108 @@ facility
 		@include inc.mq(tab) {
 			width: 50%;
 			max-width: auto;
-			padding: 6rem 6vw 0;
+			padding: 0 6vw;
 			border-top: none;
-		}
-		.home_txt {
-			padding: 0 0 2rem 0;
-			@include inc.mq(tab) {
-				padding: 0 0 6rem 0;
-			}
-			&_lead {
-				// text-align: left;
-				// @include inc.mq(tab) {
-				// 	text-align: right;
-				// }
-			}
-			.home_flx {
-				display: flex;
-				flex-wrap: wrap;
-				padding: 2rem 0 0 0;
-				@include inc.mq(tab) {
-					display: block;
-					column-count: 2;
-					column-gap: 1.5rem;
-					padding: 2rem 0 0 0;
-				}
-				figure {
-					display: flex;
-					flex-wrap: wrap;
-					width: 100%;
-					@include inc.mq(tab) {
-						display: block;
-					}
-					div {
-						max-width: 80%;
-						width: 100%;
-						@include inc.mq(tab) {
-							max-width: 100%;
-						}
-						img {
-							margin-bottom: .3rem;
-						}
-					}
-				}
-				figure + figure {
-					@include inc.mq(tab) {
-						margin-top: 1.2rem;
-					}
-					margin-top: 1.5rem;
-				}
-				.c-text-icon .icon {
-					margin-top: 5px;
-				}
-				.no01 {
-					order: 1;
-				}
-				.no02 {
-					order: 2;
-					flex-direction: row-reverse;
-				}
-				.no03 {
-					order: 3;
-				}
-				.no04 {
-					order: 4;
-					flex-direction: row-reverse;
-				}
-				.no05 {
-					order: 5;
-				}
-				.no06 {
-					order: 6;
-					flex-direction: row-reverse;
-				}
-				.no01,
-				.no02,
-				.no03,
-				.no04,
-				.no05,
-				.no06 {
-					figcaption {
-						span {
-							&::before {
-								content: "1";
-								font-family: "Helvetica Neue",sans-serif;
-								//color: #BE9424;
-								color: #956C00;
-								font-size: 18px;
-								font-weight: 700;
-								margin-right: .5rem;
-							}
-						}
-					}
-				}
-				.no02 {
-					@include inc.mq(tab) {
-						padding-top: 4rem;
-					}
-					figcaption {
-						span {
-							&::before {
-								content: "2";
-							}
-						}
-					}
-				}
-				.no03 {
-					figcaption {
-						span {
-							&::before {
-								content: "3";
-							}
-						}
-					}
-				}
-				.no04 {
-					figcaption {
-						span {
-							&::before {
-								content: "4";
-							}
-						}
-					}
-				}
-				.no05 {
-					figcaption {
-						span {
-							&::before {
-								content: "5";
-							}
-						}
-					}
-				}
-				.no06 {
-					figcaption {
-						span {
-							&::before {
-								content: "6";
-							}
-						}
-					}
-				}
-				figcaption {
-					span {
-						position: relative;
-					}
-				}
-			}
 		}
 	}
 }
 
 
 .home .monument-list {
-	padding: 1.5rem 0 2.5rem;
-	margin-top: 1.5rem;
-	@include inc.mq(tab) {
-		padding: 2rem 0 4rem;
-		margin-top: 2rem;
-	}
 	ul {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem 2rem;
+		border-top: 1px solid #E0E0D6;
 		li {
+			display: flex;
+			flex-wrap: wrap;
 			width: 100%;
-			@include inc.mq(tab) {
-				width: calc( 50% - 1rem);
+			gap: 0 5%;
+			border-bottom: 1px solid #E0E0D6;
+			@include inc.sizing(padding-top, full, 20px, sp, 16px);
+			@include inc.sizing(padding-bottom, full, 20px, sp, 16px);
+			img {
+				width: 20%;
 			}
 			span {
-				&::before {
-					content: "1";
-					font-family: "Helvetica Neue",sans-serif;
-					//color: #56717E;
-					color: #575757;
-					font-size: 18px;
-					font-weight: 700;
-					margin-right: .5rem;
-				}
+				display: block;
+				width: 75%;
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				padding-left: 26px;
+				background-position: 0 50%;
+				background-repeat: no-repeat;
+				background-size: 20px;
 			}
-			&:nth-child(2) {
-				span {
-					&::before {
-						content: "2";
-					}
-				}
+			&:nth-child(1) span {
+				background-image: url(../img/common/map_no01.svg);
 			}
-			&:nth-child(3) {
-				span {
-					&::before {
-						content: "3";
-					}
-				}
+			&:nth-child(2) span {
+				background-image: url(../img/common/map_no02.svg);
 			}
-			&:nth-child(4) {
-				span {
-					&::before {
-						content: "4";
-					}
-				}
+			&:nth-child(3) span {
+				background-image: url(../img/common/map_no03.svg);
 			}
-			&:nth-child(5) {
-				span {
-					&::before {
-						content: "5";
-					}
-				}
+			&:nth-child(4) span {
+				background-image: url(../img/common/map_no04.svg);
+			}
+			&:nth-child(5) span {
+				background-image: url(../img/common/map_no05.svg);
+			}
+			&:nth-child(6) span {
+				background-image: url(../img/common/map_no06.svg);
 			}
 		}
 	}
-
 }
+
+.map_pin {
+    position: relative;
+}
+.map_pin .pin {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 26px;
+}
+.map_pin .pin img {
+    width: 26px;
+    height: 33px;
+}
+.map_pin .pin_01 {
+    left: 63%;
+    top: 52.5%;
+}
+.map_pin .pin_02 {
+    left: 44.8%;
+    top: 17.5%;
+}
+.map_pin .pin_03 {
+    left: 37.3%;
+    top: 44.5%;
+}
+.map_pin .pin_04 {
+    left: 25.5%;
+    top: 59%;
+}
+
+.txt.txt_01 {
+	@include inc.sizingRem(font-size, lap, 18px, sp, 12px);
+	position: absolute;
+    transform: translate(-50%, -50%);
+	left: 89%;
+    top: 41%;
+	line-height: 1.4;
+	span {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
 
 .p-facility {
 	&-list {
@@ -344,7 +231,6 @@ facility
 				&::before,
 				&::after {
 					content: '';
-					//@include inc.sizing(width, full, 32px, sp, 16px);
 					width: 12px;
 					height: 1px;
 					position: absolute;
@@ -354,10 +240,6 @@ facility
 					display: block;
 					background: inc.$theme-color-darkyellow;
 					transition: transform .3s;
-					// @include inc.mq(lap) {
-					// top: 2.6rem;
-					// right: 1.5rem;
-					// }
 				}
 				&::after {
 					transform: rotate(90deg);
@@ -403,9 +285,6 @@ facility
 }
 
 #tab-map {
-	// @include inc.mq(tab) {
-	// 	display: none!important;
-	// }
 	.-map_list {
 		background: #D7E6AF;
 		padding: 2rem 5%;
@@ -442,12 +321,6 @@ facility
 				text-decoration: underline;
 				text-underline-offset: 2px;
 			}
-		}
-	}
-	&.-home {
-		display: block;
-		@include inc.mq(tab) {
-			display: none;
 		}
 	}
 }

@@ -46,6 +46,67 @@ get_header(); ?>
 
 <div class="c-bg-white">
 
+
+
+<?php if(is_home() || is_front_page()): ?>
+
+    <div class="l-container--primary">
+      <div class="p-home_sansaku">
+        <h2 class="c-title-large">星野の森を、<br>散策しよう。</h2>
+        <p>豊かな自然に囲まれて、いつもよりも、歩調をゆるめて。<br>温泉、お食事、ショッピング、散策…思うままに、一日をお過ごしください。</p>
+      </div>
+    </div>
+
+    <div class="facility-flex">
+      <div class="facility-flex-img">
+      <?php get_template_part('inc/areamap'); ?>
+      </div>
+      <div class="facility-flex-txt">
+        <div class="home_txt">
+          <div class="monument-list">
+            <ul>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph01.jpg" alt=""><span>中西悟堂の歌碑</span></li>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph02.jpg" alt=""><span>与謝野寛・明子 鴛鴦の歌碑</span></li>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph03.jpg" alt=""><span>川床のテラス</span></li>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph04.jpg" alt=""><span>北原白秋の文学碑</span></li>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph05.jpg" alt=""><span>カフェテラスのベンチ</span></li>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph06.jpg" alt=""><span>お昼寝デッキ</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="c-gmenu-primary -home c-bg-white">
+    <ul>
+      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/tombo-no-yu'); ?>" class="c-gmenu-primary__link">温泉</a></li>
+      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/shop'); ?>" class="c-gmenu-primary__link">ショップ&amp;レストラン</a></li>
+      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/activity'); ?>" class="c-gmenu-primary__link">アクティビティ</a></li>
+      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/church'); ?>" class="c-gmenu-primary__link">教会</a></li>
+      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/hotel'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
+    </ul>
+  </div>
+<?php else: ?>
+<footer class="l-footer c-bg-white">
+  <div class="l-footer__outline">
+    <a href="<?php echo home_url('/areamap'); ?>" class="u-transparent">
+      <section class="l-footer-map l-footer-buttonlink">
+        <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ttl-area-map.svg" alt="軽井沢 星野エリアマップ" width="172" height="133"></h2>
+        <p class="l-footer-map__text">Karuizawa Hoshino Area Map</p>
+        <button class="c-button-block -white -arrow l-footer-buttonlink__button">施設を探す</button>
+      </section>
+    </a>
+    <a href="" class="u-transparent">
+      <section class="l-footer-concept l-footer-buttonlink">
+        <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/txt-copy-white.svg" alt="森が、居場所になる一日。" width="168" height="159"></h2>
+        <p class="l-footer-concept__text">ゆれる木洩れ陽、川のせせらぎ、鳥のさえずり。豊かな自然に包まれて、暮らすように一日を。</p>
+        <button class="c-button-block -white -arrow l-footer-buttonlink__button">星野エリアで過ごす</button>
+      </section>
+    </a>
+  </div>
+<?php endif; ?>
+
+
+
 <section class="p-home__lead l-container--primary">
   <div class="p-home__lead-head">
     <h2>人と自然が文化を織りなす、<br>この森とひとつになる。</h2>
@@ -106,7 +167,7 @@ get_header(); ?>
 
         <div class="-box">
           <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/accordion01.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/accordion03.jpg" alt="">
           </figure>
           <div>
             <p>この場所に集う人々は、軽井沢を共に楽しむ友人です。<br>同じ情景を通じて、ゆるやかにつながっています。<br>何をするのもしないのも自由。喧騒から離れて、心の赴くままに。<br>森の一員となり、思い思いに一日を過ごすことで、大切なことを思い出せるかもしれません。<br>私たちは、いつでも「おかえりなさい」でお迎えいたします。</p>

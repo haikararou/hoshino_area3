@@ -261,17 +261,22 @@ $(window).on("load resize",function(){
 //トップページアコーディオン
 $(window).on("load resize",function(){
   if(window.matchMedia("(max-width:768px)").matches){
-    $('.accordion_area .-block .-body').css({display:'none',width:'90%',height:'auto'});
+    $('.accordion_area .-block .-body').css({display:'none'});
     $('.accordion_area .-block .-header.-open + .-body').css({display:'block'});
     $('.accordion_area .-block .-header').on('click', function() {
-      $(this).next().animate({height:'toggle'});
-      $(this).toggleClass("-open");
-      $('.accordion_area .-block .-header').not($(this)).next().animate({height:'hide'});
-      $('.accordion_area .-block .-header').not($(this)).removeClass("-open");
+      if($(this).next().css('display') == 'none') {
+        $(this).next().slideDown();
+        $(this).toggleClass("-open");
+        $('.accordion_area .-block .-header').not($(this)).removeClass("-open");
+        $('.accordion_area .-block .-header').not($(this)).next().slideUp();
+      } else {
+        $(this).removeClass("-open");
+      }
     });
   }else{
     $(function(){
-      $('.accordion_area .-block .-body').css({display:'block',width:'calc(100% - (126px * 1))',height:'600px'});
+      $('.accordion_area .-block .-body').css({display:'block'});
+      $('.accordion_area .-block .-body').slideDown();
       $('.accordion_area .-block1 .-header').click(function(){
         $('.accordion_area .-block1 .-header').addClass('-open');
         $('.accordion_area .-block2 .-header').removeClass('-open');
