@@ -1,4 +1,5 @@
 <?php global $shop_slug; ?>
+<?php global $offset; ?>
 <?php $today = date_i18n('Ymd'); ?>
 <?php
     $args = array(
@@ -15,7 +16,8 @@
         'compare' => '>=',
         ),
         ),
-        'posts_per_page' => -1,
+        'posts_per_page' => 1,
+        'offset' => $offset,
     );
     $wp_query = new WP_Query( $args );
     if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
@@ -32,7 +34,5 @@
         endwhile;
     endif;
 ?>
-<td>
-    <?php echo $time; ?><span><?php echo $comment; ?></span>
-</td>
+<?php echo $time; ?><span><?php echo $comment; ?></span>
 <?php endwhile; endif; ?>
