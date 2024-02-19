@@ -18,33 +18,7 @@
 	  <h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/logo.svg" alt="ケラ池スケートリンク"></h1>
 		<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
 		</div>
-      <div class="p-keraike__kv__news">
-        <h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
-        <div class="endress">
-          <div class="loop_wrap">
-            <?php
-            $args = array (
-                'post_type' => 'news',
-                'posts_per_page' => 3,
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'news_cat',
-                        'field' => 'slug',
-                        'terms' => 'important-news',
-                        'operator' => 'IN'
-                    ),
-                )
-            );
-            $news = new WP_Query( $args );
-            if ($news -> have_posts()):
-            ?>
-            <?php while ($news -> have_posts()): $news -> the_post(); ?>
-            <div><a href="<?php the_permalink();?>"><span><?php the_time('Y.m.d') ?></span><?php the_title(); ?></a>　</div>
-            <?php endwhile; ?>
-            </div>
-            <?php endif; wp_reset_postdata(); ?>
-          </div>
-      </div>
+		<?php get_template_part('news/list-important-kv'); ?>
     </div>
   </div>
 </div>
@@ -299,6 +273,31 @@
 			</article>
 		</div>
 	</section>
+
+	<?php if(have_rows('notes')): ?>
+	<?php while(have_rows('notes')): the_row(); ?>
+	<section class="l-contents-block__wrap  p-tombo__notices">
+		<div class="l-contents-block c-bg-border">
+			<div class="l-contents-block__inner">
+				<div class="l-container--primary">
+					<article class="l-contents-2column">
+						<h2 class="c-title-medium"><?php the_sub_field('notes_title'); ?></h2>
+						<?php if(have_rows('notes_list')): ?>
+						<div class="l-contents--left-title__conts">
+							<ul class="c-list-dot">
+							<?php while(have_rows('notes_list')): the_row(); ?>
+								<li class="c-list-dot__item"><?php the_sub_field('notes_list_li'); ?></li>
+							<?php endwhile; ?>
+							</ul>
+						</div>
+						<?php endif; ?>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<?php endwhile; ?>
+	<?php endif; ?>
 
 </section>
 

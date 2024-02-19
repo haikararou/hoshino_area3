@@ -12,43 +12,17 @@
 	</div>
 
 <div id="key_wrap">
-  <div id="keyVisual">
-    <div class="videoBox">
-      <video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_pc.mp4"></video>
-      <video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_sp.mp4"></video>
-      <div class="p-tombo__kv__logo">
-		<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/logo.svg" alt="星野温泉 トンボの湯"></h1>
-		<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
+	<div id="keyVisual">
+		<div class="videoBox">
+		<video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_pc.mp4"></video>
+		<video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_sp.mp4"></video>
+		<div class="p-tombo__kv__logo">
+			<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/logo.svg" alt="星野温泉 トンボの湯"></h1>
+			<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
+			</div>
+			<?php get_template_part('news/list-important-kv'); ?>
 		</div>
-      <div class="p-tombo__kv__news">
-        <h2 class="c-title-ex-small"><span>重要なお知らせ</span></h2>
-		<div class="endress">
-		<div class="loop_wrap">
-		<?php
-		$args = array (
-			'post_type' => 'news',
-			'posts_per_page' => 3,
-			'tax_query' => array(
-				array(
-					'taxonomy' => 'news_cat',
-					'field' => 'slug',
-					'terms' => 'important-news',
-					'operator' => 'IN'
-				),
-			)
-		);
-		$news = new WP_Query( $args );
-		if ($news -> have_posts()):
-		?>
-		<?php while ($news -> have_posts()): $news -> the_post(); ?>
-		<div><a href="<?php the_permalink();?>"><span><?php the_time('Y.m.d') ?></span><?php the_title(); ?></a>　</div>
-		<?php endwhile; ?>
-		</div>
-		<?php endif; wp_reset_postdata(); ?>
-		</div>
-      </div>
-    </div>
-  </div>
+	</div>
 </div>
 
 	<?php $lead = get_field('lead'); ?>

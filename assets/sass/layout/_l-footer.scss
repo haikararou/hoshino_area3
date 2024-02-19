@@ -13,18 +13,22 @@ footer
   }
   
   &__bottom {
-    width: 80%;
+    //width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 32px 10%;
     position: relative;
     @include inc.mq(tab) {
-      width: 94%;
+      //width: 94%;
+      width: 100%;
+      padding: 0 3%;
     }
     @include inc.mq(vr) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid inc.$theme-color-yellow;
     }
   }
   &__instagram {
@@ -33,10 +37,10 @@ footer
     padding: 0 10%;
     //width: 80%;
     padding: 32px 10%;
-    position: relative;
+    //position: relative;
     @include inc.mq(tab) {
       //width: 94%;
-      padding: 32px 3%;
+      padding: 32px 3% 32px;
     }
     @include inc.mq(vr) {
       border: none;
@@ -49,7 +53,7 @@ footer
       @include inc.mq(vr) {
         padding: 0;
         text-align: left;
-        position: absolute;
+        //position: absolute;
         left: 3%;
         bottom: 50px;
       }
@@ -63,7 +67,7 @@ footer
     font-size: inc.rem(11);
     text-align: center;
     margin-left: auto;
-    margin-top: 2em;
+    margin-top: 1em;
     width: 100%;
     @include inc.mq(tab) {
       //text-align: right;
@@ -78,13 +82,13 @@ footer
   &__logo{
     display: block;
     text-align: center;
-    margin: 3rem auto 0;
+    margin: 2rem auto 0;
     height: auto;
     position: relative;
     padding-bottom: 3rem;
     @include inc.mq(vr) {
       margin: 0 auto;
-      position: absolute;
+      //position: absolute;
       right: 3%;
       bottom:50px;
       padding-bottom: 0;
@@ -97,7 +101,7 @@ footer
         margin-left: auto;
         margin-right: auto;
         @include inc.mq(vr) {
-          margin: 0 0 53px;
+          margin: 0 0 6px;
         }
       }
     }
@@ -144,10 +148,10 @@ footer
 
 
 .l-footer-concept {
-  background: url(../img/common/bg-foot-concept.jpg) no-repeat center center / cover; 
+  background: url(../img/common/bg-foot-concept.jpg) no-repeat center center / cover;
   color: #FFF;
   @include inc.mq(lap) {
-    background-image: url(../img/common/bg-foot-concept-pc.jpg); 
+    background-image: url(../img/common/bg-foot-concept-pc.jpg);
     width: 67%;
   }
   
@@ -163,7 +167,7 @@ footer
   }
 }
 .l-footer-map {
-  background: url(../img/common/bg-foot-map.jpg) no-repeat center center / cover; 
+  background: url(../img/common/bg-foot-map.jpg) no-repeat center center / cover;
   @include inc.sizing(padding-top, full, 100px, sp, 40px);
   @include inc.mq(lap) {
     width: 33%;
@@ -254,20 +258,21 @@ footer
 .l-footer__sitemap {
   width: 100%;
   ul {
-    @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+    @include inc.sizingRem(font-size, full, 15px, sp, 13px);
     display: grid;
     grid-auto-flow: row;
-    gap: 1em;
+    gap: .8em 1em;
     @include inc.mq(tab) {
       display: block;
       column-count:2;
+      padding: 2em 0 .8em;
     }
     @include inc.mq(lap-l) {
       column-count:4;
     }
     li {
       @include inc.mq(tab) {
-        margin-bottom: 1.4rem;
+        margin-bottom: 1.2rem;
       }
       &::before {
         content: "";

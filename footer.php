@@ -39,8 +39,8 @@
     get_template_part('inc/info-menu', null, $args); ?>
   </nav>
 
-  <div class="c-border-t l-footer-position">
-    <div class="l-footer__bottom">
+  <div class="l-footer-position">
+    <div class="l-footer__bottom c-border-b">
       <nav>
         <?php get_template_part('inc/other-menu', null, $args); ?>
       </nav>
@@ -60,10 +60,6 @@
           <li><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a></li>
           <li><a href="<?php echo home_url('/hotel'); ?>">ホテル                </a></li>
           <li><a href="http://www.besso-navi.com/" target="_blank">軽井沢 別荘Navi</a></li>
-          <!-- <li class="no-arw">　</li>
-          <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
-          <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
-          <li><a href="<?php echo home_url('/hotel#beb5'); ?>" target="_blank">BEB5軽井沢</a></li> -->
         </ul>
       </nav>
     </div>
