@@ -131,21 +131,27 @@ keraike
 	}
 	&__lead {
 		color: inc.$base-color;
-		//background: linear-gradient(rgb(193, 198, 198) 0%, rgb(39, 57, 57) 30%, rgb(39, 57, 57) 100%);
-		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(113,118,86,1) 20%, rgba(113,118,86,1) 100%);
+		background: rgba(39,57,57,1);
+		@include inc.mq(lap) {
+			background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(39,57,57,1) 20%, rgba(39,57,57,1) 100%);
+		}
 		.l-container--primary {
-			height: 100vh;
+			height: 60vh;
 			max-width: 870px;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
 			@include inc.mq(lap) {
+				height: 80vh;
 				display: flex;
 				align-items: center;
 				align-content: center;
 			}
 		}
 		&__inner {
-			padding-top: 6em;
+			//padding-top: 6em;
 			@include inc.mq(lap) {
-				padding-top: 0;
+				padding-top: 10vw;
 				display: flex;
 				align-items: flex-start;
 				justify-content: space-between;

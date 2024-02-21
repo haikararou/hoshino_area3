@@ -9,13 +9,13 @@
 	</div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
 	<div class="l-container--primary">
 		<h1 class="c-title-ex-large">お問い合わせ</h1>
 	</div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer">
 	<div class="l-container--primary-s">
 		<article class="l-contents">
 			<div class="l-spacer -medium">

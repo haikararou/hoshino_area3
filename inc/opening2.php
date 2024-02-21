@@ -18,7 +18,7 @@
         'posts_per_page' => -1,
     );
     $wp_query = new WP_Query( $args );
-    if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
+    if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(); $counter2++;
 ?>
 <?php
     if(have_rows('opening_hoshino')):
@@ -32,7 +32,7 @@
         endwhile;
     endif;
 ?>
-<td>
+<td class="tab-<?php echo $counter2; ?>">
     <?php echo $time; ?><span><?php echo $comment; ?></span>
 </td>
 <?php endwhile; endif; ?>

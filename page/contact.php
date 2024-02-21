@@ -8,13 +8,13 @@
 	</div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
 	<div class="l-container--primary">
 		<h1 class="c-title-ex-large">お問い合わせ</h1>
 	</div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer">
 	<div class="l-container--primary-s">
 		<article class="l-contents">
 			<p class="-mgB-s">下記の入力フォームに必要事項をご入力のうえ、お問い合わせください。<br>

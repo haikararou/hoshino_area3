@@ -40,7 +40,7 @@ function register_files() {
 	//wp_register_style( 'endlesscss', get_template_directory_uri().'/assets/css/endless-river.css');
 
 	wp_deregister_script('jquery');
-	wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js');
 	wp_register_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js');
 	wp_register_script( 'function', get_template_directory_uri() . '/assets/js/common.js', array(), filemtime( get_template_directory().'/assets/js/common.js') );
 	wp_register_script( 'weather', get_template_directory_uri() . '/assets/js/weather.js');

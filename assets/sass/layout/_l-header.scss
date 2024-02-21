@@ -18,7 +18,7 @@
     height: auto;
   }
   &__top {
-    min-height: 54px;
+    min-height: 60px;
     @include inc.sizing(padding-top, full, 30px, sp, 10px);
     @include inc.sizing(padding-bottom, full, 30px, sp, 10px);
     @include inc.sizing(padding-left, full, 50px, sp, 16px);
@@ -299,6 +299,7 @@
 
 .display_selectedItem {
   width: 100%;
+  @include inc.sizingRem(font-size, full, 12px, sp, 11px);
 }
 
 .display_selectedItem3 {
@@ -340,20 +341,20 @@
   margin-top: 16px;
 }
 html:lang(auto) .display_selectedItem2::after {
-  content:" : JA"
+  content:" : 日本語"
 }
 html:lang(ja) .display_selectedItem2::after {
-  content:" : JA"
+  content:" : 日本語"
 }
 html:lang(en) .display_selectedItem2::after {
-  content:" : EN"
+  content:" : English"
 }
 html:lang(zh-TW) .display_selectedItem2::after {
-  content:" : 繁"
+  content:" : 繁體字"
 }
 html:lang(zh-CN) .display_selectedItem2::after {
-  content:" : 簡"
+  content:" : 简体字"
 }
 html:lang(ko) .display_selectedItem2::after {
-  content:" : 韓"
+  content:" : 한국어"
 }

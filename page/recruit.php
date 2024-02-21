@@ -8,13 +8,13 @@
 	</div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
 	<div class="l-container--primary">
 		<h1 class="c-title-ex-large">採用情報</h1>
 	</div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer">
 	<div class="l-container--primary-m">
 		<article class="l-contents">
 			<div class="l-contents__conts">

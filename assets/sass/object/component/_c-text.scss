@@ -60,3 +60,10 @@ br.sp_a {
     display: none;
   }
 }
+
+br.sp_b {
+  display: none;
+  @include inc.mq(lap) {
+    display: block;
+  }
+}

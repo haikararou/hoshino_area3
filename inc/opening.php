@@ -17,8 +17,10 @@
         ),
         'posts_per_page' => -1,
     );
+    $page = get_post( get_the_ID() );
+     $slug = $page->post_name;
     $wp_query = new WP_Query( $args );
-    if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
+    if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(); $counter++;
 ?>
 <?php
     if(have_rows('opening_harunireterrace')):
@@ -32,7 +34,7 @@
         endwhile;
     endif;
 ?>
-<td>
+<td class="tab-<?php echo $counter; ?>">
     <?php echo $time; ?><span><?php echo $comment; ?></span>
 </td>
 <?php endwhile; endif; ?>

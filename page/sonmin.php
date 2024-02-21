@@ -43,7 +43,7 @@
 	<?php if(have_rows('news')): ?>
 	<section class="l-spacer -medium -both p-sonmin__news">
 		<div class="l-container--primary">
-			<h2 class="c-title-ex-small">村民食堂からのお知らせ</h2>
+			<h2 class="c-title-ex-small">村民食堂からの<br class="sp_b">お知らせ</h2>
 			<ul>
 			<?php while(have_rows('news')): the_row(); ?>
 				<li><?php the_sub_field('news_conts'); ?></li>

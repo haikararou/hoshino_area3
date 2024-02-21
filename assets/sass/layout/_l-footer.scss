@@ -276,19 +276,20 @@ footer
       }
       &::before {
         content: "";
-        width: 0.4em;
-        height: 0.4em;
+        width: 0.3em;
+        height: 1px;
+        background: #aaa;
         display: inline-block;
         vertical-align: middle;
         margin-right: 0.7em;
-        border-top: 1px solid;
-        border-right: 1px solid;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
+        // border-top: 1px solid;
+        // border-right: 1px solid;
+        // -webkit-transform: rotate(45deg);
+        // transform: rotate(45deg);
         margin-top: -3px;
       }
       &.no-arw {
-        height: 0px;
+        height: 1px;
         font-size: 8px;
         &::before {
           display: none;

@@ -91,16 +91,40 @@
     top: -5px;
 }
 .mdl_txt.mdl_01 h2:before {
-    background: url(../img/common/map_pin.svg) no-repeat 50% 50% / contain;
+    background: url(../img/common/map_pin_onsen.svg) no-repeat 50% 50% / contain;
 }
 .mdl_txt.mdl_02 h2:before {
-    background: url(../img/common/map_pin.svg) no-repeat 50% 50% / contain;
+    background: url(../img/common/map_pin_hotel.svg) no-repeat 50% 50% / contain;
 }
 .mdl_txt.mdl_03 h2:before {
-    background: url(../img/common/map_pin.svg) no-repeat 50% 50% / contain;
+    background: url(../img/common/map_pin_restaurant.svg) no-repeat 50% 50% / contain;
 }
 .mdl_txt.mdl_04 h2:before {
     background: url(../img/common/map_pin.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_05 h2:before {
+    background: url(../img/common/map_pin_bird.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_06 h2:before {
+    background: url(../img/common/map_pin_restaurant.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_07 h2:before {
+    background: url(../img/common/map_pin_skate.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_08 h2:before {
+    background: url(../img/common/map_pin_church.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_09 h2:before {
+    background: url(../img/common/map_pin_church.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_10 h2:before {
+    background: url(../img/common/map_pin.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_11 h2:before {
+    background: url(../img/common/map_pin_hotel.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_12 h2:before {
+    background: url(../img/common/map_pin_hotel.svg) no-repeat 50% 50% / contain;
 }
 
 .mdl_txt p {

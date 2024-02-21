@@ -131,21 +131,28 @@ tombo
 	}
 	&__lead {
 		color: inc.$base-color;
-		//background: linear-gradient(rgb(192, 197, 179) 0%, rgb(76, 90, 42) 30%, rgb(45, 54, 25) 100%);
-		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(113,118,86,1) 20%, rgba(113,118,86,1) 100%);
+		//background: rgba(113,118,86,1);
+		background: rgba(25,34,3,1);
+		@include inc.mq(lap) {
+			background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(25,34,3,1) 20%, rgba(25,34,3,1) 100%);
+		}
 		.l-container--primary {
-			height: 100vh;
+			height: 60vh;
 			max-width: 870px;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
 			@include inc.mq(lap) {
+				height: 80vh;
 				display: flex;
 				align-items: center;
 				align-content: center;
 			}
 		}
 		&__inner {
-			padding-top: 6em;
+			//padding-top: 6em;
 			@include inc.mq(lap) {
-				padding-top: 0;
+				padding-top: 10vw;
 				display: flex;
 				align-items: flex-start;
 				justify-content: space-between;

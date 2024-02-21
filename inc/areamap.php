@@ -20,107 +20,106 @@
 <div class="no00 no05"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_no05.svg" alt=""></div>
 <div class="no00 no06"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_no06.svg" alt=""></div>
 
-
 <div class="txt txt_01">軽井沢<br>野鳥の森</span></div>
 
 </div>
 
 <section id="mdl_01" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_tombo.jpg" alt=""></figure>
 <div class="mdl_txt mdl_01">
-    <h2>トンボの湯</h2>
-    <p>トンボの湯説明文。トンボの湯説明文。トンボの湯説明文。トンボの湯説明文。</p>
+    <h2>星野温泉 トンボの湯</h2>
+    <p>大正時代の開湯以来、名湯として愛されてきた「源泉かけ流し」の温泉。森を感じながら心身をほぐし、英気を養うことができます。</p>
 </div>
 </section>
 
 <section id="mdl_02" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_hoshinoya.jpg" alt=""></figure>
 <div class="mdl_txt mdl_02">
     <h2>星のや軽井沢</h2>
-    <p>星のや軽井沢の説明文。星のや軽井沢の説明文。星のや軽井沢の説明文。星のや軽井沢の説明文。</p>
+    <p>「その瞬間の特等席へ。」がコンセプトの「星のや」。日本の原風景が鮮やかに蘇る谷の集落で、特別な滞在をお楽しみください。</p>
 </div>
 </section>
 
 <section id="mdl_03" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_sonmin.jpg" alt=""></figure>
 <div class="mdl_txt mdl_03">
     <h2>村民食堂</h2>
-    <p>村民食堂の説明文。村民食堂の説明文。村民食堂の説明文。村民食堂の説明文。村民食堂の説明文。</p>
+    <p>軽井沢を訪れる人々を、おいしくもてなすカジュアルダイニング。信州ならではの料理やお酒を、豊富にご用意しています。</p>
 </div>
 </section>
 
 <section id="mdl_04" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_bessounavi.jpg" alt=""></figure>
 <div class="mdl_txt mdl_04">
     <h2>軽井沢 別荘Navi</h2>
-    <p>軽井沢 別荘Naviの説明文。軽井沢 別荘Naviの説明文。軽井沢 別荘Naviの説明文。軽井沢 別荘Naviの説明文。</p>
+    <p>星野別荘地の不動産仲介と管理を行っています。豊かな軽井沢ライフをトータルサポート。別荘・移住のご相談はお気軽にどうぞ。</p>
 </div>
 </section>
 
 <section id="mdl_05" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_picchio.jpg" alt=""></figure>
 <div class="mdl_txt mdl_05">
     <h2>ピッキオ</h2>
-    <p>ピッキオの説明文ピッキオの説明文ピッキオの説明文ピッキオの説明文</p>
-    <ul>
+    <p>森の生き物との出会いを楽しむ、季節ごとの自然観察ツアーを開催。自然を愛するスタッフが、軽井沢の森をご案内します。</p>
+    <!-- <ul>
         <li><a href=""><span class="c-button-arrow">ピッキオ</span></a></li>
         <li><a href=""><span class="c-button-arrow">イカルカフェ</span></a></li>
-    </ul>
+    </ul> -->
 </div>
 </section>
 
 <section id="mdl_06" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_yukawatan.jpg" alt=""></figure>
 <div class="mdl_txt mdl_06">
     <h2>ブレストンコート ユカワタン</h2>
-    <p>ブレストンコート ユカワタンの説明文。ブレストンコート ユカワタンの説明文。ブレストンコート ユカワタンの説明文。</p>
+    <p>森の中の一軒家レストラン。王道のフランス料理をベースにしつつ、現代的な軽やかさをまとった新たな味わいをお届けします。</p>
 </div>
 </section>
 
 <section id="mdl_07" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_keraike.jpg" alt=""></figure>
 <div class="mdl_txt mdl_07">
     <h2>ケラ池スケートリンク</h2>
-    <p>ケラ池スケートリンクの説明文。ケラ池スケートリンクの説明文。ケラ池スケートリンクの説明文。</p>
+    <p>池が凍ると現れる、森の中のスケートリンク。紅葉の時期から春先まで、自然の中で氷上散歩を楽しむことができます。</p>
 </div>
 </section>
 
 <section id="mdl_08" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_ishinokyoukai.jpg" alt=""></figure>
 <div class="mdl_txt mdl_08">
     <h2>石の教会 内村鑑三記念堂</h2>
-    <p>石の教会 内村鑑三記念堂の説明文。石の教会 内村鑑三記念堂の説明文。石の教会 内村鑑三記念堂の説明文。</p>
+    <p>堅固な石のアーチ、その間から光が差して緑が茂り、水が流れる教会。自然との対話から生まれた、唯一無二の祈りの空間です。</p>
 </div>
 </section>
 
 <section id="mdl_09" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_kougenkyoukai.jpg" alt=""></figure>
 <div class="mdl_txt mdl_09">
     <h2>軽井沢高原教会</h2>
-    <p>軽井沢高原教会の説明文。軽井沢高原教会の説明文。軽井沢高原教会の説明文。軽井沢高原教会の説明文。</p>
+    <p>大正時代からの歴史ある教会。日曜礼拝やハープの演奏に、誰もが訪れることのできる開かれた教会です。</p>
 </div>
 </section>
 
 <section id="mdl_10" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_halnire.jpg" alt=""></figure>
 <div class="mdl_txt mdl_10">
     <h2>ハルニレテラス</h2>
-    <p>ハルニレテラスの説明文。ハルニレテラスの説明文。ハルニレテラスの説明文。</p>
+    <p>「軽井沢の日常」がコンセプトの森の中の小さな街。ハルニレの木立の中で、お買い物やお食事、散策をお楽しみください。</p>
 </div>
 </section>
 
 <section id="mdl_11" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_blestoncourt.jpg" alt=""></figure>
 <div class="mdl_txt mdl_11">
     <h2>軽井沢ホテルブレストンコート</h2>
-    <p>軽井沢ホテルブレストンコートの説明文。軽井沢ホテルブレストンコートの説明文。軽井沢ホテルブレストンコートの説明文。</p>
+    <p>丘の上に佇むリゾートホテルです。客室は、独立型のコテージスタイル。上質なおもてなしで、心とからだを静かに満たします。</p>
 </div>
 </section>
 
 <section id="mdl_12" class="hide-area">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/musasabi.png" alt=""></figure>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map_beb5.jpg" alt=""></figure>
 <div class="mdl_txt mdl_12">
     <h2>BEB5軽井沢</h2>
-    <p>BEB5軽井沢の説明文。BEB5軽井沢の説明文。BEB5軽井沢の説明文。BEB5軽井沢の説明文。BEB5軽井沢の説明文。</p>
+    <p>24時間オープンのパブリックスペース「TAMARIBA」や、秘密基地のような部屋。自由気ままに、ルーズな滞在を。</p>
 </div>
 </section>

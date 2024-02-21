@@ -58,8 +58,11 @@
           <li><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコート ユカワタン</a></li>
           <li><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェ ハングリースポット</a></li>
           <li><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a></li>
-          <li><a href="<?php echo home_url('/hotel'); ?>">ホテル                </a></li>
           <li><a href="http://www.besso-navi.com/" target="_blank">軽井沢 別荘Navi</a></li>
+          <li class="no-arw"></li>
+          <li><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
+          <li><a href="https://www.blestoncourt.com/" target="_blank">軽井沢ホテルブレストンコート</a></li>
+          <li><a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
         </ul>
       </nav>
     </div>
@@ -77,7 +80,19 @@
 </div>
 
 <?php wp_footer(); ?>
+<?php if(is_home() || is_front_page() || is_page('areamap')): ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modaal.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modaal.js"></script>
+<?php endif; ?>
+
+<?php if(is_archive('business-hours')): ?>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/mrstickytableheaders.min.js" type="text/javascript"></script>
+<script>
+$(function(){
+  $('#table01').mrstickytableheaders();
+});
+</script>
+<?php endif; ?>
+
 </body>
 </html>

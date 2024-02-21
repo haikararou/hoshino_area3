@@ -8,14 +8,14 @@
   </div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
   <div class="l-container--primary">
     <h1 class="c-title-ex-large">アクティビティ</h1>
     <p>自然に囲まれた星野エリアならではのアクティビティで、今日を、もっと思い出深い日に。</p>
   </div>
 </section>
 
-<section class="l-spacer -medium -both" id="picchio">
+<section class="l-spacer -mgB-l" id="picchio">
  <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
@@ -77,7 +77,7 @@ $the_query = new WP_Query( $args );
   </div>
 </section>
 
-<section class="l-spacer -medium -both" id="keraike">
+<section class="l-spacer -mgB-l" id="keraike">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
@@ -98,7 +98,7 @@ $the_query = new WP_Query( $args );
   </div>
 </section>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -mgB-l">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">

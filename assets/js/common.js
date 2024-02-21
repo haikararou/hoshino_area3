@@ -259,7 +259,7 @@ $(window).on("load resize",function(){
 
 
 //トップページアコーディオン
-$(window).on("load resize",function(){
+$(window).on("load",function(){
   if(window.matchMedia("(max-width:768px)").matches){
     $('.accordion_area .-block .-body').css({display:'none'});
     $('.accordion_area .-block .-header.-open + .-body').css({display:'block'});
@@ -303,7 +303,17 @@ $(window).on("load resize",function(){
 });
 
 
-
+$(window).on("resize",function(){
+  if(window.matchMedia("(max-width:768px)").matches){
+    $('.accordion_area .-block .-body').css({display:'none'});
+    $('.accordion_area .-block .-header.-open + .-body').css({display:'block'});
+  }else{
+    $(function(){
+      $('.accordion_area .-block .-body').css({display:'block'});
+      $('.accordion_area .-block .-body').slideDown();
+    });
+  }
+});
 
 
 //ショップ＆レストラン　絞り込み
@@ -387,4 +397,66 @@ $(function(){
       spVideoBool = true;
     }
   });
+});
+
+
+
+//営業時間タブ切り替え
+$(window).on("load resize",function(){
+  if(window.matchMedia("(max-width:768px)").matches){
+    $(function(){
+      $('.tab-1').css({display:'table-cell'});
+      $('.tab-2').css({display:'none',border:'none'});
+      $('.tab-3').css({display:'none',border:'none'});
+      $('#tab-1').click(function(){
+        $('#tab-1').addClass('-active');
+        $('#tab-2').removeClass('-active');
+        $('#tab-3').removeClass('-active');
+        $('.tab-1').css({display:'table-cell'});
+        $('.tab-2').css({display:'none',border:'none'});
+        $('.tab-3').css({display:'none',border:'none'});
+      });
+      $('#tab-2').click(function(){
+        $('#tab-1').removeClass('-active');
+        $('#tab-2').addClass('-active');
+        $('#tab-3').removeClass('-active');
+        $('.tab-1').css({display:'none'});
+        $('.tab-2').css({display:'table-cell',border:'none'});
+        $('.tab-3').css({display:'none',border:'none'});
+      });
+      $('#tab-3').click(function(){
+        $('#tab-1').removeClass('-active');
+        $('#tab-2').removeClass('-active');
+        $('#tab-3').addClass('-active');
+        $('.tab-1').css({display:'none'});
+        $('.tab-2').css({display:'none',border:'none'});
+        $('.tab-3').css({display:'table-cell',border:'none'});
+      });
+    });
+  }else{
+    $(function(){
+      $('#tab-1').addClass('-active');
+      $('#tab-2').removeClass('-active');
+      $('#tab-3').removeClass('-active');
+      $('.tab-1').css({display:'table-cell'});
+      $('.tab-2').css({display:'table-cell'});
+      $('.tab-3').css({display:'table-cell'});
+    });
+  }
+});
+
+$(window).on("load resize",function(){
+  var tab = $('.business-hours-tab ul li').length;
+  if (tab == '1') {
+    $('.business-hours-tab ul').addClass('tab-cnt01');
+  }
+  if (tab == '2') {
+    $('.business-hours-tab ul').addClass('tab-cnt02');
+  }
+  if (tab == '3') {
+    $('.business-hours-tab ul').addClass('tab-cnt03');
+  }
+  if (tab == '4') {
+    $('.business-hours-tab ul').addClass('tab-cnt04');
+  }
 });

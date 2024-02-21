@@ -20,8 +20,6 @@ get_header(); ?>
 
 <div class="c-bg-white">
 
-
-
 <?php if(is_home() || is_front_page()): ?>
 
     <div class="l-container--primary">
@@ -151,6 +149,58 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+<!-- <section>
+<div class="l-contents--left-title__conts">
+<dl class="p-recruit-list">
+  <div class="p-recruit-list__item">
+      <dt class="p-recruit-list__title">自然との共生</dt>
+      <dd class="p-recruit-list__txt">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/accordion01.jpg" alt="">
+        </figure>
+        <div>
+          <p>星野エリアは、星野温泉旅館が開業した大正時代から、豊かな自然と共生してきました。<br>広大な野鳥の森には、年間約８０種類の野鳥が見られ、ムササビやツキノワグマ、ニホンカモシカなど、多くの野生動植物が生息しています。<br>浅間山の雪解け水は湯川となり、心地よいせせらぎがエリア全体に響いています。<br>ずっと変わらない森の情景は、ここに訪れる人たちを、優しく包み込みます。</p>
+        </div>
+      </dd>
+    </div>
+    <div class="p-recruit-list__item">
+      <dt class="p-recruit-list__title">今に続く歴史の足跡</dt>
+      <dd class="p-recruit-list__txt">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/accordion03.jpg" alt="">
+        </figure>
+        <div>
+          <p>この場所に集う人々は、軽井沢を共に楽しむ友人です。<br>同じ情景を通じて、ゆるやかにつながっています。<br>何をするのもしないのも自由。喧騒から離れて、心の赴くままに。<br>森の一員となり、思い思いに一日を過ごすことで、大切なことを思い出せるかもしれません。<br>私たちは、いつでも「おかえりなさい」でお迎えいたします。</p>
+        </div>
+      </dd>
+    </div>
+    <div class="p-recruit-list__item">
+      <dt class="p-recruit-list__title">森に溶け込むひととき</dt>
+      <dd class="p-recruit-list__txt">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/accordion03.jpg" alt="">
+        </figure>
+        <div>
+          <p>この場所に集う人々は、軽井沢を共に楽しむ友人です。<br>同じ情景を通じて、ゆるやかにつながっています。<br>何をするのもしないのも自由。喧騒から離れて、心の赴くままに。<br>森の一員となり、思い思いに一日を過ごすことで、大切なことを思い出せるかもしれません。<br>私たちは、いつでも「おかえりなさい」でお迎えいたします。</p>
+        </div>
+      </dd>
+    </div>
+  </dl>
+</div>
+</section> -->
+
+
+
 
 </div>
 

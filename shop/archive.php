@@ -31,9 +31,6 @@
 					}
 					echo $des_list; ?>
                 </ul>
-                <div class="l-spacer -em2">
-                    <a href="<?php echo home_url('/business-hours'); ?>" class="c-button-block -yellow -icon"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg" width="16" height="16">営業時間</a>
-                </div>
             </div>
             <div class="l-contents--left-title__conts">
                 <?php

@@ -10,7 +10,7 @@
 
 <?php get_template_part('news/list-important'); ?>
 
-<section class="l-spacer -pagetitile">
+<section class="l-spacer -medium -both">
   <div class="l-container--primary">
     <h1 class="c-title-ex-large">アクセス</h1>
   </div>
@@ -23,7 +23,7 @@
         <iframe class="p-access-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.9792666866465!2d138.58612247700245!3d36.361281092316624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601dd3a1cc80e7f1%3A0x98ae4e19525e1b0c!2z6Lu95LqV5rKi5pif6YeO44Ko44Oq44Ki!5e0!3m2!1sja!2sjp!4v1701934750676!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="p-access-map-btn">
-        <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -yellow -parking -more"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i><span>駐車場</span></a>
+        <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -yellow -parking -more"><span>駐車場</span></a>
         <a href="https://www.google.com/maps?ll=36.361277,138.588697&z=17&t=m&hl=ja&gl=JP&mapclient=embed&cid=11001816810375748364" class="c-button-block -yellow -arrow -more" target="_blank"><span>Google Map</span></a>
       </div>
     </article>
@@ -61,7 +61,7 @@
                 <div class="div1-4"><span>平均約20分</span></div>
                 <div class="div1-5"><span>上信越自動車道</span>佐久平スマートIC（ETC専用）</div>
                 <div class="div1-6"><span>約20分</span></div>
-                <div class="div1-7">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i><span>駐車場</span></a></div>
+                <div class="div1-7">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
               </div>
             </div>
             <div class="-mgB-m">
@@ -71,7 +71,7 @@
                 <div class="div2-2"><span>約25分</span></div>
                 <div class="div2-3"><span>上信越自動車道</span>小諸IC</div>
                 <div class="div2-4"><span>約30分</span></div>
-                <div class="div2-5">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i><span>駐車場</span></a></div>
+                <div class="div2-5">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
               </div>
             </div>
             <div class="l-footer-important-news -mgB-s">
@@ -144,7 +144,7 @@
                 </ul>
               </div>
             </div>
-            <div class="l-footer-important-news -mgB-s c-border-t">
+            <div class="l-footer-important-news l-spacer -medium -s -both c-border-t">
               <div class="l-footer-important-news__inner">
                 <h2 class="l-footer-important-news__title">コインロッカーについて</h2>
                 <p>星野エリアにはコインロッカーはございません。軽井沢駅または中軽井沢駅のコインロッカーをご利用ください。</p>
@@ -175,7 +175,7 @@
                 <p class="">ますや交通（ TEL:<a href="tel:+81-267455223">0267-45-5223 ）<br>軽井沢観光タクシー（ TEL:<a href="tel:+81-267455408">0267-45-5408</a> ）<br>浅間観光タクシー（ TEL:<a href="tel:+81-267455264">0267-45-5264</a> ）</p>
               </div>
             </div>
-            <div class="l-footer-important-news -mgB-s">
+            <div class="l-footer-important-news l-spacer -medium -s -both c-border-t">
               <div class="l-footer-important-news__inner">
                 <h2 class="l-footer-important-news__title">コインロッカーについて</h2>
                 <p>星野エリアにはコインロッカーはございません。軽井沢駅または中軽井沢駅のコインロッカーをご利用ください。</p>

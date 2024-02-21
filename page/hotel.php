@@ -8,14 +8,14 @@
   </div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
   <div class="l-container--primary">
     <h1 class="c-title-ex-large">ホテル</h1>
     <p>日が暮れるまで過ごしたら、そのまま星野エリアにお泊りいただけます。一日の思い出とともに、ゆったりお過ごしください。</p>
   </div>
 </section>
 
-<section class="l-spacer -medium -both" id="hoshinoya">
+<section class="l-spacer -mgB-l" id="hoshinoya">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
@@ -37,7 +37,7 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both" id="hbc">
+<section class="l-spacer -mgB-l" id="hbc">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
@@ -59,7 +59,7 @@
   </div>
 </section>
 
-<section class="l-spacer -medium -both" id="beb5">
+<section class="l-spacer -mgB-l" id="beb5">
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">

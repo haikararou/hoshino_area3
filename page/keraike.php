@@ -39,7 +39,7 @@
 
 	<section class="l-spacer -medium -both p-keraike__news">
 		<div class="l-container--primary">
-			<h2 class="c-title-ex-small">ケラ池スケートリンク<br>からのお知らせ</h2>
+			<h2 class="c-title-ex-small">ケラ池スケートリンク<br class="sp_b">からのお知らせ</h2>
 			<div class="newsR">
 				<div class="news_txt"><?php the_field('news_txt'); ?></div>
 				<?php if(have_rows('news')): ?>
