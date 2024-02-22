@@ -112,11 +112,17 @@ facility
 			@include inc.sizing(padding-top, full, 20px, sp, 16px);
 			@include inc.sizing(padding-bottom, full, 20px, sp, 16px);
 			img {
-				width: 20%;
+				width: 35%;
+				@include inc.mq(tab) {
+					width: 30%;
+				}
 			}
 			span {
 				display: block;
-				width: 75%;
+				width: 60%;
+				@include inc.mq(tab) {
+					width: 65%;
+				}
 				display:flex;
 				flex-direction:column;
 				justify-content:center;

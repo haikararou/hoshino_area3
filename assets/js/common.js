@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', (e)=> {
-   $('.js-loading').fadeOut();
+   $('.js-loading').delay(500).fadeOut();
+});
+
+$(window).on("load",function(){
+  $('.c-lang .select_box').css('opacity', '1');
 });
 
 $(function() {
@@ -186,7 +190,7 @@ $(window).on("load resize",function(){
     }
   });
 
-
+//アコーディオン設定
     // facility-tab
     $('.js-tab-button').on('click', function() {
       parent = $(this).parents('.js-tab-parent');
@@ -232,6 +236,21 @@ $(window).on("load resize",function(){
       $(this).find('.p-recruit-list__txt').slideUp();
     }
   });
+
+  // HOME
+  $('.p-home-sp_accordion__item').on('click', function() {
+    $(this).toggleClass('-open');
+    if($(this).hasClass('-open')) {
+      $(this).find('.p-home-sp_accordion__txt').slideDown();
+    } else {
+      $(this).find('.p-home-sp_accordion__txt').slideUp();
+    }
+  });
+
+  $(window).on("load",function(){
+    $('.p-home-sp_accordion__item.-open .p-home-sp_accordion__txt').slideDown();
+  });
+
 
 
   //スライダー
@@ -459,4 +478,27 @@ $(window).on("load resize",function(){
   if (tab == '4') {
     $('.business-hours-tab ul').addClass('tab-cnt04');
   }
+});
+
+
+
+//営業時間タブ切り替え
+$(window).on("load resize",function(){
+  if(window.matchMedia("(max-width:768px)").matches){
+    $(window).scroll(function() {
+      var scroll;
+      var winH = $(window).height();
+      var objTop = $('.lead-end').offset().top;
+      $(window).on('scroll', function(){
+        scroll = $(window).scrollTop();
+        if(scroll >= objTop - winH){
+          //ここに処理
+          $('.p-kv__news').fadeOut();
+        }
+        else {
+          $('.p-kv__news').fadeIn();
+        }
+      });
+    });
+}
 });

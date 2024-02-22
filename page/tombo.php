@@ -11,25 +11,25 @@
 		</div>
 	</div>
 
-<div id="key_wrap">
-	<div id="keyVisual">
-		<div class="videoBox">
-		<video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_pc.mp4"></video>
-		<video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_sp.mp4"></video>
-		<div class="p-tombo__kv__logo">
-			<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/logo.svg" alt="星野温泉 トンボの湯"></h1>
-			<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
+	<div id="key_wrap">
+		<div id="keyVisual">
+			<div class="videoBox">
+			<video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_pc.mp4"></video>
+			<video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/tombo_sp.mp4"></video>
+			<div class="tombo p-kv__logo">
+				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/logo.svg" alt="星野温泉 トンボの湯"></h1>
+				<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
+				</div>
+				<?php get_template_part('news/list-important-kv'); ?>
 			</div>
-			<?php get_template_part('news/list-important-kv'); ?>
 		</div>
 	</div>
-</div>
 
 	<?php $lead = get_field('lead'); ?>
 	<?php if($lead):?>
-	<section class="l-spacer p-tombo__lead">
+	<section class="l-spacer tombo p-kv__lead">
 		<div class="l-container--primary">
-			<div class="p-tombo__lead__inner">
+			<div class="p-kv__lead__inner">
 				<h2 class="c-title-ex-small"><?php echo $lead['lead_title']; ?></h2>
 				<?php if($lead['lead_txt']):?><p><?php echo $lead['lead_txt']; ?></p><?php endif;?>
 			</div>
@@ -37,7 +37,7 @@
 	</section>
 	<?php endif;?>
 
-<section class="-tombo-bg">
+<section class="-tombo-bg lead-end">
 
 	<?php if(have_rows('news')): ?>
 	<section class="l-spacer -medium -both p-tombo__news">

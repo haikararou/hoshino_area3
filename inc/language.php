@@ -10,6 +10,11 @@
   </ul>
 </div>
 
+<style>
+.c-lang .select_box {
+  opacity: 0;
+}
+</style>
 <script>
 $(function(){
   var selectedItem = $("ul.select_box li.selected").text();

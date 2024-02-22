@@ -14,7 +14,7 @@
     <div class="videoBox">
       <video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/keraike_pc.mp4"></video>
       <video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/keraike_sp.mp4"></video>
-      <div class="p-keraike__kv__logo">
+      <div class="keraike p-kv__logo">
 	  <h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/logo.svg" alt="ケラ池スケートリンク"></h1>
 		<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
 		</div>
@@ -25,9 +25,9 @@
 
 	<?php $lead = get_field('lead'); ?>
 	<?php if($lead):?>
-	<section class="l-spacer p-keraike__lead">
+	<section class="l-spacer keraike p-kv__lead">
 		<div class="l-container--primary">
-			<div class="p-keraike__lead__inner">
+			<div class="keraike p-kv__lead__inner">
 				<h2 class="c-title-ex-small"><?php echo $lead['lead_title']; ?></h2>
 				<?php if($lead['lead_txt']):?><p><?php echo $lead['lead_txt']; ?></p><?php endif;?>
 			</div>
@@ -35,7 +35,7 @@
 	</section>
 	<?php endif;?>
 
-<section class="-keraike-bg">
+<section class="-keraike-bg lead-end">
 
 	<section class="l-spacer -medium -both p-keraike__news">
 		<div class="l-container--primary">

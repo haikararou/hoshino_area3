@@ -16,7 +16,7 @@
 			<div class="videoBox">
 			<video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/sonmin_pc.mp4"></video>
 			<video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/sonmin_sp.mp4"></video>
-			<div class="p-sonmin__kv__logo">
+			<div class="sonmin p-kv__logo">
 				<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/logo.svg" alt="村民食堂"></h1>
 				<a href="#usage-guide"class="c-button-block -lightyellow -arrow"><span>営業案内</span></a>
 				</div>
@@ -28,9 +28,9 @@
 
 	<?php $lead = get_field('lead'); ?>
 	<?php if($lead):?>
-	<section class="l-spacer p-sonmin__lead">
+	<section class="l-spacer sonmin p-kv__lead">
 		<div class="l-container--primary">
-			<div class="p-sonmin__lead__inner">
+			<div class="sonmin p-kv__lead__inner">
 				<h2 class="c-title-ex-small"><?php echo $lead['lead_title']; ?></h2>
 				<?php if($lead['lead_txt']):?><p><?php echo $lead['lead_txt']; ?></p><?php endif;?>
 			</div>
@@ -38,7 +38,7 @@
 	</section>
 	<?php endif;?>
 
-<section class="-sonmin-bg">
+<section class="-sonmin-bg lead-end">
 
 	<?php if(have_rows('news')): ?>
 	<section class="l-spacer -medium -both p-sonmin__news">

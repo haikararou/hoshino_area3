@@ -8,7 +8,7 @@ contact
     width: 100%;
     padding: 1rem;
     @include inc.sizingRem(font-size, full, 16px, sp, 14px);
-    font-family: fot-tsukumin-pr6n, sans-serif;
+    //font-family: fot-tsukumin-pr6n, sans-serif;
     border: 1px solid inc.$theme-color-yellow;
     border-radius: .2rem;
   }
@@ -16,14 +16,14 @@ contact
     width: 100%;
     padding: 0.6rem 1rem;
     @include inc.sizingRem(font-size, full, 16px, sp, 14px);
-    font-family: fot-tsukumin-pr6n, sans-serif;
+    //font-family: fot-tsukumin-pr6n, sans-serif;
     border: 1px solid inc.$theme-color-yellow;
     border-radius: .2rem;
   }
   &-zip {
     padding: 0.6rem 1rem;
     @include inc.sizingRem(font-size, full, 16px, sp, 14px);
-    font-family: fot-tsukumin-pr6n, sans-serif;
+    //font-family: fot-tsukumin-pr6n, sans-serif;
     border: 1px solid inc.$theme-color-yellow;
     border-radius: .2rem;
   }
@@ -31,7 +31,7 @@ contact
     width: 100%;
     padding: 0.6rem 1rem;
     @include inc.sizingRem(font-size, full, 16px, sp, 14px);
-    font-family: fot-tsukumin-pr6n, sans-serif;
+    //font-family: fot-tsukumin-pr6n, sans-serif;
     border: 1px solid inc.$theme-color-yellow;
     border-radius: .2rem;
   }

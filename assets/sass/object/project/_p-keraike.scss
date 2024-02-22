@@ -26,151 +26,30 @@ keraike
 	}
 }
 
+.keraike.p-kv__logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	h1 {
+		max-width: 370px;
+		@include inc.sizing(margin-bottom, full, 60px, sp, 32px);
+	}
+	.c-button-block.-arrow::before {
+		transform: rotate(135deg);
+	}
+}
+
+.keraike.p-kv__lead {
+	color: inc.$base-color;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(39,57,57,1) 20%, rgba(39,57,57,1) 100%);
+	@include inc.mq(lap) {
+		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(39,57,57,1) 20%, rgba(39,57,57,1) 100%);
+	}
+}
+
 .p-keraike {
-	&__kv {
-		// position: absolute;
-		// top: 0;
-		// left: 0;
-		// width: 100%;
-		background: url(../img/keraike/keyvisual.jpg) no-repeat 50% 50%;
-		background-size: cover;
-		.l-container--primary {
-			position: relative;
-			height: 100vh;
-			width: 100%;
-			max-width: 100%;
-		}
-		&__logo {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
-			h1 {
-				max-width: 370px;
-				@include inc.sizing(margin-bottom, full, 60px, sp, 32px);
-			}
-			.c-button-block.-arrow::before {
-				transform: rotate(135deg);
-			}
-		}
-		&__news {
-			position: absolute;
-			bottom: 0;
-			background: inc.$base-color;
-			width: 100%;
-			padding: 5%;
-			@include inc.mq(lap) {
-				width: 370px;
-				left: 3%;
-				bottom: 5vh;
-				padding: 1.5em;
-			}
-			h2 {
-				@include inc.sizing(margin-bottom, full, 12px, sp, 10px);
-				span {
-					font-size: 12px;
-					position: relative;
-					padding-left: 1.2em;
-					&:before {
-						content: "";
-						position: absolute;
-						top: 0;
-						left: 0;
-						background: url(../img/common/icon-info.svg) no-repeat 0 50%;
-						background-size: 1em;
-						width: 1em;
-						height: 1em;
-					}
-				}
-			}
-			.endress {
-				width: 100%;
-				overflow: hidden;
-				.loop_wrap {
-				  display: flex;
-				  width: 100%;
-				  overflow: hidden;
-				  gap: 0 3rem;
-				}
-				.loop_wrap div {
-				  flex: 0 0 auto;
-				  white-space: nowrap;
-				  overflow: hidden;
-				  a {
-					span {
-					  @include inc.sizingRem(font-size, full, 12px, sp, 11px);
-					  padding-right: .6rem;
-					}
-				  }
-				}
-				.loop_wrap div:nth-child(odd) {
-				  animation: loop 50s -25s linear infinite;
-				}
-				.loop_wrap div:nth-child(even) {
-				  animation: loop2 50s linear infinite;
-				}
-				@keyframes loop {
-				  0% {
-					transform: translateX(100%);
-				  }
-				  to {
-					transform: translateX(-100%);
-				  }
-				}
-				@keyframes loop2 {
-				  0% {
-					transform: translateX(0);
-				  }
-				  to {
-					transform: translateX(-200%);
-				  }
-				}
-			  }
-		}
-	}
-	&__lead {
-		color: inc.$base-color;
-		background: rgba(39,57,57,1);
-		@include inc.mq(lap) {
-			background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(39,57,57,1) 20%, rgba(39,57,57,1) 100%);
-		}
-		.l-container--primary {
-			height: 60vh;
-			max-width: 870px;
-			display:flex;
-			flex-direction:column;
-			justify-content:center;
-			@include inc.mq(lap) {
-				height: 80vh;
-				display: flex;
-				align-items: center;
-				align-content: center;
-			}
-		}
-		&__inner {
-			//padding-top: 6em;
-			@include inc.mq(lap) {
-				padding-top: 10vw;
-				display: flex;
-				align-items: flex-start;
-				justify-content: space-between;
-			}
-		}
-		h2 {
-			@include inc.sizing(font-size, full, 32px, sp, 24px);
-			line-height: 1.4375;
-			margin-bottom: 1.3em;
-			@include inc.mq(lap) {
-				width: 43%;
-			}
-		}
-		p {
-			@include inc.mq(lap) {
-				width: 42.528%;
-			}
-		}
-	}
 	&__news {
 		.l-container--primary {
 			@include inc.mq(lap) {

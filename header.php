@@ -3,11 +3,6 @@
  * ヘッダーテンプレート
  */
 ?><!DOCTYPE html>
-<style>
-  .c-lang .glink img {
-    display: none;
-}
-</style>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -54,6 +49,7 @@
 </head>
 
 <body <?php body_class('l-body'); ?> id="js-body">
+  <div id="loading" class="js-loading"></div>
   <header class="l-header" id="js-header">
     <div class="l-header__top" id="js-fixed-header-sp">
       <a href="<?php echo home_url(); ?>">
@@ -82,7 +78,7 @@
       </ul>
       
       <div class="c-gmenu-secondary l-header-menu__secondary">
-        <a href="<?php echo home_url('/areamap'); ?>" class="c-button-arrow c-gmenu-secondary__textbtn">施設を探す</a>
+        <a href="<?php echo home_url('/areamap'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-map.svg"></i>施設を探す</a>
         <a href="<?php echo home_url('/business-hours'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg"></i>営業時間</a>
         <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場</a>
         </ul>

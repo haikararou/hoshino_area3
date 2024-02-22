@@ -16,17 +16,16 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   line-height: 2;
-  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  //font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 body {
-  // color: $main-text-color; //設定
-  // background-color: $base-color; //設定
   text-rendering: optimizeLegibility; //アンチエイリアス処理、組み込みのフォントヒンティングの片方あるいは両方を行う
   -webkit-font-feature-settings: 'palt';
   font-feature-settings: 'palt';
+  //font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-family: inc.$font-set-primary, sans-serif;
-  //font-family: fot-tsukumin-pr6n, sans-serif;
   font-weight: 300;
   font-style: normal;
   line-height: 1.75; //設定

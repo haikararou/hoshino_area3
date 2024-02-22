@@ -4,6 +4,6 @@
   <p class="c-today__date"><?php echo date_i18n("Y.m.d");?> <?php echo date('D');?></p>
   <div class="c-today__temp <?php echo $class; ?>">
     <span class="js-weather-icon"><i class="fa-solid fa-cloud"></i></span>
-    <span class="js-weather-temp <?php echo $class; ?>">20</span>℃
+    <span class="js-weather-temp <?php echo $class; ?>"></span>℃
   </div>
 </section>

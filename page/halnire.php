@@ -15,7 +15,7 @@
     <div class="videoBox">
       <video playsinline autoplay muted preload="none" poster="./img/poster.jpg" loop class="pc-video" id="js-video-pc" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/harunire_pc.mp4"></video>
       <video playsinline autoplay muted preload="none" poster="./img/poster-sp.jpg" loop class="sp-video" id="js-video-sp" src="" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/video/harunire_sp.mp4"></video>
-      <div class="p-harunire__kv__logo">
+      <div class="harunire p-kv__logo">
       <h1><img src="<?php echo get_template_directory_uri(); ?>/assets/img/harunire/logo.svg" alt="ハルニレテラス"></h1>
 		</div>
     <?php get_template_part('news/list-important-kv'); ?>
@@ -23,16 +23,16 @@
   </div>
 </div>
 
-	<section class="l-spacer p-harunire__lead">
+	<section class="l-spacer harunire p-kv__lead">
 		<div class="l-container--primary">
-			<div class="p-harunire__lead__inner">
+			<div class="harunire p-kv__lead__inner">
 				<h2 class="c-title-ex-small">軽井沢の日常が流れる<br>森の中の小さな街</h1>
 				<p>「軽井沢の日常」をコンセプトにした、森の中の小さな街。ハルニレの木立の中、湯川の清流沿いに連なる建物を、ウッドデッキでつないでいます。豊かな自然と個性的なお店が、星野エリアでの一日を彩ります。</p>
 			</h2>
 		</div>
 	</section>
 
-<div class="c-bg-white">
+<div class="c-bg-white lead-end">
 
   <?php get_template_part('event/list-3-facility'); ?>
 

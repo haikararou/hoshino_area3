@@ -54,7 +54,7 @@ button
 		text-align: center;
 		@include inc.mq(desk) {
 		justify-content: flex-start;
-			padding: .75em 2em;
+			padding: .75em 1.5em;
 		}
 		i,
 		.icon {
@@ -109,7 +109,7 @@ button
 		border: none;
 		color: inc.$base-color;
 		@include inc.sizingRem(font-size, full, 24px, sp, 18px);
-		font-family: fot-tsukumin-pr6n, sans-serif;
+		//font-family: fot-tsukumin-pr6n, sans-serif;
 		&.-back {
 			width: 48%;
 			background: inc.$theme-color-lightyellow;

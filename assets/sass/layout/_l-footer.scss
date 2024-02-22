@@ -37,7 +37,9 @@ footer
     padding: 0 10%;
     //width: 80%;
     padding: 32px 10%;
-    //position: relative;
+    position: relative;
+    z-index: 10;
+    max-width: 220px;
     @include inc.mq(tab) {
       //width: 94%;
       padding: 32px 3% 32px;
@@ -88,9 +90,9 @@ footer
     padding-bottom: 3rem;
     @include inc.mq(vr) {
       margin: 0 auto;
-      //position: absolute;
+      position: absolute;
       right: 3%;
-      bottom:50px;
+      bottom:28px;
       padding-bottom: 0;
     }
     .logo {
@@ -110,6 +112,7 @@ footer
 
 .l-footer-position {
   position: relative;
+  padding-bottom: 20px;
 }
 
 .l-footer-information {
