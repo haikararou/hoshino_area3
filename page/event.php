@@ -5,7 +5,6 @@
 
 <?
 $today = date('Ymd');
-$today2 = date('Ymd-H:i:s');
 ?>
 
 <div class="l-spacer">
@@ -25,7 +24,7 @@ $args = array(
     'paged' => $paged,
     'post_type' => 'event',
     'post_status' => 'publish',
-    'meta_value'    => $today,// dateで現在の日時を取得
+    'meta_value'    => date('Ymd'),// dateで現在の日時を取得
     'meta_key'      => 'event_end',
     'meta_compare'  => '<',// meta_valueとmeta_keyを比較して過去の場合のみ表示
     'posts_per_page' => 12,

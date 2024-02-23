@@ -74,7 +74,7 @@
           <p>自由気ままで「ルーズ」な滞在スタイルのホテル。<br>24時間オープンで持ち込み可能なパブリックスペース「TAMARIBA（タマリバ）」に、秘密基地のような部屋。<br>好きな時に、好きな場所で、好きなように過ごすことができます。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="https://www.hoshinoresorts.com/resortsandhotels/omobeb/beb/5karuizawa.html" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+          <a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
       </div>
     </article>

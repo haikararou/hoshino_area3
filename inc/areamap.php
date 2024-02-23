@@ -1,5 +1,5 @@
 <div class="map_pin">
-<img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map2.png" alt="">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map.png" alt="">
 <div class="pin pin_01"><a href="#mdl_01" class="mdl"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_pin_onsen.svg" alt=""></a></div>
 <div class="pin pin_02"><a href="#mdl_02" class="mdl"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_pin_hotel.svg" alt=""></a></div>
 <div class="pin pin_03"><a href="#mdl_03" class="mdl"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_pin_restaurant.svg" alt=""></a></div>

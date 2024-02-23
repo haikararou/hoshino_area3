@@ -435,9 +435,9 @@ home
 
 
 .p-home-sp_accordion {
-  border-top: 1px solid inc.$theme-color-yellow;
+  //border-top: 1px solid inc.$theme-color-yellow;
   &__item {
-    border-bottom: 1px solid inc.$theme-color-yellow;
+    border-top: 1px solid inc.$theme-color-yellow;
     transition: background .3s;
     position: relative;
     cursor: pointer;

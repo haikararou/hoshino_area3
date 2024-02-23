@@ -12,6 +12,7 @@ kv
 	}
 	&__news {
 		position: fixed;
+		z-index: 900;
 		bottom: 0;
 		background: inc.$base-color;
 		width: 100%;

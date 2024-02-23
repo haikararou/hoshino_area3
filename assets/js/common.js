@@ -482,23 +482,20 @@ $(window).on("load resize",function(){
 
 
 
-//営業時間タブ切り替え
+//キービジュアル　重要なお知らせ
 $(window).on("load resize",function(){
-  if(window.matchMedia("(max-width:768px)").matches){
+  //if(window.matchMedia("(max-width:768px)").matches){
     $(window).scroll(function() {
       var scroll;
       var winH = $(window).height();
       var objTop = $('.lead-end').offset().top;
-      $(window).on('scroll', function(){
-        scroll = $(window).scrollTop();
-        if(scroll >= objTop - winH){
-          //ここに処理
-          $('.p-kv__news').fadeOut();
-        }
-        else {
-          $('.p-kv__news').fadeIn();
-        }
-      });
+      scroll = $(window).scrollTop();
+      if(scroll >= objTop - winH){
+        $('.p-kv__news').fadeOut();
+      }
+      else {
+        $('.p-kv__news').fadeIn();
+      }
     });
-}
+  //}
 });
