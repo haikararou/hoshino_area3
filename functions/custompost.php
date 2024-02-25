@@ -124,7 +124,7 @@ function create_post_type() {
 	register_post_type( 'business-hours', // 投稿タイプ名(スラッグ)
 		array(
 			'labels' => array(
-			'name' => __( '営業時間一覧' ), // 投稿タイプ名(表示名)
+			'name' => __( '営業時間' ), // 投稿タイプ名(表示名)
 			'singular_name' => __( '営業時間' )// 投稿タイプ名(表示名)
 			),
 			'menu_icon' => 'dashicons-clipboard',

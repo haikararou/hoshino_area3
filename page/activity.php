@@ -27,11 +27,11 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/activity/logo_picchio.svg">
         </div>
         <div class="l-spacer -em2">
-          <p>ピッキオは「軽井沢野鳥の森」をメインフィールドに、森の生き物との出会いを楽しむ自然観察ツアーを開催しています。<br>
-          ツアーは年間通じて行われ、季節ごとに内容が変わります。小さなお子様からご年配の方まで、どなたでも気軽にお楽しみいただける「野鳥の森ネイチャーウォッチング」や、目撃率95％以上の「空飛ぶムササビウォッチング」など、その季節にしか味わえない楽しみがたくさん。自然をこよなく愛するスタッフが、豊かな森をご案内します。</p>
+          <p>「軽井沢野鳥の森」をメインフィールドに、森の生き物との出会いを楽しむ自然観察ツアーを開催。<br>
+          ツアーは年間通じて行われ、季節ごとに内容が変わります。小さなお子様からご年配の方まで、どなたでも気軽に参加できる「野鳥の森ネイチャーウォッチング」や、目撃率95％以上の「空飛ぶムササビウォッチング」など、その季節にしか味わえない楽しみがたくさん。自然をこよなく愛するスタッフが、豊かな森をご案内します。</p>
         </div>
         <div class="l-spacer -em2">
-          <a href="" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+          <a href="https://picchio.co.jp/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
 
 

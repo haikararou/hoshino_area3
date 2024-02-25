@@ -1905,6 +1905,21 @@ button
   text-align: center;
   min-width: 3rem;
 }
+.c-button-block[target=_blank] span {
+  position: relative;
+}
+.c-button-block[target=_blank] span::after {
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  position: absolute;
+  right: -20px;
+  color: inherit;
+  background: url(../img/common/icon-outer.svg) no-repeat center center/contain;
+}
 .c-button-block.-arrow {
   position: relative;
 }
@@ -2313,7 +2328,7 @@ list
   counter-increment: listnum;
 }
 .c-list-kome__item::before {
-  content: "※";
+  content: "＊";
   margin-left: -1.5em;
   display: inline-block;
   width: 1.5em;
@@ -2989,17 +3004,10 @@ breadcrumb
   }
 }
 .c-breadcrumb__item:nth-child(3) {
-  width: 9rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (min-width: 768px) {
-  .c-breadcrumb__item:nth-child(3) {
-    width: 16rem;
-  }
-}
-
 /*
 today
 -----------------------------------------------------*/

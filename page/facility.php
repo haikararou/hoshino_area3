@@ -52,7 +52,7 @@
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church#stonechurch'); ?>">石の教会 内村鑑三記念堂</a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコート ユカワタン</a></dt>
+                  <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank"><em class="c-button-outerlink">ブレストンコート ユカワタン</em></a></dt>
                 </div>
                 <div>
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></dt>
@@ -66,12 +66,12 @@
                     <ul>
                       <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
                       <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
-                      <li><a href="<?php echo home_url('/hotel#beb5'); ?>">星野リゾート　BEB5軽井沢</a></li>
+                      <li><a href="<?php echo home_url('/hotel#beb5'); ?>">星野リゾート</a></li>
                     </ul>
                   </dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="http://www.besso-navi.com/" target="_blank">軽井沢 別荘Navi</a></dt>
+                  <dt class="p-facility-list__dt"><a href="http://www.besso-navi.com/" target="_blank"><em class="c-button-outerlink">軽井沢 別荘Navi</em></a></dt>
                 </div>
               </div>
             </dl>

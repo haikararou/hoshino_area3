@@ -34,12 +34,12 @@ breadcrumb
       transform: translateX(-25%) rotate(45deg);
     }
     &:nth-child(3) {
-      width: 9rem;
+      //width: 9rem;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       @include inc.mq(tab) {
-        width: 16rem;
+        //width: 16rem;
       }
     }
   }

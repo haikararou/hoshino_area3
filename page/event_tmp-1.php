@@ -119,7 +119,7 @@
 							<dd>無料</dd>
 
 							<dt>予約</dt>
-							<dd>不要<span class="">※荒天時中止</span></dd>
+							<dd>不要<span class="">＊荒天時中止</span></dd>
 						</dl>
 						<p>
 							<a href="#" class="c-button-block -lightyellow -arrow"><span>ご予約はこちら</span></a>
@@ -145,7 +145,7 @@
 							<dd>無料</dd>
 
 							<dt>予約</dt>
-							<dd>不要<span class="">※荒天時中止</span></dd>
+							<dd>不要<span class="">＊荒天時中止</span></dd>
 						</dl>
 					</div>
 				</div>

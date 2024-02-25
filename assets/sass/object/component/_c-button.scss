@@ -18,6 +18,23 @@ button
 		text-align: center;
 		min-width: 3rem;
 	}
+	&[target="_blank"] {
+		span {
+			position: relative;
+			&::after {
+				content: '';
+				width: .8em;
+				height: .8em;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: .5em;
+				position: absolute;
+    			right: -20px;
+				color: inherit;
+				background: url(../img/common/icon-outer.svg) no-repeat center center / contain;
+			}
+		}
+	}
 	&.-arrow {
 		position: relative;
 		&::before {

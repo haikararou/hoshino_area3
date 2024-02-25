@@ -58,7 +58,7 @@
                 <div class="div1-1"><span>上信越自動車道</span>碓氷軽井沢IC</div>
                 <div class="div1-2"><span>約25分</span></div>
                 <div class="div1-3"><span>上信越自動車道</span>佐久IC</div>
-                <div class="div1-4"><span>平均約20分</span></div>
+                <div class="div1-4"><span>約20分</span></div>
                 <div class="div1-5"><span>上信越自動車道</span>佐久平スマートIC（ETC専用）</div>
                 <div class="div1-6"><span>約20分</span></div>
                 <div class="div1-7">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
@@ -77,7 +77,7 @@
             <div class="l-footer-important-news -mgB-s">
               <div class="l-footer-important-news__inner">
                 <h2 class="l-footer-important-news__title">冬用タイヤの装着について</h2>
-                <p>冬期（おおむね12月中旬～3月中旬）に車で軽井沢にお越しの際は、冬用タイヤまたはタイヤチェーンをご準備ください。最高気温が零下となる日も多く、少量の降雪や融雪でも路面が凍結します。安全のため、ノーマルタイヤでの運転は控えていただくようお願いいたします。</p>
+                <p>冬期（おおむね12月中旬～3月中旬）に車で軽井沢にお越しの際は、冬用タイヤまたはタイヤチェーンをご準備ください。安全のため、ノーマルタイヤでの運転は控えていただくようお願いいたします。</p>
               </div>
             </div>
           </div><!--車-->

@@ -32,7 +32,7 @@
 					<h2 class="c-title-small">目的から探す</h2>
 					<ul class="c-list-std">
 						<li class="c-list-std__item"><a href="#">駐車場について</a></li>
-						<li class="c-list-std__item"><a href="#">交通アクセス</a></li>
+						<li class="c-list-std__item"><a href="#">アクセス</a></li>
 						<li class="c-list-std__item"><a href="#">ペットの同伴について</a></li>
 						<li class="c-list-std__item"><a href="#">◯◯◯</a></li>
 					</ul>

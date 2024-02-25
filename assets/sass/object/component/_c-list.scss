@@ -85,7 +85,7 @@ list
     line-height: 1.6;
     counter-increment: listnum;
     &::before {
-      content: '※';
+      content: '＊';
       margin-left: -1.5em;
       display: inline-block;
       width: 1.5em;

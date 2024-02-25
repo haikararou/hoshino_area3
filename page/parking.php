@@ -68,7 +68,7 @@
               <li class="c-list-dot__item">ご精算は現金（千円札、500、100、50、10円硬貨）にてお願いいたします。</li>
             </ul></dd>
           </dl>
-          <a href=""><span class="c-button-arrow c-text-underline">駐車場管理規定（PDF）</span></a>
+          <a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/Seibu-bus-to-Hoshino.pdf" target="_blank"><span class="c-button-arrow c-text-underline">駐車場管理規定（PDF）</span></a>
         </div>
       </div>
     </article>

@@ -37,10 +37,10 @@ get_header(); ?>
         <div class="home_txt">
           <div class="monument-list">
             <ul>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph01.jpg" alt=""><span>中西悟堂の歌碑</span></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph02.jpg" alt=""><span>与謝野寛・明子 鴛鴦の歌碑</span></li>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph01.jpg" alt=""><span>中西悟堂の詩碑</span></li>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph02.jpg" alt=""><span>与謝野寛・晶子の歌碑</span></li>
               <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph03.jpg" alt=""><span>川床のテラス</span></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph04.jpg" alt=""><span>北原白秋の文学碑</span></li>
+              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph04.jpg" alt=""><span>北原白秋の詩碑</span></li>
               <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph05.jpg" alt=""><span>カフェテラスのベンチ</span></li>
               <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph06.jpg" alt=""><span>お昼寝デッキ</span></li>
             </ul>
@@ -122,7 +122,7 @@ get_header(); ?>
         </figure>
         <div>
           <p>星野エリアの歴史は、大正時代まで遡ります。<br>1915年（大正4年）に開湯した星野温泉を起点に、北原白秋や島崎藤村など当時の文人たちが集い、文化的エポックが切り拓かれてきました。<br>源泉は今も滔々と湧き続け、森の小道には文人の言葉が石碑として残っています。</p>
-          <p>昭和中期には、日本野鳥の会創立者である中西悟堂が滞在するようになります。<br>彼は軽井沢の森が、世界的な野鳥の宝庫であると指摘。<br>やがて、星野エリアに隣接する国有林は、国設「軽井沢野鳥の森」に指定されました。<br>探鳥会と呼ばれたガイド付きツアーは、ピッキオのエコツーリズムへと繋がっています。</p>
+          <p>昭和中期には、日本野鳥の会創立者である中西悟堂が滞在するようになります。<br>彼は軽井沢の森が、世界的な野鳥の宝庫であると指摘。やがて、星野エリアに隣接する国有林は、国設「軽井沢野鳥の森」に指定されました。<br>探鳥会と呼ばれたガイド付きツアーは、ピッキオのエコツーリズムへと繋がっています。</p>
         </div>
       </div>
     </div>
@@ -166,7 +166,7 @@ get_header(); ?>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/accordion02.jpg" alt="">
           </figure>
           <p>星野エリアの歴史は、大正時代まで遡ります。<br>1915年（大正4年）に開湯した星野温泉を起点に、北原白秋や島崎藤村など当時の文人たちが集い、文化的エポックが切り拓かれてきました。<br>源泉は今も滔々と湧き続け、森の小道には文人の言葉が石碑として残っています。</p>
-          <p>昭和中期には、日本野鳥の会創立者である中西悟堂が滞在するようになります。<br>彼は軽井沢の森が、世界的な野鳥の宝庫であると指摘。<br>やがて、星野エリアに隣接する国有林は、国設「軽井沢野鳥の森」に指定されました。<br>探鳥会と呼ばれたガイド付きツアーは、ピッキオのエコツーリズムへと繋がっています。</p>
+          <p>昭和中期には、日本野鳥の会創立者である中西悟堂が滞在するようになります。<br>彼は軽井沢の森が、世界的な野鳥の宝庫であると指摘。やがて、星野エリアに隣接する国有林は、国設「軽井沢野鳥の森」に指定されました。<br>探鳥会と呼ばれたガイド付きツアーは、ピッキオのエコツーリズムへと繋がっています。</p>
         </div>
       </dd>
     </div>

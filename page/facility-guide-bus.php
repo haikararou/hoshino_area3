@@ -29,7 +29,7 @@
 					<dl class="c-list-dl">
 						<dt>受入可能期間</dt>
 						<dd>2023年11月6日～2024年4月26日<br>
-						ゴールデンウィークから11月上旬までの期間は、バスでのご利用は受け入れておりません。</dd>
+						<span>*ゴールデンウィークから11月上旬までの期間は、バスでのご利用は受け入れておりません。</span></dd>
 
 						<dt>時間・台数</dt>
 						<dd>10:00～12:00　1台<br>
@@ -54,16 +54,16 @@
 
 						<dt>予約開始日</dt>
 						<dd>
-							<p>毎月1日に3ヶ月後1ヶ月分の予約受付を開始します。<br>（例）9月1日に12月1～31日分のご予約受付を開始</p>
+							<p>毎月1日に3ヵ月後1か月分の予約受付を開始<br>（例）9月1日に12月1日～31日分の予約受付</p>
 							<p>
-								<a href="#"><span class="c-button-arrow c-text-underline">バス駐車場のご予約はこちら</span></a><br>
-								<a href="#"><span class="c-button-arrow c-text-underline">予約方法の詳細はこちら</span></a>
+								<a href="https://urakata.in/new_reserve/calendar/hoshinoarea?course_id=24662" target="_blank"><span class="c-button-arrow c-button-outerlink c-text-underline">バス駐車場のご予約はこちら</span></a><br>
+								<a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/parking-rules.pdf" target="_blank"><span class="c-button-arrow c-text-underline">予約方法（PDF）</span></a>
 							</p>
 						</dd>
 
 						<dt>キャンセルの連絡</dt>
 						<dd>
-							<p><a href="<?php echo home_url('/contact'); ?>">お問い合わせフォーム</a>よりご連絡ください。</p>
+							<p><a href="<?php echo home_url('/contact'); ?>" class="c-text-underline">お問い合わせフォーム</a>よりご連絡ください。</p>
 						</dd>
 
 						<dt>キャンセルポリシー</dt>
@@ -71,10 +71,10 @@
 							<p>22日前：無料<br>21日前～4日前：10%<br>3日前～当日：100％<br>連絡なしキャンセル：100%</p>
 						</dd>
 
-						<dt>備考</dt>
+						<dt>注意事項</dt>
 						<dd>
 							<ul class="c-list-dot">
-								<li class="c-list-dot__item">ご予約のないバスの乗降および駐停車はお断りしております</li>
+								<li class="c-list-dot__item">ご予約のないバスの乗降および駐停車はお断りしております。</li>
 								<li class="c-list-dot__item">募集型企画旅行でのご利用は承っておりません。施設規模が小さいため、ご理解を賜りますようお願い申し上げます。</li>
 							</ul>
 						</dd>
