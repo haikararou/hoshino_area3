@@ -30,7 +30,7 @@
     <h2>星野温泉 トンボの湯</h2>
     <p>大正時代の開湯以来、名湯として愛されてきた「源泉かけ流し」の温泉。森を感じながら心身をほぐし、英気を養うことができます。</p>
     <ul>
-        <li><a href="<?php echo home_url('/tombo-no-yu'); ?>" class="c-button-block -lightyellow -arrow"><span>星野温泉 トンボの湯</span></a></li>
+        <li><a href="<?php echo home_url('/tombo-no-yu'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -41,7 +41,7 @@
     <h2>星のや軽井沢</h2>
     <p>「その瞬間の特等席へ。」がコンセプトの「星のや」。日本の原風景が鮮やかに蘇る谷の集落で、特別な滞在をお楽しみください。</p>
     <ul>
-        <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>" class="c-button-block -lightyellow -arrow"><span>星のや軽井沢</span></a></li>
+        <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -52,7 +52,7 @@
     <h2>村民食堂</h2>
     <p>軽井沢を訪れる人々を、おいしくもてなすカジュアルダイニング。信州ならではの料理やお酒を、豊富にご用意しています。</p>
     <ul>
-        <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>" class="c-button-block -lightyellow -arrow"><span>村民食堂</span></a></li>
+        <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -63,7 +63,7 @@
     <h2>軽井沢 別荘Navi</h2>
     <p>星野別荘地の不動産仲介と管理を行っています。豊かな軽井沢ライフをトータルサポート。別荘・移住のご相談はお気軽にどうぞ。</p>
     <ul>
-        <li><a href="http://www.besso-navi.com/" target="_blank" class="c-button-block -lightyellow -arrow"><span>軽井沢 別荘Navi</span></a></li>
+        <li><a href="http://www.besso-navi.com/" target="_blank" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -74,7 +74,7 @@
     <h2>ピッキオ</h2>
     <p>森の生き物との出会いを楽しむ、季節ごとの自然観察ツアーを開催。自然を愛するスタッフが、軽井沢の森をご案内します。</p>
     <ul>
-        <li><a href="<?php echo home_url('/activity#picchio'); ?>" class="c-button-block -lightyellow -arrow"><span>ピッキオ</span></a></li>
+        <li><a href="<?php echo home_url('/activity#picchio'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -85,7 +85,7 @@
     <h2>ブレストンコート ユカワタン</h2>
     <p>森の中の一軒家レストラン。王道のフランス料理をベースにしつつ、現代的な軽やかさをまとった新たな味わいをお届けします。</p>
     <ul>
-        <li><a href="https://yukawatan.blestoncourt.com/" target="_blank" class="c-button-block -lightyellow -arrow"><span>ブレストンコート ユカワタン</span></a></li>
+        <li><a href="https://yukawatan.blestoncourt.com/" target="_blank" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -96,7 +96,7 @@
     <h2>ケラ池スケートリンク</h2>
     <p>池が凍ると現れる、森の中のスケートリンク。紅葉の時期から春先まで、自然の中で氷上散歩を楽しむことができます。</p>
     <ul>
-        <li><a href="<?php echo home_url('/kera-ike-icerink'); ?>" class="c-button-block -lightyellow -arrow"><span>ケラ池スケートリンク</span></a></li>
+        <li><a href="<?php echo home_url('/kera-ike-icerink'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -107,7 +107,7 @@
     <h2>石の教会 内村鑑三記念堂</h2>
     <p>堅固な石のアーチ、その間から光が差して緑が茂り、水が流れる教会。自然との対話から生まれた、唯一無二の祈りの空間です。</p>
     <ul>
-        <li><a href="<?php echo home_url('/church#stonechurch'); ?>" class="c-button-block -lightyellow -arrow"><span>石の教会 内村鑑三記念堂</span></a></li>
+        <li><a href="<?php echo home_url('/church#stonechurch'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -118,7 +118,7 @@
     <h2>軽井沢高原教会</h2>
     <p>大正時代からの歴史ある教会。日曜礼拝やハープの演奏に、誰もが訪れることのできる開かれた教会です。</p>
     <ul>
-        <li><a href="<?php echo home_url('/church#karuizawachurch'); ?>" class="c-button-block -lightyellow -arrow"><span>軽井沢高原教会</span></a></li>
+        <li><a href="<?php echo home_url('/church#karuizawachurch'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -129,7 +129,7 @@
     <h2>ハルニレテラス</h2>
     <p>「軽井沢の日常」がコンセプトの森の中の小さな街。ハルニレの木立の中で、お買い物やお食事、散策をお楽しみください。</p>
     <ul>
-        <li><a href="<?php echo home_url('/harunireterrace'); ?>" class="c-button-block -lightyellow -arrow"><span>ハルニレテラス</span></a></li>
+        <li><a href="<?php echo home_url('/harunireterrace'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -140,7 +140,7 @@
     <h2>軽井沢ホテルブレストンコート</h2>
     <p>丘の上に佇むリゾートホテルです。客室は、独立型のコテージスタイル。上質なおもてなしで、心とからだを静かに満たします。</p>
     <ul>
-        <li><a href="<?php echo home_url('/hotel#hbc'); ?>" class="c-button-block -lightyellow -arrow"><span>軽井沢ホテルブレストンコート</span></a></li>
+        <li><a href="<?php echo home_url('/hotel#hbc'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>
@@ -151,7 +151,7 @@
     <h2>BEB5軽井沢</h2>
     <p>24時間オープンのパブリックスペース「TAMARIBA」や、秘密基地のような部屋。自由気ままに、ルーズな滞在を。</p>
     <ul>
-        <li><a href="<?php echo home_url('/hotel#beb5'); ?>" class="c-button-block -lightyellow -arrow"><span>BEB5軽井沢</span></a></li>
+        <li><a href="<?php echo home_url('/hotel#beb5'); ?>" class="c-button-block -lightyellow -arrow"><span>詳細</span></a></li>
     </ul>
 </div>
 </section>

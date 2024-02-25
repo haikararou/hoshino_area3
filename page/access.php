@@ -50,24 +50,22 @@
 
           <div class="c-tab-contents -active" id="tab-car"><!--車-->
             <div class="l-container--primary-s -l p-access-search">
-              <p class="-mgB">カーナビ入力設定は、「長野県北佐久郡軽井沢町長倉2148」、<br>もしくは「星野温泉 トンボの湯」で検索ください。</p>
+              <p class="-mgB">カーナビ入力設定は、「長野県北佐久郡軽井沢町長倉2148」、<br>または「星野温泉 トンボの湯」で検索してください。</p>
             </div>
             <div class="-mgB-m">
-              <h3 class="c-title-small">東京方面からお越しのお客様</h3>
-              <div class="parent1">
-                <div class="div1-1"><span>上信越自動車道</span>碓氷軽井沢IC</div>
-                <div class="div1-2"><span>約25分</span></div>
-                <div class="div1-3"><span>上信越自動車道</span>佐久IC</div>
-                <div class="div1-4"><span>約20分</span></div>
-                <div class="div1-5"><span>上信越自動車道</span>佐久平スマートIC（ETC専用）</div>
-                <div class="div1-6"><span>約20分</span></div>
-                <div class="div1-7">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
+              <h3 class="c-title-small">上信越自動車道で東京方面からお越しのお客様</h3>
+              <div class="parent2">
+                <div class="div2-1">碓氷軽井沢IC</div>
+                <div class="div2-2"><span>約25分</span></div>
+                <div class="div2-3"><span>上信越自動車道</span>佐久平スマートIC<span>＊ETC専用<br>＊軽井沢町内渋滞時にお薦め</span></div>
+                <div class="div2-4"><span>約20分</span></div>
+                <div class="div2-5">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
               </div>
             </div>
             <div class="-mgB-m">
-              <h3 class="c-title-small">長野方面からお越しのお客様</h3>
+              <h3 class="c-title-small">上信越自動車道で長野方面からお越しのお客様</h3>
               <div class="parent2">
-                <div class="div2-1"><span>上信越自動車道</span>碓氷軽井沢IC</div>
+                <div class="div2-1">碓氷軽井沢IC</div>
                 <div class="div2-2"><span>約25分</span></div>
                 <div class="div2-3"><span>上信越自動車道</span>小諸IC</div>
                 <div class="div2-4"><span>約30分</span></div>
@@ -121,7 +119,7 @@
               <div class="l-contents-2column__block -w-1_2">
                 <h3 class="c-title-small">星野温泉 トンボの湯 バス停</h3>
                 <div class="a-list">
-                  <a href="https://www.hoshino-area.jp/contents/uploads/814d3d57541d55ddef37602a5693dd27.pdf#page=2" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（軽井沢駅行き）</span></a>
+                  <a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/Seibu-bus-from-Hoshino.pdf" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（軽井沢駅行き）</span></a>
                 </div>
                 <div class="-bus-noriba">
                   <a href="https://www.google.com/maps/@36.3610828,138.5886665,3a,75y,67.12h,90t/data=!3m7!1e1!3m5!1saroWnukiwV4-SX41H_xa4w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DaroWnukiwV4-SX41H_xa4w%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D67.11876%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu" target="_blank">
@@ -139,12 +137,12 @@
               </div>
               <div class="l-contents-2column__block -w-1_2 senyou_bus">
                 <ul>
-                  <li><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/access/" target="_blank"><span class="hoshinoya">星のや軽井沢にご宿泊の方</span></a></li>
-                  <li><a href="https://www.blestoncourt.com/access/shuttlebus/" target="_blank"><span class="hbc">ホテルブレストンコートにご来館の方</span></a></li>
+                  <li><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/access/" target="_blank" class="c-text-underline"><span>星のや軽井沢にご宿泊の方</span></a></li>
+                  <li><a href="https://www.blestoncourt.com/access/shuttlebus/" target="_blank" class="c-text-underline"><span>ホテルブレストンコートにご来館の方</span></a></li>
                 </ul>
               </div>
             </div>
-            <div class="l-footer-important-news l-spacer -medium -s -both c-border-t">
+            <div class="l-footer-important-news l-spacer -medium -both c-border-t">
               <div class="l-footer-important-news__inner">
                 <h2 class="l-footer-important-news__title">コインロッカーについて</h2>
                 <p>星野エリアにはコインロッカーはございません。軽井沢駅または中軽井沢駅のコインロッカーをご利用ください。</p>
@@ -167,7 +165,7 @@
             <div class="l-contents-2column -mgB-s">
               <div class="l-contents-2column__block -w-1_2  -fix">
                 <h2 class="c-title-small"><span class="tag-b">電車</span>JR軽井沢駅から1駅の中軽井沢駅下車。</h2>
-                <p>JR軽井沢駅から中軽井沢駅まではしなの鉄道をご利用ください。しなの鉄道時刻表はこちら</p>
+                <p>JR軽井沢駅から中軽井沢駅まではしなの鉄道をご利用ください。</p>
                 <p><a href="https://www.shinanorailway.co.jp/rail-info/time-table/index.php" target="_blank"><span class="c-button-arrow c-button-outerlink c-text-underline">しなの鉄道時刻表</span></a></p>
               </div>
               <div class="l-contents-2column__block -w-1_2  -fix">
@@ -175,7 +173,7 @@
                 <p class="">ますや交通（ TEL:<a href="tel:+81-267455223">0267-45-5223 ）<br>軽井沢観光タクシー（ TEL:<a href="tel:+81-267455408">0267-45-5408</a> ）<br>浅間観光タクシー（ TEL:<a href="tel:+81-267455264">0267-45-5264</a> ）</p>
               </div>
             </div>
-            <div class="l-footer-important-news l-spacer -medium -s -both c-border-t">
+            <div class="l-footer-important-news l-spacer -medium -both c-border-t">
               <div class="l-footer-important-news__inner">
                 <h2 class="l-footer-important-news__title">コインロッカーについて</h2>
                 <p>星野エリアにはコインロッカーはございません。軽井沢駅または中軽井沢駅のコインロッカーをご利用ください。</p>

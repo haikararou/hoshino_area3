@@ -27,7 +27,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hotel/logo_hoshinoya.jpg">
         </div>
         <div class="l-spacer -em2">
-          <p>「その瞬間の特等席へ。」がコンセプトの、滞在型リゾート。<br>四季折々の最高の瞬間を体験していただくことで、訪れる人々を、日々の時間の流れから解き放ちます。<br>日本の原風景が鮮やかに蘇る谷の集落で、軽井沢の自然と歴史を感じながら、特別な滞在をお楽しみください。</p>
+          <p>「その瞬間の特等席へ。」がコンセプトの滞在型リゾート。<br>四季折々の最高の瞬間を体験していただくことで、訪れる人々を、日々の時間の流れから解き放ちます。<br>日本の原風景が鮮やかに蘇る谷の集落で、軽井沢の自然と歴史を感じながら、特別な滞在をお楽しみください。</p>
         </div>
         <div class="l-spacer -em2">
           <a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>

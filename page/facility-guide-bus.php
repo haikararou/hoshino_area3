@@ -57,7 +57,7 @@
 							<p>毎月1日に3ヵ月後1か月分の予約受付を開始<br>（例）9月1日に12月1日～31日分の予約受付</p>
 							<p>
 								<a href="https://urakata.in/new_reserve/calendar/hoshinoarea?course_id=24662" target="_blank"><span class="c-button-arrow c-button-outerlink c-text-underline">バス駐車場のご予約はこちら</span></a><br>
-								<a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/parking-rules.pdf" target="_blank"><span class="c-button-arrow c-text-underline">予約方法（PDF）</span></a>
+								<a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/booking-information.pdf" target="_blank"><span class="c-button-arrow c-text-underline">予約方法（PDF）</span></a>
 							</p>
 						</dd>
 

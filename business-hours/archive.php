@@ -46,7 +46,7 @@
 </section>
 
 
-<section class="l-spacer -mgB-l">
+<section class="l-spacer -mgB-m">
 	<div class="l-container--primary">
     <h2 class="c-title-large">ハルニレテラス</h2>
         <table class="p-opening--table" id="table01">
@@ -213,7 +213,7 @@
     </div>
 </section>
 
-<section class="l-spacer -mgB-l">
+<section class="l-spacer -mgB-m">
 	<div class="l-container--primary">
         <table class="p-opening--table" id="table02">
             <thead>

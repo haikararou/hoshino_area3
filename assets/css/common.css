@@ -2963,6 +2963,7 @@ bg
 breadcrumb
 -----------------------------------------------------*/
 .pan {
+  width: 100%;
   position: absolute;
   right: 0;
   z-index: 1;
@@ -5066,8 +5067,8 @@ access
 @media screen and (min-width: 768px) {
   .parent1 {
     height: auto;
-    -ms-grid-rows: (1fr)[8];
-    grid-template-rows: repeat(8, 1fr);
+    -ms-grid-rows: (1fr)[5];
+    grid-template-rows: repeat(5, 1fr);
   }
 }
 
@@ -5864,24 +5865,6 @@ access
 }
 .senyou_bus ul a {
   display: block;
-}
-.senyou_bus ul a span {
-  display: block;
-}
-.senyou_bus ul a span::before {
-  content: "";
-  width: 125px;
-  height: 67px;
-  margin: 0 auto 0.8rem;
-  display: block;
-}
-.senyou_bus ul a span.hoshinoya::before {
-  content: "";
-  background: url(../img/hotel/logo_hoshinoya.jpg) no-repeat center center/contain;
-}
-.senyou_bus ul a span.hbc::before {
-  content: "";
-  background: url(../img/access/logo_hbc.png) no-repeat center center/contain;
 }
 
 .-fix {
