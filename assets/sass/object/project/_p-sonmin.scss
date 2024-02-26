@@ -41,10 +41,38 @@ sonmin
 	}
 }
 .sonmin.p-kv__lead {
+	position: relative;
 	color: inc.$base-color;
 	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(25,34,3,1) 20%, rgba(25,34,3,1) 100%);
 	@include inc.mq(lap) {
 		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(25,34,3,1) 20%, rgba(25,34,3,1) 100%);
+	}
+	&::after {
+		content: "";
+		display: block;
+		//width: 145px;
+		aspect-ratio: 223 / 303;
+		//height: 165px;
+		@include inc.sizing(width, full, 223px, sp, 80px);
+		background: url();
+		background: url(../img/sonmin/risu.png) no-repeat center center/contain;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		margin-left: 36vw;
+		bottom: -2vw;
+	}
+	.l-container--primary {
+		height: 80vh;
+		@include inc.mq(lap) {
+			height: 90vh;
+		}
+		.p-kv__lead__inner {
+			padding-top: 7vw;
+			@include inc.mq(lap) {
+				padding-top: 3vw;
+			}
+		}
 	}
 }
 
@@ -126,5 +154,33 @@ sonmin
 	&__lnk {
 		text-align: center;
 		@include inc.sizing(margin-top, full, 124px, sp, 50px);
+	}
+	&__faq {
+		//background: #8C8C8C;
+		position: relative;
+		background: rgba(60,60,60,.6);
+		.p-faq-list {
+			background-color: inc.$base-color;
+		}
+		h2 {
+			color: inc.$base-color;
+			span {
+				color: inc.$base-color;
+			}
+		}
+		&::before {
+			content: "";
+			display: block;
+			aspect-ratio: 224 / 305;
+			@include inc.sizing(width, full, 130px, sp, 80px);
+			background: url();
+			background: url(../img/sonmin/yamaboushi.png) no-repeat center center/contain;
+			position: absolute;
+			left: -2vw;
+			top: -80px;
+			@include inc.mq(lap) {
+				@include inc.sizing(top, full, -100px, tab, -90px);
+			}
+		}
 	}
 }

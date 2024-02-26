@@ -109,7 +109,7 @@
 	?>
 	<?php get_template_part('news/list-3-facility'); ?>
 
-	<section id="usage-guide" class="l-spacer -medium -both">
+	<section id="usage-guide" class="l-spacer -medium -pgB-l">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title">
 				<h2 class="c-title-large -vertical l-contents--left-title__title">営業案内</h2>
@@ -184,7 +184,7 @@
 </section>
 
 <?php if(have_rows('faq')): ?>
-<section class="l-spacer -medium -both  p-tombo__faq">
+<section class="l-spacer -medium -both  p-sonmin__faq">
 	<div class="l-container--primary">
 		<article class="l-contents--left-title -title-large">
 			<h2 class="c-title-large -vertical l-contents--left-title__title"><span>村民食堂</span>よくある質問</h2>

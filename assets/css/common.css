@@ -450,6 +450,14 @@ spacer
   padding-top: clamp(16px, 1.07vw + 12.6px, 30px);
 }
 
+.-pgB-l {
+  padding-bottom: clamp(80px, 3.66vw + 68.3px, 128px);
+}
+
+.-pgB-m {
+  padding-bottom: clamp(64px, 1.22vw + 60.1px, 80px);
+}
+
 /*
  header
 -----------------------------------------------------*/
@@ -4603,6 +4611,7 @@ tombo
 
 .tombo.p-kv__lead {
   color: #FFF;
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(20%, rgb(25, 34, 3)), to(rgb(25, 34, 3)));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(25, 34, 3) 20%, rgb(25, 34, 3) 100%);
 }
@@ -4610,6 +4619,37 @@ tombo
   .tombo.p-kv__lead {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(20%, rgb(25, 34, 3)), to(rgb(25, 34, 3)));
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(25, 34, 3) 20%, rgb(25, 34, 3) 100%);
+  }
+}
+.tombo.p-kv__lead::after {
+  content: "";
+  display: block;
+  width: 145px;
+  aspect-ratio: 145/165;
+  width: clamp(80px, 5.18vw + 60.6px, 145px);
+  background: url();
+  background: url(../img/tombo/akiakane.png) no-repeat center center/contain;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  margin-left: 30vw;
+  bottom: 4vw;
+}
+.tombo.p-kv__lead .l-container--primary {
+  height: 80vh;
+}
+@media screen and (min-width: 960px) {
+  .tombo.p-kv__lead .l-container--primary {
+    height: 90vh;
+  }
+}
+.tombo.p-kv__lead .l-container--primary .p-kv__lead__inner {
+  padding-top: 7vw;
+}
+@media screen and (min-width: 960px) {
+  .tombo.p-kv__lead .l-container--primary .p-kv__lead__inner {
+    padding-top: 3vw;
   }
 }
 
@@ -4689,8 +4729,117 @@ tombo
   color: #000;
   font-size: clamp(12px, 0.32vw + 10.8px, 16px);
 }
+.p-tombo__feature {
+  position: relative;
+}
+.p-tombo__feature::before {
+  content: "";
+  display: block;
+  aspect-ratio: 167/161;
+  width: clamp(80px, 6.93vw + 54px, 167px);
+  background: url();
+  background: url(../img/tombo/oniyamma.png) no-repeat center center/contain;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  margin-left: -44vw;
+  top: -5.5vw;
+}
+.p-tombo__feature .count02 .feature_img {
+  position: relative;
+}
+.p-tombo__feature .count02 .feature_img:before {
+  content: "";
+  display: block;
+  aspect-ratio: 127/181;
+  width: clamp(60px, 5.34vw + 40px, 127px);
+  background: url();
+  background: url(../img/tombo/usubaki.png) no-repeat center center/contain;
+  position: absolute;
+  right: 0;
+  top: clamp(-85px, -3.19vw - 33px, -45px);
+}
+.p-tombo__feature .count03 .feature_img {
+  position: relative;
+}
+.p-tombo__feature .count03 .feature_img:before {
+  content: "";
+  display: block;
+  aspect-ratio: 156/162;
+  width: clamp(60px, 7.65vw + 31.3px, 156px);
+  background: url();
+  background: url(../img/tombo/tagane.png) no-repeat center center/contain;
+  position: absolute;
+  left: 1vw;
+  bottom: clamp(-85px, -4.46vw - 12.3px, -29px);
+}
+.p-tombo__feature .count04 .feature_img {
+  position: relative;
+}
+.p-tombo__feature .count04 .feature_img:before {
+  content: "";
+  display: block;
+  aspect-ratio: 162/156;
+  width: clamp(60px, 8.13vw + 29.5px, 162px);
+  background: url();
+  background: url(../img/tombo/shiokara.png) no-repeat center center/contain;
+  position: absolute;
+  right: 1vw;
+  bottom: clamp(-85px, -3.67vw - 25.2px, -39px);
+}
 .p-tombo__after .l-container--primary {
   background: #FFF;
+}
+.p-tombo__intro {
+  position: relative;
+}
+.p-tombo__intro::before {
+  content: "";
+  display: block;
+  aspect-ratio: 156/159;
+  width: clamp(80px, 4.14vw + 64.5px, 132px);
+  background: url();
+  background: url(../img/tombo/ooruriboshi02.png) no-repeat center center/contain;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  margin-left: -20vw;
+  bottom: clamp(-62px, -1.35vw - 40px, -45px);
+}
+.p-tombo__guide {
+  position: relative;
+}
+.p-tombo__guide::before {
+  content: "";
+  display: block;
+  aspect-ratio: 168/156;
+  width: clamp(80px, 4.14vw + 64.5px, 132px);
+  background: url();
+  background: url(../img/tombo/ooruriboshi.png) no-repeat center center/contain;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  margin-left: 20vw;
+  top: clamp(-62px, -2.39vw - 23px, -32px);
+}
+@media screen and (min-width: 768px) {
+  .p-tombo__guide::after {
+    content: "";
+    display: block;
+    aspect-ratio: 163/151;
+    width: clamp(120px, 3.43vw + 107.1px, 163px);
+    background: url();
+    background: url(../img/tombo/akiakane_y.png) no-repeat center center/contain;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    margin-left: -33vw;
+    top: 38vw;
+  }
 }
 @media screen and (min-width: 960px) {
   .p-tombo__notices h2 {
@@ -4703,6 +4852,7 @@ tombo
   }
 }
 .p-tombo__faq {
+  position: relative;
   background: rgba(60, 60, 60, 0.6);
 }
 .p-tombo__faq .p-faq-list {
@@ -4713,6 +4863,17 @@ tombo
 }
 .p-tombo__faq h2 span {
   color: #FFF;
+}
+.p-tombo__faq::before {
+  content: "";
+  display: block;
+  aspect-ratio: 319/293;
+  width: clamp(80px, 7.97vw + 50.1px, 180px);
+  background: url();
+  background: url(../img/tombo/harunire_ha.png) no-repeat center center/contain;
+  position: absolute;
+  left: -2vw;
+  top: clamp(-100px, -4.78vw - 22.1px, -40px);
 }
 
 /*
@@ -4759,6 +4920,7 @@ sonmin
 }
 
 .sonmin.p-kv__lead {
+  position: relative;
   color: #FFF;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(20%, rgb(25, 34, 3)), to(rgb(25, 34, 3)));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(25, 34, 3) 20%, rgb(25, 34, 3) 100%);
@@ -4767,6 +4929,36 @@ sonmin
   .sonmin.p-kv__lead {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(20%, rgb(25, 34, 3)), to(rgb(25, 34, 3)));
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(25, 34, 3) 20%, rgb(25, 34, 3) 100%);
+  }
+}
+.sonmin.p-kv__lead::after {
+  content: "";
+  display: block;
+  aspect-ratio: 223/303;
+  width: clamp(80px, 11.39vw + 37.3px, 223px);
+  background: url();
+  background: url(../img/sonmin/risu.png) no-repeat center center/contain;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  margin-left: 36vw;
+  bottom: -2vw;
+}
+.sonmin.p-kv__lead .l-container--primary {
+  height: 80vh;
+}
+@media screen and (min-width: 960px) {
+  .sonmin.p-kv__lead .l-container--primary {
+    height: 90vh;
+  }
+}
+.sonmin.p-kv__lead .l-container--primary .p-kv__lead__inner {
+  padding-top: 7vw;
+}
+@media screen and (min-width: 960px) {
+  .sonmin.p-kv__lead .l-container--primary .p-kv__lead__inner {
+    padding-top: 3vw;
   }
 }
 
@@ -4849,6 +5041,35 @@ sonmin
 .p-sonmin__lnk {
   text-align: center;
   margin-top: clamp(50px, 5.9vw + 27.8px, 124px);
+}
+.p-sonmin__faq {
+  position: relative;
+  background: rgba(60, 60, 60, 0.6);
+}
+.p-sonmin__faq .p-faq-list {
+  background-color: #FFF;
+}
+.p-sonmin__faq h2 {
+  color: #FFF;
+}
+.p-sonmin__faq h2 span {
+  color: #FFF;
+}
+.p-sonmin__faq::before {
+  content: "";
+  display: block;
+  aspect-ratio: 224/305;
+  width: clamp(80px, 3.98vw + 65.1px, 130px);
+  background: url();
+  background: url(../img/sonmin/yamaboushi.png) no-repeat center center/contain;
+  position: absolute;
+  left: -2vw;
+  top: -80px;
+}
+@media screen and (min-width: 960px) {
+  .p-sonmin__faq::before {
+    top: clamp(-100px, -1.16vw - 81.1px, -90px);
+  }
 }
 
 /*

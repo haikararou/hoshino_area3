@@ -60,9 +60,9 @@
 		<div class="l-container--primary">
 			<h2 class="c-title-large">温泉の特徴</h2>
 			<?php $i=1; while(have_rows('feature')): the_row(); ?>
-			<div class="l-spacer -medium">
-				<article class="l-contents-2column <?php if ($i %2 == 0): ?><?php else:?>-pc-rl<?php endif; ?>">
-					<div class="l-contents-2column__block -w-1_2">
+			<div class="l-spacer -medium count0<?php echo $i; ?>">
+				<article class="l-contents-2column <?php if ($i %2 == 1): ?><?php else:?>-pc-rl<?php endif; ?>">
+					<div class="l-contents-2column__block -w-1_2 feature_img">
 					<?php if(get_sub_field('feature_img')) :?><img src="<?php the_sub_field('feature_img'); ?>"><?php endif; ?>
 					</div>
 					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
@@ -153,7 +153,7 @@
 	<?php endif; ?>
 
 	<?php if(have_rows('onsen_info')): ?>
-	<section class="l-spacer -medium c-border-t p-tombo__intro">
+	<section class="l-spacer -large -both c-border-t p-tombo__intro">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title">
 				<h2 class="c-title-large -vertical l-contents--left-title__title">温泉のご紹介</h2>
@@ -166,9 +166,6 @@
 								<dd><?php the_sub_field('onsen_info_txt'); ?></dd>
 							<?php endwhile; ?>
 							</dl>
-						</div>
-						<div class="l-contents-2column__block -w-1_2--left">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/tombo02.png">
 						</div>
 					</div>
 				</div>
@@ -319,7 +316,7 @@
 	<?php if(have_rows('how_to')): ?>
 	<?php while(have_rows('how_to')): the_row(); ?>
 	<section class="c-bg-yellow l-contents-block__wrap p-tombo__howto">
-		<div class="l-contents-block c-bg-white">
+		<div class="l-contents-block c-bg-white -mgB-m">
 			<div class="l-contents-block__inner">
 				<div class="l-container--primary">
 					<article class="l-contents--left-title l-spacer -medium -both">
