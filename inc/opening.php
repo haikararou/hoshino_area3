@@ -15,7 +15,7 @@
         'compare' => '>=',
         ),
         ),
-        'posts_per_page' => -1,
+        'posts_per_page' => 2,
     );
     $page = get_post( get_the_ID() );
      $slug = $page->post_name;

@@ -36,9 +36,11 @@
 
   <?php get_template_part('event/list-3-facility'); ?>
 
-	<?php get_template_part('news/list-3-facility'); ?>
+  <div class=" p-harunire__news">
+  <?php get_template_part('news/list-3-facility'); ?>
+  </div>
 
-  <section class="l-spacer -medium -both c-border-t">
+  <section class="l-spacer -medium -both c-border-t p-harunire__shop">
     <div class="l-container--primary">
       <article class="l-contents--left-title -title-large">
         <div class="l-contents--left-title__title">

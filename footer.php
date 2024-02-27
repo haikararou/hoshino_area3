@@ -11,15 +11,14 @@
   <?php get_template_part('event/list-3'); ?>
   <?php endif; ?>
 
+  <?php if(is_home() || is_front_page()): ?>
+  <?php get_template_part('news/list-3'); ?>
+  <?php endif; ?>
+
 <!--
 -------------------------------------------------------
 -------------------------------------------------------
 -------------------------------------------------------
-<?php if(is_home() || is_front_page()): ?>
-<?php else: ?>
-<?php get_template_part('news/list-important'); ?>
-<?php endif; ?>
-
 <?php if(is_page('harunireterrace')): ?>
 <?php get_template_part('news/list-3-facility'); ?>
 <?php endif; ?>
@@ -51,7 +50,7 @@
           <li><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉 トンボの湯</a></li>
           <li><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></li>
           <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></li>
-          <li><a href="<?php echo home_url('/church#picchio'); ?>">ピッキオ</a></li>
+          <li><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li>
           <li><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</a></li>
           <li><a href="<?php echo home_url('/church#karuizawachurch'); ?>" target="_blank">軽井沢高原教会</a></li>
           <li><a href="<?php echo home_url('/church#stonechurch'); ?>" target="_blank">石の教会 内村鑑三記念堂</a></li>

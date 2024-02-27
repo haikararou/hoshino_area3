@@ -19,12 +19,12 @@
     <div class="bbs">
     <ul>
     <?php while ($news -> have_posts()): $news -> the_post(); ?>
-    <li><a href="<?php the_permalink();?>"><span><?php the_time('Y.m.d') ?></span><?php the_title(); ?></a></li>
+    <li><a href="<?php the_permalink();?>"><?php the_title(); ?></a></li>
     <?php endwhile; ?>
     </ul>
     <ul>
     <?php while ($news -> have_posts()): $news -> the_post(); ?>
-    <li><a href="<?php the_permalink();?>"><span><?php the_time('Y.m.d') ?></span><?php the_title(); ?></a></li>
+    <li><a href="<?php the_permalink();?>"><?php the_title(); ?></a></li>
     <?php endwhile; ?>
     </ul>
     </div>

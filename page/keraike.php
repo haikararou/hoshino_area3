@@ -58,13 +58,13 @@
 
 	<?php if(have_rows('feature')): ?>
 	<?php the_sub_field('sub_field_name'); ?>
-	<section class="l-spacer -medium -both c-border-t">
+	<section class="l-spacer -medium -both c-border-t p-keraike__feature">
 		<div class="l-container--primary">
 			<h2 class="c-title-large">氷上に感じる季節の変化</h2>
 			<?php $i=1; while(have_rows('feature')): the_row(); ?>
-			<div class="l-spacer -medium">
+			<div class="l-spacer -medium count0<?php echo $i; ?>">
 				<article class="l-contents-2column <?php if ($i %2 == 0): ?>-pc-rl<?php else:?><?php endif; ?>">
-					<div class="l-contents-2column__block -w-1_2">
+					<div class="l-contents-2column__block -w-1_2 feature_img">
 					<?php if(get_sub_field('feature_img')) :?><img src="<?php the_sub_field('feature_img'); ?>"><?php endif; ?>
 					</div>
 					<div class="l-contents-2column__block -w-1_2 c-block-conts-center">
@@ -202,7 +202,7 @@
 	?>
 	<?php get_template_part('news/list-3-facility'); ?>
 
-	<section id="usage-guide" class="l-spacer -medium -both c-border-t">
+	<section id="usage-guide" class="l-spacer -medium -both c-border-t p-keraike__guide">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title">
 				<h2 class="c-title-large -vertical l-contents--left-title__title">営業案内</h2>

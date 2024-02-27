@@ -26,7 +26,7 @@
 
         <div class="-mgB-m c-border-4">
           <h3 class="c-title-small">満車予測時間帯</h3>
-          <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。<br>満車の場合は路上で待機せず、次の駐車場へお進みください。</p>
+          <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。満車の場合は路上で待機せず、次の駐車場へお進みください。</p>
           <dl class="c-list-dl">
             <dt>平日</dt>
             <dd>
@@ -68,7 +68,7 @@
               <li class="c-list-dot__item">ご精算は現金（千円札、500、100、50、10円硬貨）にてお願いいたします。</li>
             </ul></dd>
           </dl>
-          <a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/Seibu-bus-to-Hoshino.pdf" target="_blank"><span class="c-button-arrow c-text-underline">駐車場管理規定（PDF）</span></a>
+          <a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/parking-rules.pdf" target="_blank"><span class="c-button-arrow c-text-underline">駐車場管理規定（PDF）</span></a>
         </div>
       </div>
     </article>

@@ -68,6 +68,45 @@
         </div>
       </div>
     </div>
+
+    <?php if(is_page('harunireterrace') || is_singular('shop')): ?>
+    <div class="l-header__top harunire_sp__top">
+    <a href="<?php echo home_url(); ?>">
+        <p class="l-header-logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/harunire/logo_b.svg" width="auto" height="26" alt="ハルニレテラス" class="">
+        </p>
+      </a>
+    </div>
+    <?php endif; ?>
+    <?php if(is_page('tombo-no-yu')): ?>
+    <div class="l-header__top tombo_sp__top">
+    <a href="<?php echo home_url(); ?>">
+        <p class="l-header-logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tombo/logo_b.svg" width="auto" height="26" alt="トンボの湯" class="">
+        </p>
+      </a>
+    </div>
+    <?php endif; ?>
+    <?php if(is_page('sonmin-shokudo')): ?>
+    <div class="l-header__top sonmin_sp__top">
+    <a href="<?php echo home_url(); ?>">
+        <p class="l-header-logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sonmin/logo_b.svg" width="auto" height="26" alt="村民食堂" class="">
+        </p>
+      </a>
+    </div>
+    <?php endif; ?>
+    <?php if(is_page('kera-ike-icerink')): ?>
+    <div class="l-header__top keraike_sp__top">
+    <a href="<?php echo home_url(); ?>">
+        <p class="l-header-logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/keraike/logo_b.svg" width="auto" height="26" alt="ケラ池スケートリンク" class="">
+        </p>
+      </a>
+    </div>
+    <?php endif; ?>
+
+
     <div class="l-header-menu" id="js-fixed-header-pc">
       <ul class="c-gmenu-primary l-header-menu__primary" id="js-header-menu-primary">
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/tombo-no-yu'); ?>" class="c-gmenu-primary__link">温泉</a></li>
@@ -100,14 +139,6 @@
       </div>
     </div>
   </header>
-  <?php if(!is_page('areamap')): ?>
-  <!-- <a href="<?php echo home_url('/areamap'); ?>" id="js-areamap">
-    <div class="c-button-areamap">
-      <img class="c-button-areamap__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/common/areamap.svg" width="71" height="71">
-      <p class="c-button-areamap__text">Area Map</p>
-    </div>
-  </a> -->
-  <?php endif; ?>
 
 <?php if(is_home() || is_front_page() || is_archive('shop') || is_page('harunireterrace') || is_page('tombo-no-yu') || is_page('sonmin-shokudo') || is_page('kera-ike-icerink') || is_page('areamap') || is_page('access') || is_page('parking')): ?>
   <main id="" class="l-main -cxl">

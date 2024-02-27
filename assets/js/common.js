@@ -253,11 +253,13 @@ $(window).on("load resize",function(){
 
 
 
-  //スライダー
+//スライダー
+
+
   if($('.js-gallery-slider').length > 0) {
     gallerySlider = new Swiper('.js-gallery-slider', {
-      speed: 12000,
       loop: true,
+      speed: 12000,
       spaceBetween: 12,
       slidesPerView:1.6,
       autoplay: {
@@ -272,6 +274,7 @@ $(window).on("load resize",function(){
       }
     });
   }
+
 });
 
 
@@ -499,3 +502,5 @@ $(window).on("load resize",function(){
     });
   //}
 });
+
+

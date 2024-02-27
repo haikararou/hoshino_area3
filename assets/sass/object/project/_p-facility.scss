@@ -30,7 +30,7 @@ facility
 	flex-wrap: wrap;
 	&-img {
 		background-image: url(../img/facility/base.jpg);
-		background-color: #D7E6AF;
+		//background-color: #D7E6AF;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -66,7 +66,7 @@ facility
 }
 
 .home .facility-flex {
-	background: inc.$theme-color-lightyellow;
+	//background: inc.$theme-color-lightyellow;
 	@include inc.mq(tab) {
 		background: none;
 	}
@@ -85,7 +85,7 @@ facility
 		@include inc.sizing(width, full, 1470px, sp, 330px);
 		max-width: 90%;
 		margin: 0 auto;
-		padding: 3rem 0;
+		padding: 1rem 0 3rem;
 		@include inc.mq(tab) {
 			padding: 0;
 		}
@@ -95,6 +95,16 @@ facility
 			max-width: auto;
 			padding: 0 6vw;
 			border-top: none;
+			.home_txt {
+				display: flex;
+				flex-direction:column;
+				.monument-list {
+					order: 1;
+				}
+				p {
+					order: 2;
+				}
+			}
 		}
 	}
 }

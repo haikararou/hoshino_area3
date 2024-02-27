@@ -99,9 +99,15 @@
               <div class="l-contents-2column__block -w-1_2">
                 <h3 class="c-title-small">JR軽井沢駅 北口1番のりば</h3>
                 <p>1番のりばから発車するバスは全て「星野温泉 トンボの湯」に停車します。</p>
-                <div class="a-list">
-                  <a href="https://www.hoshino-area.jp/contents/uploads/814d3d57541d55ddef37602a5693dd27.pdf" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（星野温泉 トンボの湯行き）</span></a>
-                </div>
+                <ul class="a-list">
+                  <?php while (have_rows('bus_jr')) : the_row();
+                  while (have_rows('pdf')) : the_row();
+                  ?>
+                  <li><a href="<?php the_sub_field('pdf_file'); ?>" target="_blank" class="c-button-block -yellow -arrow -more"><span><?php the_sub_field('pdf_title'); ?></span></a></li>
+                  <?php
+                  endwhile;
+                  endwhile; ?>
+                </ul>
                 <div class="-bus-noriba">
                   <a href="https://www.google.com/maps/@36.3432916,138.636364,3a,75y,218.54h,75.24t/data=!3m6!1e1!3m4!1sVP-9Bhyi92-5U7U3Wx5GZA!2e0!7i16384!8i8192?authuser=0&entry=ttu" target="_blank">
                     <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/icon_bus_01.png"></i>
@@ -118,9 +124,15 @@
               </div>
               <div class="l-contents-2column__block -w-1_2">
                 <h3 class="c-title-small">星野温泉 トンボの湯 バス停</h3>
-                <div class="a-list">
-                  <a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/Seibu-bus-from-Hoshino.pdf" target="_blank" class="c-button-block -yellow -arrow -more"><span>西武観光バスの時刻表（軽井沢駅行き）</span></a>
-                </div>
+                <ul class="a-list">
+                  <?php while (have_rows('bus_onsen')) : the_row();
+                  while (have_rows('pdf')) : the_row();
+                  ?>
+                  <li><a href="<?php the_sub_field('pdf_file'); ?>" target="_blank" class="c-button-block -yellow -arrow -more"><span><?php the_sub_field('pdf_title'); ?></span></a></li>
+                  <?php
+                  endwhile;
+                  endwhile; ?>
+                </ul>
                 <div class="-bus-noriba">
                   <a href="https://www.google.com/maps/@36.3610828,138.5886665,3a,75y,67.12h,90t/data=!3m7!1e1!3m5!1saroWnukiwV4-SX41H_xa4w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DaroWnukiwV4-SX41H_xa4w%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D67.11876%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu" target="_blank">
                     <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/icon_bus_02.png"></i>

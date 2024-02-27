@@ -13,15 +13,17 @@ get_header(); ?>
 	</div>
 </div>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pagetitile">
 	<div class="l-container--primary c-display-flex -between">
 		<h1 class="c-title-ex-large">
 			<span class="c-title-sub">
 			<?php
-			if ($terms = get_the_terms($post->ID, 'event_cat')) {
-			foreach ( $terms as $term ):
-			if($term->parent) echo esc_html($term->name);
-			endforeach;
+			if ($terms2 = get_the_terms($post->ID, 'event_cat')) {
+				foreach($terms2 as $term):
+					$term_name = $term->name;
+					echo $term_name;
+					echo " ";
+					endforeach;
 			} ?>
 			</span>
 			<?php the_title(); ?><?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?>
@@ -29,13 +31,13 @@ get_header(); ?>
 		<div class="p-news-date">
 			<ul class="c-list-category -newsDate">
 				<?php
-				$terms = get_the_terms($post->ID, 'event_cat');
-				foreach($terms as $term){
+				$terms3 = get_the_terms($post->ID, 'event_place');
+				foreach($terms3 as $term):
 				$term_name = $term->name;
 				echo '<li><a href="./category/'. $term-> slug .'" class="c-list-category__item -act">';
 				echo $term_name;
 				echo '</a></li>';
-				break; };
+				endforeach;
 				?>
 			</ul>
 		</div>

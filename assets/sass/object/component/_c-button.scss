@@ -104,6 +104,11 @@ button
 		background-repeat: no-repeat;
 		background-position: 95% 50%;
 		background-size: 1.6875em 1em;
+		span {
+			&::after {
+				display: none;
+			}
+		}
 	}
 	&.-num {
 		width: 40px;
@@ -169,10 +174,12 @@ button
 				height: 12px;
 				display: block;
 				background: url('/wp-content/themes/hoshino-area/assets/img/common/icon-parking.svg') no-repeat 50% 50% /contain;
+				margin-top: 1px;
 				@include inc.mq(tab) {
 					left: -20px;
 					width: 14px;
 					height: 14px;
+					margin-top: 1px;
 				}
 			}
 		}
@@ -306,7 +313,7 @@ button
 }
 
 .a-list {
-	a + a {
+	li + li {
 		margin-top: .6rem;
 		display: inline-block;
 	}

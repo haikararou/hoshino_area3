@@ -11,7 +11,7 @@
 <section class="l-spacer -pagetitile">
   <div class="l-container--primary">
     <h1 class="c-title-ex-large">ホテル</h1>
-    <p>日が暮れるまで過ごしたら、そのまま星野エリアにお泊りいただけます。一日の思い出とともに、ゆったりお過ごしください。</p>
+    <p>星野エリアには、趣の異なる宿泊施設が3つあります。朝から日が暮れるまで、暮らすように、ゆったりとお過ごしください。</p>
   </div>
 </section>
 

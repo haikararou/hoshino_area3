@@ -66,7 +66,7 @@
                     <ul>
                       <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
                       <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
-                      <li><a href="<?php echo home_url('/hotel#beb5'); ?>">星野リゾート</a></li>
+                      <li><a href="<?php echo home_url('/hotel#beb5'); ?>">BEB5軽井沢</a></li>
                     </ul>
                   </dt>
                 </div>

@@ -34,14 +34,14 @@ CSS・JSを登録する
 function register_files() {
 	wp_register_style( 'fontawesome', 'https://use.fontawesome.com/releases/v6.4.2/css/all.css');
 	wp_register_style( 'theme-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300:600&display=swap');
-	wp_register_style( 'swiper', get_template_directory_uri().'/assets/css/swiper.min.css');
+	wp_register_style( 'swiper', get_template_directory_uri().'/assets/css/swiper.min_v8.css');
 	wp_register_style( 'wpadminbar', get_template_directory_uri().'/assets/css/wpadminbar.css', array(), filemtime( get_template_directory().'/assets/css/wpadminbar.css') );
 	wp_register_style( 'theme-common', get_template_directory_uri().'/assets/css/common.css', array(), filemtime( get_template_directory().'/assets/css/common.css') );
 	//wp_register_style( 'endlesscss', get_template_directory_uri().'/assets/css/endless-river.css');
 
 	wp_deregister_script('jquery');
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js');
-	wp_register_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js');
+	wp_register_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min_v8.js');
 	wp_register_script( 'function', get_template_directory_uri() . '/assets/js/common.js', array(), filemtime( get_template_directory().'/assets/js/common.js') );
 	wp_register_script( 'weather', get_template_directory_uri() . '/assets/js/weather.js');
 	//wp_register_script( 'endless', get_template_directory_uri() . '/assets/js/endless-river.js');

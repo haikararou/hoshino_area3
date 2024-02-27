@@ -29,13 +29,13 @@
 					<dl class="c-list-dl">
 						<dt>受入可能期間</dt>
 						<dd>2023年11月6日～2024年4月26日<br>
-						<span>*ゴールデンウィークから11月上旬までの期間は、バスでのご利用は受け入れておりません。</span></dd>
+						<span>＊ゴールデンウィークから11月上旬までの期間は、バスでのご利用は受け入れておりません。</span></dd>
 
 						<dt>時間・台数</dt>
 						<dd>10:00～12:00　1台<br>
 						13:30～15:30　1台<br>
-						<span>*時間内でしたら、到着／出発時間はご自由に設定いただけます。<br>
-						*同じ時間枠で2台以上のご予約は承っておりません。</span></dd>
+						<span>＊時間内でしたら、到着／出発時間はご自由に設定いただけます。<br>
+						＊同じ時間枠で2台以上のご予約は承っておりません。</span></dd>
 
 						<dt>料金</dt>
 						<dd>１台3,000円</dd>
@@ -43,20 +43,20 @@
 						<dt>支払方法</dt>
 						<dd>
 							<p>クレジットカードでの事前決済</p>
-							<p><span>*webサイトからのご予約時に承ります。<br>*当日支払いは不可。</span></p>
+							<p><span>＊webサイトからのご予約時に承ります。<br>＊当日支払いは不可。</span></p>
 						</dd>
 
 						<dt>予約受付期間</dt>
 						<dd>
 							<p>３か月前～前日16：00まで</p>
-							<p><span>*webサイトからのご予約時に承ります。<br>*当日支払いは不可。</span></p>
+							<p><span>＊webサイトからのご予約時に承ります。<br>＊当日支払いは不可。</span></p>
 						</dd>
 
 						<dt>予約開始日</dt>
 						<dd>
 							<p>毎月1日に3ヵ月後1か月分の予約受付を開始<br>（例）9月1日に12月1日～31日分の予約受付</p>
 							<p>
-								<a href="https://urakata.in/new_reserve/calendar/hoshinoarea?course_id=24662" target="_blank"><span class="c-button-arrow c-button-outerlink c-text-underline">バス駐車場のご予約はこちら</span></a><br>
+								<a href="https://urakata.in/new_reserve/calendar/hoshinoarea?course_id=24662" target="_blank"><span class="c-button-arrow c-button-outerlink c-text-underline">バス駐車場のご予約</span></a><br>
 								<a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/booking-information.pdf" target="_blank"><span class="c-button-arrow c-text-underline">予約方法（PDF）</span></a>
 							</p>
 						</dd>

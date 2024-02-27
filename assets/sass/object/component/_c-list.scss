@@ -217,6 +217,7 @@ list
 .c-list-category {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 6px;
   @include inc.sizing(gap, full, 12px, sp, 6px);
   &__item {
     font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
@@ -232,11 +233,11 @@ list
     }
   }
   &.-newsDate {
-    display: block;
-    margin-top: 16px;
-    li + li {
-      margin-top: .3rem;
-    }
+    // display: block;
+    // margin-top: 16px;
+    // li + li {
+    //   margin-top: .3rem;
+    // }
     &__item {
       border-radius: 1rem;
       padding: 0.65em 1rem;
