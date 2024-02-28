@@ -18,8 +18,8 @@
 	<div class="l-container--primary-m">
 		<article class="l-contents">
 			<div class="l-contents__conts">
-				<div class="">
-					<a href="https://www.hoshino-area.jp/recruit/" target="_blank" class="c-button-block -lightyellow -arrow p-recruit-hoshino"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/hoshinoresorts.png" alt="星野リゾート"></a>
+				<div class="p-recruit-hoshino">
+					<a href="https://www.hoshino-area.jp/recruit/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/hoshinoresorts.png" alt="星野リゾート"></a>
 				</div>
 
 				<dl class="p-recruit-list">
