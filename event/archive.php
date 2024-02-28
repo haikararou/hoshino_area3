@@ -61,10 +61,10 @@ $wp_query = new WP_Query( $args );
                             <?php if(get_field('event_period')): ?><p class="p-post-card__period"><span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                             <?php
                                 $terms1 = get_the_terms($post->ID, 'event_place');
-                                echo '<ul>';
+                                echo '<ul class="p-post-card__tag">';
                                 foreach($terms1 as $term1){
                                 $term_name1 = $term1->name;
-                                echo '<li class="p-post-card__info">';
+                                echo '<li>';
                                 echo $term_name1;
                                 echo '</li>';
                                 };
@@ -126,10 +126,10 @@ $wp_query = new WP_Query( $args );
                                     <?php if(get_field('event_period')): ?><p class="p-post-card__period">開催予定 <span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                                     <?php
                                         $terms3 = get_the_terms($post->ID, 'event_place');
-                                        echo '<ul>';
+                                        echo '<ul class="p-post-card__tag">';
                                         foreach($terms3 as $term3){
                                         $term_name3 = $term3->name;
-                                        echo '<li class="p-post-card__info">';
+                                        echo '<li>';
                                         echo $term_name3;
                                         echo '</li>';
                                         };

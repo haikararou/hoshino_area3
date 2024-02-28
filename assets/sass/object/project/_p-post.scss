@@ -107,10 +107,26 @@ post
     border-radius: 0.8rem;
     padding: 0.3em 0.8rem;
   }
+  &__tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    li {
+      @include inc.sizingRem(font-size, full, 12px, sp, 10px);
+      color: inc.$base-color;
+      background: inc.$theme-color-gold;;
+      //display: inline-block;
+      display: table;
+      line-height: 1;
+      border-radius: 0.8rem;
+      padding: 0.3em 0.8rem 0.5em;
+      }
+  }
   &__period {
     @include inc.sizingRem(font-size, full, 13px, sp, 11px);
     display: inline-block;
     line-height: 1;
+    margin-bottom: .8rem;
     //border-radius: 0.8rem;
     //padding: 0.3em 0.8rem;
     span {
@@ -119,9 +135,9 @@ post
   }
 }
 
-.p-post-card__info + .p-post-card__info {
-  margin-top: .3rem;
-}
+// .p-post-card__info + .p-post-card__info {
+//   margin-top: .3rem;
+// }
 
 
 .p-post-tate {

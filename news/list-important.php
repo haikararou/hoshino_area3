@@ -23,7 +23,7 @@
                 <?php while ($news -> have_posts()): $news -> the_post(); ?>
                     <div class="c-list-news__item">
                         <dt class="c-list-news__date"><?php the_time('Y.m.d') ?></dt>
-                        <dd class="c-list-news__conts"><a href="< ?php the_permalink();?>"><?php the_title(); ?></a></dd>
+                        <dd class="c-list-news__conts"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></dd>
                     </div>
                 <?php endwhile; ?>
                 </dl>

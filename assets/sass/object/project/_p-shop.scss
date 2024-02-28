@@ -72,6 +72,7 @@ post
       -ms-flex-align: center;
       align-items: center;
       font-family: inc.$font-set-en;
+      font-display: swap;
       @include inc.sizingRem(font-size, full, 14px, sp, 12px);
       font-weight: 500;
       .icon {

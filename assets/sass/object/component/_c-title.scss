@@ -82,6 +82,7 @@ title
 
 .c-title-gothic {
   font-family: inc.$font-set-en;
+  font-display: swap;
   font-weight: 400;
   @include inc.sizingRem(font-size, full, 16px, sp, 14px);
   @include inc.sizing(margin-bottom, full, 16px, sp, 8px);

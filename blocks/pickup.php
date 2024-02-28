@@ -20,7 +20,14 @@ if( !empty($block['align']) ) {
 <?php if(have_rows('pickup')): ?>
 <?php while(have_rows('pickup')): the_row(); ?>
 <?php
-echo '<div class="l-contents-2column and-border pickup">';
+echo '<div class="l-contents-2column and-border pickup ';
+?>
+<?php if(get_sub_field('linking')): ?>
+<?php echo '-linking';
+?>
+<?php endif; ?>
+<?php
+echo '">';
 echo '<div class="l-contents-2column__block -w-1_2">';
 echo '<img decoding="async" src="';
 ?>
@@ -28,18 +35,24 @@ echo '<img decoding="async" src="';
 <?php
 echo '" alt=""></div>';
 echo '<div class="l-contents-2column__block -w-1_2">';
-echo '<h2 class="c-title-medium"><span>';
 ?>
+<?php if(get_sub_field('title')): ?>
+<?php echo '<h2 class="c-title-medium"><span>'; ?>
 <?php the_sub_field('campaign'); ?>
 <?php echo '</span>'; ?>
 <?php the_sub_field('title'); ?>
 <?php echo '</h2>'; ?>
+<?php endif; ?>
+<?php if(get_sub_field('sub')): ?>
 <?php echo '<h3>'; ?>
 <?php the_sub_field('sub'); ?>
 <?php echo '</h3>'; ?>
+<?php endif; ?>
+<?php if(get_sub_field('txt')): ?>
 <?php echo '<p>'; ?>
 <?php the_sub_field('txt'); ?>
 <?php echo '</p>'; ?>
+<?php endif; ?>
 <?php if(have_rows('info')): ?>
 <?php
 echo '<dl class="c-list-dl -noBorder">';
@@ -83,3 +96,5 @@ echo '</div></div>';
 </div>
 </div>
 </section>
+
+

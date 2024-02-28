@@ -209,12 +209,17 @@ function my_acf_init_block_types() {
 /* ---------------------------------------------------------------------
 イベントの初期タームを自動的に設定する
 -------------------------------------------------------------------------*/
-function add_defaultcategory_automatically($post_ID) {
-global $wpdb;
-$curTerm = wp_get_object_terms($post_ID, 'event_status'); // カスタムタクソノミーのスラッグ
-if (0 == count($curTerm)) {
-	$defaultTerm = array(83); // 初期タームのID
-	wp_set_object_terms($post_ID, $defaultTerm, 'event_status'); // カスタムタクソノミーのスラッグ
-}
-}
-add_action('publish_event', 'add_defaultcategory_automatically'); // publish_カスタム投稿タイプのスラッグ
+// function add_defaultcategory_automatically($post_ID) {
+// global $wpdb;
+// $curTerm = wp_get_object_terms($post_ID, 'event_status'); // カスタムタクソノミーのスラッグ
+// if (0 == count($curTerm)) {
+// 	$defaultTerm = array(83); // 初期タームのID
+// 	wp_set_object_terms($post_ID, $defaultTerm, 'event_status'); // カスタムタクソノミーのスラッグ
+// }
+// }
+// add_action('publish_event', 'add_defaultcategory_automatically'); // publish_カスタム投稿タイプのスラッグ
+
+
+
+
+

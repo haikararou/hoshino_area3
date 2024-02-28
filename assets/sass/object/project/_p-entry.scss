@@ -249,6 +249,12 @@ post
     margin-top: 3rem;
     padding-top: 3rem;
   }
+  .and-border.-linking {
+    border-top: none;
+    margin-top: 1rem;
+    padding-top: 0;
+  }
+
   .pickup {
     h3 {
       @include inc.sizingRem(font-size, full, 18px, sp, 14px);

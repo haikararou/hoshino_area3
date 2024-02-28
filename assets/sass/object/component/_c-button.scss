@@ -307,6 +307,7 @@ button
 	&__text {
 		color: inc.$theme-color-darkyellow;
 		font-family: inc.$font-set-en;
+		font-display: swap;
 		font-size: inc.rem(11);
 		font-weight: 600;
 	}

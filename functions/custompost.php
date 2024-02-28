@@ -107,8 +107,8 @@ function create_post_type() {
 		array(
 			'hierarchical' => true,
 			'update_count_callback' => '_update_post_term_count',
-			'label' => '関連施設',// タクソノミー名（表示名）
-			'singular_label' => '関連施設',// タクソノミー名（表示名）
+			'label' => '表示ページ',// タクソノミー名（表示名）
+			'singular_label' => '表示ページ',// タクソノミー名（表示名）
 			'public' => true,
 			'show_ui' => true,
 			'show_in_rest' => true,

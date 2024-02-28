@@ -89,7 +89,10 @@ home
       @include inc.sizing(background-size, tab, 290px, sp, 190px);
       position: absolute;
       left: -5.3vw;
-      @include inc.sizing(top, tab, 100px, sp, 130px);
+      top: 4vw;
+      @include inc.mq(tab) {
+        @include inc.sizing(top, full, 100px, tab, 100px);
+      }
     }
     @include inc.mq(tab) {
       padding: 5rem 0 180px;
@@ -121,9 +124,6 @@ home
     justify-content: left;
     gap: 0 4rem;
     &-head {
-      writing-mode: vertical-rl;
-      text-orientation: upright;
-      font-feature-settings: initial;
       max-width: 100%;
       width: 100%;
       @include inc.sizingRem(font-size, full, 32px, sp, 20px);
@@ -131,6 +131,15 @@ home
       display: flex;
       flex-direction: column;
       justify-content: right;
+      padding-top: 16vw;
+      text-align: right;
+      @include inc.mq(tab) {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-feature-settings: initial;
+        text-align: left;
+        padding: 0;
+      }
       @include inc.mq(lap-ll) {
         max-width: 340px;
         width: 100%;
@@ -139,10 +148,11 @@ home
       }
     }
     &-body {
-      margin: 3rem 0 0 0;
+      margin: 1rem 0 0 0;
       max-width: 100%;
       width: 100%;
       @include inc.mq(tab) {
+        margin: 3rem 0 0 0;
         display: flex;
         flex-wrap: wrap;
         flex-direction:row-reverse;
