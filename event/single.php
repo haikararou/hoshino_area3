@@ -28,19 +28,6 @@ get_header(); ?>
 			</span>
 			<?php the_title(); ?><?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?>
 		</h1>
-		<div class="p-news-date">
-			<ul class="c-list-category -newsDate">
-				<?php
-				$terms3 = get_the_terms($post->ID, 'event_place');
-				foreach($terms3 as $term):
-				$term_name = $term->name;
-				echo '<li><a href="./category/'. $term-> slug .'" class="c-list-category__item -act">';
-				echo $term_name;
-				echo '</a></li>';
-				endforeach;
-				?>
-			</ul>
-		</div>
 	</div>
 </section>
 

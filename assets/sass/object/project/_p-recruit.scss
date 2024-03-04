@@ -59,14 +59,20 @@ recruit
   margin: 0 auto 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: center;
+  @include inc.mq(tab) {
+    margin: 0 auto 48px;
+    justify-content: right;
+  }
   a {
     display: block;
+    width: 80%;
     max-width: 270px;
     img {
       width: 100%;
     }
   }
+
   // width: 100%;
   // height: auto;
   // @include inc.sizingRem(font-size, full, 17px, sp, 14px);

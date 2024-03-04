@@ -3884,12 +3884,21 @@ recruit
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .p-recruit-hoshino {
+    margin: 0 auto 48px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
 }
 .p-recruit-hoshino a {
   display: block;
+  width: 80%;
   max-width: 270px;
 }
 .p-recruit-hoshino a img {

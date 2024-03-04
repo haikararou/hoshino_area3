@@ -60,7 +60,7 @@ $wp_query = new WP_Query( $args );
                             <h3 class="c-title-small"><?php the_title(); ?></h3>
                             <?php if(get_field('event_period')): ?><p class="p-post-card__period"><span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                             <?php
-                                $terms1 = get_the_terms($post->ID, 'event_place');
+                                $terms1 = get_the_terms($post->ID, 'event_cat');
                                 echo '<ul class="p-post-card__tag">';
                                 foreach($terms1 as $term1){
                                 $term_name1 = $term1->name;
@@ -69,17 +69,6 @@ $wp_query = new WP_Query( $args );
                                 echo '</li>';
                                 };
                                 echo '</ul>';
-                            ?>
-                            <?php
-                                $terms2 = get_the_terms($post->ID, 'event_cat');
-                                echo '<p class="p-post-card__cat">';
-                                foreach($terms2 as $term2){
-                                $term_name2 = $term2->name;
-                                echo '<span>';
-                                echo $term_name2;
-                                echo '</span>';
-                                };
-                                echo '</p>';
                             ?>
                         </div>
                     </div>
@@ -124,17 +113,7 @@ $wp_query = new WP_Query( $args );
                                 <div class="p-post-card__text">
                                     <h3 class="p-post-card__title"><?php the_title(); ?></h3>
                                     <?php if(get_field('event_period')): ?><p class="p-post-card__period">開催予定 <span><?php the_field('event_period'); ?></span></p><?php endif; ?>
-                                    <?php
-                                        $terms3 = get_the_terms($post->ID, 'event_place');
-                                        echo '<ul class="p-post-card__tag">';
-                                        foreach($terms3 as $term3){
-                                        $term_name3 = $term3->name;
-                                        echo '<li>';
-                                        echo $term_name3;
-                                        echo '</li>';
-                                        };
-                                        echo '</ul>';
-                                    ?>
+
                                     <?php
                                         $terms4 = get_the_terms($post->ID, 'event_cat');
                                         echo '<p class="p-post-card__cat">';

@@ -25,7 +25,7 @@ $args = array(
     'posts_per_page' => 3,
     'tax_query' => array(
         array(
-        'taxonomy' => 'event_cat', //タクソノミーを指定
+        'taxonomy' => 'event_place', //タクソノミーを指定
         'field' => 'slug', //ターム名をスラッグで指定する
         'terms' => $slug, //表示したいタームをスラッグで指定
         'operator' => 'IN'
@@ -74,7 +74,7 @@ $wp_query = new WP_Query( $args );
                 'order'=> 'ASC',
                 'tax_query' => array(
                     array(
-                    'taxonomy' => 'event_cat', //タクソノミーを指定
+                    'taxonomy' => 'event_place', //タクソノミーを指定
                     'field' => 'slug', //ターム名をスラッグで指定する
                     'terms' => $slug, //表示したいタームをスラッグで指定
                     'operator' => 'IN'
@@ -116,7 +116,7 @@ $wp_query = new WP_Query( $args );
 
 
 
-
+    <?php if ( $wp_query->have_posts() ): ?>
 
     <section class="l-spacer -medium -both c-border-t">
     <div class="l-container--primary">
@@ -158,6 +158,17 @@ $wp_query = new WP_Query( $args );
                             <div class="p-post-card__text">
                                 <h3 class="p-post-card__title"><?php the_title(); ?></h3>
                                 <?php if(get_field('event_period')): ?><p class="p-post-card__period">⚫︎近日開催　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                                <?php
+                                    $terms4 = get_the_terms($post->ID, 'event_cat');
+                                    echo '<p class="p-post-card__cat">';
+                                    foreach($terms4 as $term4){
+                                    $term_name4 = $term4->name;
+                                    echo '<span>';
+                                    echo $term_name4;
+                                    echo '</span>';
+                                    };
+                                    echo '</p>';
+                                ?>
                             </div>
                         </article>
                     </a>
@@ -175,6 +186,7 @@ $wp_query = new WP_Query( $args );
 
 
 
+<?php endif; ?>
 
 
 
