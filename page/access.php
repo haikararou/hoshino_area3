@@ -59,7 +59,7 @@
                 <div class="div2-2"><span>約25分</span></div>
                 <div class="div2-3"><span>上信越自動車道</span>佐久平スマートIC<span>＊ETC専用<br>＊軽井沢町内渋滞時にお薦め</span></div>
                 <div class="div2-4"><span>約20分</span></div>
-                <div class="div2-5">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
+                <div class="div2-5">星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
               </div>
             </div>
             <div class="-mgB-m">
@@ -69,7 +69,7 @@
                 <div class="div2-2"><span>約25分</span></div>
                 <div class="div2-3"><span>上信越自動車道</span>小諸IC</div>
                 <div class="div2-4"><span>約30分</span></div>
-                <div class="div2-5">軽井沢星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
+                <div class="div2-5">星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
               </div>
             </div>
             <div class="l-footer-important-news -mgB-s">
@@ -82,13 +82,13 @@
 
           <div class="c-tab-contents" id="tab-bus"><!--バス-->
             <div class="">
-              <h2 class="c-title-small"><span class="tag-b">バス</span>軽井沢駅から西武観光バス（路線バス）で星野エリアまで約20分</h2>
+              <h2 class="c-title-small">軽井沢駅から西武観光バス（路線バス）で星野エリアまで約20分</h2>
             </div>
             <div class="-mgB">
               <div class="parent3">
                 <div class="div3-1">JR軽井沢駅<span>北口1番のりば</span></div>
                 <div class="div3-2"><span>約20分</span></div>
-                <div class="div3-3">軽井沢星野エリア<span>「星野温泉 トンボの湯」下車</span></div>
+                <div class="div3-3">星野エリア<span>「星野温泉 トンボの湯」下車</span></div>
               </div>
             </div>
             <div class="l-contents-2column -mgB-l">
@@ -170,7 +170,7 @@
                 <div class="div4-3"><span>しなの鉄道</span>中軽井沢駅</div>
                 <div class="div4-4">タクシー<br>約5分</div>
                 <div class="div4-5">徒歩<br>約17分</div>
-                <div class="div4-6">軽井沢星野エリア</div>
+                <div class="div4-6">星野エリア</div>
                 <div class="div4-7">タクシー<br>約15分</div>
               </div>
             </div>

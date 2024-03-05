@@ -2418,9 +2418,10 @@ list
   content: "・";
   position: absolute;
   left: 0.1em;
+  line-height: 2;
 }
 .c-list-dot__item:not(:last-child) {
-  margin-bottom: 1.2em;
+  margin-bottom: 0.6em;
 }
 
 .c-list-num {
@@ -2547,7 +2548,7 @@ list
   gap: 0.5rem 1rem;
 }
 .c-list-news__item + .c-list-news__item {
-  margin-top: 1.6em;
+  margin-top: 0.6em;
 }
 @media screen and (min-width: 960px) {
   .c-list-news__item {
@@ -2558,6 +2559,7 @@ list
   }
 }
 .c-list-news__date {
+  line-height: 1.6;
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
   padding: 5px 0 0 0;
 }
@@ -3684,6 +3686,7 @@ restaurant
 }
 
 .p-restaurant-card {
+  display: block;
   position: relative;
 }
 .p-restaurant-card__text {
@@ -6309,7 +6312,7 @@ access
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0 3rem;
+  gap: 1.5rem 3rem;
 }
 .senyou_bus ul a {
   display: block;
@@ -7699,8 +7702,8 @@ kv
   z-index: 1;
 }
 .p-kv__news .bbs ul {
-  -webkit-animation: flowing 20s linear infinite;
-          animation: flowing 20s linear infinite;
+  -webkit-animation: flowing 30s linear infinite;
+          animation: flowing 30s linear infinite;
   font-size: clamp(0.8125rem, 0.08vw + 0.79375rem, 0.875rem);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);

@@ -333,8 +333,6 @@
 										<li class="c-list-dot__item"><?php the_sub_field('how_to_txt'); ?></li>
 									<?php endwhile; ?>
 									</ul>
-									<br><br>
-									<p>それではみなさん心ゆくまで温泉をお楽しみください。</p>
 								</div>
 							<?php endif; ?>
 							</div>

@@ -53,7 +53,7 @@ kv
 			z-index: 1;
 		}
 		.bbs ul {
-			animation: flowing 20s linear infinite;
+			animation: flowing 30s linear infinite;
 			@include inc.sizingRem(font-size, full, 14px, sp, 13px);
 			transform:translateX(100%);
 			margin: 0;

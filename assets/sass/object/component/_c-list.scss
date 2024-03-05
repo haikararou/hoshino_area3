@@ -49,12 +49,12 @@ list
     line-height: 1.6;
     &::before {
       content: '・';
-      //margin-left: -1.5em;
       position: absolute;
       left: 0.1em;
+      line-height: 2;
     }
     &:not(:last-child) {
-      margin-bottom: 1.2em;
+      margin-bottom: .6em;
     }
   }
 }
@@ -167,7 +167,7 @@ list
 .c-list-news {
   &__item {
     & + & {
-      margin-top: 1.6em;
+      margin-top: .6em;
     }
     display: flex;
     gap: .5rem 1rem;
@@ -177,7 +177,7 @@ list
     }
   }
   &__date {
-    
+    line-height: 1.6;
     @include inc.sizingRem(font-size, full, 14px, sp, 12px);
     padding: 5px 0 0 0;
     @include inc.mq(lap) {
@@ -233,11 +233,6 @@ list
     }
   }
   &.-newsDate {
-    // display: block;
-    // margin-top: 16px;
-    // li + li {
-    //   margin-top: .3rem;
-    // }
     &__item {
       border-radius: 1rem;
       padding: 0.65em 1rem;

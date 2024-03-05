@@ -300,31 +300,9 @@ height: 260px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 0 3rem;
+		gap: 1.5rem 3rem;
 		a {
 			display: block;
-			// span {
-			// 	display: block;
-			// 	&::before {
-			// 		content: "";
-			// 		width: 125px;
-			// 		height: 67px;
-			// 		margin: 0 auto .8rem;
-			// 		display: block;
-			// 	}
-			// 	&.hoshinoya {
-			// 		&::before {
-			// 			content: "";
-			// 			background: url(../img/hotel/logo_hoshinoya.jpg) no-repeat center center / contain;
-			// 		}
-			// 	}
-			// 	&.hbc {
-			// 		&::before {
-			// 			content: "";
-			// 			background: url(../img/access/logo_hbc.png) no-repeat center center / contain;
-			// 		}
-			// 	}
-			// }
 		}
 	}
 }

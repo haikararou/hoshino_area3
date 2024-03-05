@@ -22,6 +22,7 @@ restaurant
 }
 
 .p-restaurant-card {
+  display: block;
   position: relative;
   &__text {
     padding: .5em;

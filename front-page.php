@@ -35,7 +35,7 @@ get_header(); ?>
       </div>
       <div class="facility-flex-txt">
         <div class="home_txt">
-          <p class="l-spacer -small -both"><a href="" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a></p>
+          <!-- <p class="l-spacer -small -both"><a href="" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a></p> -->
           <div class="monument-list">
             <ul>
               <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph01.jpg" alt=""><span>中西悟堂の詩碑</span></li>

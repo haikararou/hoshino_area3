@@ -42,7 +42,7 @@ $args = array(
 $wp_query = new WP_Query( $args );
 ?>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pgB-l">
     <div class="l-container--primary">
         <article class="l-contents--left-title">
             <h2 class="c-title-large -vertical l-contents--left-title__title">開催中のイベント</h2>
@@ -94,7 +94,7 @@ $args = array(
 );
 $wp_query = new WP_Query( $args );
 ?>
-<section class="l-spacer -medium -both">
+<section class="l-spacer -pgB-m">
     <div class="l-container--primary">
         <article class="l-contents--left-title">
             <h2 class="c-title-large -vertical l-contents--left-title__title">近日開催予定のイベント</h2>
