@@ -10,11 +10,15 @@ list
   }
   &__item {
     line-height: 1.6;
-    padding:0 1rem;
+    //padding:0 1rem;
+    padding:.2rem 1rem .2rem 1rem;
     border-radius: inc.size(full, 10px, sp, 5px);
     border: 1px solid inc.$theme-color-yellow;
     @include inc.mq(tab) {
       cursor: pointer;
+    }
+    .c-text-icon .icon {
+      margin-right: 0.2em;
     }
     @include inc.sizingRem(font-size, full, 14px, wsp, 12px);
     &.active {
@@ -26,7 +30,8 @@ list
   &__item:not(:last-child) {
     margin-bottom: 0.8rem;
     @include inc.mq(lap) {
-      margin-bottom: 1.2rem;
+      //margin-bottom: 1.2rem;
+      margin-bottom: 0.8rem;
     }
   }
 }

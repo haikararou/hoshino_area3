@@ -52,6 +52,9 @@ title
     color: inc.$theme-color-gold;
     @include inc.sizingRem(font-size, full, 13px, sp, 11px);
     margin-bottom: .5rem;
+    &.-black {
+      color: inc.$theme-color-black;
+    }
     &.tag-b {
       display: inline-block;
       color: inc.$base-color;

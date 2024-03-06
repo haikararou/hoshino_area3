@@ -126,6 +126,24 @@
 .mdl_txt.mdl_12 h2:before {
     background: url(../img/common/map_pin_hotel.svg) no-repeat 50% 50% / contain;
 }
+.mdl_txt.mdl_21 h2:before {
+    background: url(../img/common/map_pin_walk.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_22 h2:before {
+    background: url(../img/common/map_pin_walk.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_23 h2:before {
+    background: url(../img/common/map_pin_walk.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_24 h2:before {
+    background: url(../img/common/map_pin_walk.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_25 h2:before {
+    background: url(../img/common/map_pin_walk.svg) no-repeat 50% 50% / contain;
+}
+.mdl_txt.mdl_26 h2:before {
+    background: url(../img/common/map_pin_walk.svg) no-repeat 50% 50% / contain;
+}
 
 .mdl_txt p {
     margin-bottom: .5rem;

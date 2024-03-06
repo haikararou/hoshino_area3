@@ -41,7 +41,7 @@
           </dl>
         </div>
 
-        <div class="-mgB-m">
+        <!-- <div class="-mgB-m">
           <h3 class="c-title-small">お車でお越しの方</h3>
           <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_blu.svg" width="28" height="28" class="icon -bicycle">有料駐車場　P1、P2、P3</span>
           <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_grn.svg" width="28" height="28" class="icon -bicycle">無料駐車場　P6、P7、臨時駐車場</span></p>
@@ -50,7 +50,7 @@
         <div class="-mgB-m">
           <h3 class="c-title-small">バイク・自転車でお越しの方</h3>
           <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-bicycle.svg" width="28" height="28" class="icon -bicycle">駐輪場（無料）　P1、P2、P3</span></p>
-        </div>
+        </div> -->
 
         <div class="">
           <h3 class="c-title-small">駐車場概要</h3>

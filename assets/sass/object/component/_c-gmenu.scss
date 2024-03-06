@@ -89,6 +89,7 @@ gmenu
   @include inc.mq(tab) {
     display: flex;
     gap: 0;
+    justify-content: right;
   }
   
   

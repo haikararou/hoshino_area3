@@ -86,7 +86,7 @@
             </div>
             <div class="-mgB">
               <div class="parent3">
-                <div class="div3-1">JR軽井沢駅<span>北口1番のりば</span></div>
+                <div class="div3-1">JR軽井沢駅</div>
                 <div class="div3-2"><span>約20分</span></div>
                 <div class="div3-3">星野エリア<span>「星野温泉 トンボの湯」下車</span></div>
               </div>
@@ -97,7 +97,7 @@
                 <a href="https://www.google.com/maps/place/36%C2%B020'35.5%22N+138%C2%B038'10.2%22E/@36.3431864,138.6361618,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3431864!4d138.6361618?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <h3 class="c-title-small">JR軽井沢駅 北口1番のりば</h3>
+                <h3 class="c-title-small"><span class="-black">軽井沢駅 → 星野エリア</span>JR軽井沢駅 北口1番のりば</h3>
                 <p>1番のりばから発車するバスは全て「星野温泉 トンボの湯」に停車します。</p>
                 <ul class="a-list">
                   <?php while (have_rows('bus_jr')) : the_row();
@@ -123,7 +123,7 @@
                 <a href="https://www.google.com/maps/place/36%C2%B021'40.1%22N+138%C2%B035'19.4%22E/@36.3611238,138.5887211,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3611238!4d138.5887211?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <h3 class="c-title-small">星野温泉 トンボの湯 バス停</h3>
+                <h3 class="c-title-small"><span class="-black">星野エリア → 軽井沢駅</span>星野温泉 トンボの湯 バス停</h3>
                 <ul class="a-list">
                   <?php while (have_rows('bus_onsen')) : the_row();
                   while (have_rows('pdf')) : the_row();

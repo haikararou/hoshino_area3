@@ -147,6 +147,7 @@
 
 .held {
   display: block;
+  position: relative;
 }
 .held + .held {
   margin-top: 3rem;

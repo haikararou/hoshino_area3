@@ -18,7 +18,14 @@
             <div class="l-contents--left-title__title shopmenu">
 
                 <ul class="c-list-std">
-                    <li class="c-list-std__item active" data-filter="all"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></li>
+                <?php
+                    $numposts = $wpdb->get_var("SELECT count(*) FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'shop'");
+                ?>
+                <?php if (0 < $numposts){
+                    $numposts = number_format($numposts);
+                }
+                ?>
+                    <li class="c-list-std__item active" data-filter="all"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて(<?php echo $numposts; ?>)</span></li>
                     <?php
 					$terms = get_terms('shop_cat');
                     $args = array(
@@ -27,7 +34,7 @@
                     $terms = get_terms('shop_cat', $args);
                     foreach ($terms as $term ) {
 					$des_list .= '<li class="c-list-std__item '. $term-> slug .'" data-filter="'. $term-> slug .'"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
-					$des_list .= $term->name . '</span></li>';
+					$des_list .= $term->name .'（'.$term->count.'）</span></li>';
 					}
 					echo $des_list; ?>
                 </ul>

@@ -22,41 +22,47 @@ get_header(); ?>
 
 <?php if(is_home() || is_front_page()): ?>
 
-    <div class="l-container--primary">
+    <!-- <div class="l-container--primary">
       <div class="p-home_sansaku">
         <h2 class="c-title-large">星野の森を、<br>散策しよう。</h2>
         <p>豊かな自然に囲まれて、いつもよりも、歩調をゆるめて。<br>温泉、お食事、ショッピング、散策…思うままに、一日をお過ごしください。</p>
       </div>
-    </div>
+    </div> -->
 
-    <div class="facility-flex lead-end">
-      <div class="facility-flex-img">
-      <?php get_template_part('inc/areamap'); ?>
-      </div>
-      <div class="facility-flex-txt">
-        <div class="home_txt">
-          <!-- <p class="l-spacer -small -both"><a href="" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a></p> -->
-          <div class="monument-list">
-            <ul>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph01.jpg" alt=""><span>中西悟堂の詩碑</span></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph02.jpg" alt=""><span>与謝野寛・晶子の歌碑</span></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph03.jpg" alt=""><span>川床のテラス</span></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph04.jpg" alt=""><span>北原白秋の詩碑</span></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph05.jpg" alt=""><span>カフェテラスのベンチ</span></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_ph06.jpg" alt=""><span>お昼寝デッキ</span></li>
-            </ul>
-          </div>
+    <div class="facility-flex000000 lead-end000000 map-area">
+      <div class="facility-flex-txt00000 map-area01">
+        <!-- <div class="home_txt"> -->
+        <div class="p-home_sansaku">
+          <h2>星野の森を、<br>散策しよう。</h2>
+          <p>豊かな自然に囲まれて、いつもよりも、歩調をゆるめて。<br>温泉、お食事、ショッピング、散策…思うままに、一日をお過ごしください。</p>
         </div>
       </div>
-  </div>
-  <div class="c-gmenu-primary -home c-bg-white">
-    <ul>
-      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/tombo-no-yu'); ?>" class="c-gmenu-primary__link">温泉</a></li>
-      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/shop'); ?>" class="c-gmenu-primary__link">ショップ&amp;レストラン</a></li>
-      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/activity'); ?>" class="c-gmenu-primary__link">アクティビティ</a></li>
-      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/church'); ?>" class="c-gmenu-primary__link">教会</a></li>
-      <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/hotel'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
-    </ul>
+      <div class="facility-flex-img000000 map-area02">
+        <?php get_template_part('inc/areamap'); ?>
+      </div>
+      <div class="facility-flex-txt00000 map-area03">
+        <a href="" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a>
+        <dl class="p-facility-list">
+          <div class="p-facility-list__item">
+            <div>
+              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">温泉</a></dt>
+            </div>
+            <div>
+              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop'); ?>">ショップ&amp;レストラン</a></dt>
+            </div>
+            <div>
+              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity'); ?>">アクティビティ</a></dt>
+            </div>
+            <div>
+              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church'); ?>">教会</a></dt>
+            </div>
+            <div>
+              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/hotel'); ?>">ホテル</a></dt>
+            </div>
+          </div>
+        </dl>
+        <!-- </div> -->
+      </div>
   </div>
 <?php else: ?>
 <footer class="l-footer c-bg-white">

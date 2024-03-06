@@ -30,7 +30,6 @@ facility
 	flex-wrap: wrap;
 	&-img {
 		background-image: url(../img/facility/base.jpg);
-		//background-color: #D7E6AF;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -38,10 +37,12 @@ facility
 		display: none;
 		@include inc.mq(tab) {
 			display: block;
-			width: 55%;
+			//width: 55%;
+			width: 50%;
 		}
 		@include inc.mq(lap-l) {
-			width: 65%;
+			//width: 65%;
+			width: 50%;
 		}
 	}
 	&-txt {
@@ -51,7 +52,8 @@ facility
 		}
 		border-top: 1px solid #E8E8D6;
 		@include inc.mq(tab) {
-			width: 45%;
+			//width: 45%;
+			width: 50%;
 			padding: 4rem 3vw 0;
 			h2.c-title-small {
 				display: block;
@@ -59,55 +61,49 @@ facility
 			border-top: none;
 		}
 		@include inc.mq(lap-l) {
-			width: 35%;
+			//width: 35%;
+			width: 50%;
 			padding: 4rem 5vw 0;
 		}
 	}
 }
 
-.home .facility-flex {
-	//background: inc.$theme-color-lightyellow;
-	@include inc.mq(tab) {
-		background: none;
-	}
-	display: flex;
-	flex-wrap: wrap;
-	&-img {
-		padding: 0 0%;
-		width: 100%;
-		display: block;
-		@include inc.mq(tab) {
-			display: block;
-			width: 50%;
-		}
-	}
-	&-txt {
-		@include inc.sizing(width, full, 1470px, sp, 330px);
-		max-width: 90%;
-		margin: 0 auto;
-		padding: 1rem 0 3rem;
-		@include inc.mq(tab) {
-			padding: 0;
-		}
-		border-top: 1px solid #E8E8D6;
-		@include inc.mq(tab) {
-			width: 50%;
-			max-width: auto;
-			padding: 0 6vw;
-			border-top: none;
-			.home_txt {
-				display: flex;
-				flex-direction:column;
-				.monument-list {
-					order: 1;
-				}
-				p {
-					order: 2;
-				}
-			}
-		}
-	}
-}
+// .home .facility-flex {
+// 	@include inc.mq(tab) {
+// 		background: none;
+// 	}
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	&-img {
+// 		padding: 0 0%;
+// 		width: 100%;
+// 		display: block;
+// 		@include inc.mq(tab) {
+// 			display: block;
+// 			width: 50%;
+// 		}
+// 	}
+// 	&-txt {
+// 		@include inc.sizing(width, full, 1470px, sp, 330px);
+// 		max-width: 90%;
+// 		margin: 0 auto;
+// 		padding: 1rem 0 3rem;
+// 		@include inc.sizing(padding-top, tab, 80px, sp, 64px);
+// 		@include inc.sizing(padding-bottom, tab, 48px, sp, 32px);
+// 		@include inc.mq(tab) {
+// 			@include inc.sizing(padding-top, full, 80px, tab, 70px);
+// 			@include inc.sizing(padding-bottom, full, 70px, tab, 60px);
+// 		}
+// 		border-top: 1px solid #E8E8D6;
+// 		@include inc.mq(tab) {
+// 			width: 50%;
+// 			max-width: auto;
+// 			padding-left: 6vw;
+// 			padding-right: 6vw;
+// 			border-top: none;
+// 		}
+// 	}
+// }
 
 
 .home .monument-list {
@@ -171,31 +167,37 @@ facility
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 26px;
+    width: 39px;
+	@include inc.sizing(width, tab, 32px, sps, 24px);
+	@include inc.mq(tab) {
+		@include inc.sizing(width, full, 39px, tab, 24px);
+	}
+	a {
+		cursor: pointer;
+	}
 }
 .map_pin .pin img {
-    width: 26px;
-    height: 33px;
+	width: 100%;
 }
 .map_pin .pin_01 {
-    margin-top: -56%;
+    margin-top: -56.5%;
     margin-left: 9%;
 }
 .map_pin .pin_02 {
     margin-top: -47.2%;
-    margin-left: 34.8%;
+    margin-left: 33.8%;
 }
 .map_pin .pin_03 {
-    margin-top: -45.8%;
+    margin-top: -44.2%;
     margin-left: -5.2%;
 }
 .map_pin .pin_04 {
-    margin-top: -37%;
-    margin-left: 6.2%;
+    margin-top: -37.3%;
+    margin-left: 6.0%;
 }
 .map_pin .pin_05 {
     margin-top: -22.2%;
-    margin-left: 32%;
+    margin-left: 31.5%;
 }
 .map_pin .pin_06 {
     margin-top: -14.2%;
@@ -203,19 +205,19 @@ facility
 }
 .map_pin .pin_07 {
     margin-top: -9.5%;
-    margin-left: 22.8%;
+    margin-left: 22.3%;
 }
 .map_pin .pin_08 {
-    margin-top: 13.5%;
+    margin-top: 12.8%;
     margin-left: -42.2%;
 }
 .map_pin .pin_09 {
-    margin-top: 2.5%;
-    margin-left: -10.5%;
+    margin-top: 1.3%;
+    margin-left: -10.8%;
 }
 .map_pin .pin_10 {
-    margin-top: 13.5%;
-    margin-left: 12.5%;
+    margin-top: 13.8%;
+    margin-left: 12%;
 }
 .map_pin .pin_11 {
     margin-top: 24.8%;
@@ -231,38 +233,45 @@ facility
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 26px;
+	width: 28px;
+	@include inc.sizing(width, tab, 28px, sps, 20px);
+	@include inc.mq(tab) {
+		@include inc.sizing(width, full, 32px, tab, 20px);
+	}
+	a {
+		cursor: pointer;
+	}
 }
 
 .map_pin .no01 {
-	margin-top: -23.8%;
+	margin-top: -24.8%;
     margin-left: 24.3%;
 }
 .map_pin .no02 {
-	margin-top: -35.8%;
+	margin-top: -34.8%;
     margin-left: 18.3%;
 }
 .map_pin .no03 {
-	margin-top: -29.4%;
-    margin-left: -0.7%;
+	margin-top: -29.6%;
+    margin-left: -1.2%;
 }
 .map_pin .no04 {
 	margin-top: -17.8%;
     margin-left: -9%;
 }
 .map_pin .no05 {
-	margin-top: 17.2%;
-    margin-left: 24%;
+	margin-top: 16.2%;
+    margin-left: 23.5%;
 }
 .map_pin .no06 {
-	margin-top: 30%;
-    margin-left: 18.3%;
+	margin-top: 28.5%;
+    margin-left: 17.3%;
 }
 
 
-.page-template-facility .map_pin .no00 {
-    display: none;
-}
+// .page-template-facility .map_pin .no00 {
+//     display: none;
+// }
 
 .txt.txt_01 {
 	@include inc.sizingRem(font-size, tab, 11px, sp, 10px);
@@ -278,8 +287,8 @@ facility
 		display: block;
 	}
 	@include inc.mq(lap) {
-		margin-top: -28%;
-		margin-left: 39%;
+		margin-top: -15%;
+		margin-left: 37%;
         @include inc.sizingRem(font-size, lap, 12px, tab, 11px);
 		width: 3.8rem;
     }
@@ -296,6 +305,7 @@ facility
 .p-facility {
 	&-list {
 		&__item {
+			border-top: 1px solid inc.$border-color-yellow;
 			div {
 				border-bottom: 1px solid inc.$border-color-yellow;
 			}
