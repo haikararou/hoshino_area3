@@ -83,8 +83,11 @@ home
     justify-content: end;
     @include inc.sizing(padding-bottom, full, 48px, tab, 24px);
   }
-  .home .map-area03 {
+  .home .map-area02 {
     min-height: 71vw;
+  }
+  .home .map-area03 {
+    //min-height: 71vw;
     max-width: auto;
     padding-left: 6vw;
     padding-right: 6vw;

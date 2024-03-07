@@ -351,7 +351,7 @@
       border-bottom: 1px solid inc.$theme-color-yellow;
     }
     @include inc.mq(desk) {
-      width: calc(100% / 3);
+      //width: calc(100% / 3);
       border-bottom: none;
     }
     @include inc.mq(vr) {
