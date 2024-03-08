@@ -486,21 +486,37 @@ $(window).on("load resize",function(){
 
 
 //キービジュアル　重要なお知らせ
-$(window).on("load resize",function(){
-  //if(window.matchMedia("(max-width:768px)").matches){
-    $(window).scroll(function() {
-      var scroll;
-      var winH = $(window).height();
-      var objTop = $('.lead-end').offset().top;
+// $(window).on("load resize",function(){
+//   $(window).scroll(function() {
+//     var scroll;
+//     var winH = $(window).height();
+//     var objTop = $('.lead-end').offset().top;
+//     scroll = $(window).scrollTop();
+//     if(scroll >= objTop - winH){
+//       $('.p-kv__news').fadeOut();
+//     }
+//     else {
+//       $('.p-kv__news').fadeIn();
+//     }
+//   });
+// });
+
+
+$(window).on("load resize", function() {
+  $(window).scroll(function() {
+    var scroll;
+    var winH = $(window).height();
+    var $leadEnd = $('.lead-end');
+    
+    if ($leadEnd.length) { // 要素が存在するかどうかを確認
+      var objTop = $leadEnd.offset().top;
       scroll = $(window).scrollTop();
-      if(scroll >= objTop - winH){
+      
+      if(scroll >= objTop - winH) {
         $('.p-kv__news').fadeOut();
-      }
-      else {
+      } else {
         $('.p-kv__news').fadeIn();
       }
-    });
-  //}
+    }
+  });
 });
-
-

@@ -1403,6 +1403,16 @@ footer
   max-width: 90%;
   margin: 0 auto;
 }
+.l-container--primary-ll {
+  width: clamp(330px, 246.82vw - 595.6px, 1300px);
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .l-container--primary-ll {
+    width: 1300px;
+  }
+}
 .l-container--primary-l {
   width: clamp(330px, 213.74vw - 471.5px, 1170px);
   max-width: 90%;
@@ -7054,7 +7064,7 @@ home
   padding: 1.5rem 3rem 1.5rem 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .home .map-area {
     display: -ms-grid;
     display: grid;
@@ -7105,8 +7115,8 @@ home
   .home .map-area01 {
     padding-top: 48px;
     max-width: auto;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     border-top: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7121,12 +7131,12 @@ home
     padding-bottom: clamp(24px, 2.78vw + 2.7px, 48px);
   }
   .home .map-area02 {
-    min-height: 71vw;
+    aspect-ratio: 585/826;
   }
   .home .map-area03 {
     max-width: auto;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     border-top: none;
   }
   .home .map-area03 a.c-button-block {
@@ -7144,12 +7154,12 @@ home
 }
 @media screen and (min-width: 768px) {
   .p-home_sansaku {
-    background: url(../img/top/illust_01.png) no-repeat 100% 0%/13vw;
+    background: url(../img/top/illust_01.png) no-repeat 100% 0%/23vw;
   }
 }
 @media screen and (min-width: 960px) {
   .p-home_sansaku {
-    background: url(../img/top/illust_01.png) no-repeat 100% 10px/16vw;
+    background: url(../img/top/illust_01.png) no-repeat 100% 10px/14vw;
   }
 }
 .p-home_sansaku h2 {
@@ -7194,7 +7204,6 @@ home
 }
 @media screen and (min-width: 768px) {
   .p-home__lead {
-    padding: 5rem 0 180px;
     background: url(../img/top/illust_03.png) no-repeat 100% calc(100% - 50px)/12vw;
   }
   .p-home__lead::before {

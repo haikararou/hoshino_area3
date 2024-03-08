@@ -61,7 +61,7 @@ home
   }
 }
 
-@include inc.mq(tab) {
+@include inc.mq(lap) {
   .home .map-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -75,8 +75,8 @@ home
   .home .map-area01 {
     padding-top: 48px;
     max-width: auto;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     border-top: none;
     display: flex;
     flex-direction: column;
@@ -84,13 +84,14 @@ home
     @include inc.sizing(padding-bottom, full, 48px, tab, 24px);
   }
   .home .map-area02 {
-    min-height: 71vw;
+    //min-height: 71vw;
+    aspect-ratio: 585 / 826;
   }
   .home .map-area03 {
     //min-height: 71vw;
     max-width: auto;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     border-top: none;
     a.c-button-block {
       width: auto;
@@ -108,10 +109,10 @@ home
       background: url(../img/top/illust_01.png) no-repeat 100% 10px / 26vw;
     }
     @include inc.mq(tab) {
-      background: url(../img/top/illust_01.png) no-repeat 100% 0% / 13vw;
+      background: url(../img/top/illust_01.png) no-repeat 100% 0% / 23vw;
     }
     @include inc.mq(lap) {
-      background: url(../img/top/illust_01.png) no-repeat 100% 10px / 16vw;
+      background: url(../img/top/illust_01.png) no-repeat 100% 10px / 14vw;
     }
     h2 {
       @include inc.sizingRem(font-size, full, 46px, sp, 24px);
@@ -140,7 +141,7 @@ home
       }
     }
     @include inc.mq(tab) {
-      padding: 5rem 0 180px;
+      //padding: 5rem 0 180px;
       background: url(../img/top/illust_03.png) no-repeat 100% calc(100% - 50px) / 12vw;
       &::before {
         content: "";

@@ -29,40 +29,45 @@ get_header(); ?>
       </div>
     </div> -->
 
-    <div class="facility-flex000000 lead-end000000 map-area">
-      <div class="facility-flex-txt00000 map-area01">
-        <!-- <div class="home_txt"> -->
-        <div class="p-home_sansaku">
-          <h2>星野の森を、<br>散策しよう。</h2>
-          <p>豊かな自然に囲まれて、いつもよりも、歩調をゆるめて。<br>温泉、お食事、ショッピング、散策…思うままに、一日をお過ごしください。</p>
+  <div class="l-container--primary-ll">
+    <section class="l-spacer -large -both">
+      <div class="facility-flex000000 lead-end000000 map-area">
+        <div class="facility-flex-txt00000 map-area01">
+          <!-- <div class="home_txt"> -->
+          <div class="p-home_sansaku">
+            <h2>星野の森を、<br>散策しよう。</h2>
+            <p>豊かな自然に囲まれて、いつもよりも、歩調をゆるめて。<br>温泉、お食事、ショッピング、散策…思うままに、一日をお過ごしください。</p>
+          </div>
+        </div>
+        <div class="facility-flex-img000000 map-area02">
+          <?php get_template_part('inc/areamap'); ?>
+        </div>
+        <div class="facility-flex-txt00000 map-area03">
+          <div class="p-home_maplist">
+            <!-- <a href="" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a> -->
+            <dl class="p-facility-list">
+              <div class="p-facility-list__item">
+                <div>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">温泉</a></dt>
+                </div>
+                <div>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop'); ?>">ショップ&amp;レストラン</a></dt>
+                </div>
+                <div>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity'); ?>">アクティビティ</a></dt>
+                </div>
+                <div>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church'); ?>">教会</a></dt>
+                </div>
+                <div>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/hotel'); ?>">ホテル</a></dt>
+                </div>
+              </div>
+            </dl>
+          </div>
         </div>
       </div>
-      <div class="facility-flex-img000000 map-area02">
-        <?php get_template_part('inc/areamap'); ?>
-      </div>
-      <div class="facility-flex-txt00000 map-area03">
-        <a href="" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a>
-        <dl class="p-facility-list">
-          <div class="p-facility-list__item">
-            <div>
-              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">温泉</a></dt>
-            </div>
-            <div>
-              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop'); ?>">ショップ&amp;レストラン</a></dt>
-            </div>
-            <div>
-              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity'); ?>">アクティビティ</a></dt>
-            </div>
-            <div>
-              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church'); ?>">教会</a></dt>
-            </div>
-            <div>
-              <dt class="p-facility-list__dt"><a href="<?php echo home_url('/hotel'); ?>">ホテル</a></dt>
-            </div>
-          </div>
-        </dl>
-        <!-- </div> -->
-      </div>
+    </section>
   </div>
 <?php else: ?>
 <footer class="l-footer c-bg-white">

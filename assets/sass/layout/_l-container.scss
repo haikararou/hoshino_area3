@@ -10,6 +10,14 @@
     max-width: 90%;
     margin: 0 auto;
   }
+  &--primary-ll {
+    @include inc.sizing(width, tab, 1300px, sp, 330px);
+    max-width: 100%;
+    @include inc.mq(tab) {
+      width: 1300px;
+    }
+    margin: 0 auto;
+  }
   &--primary-l {
     @include inc.sizing(width, tab, 1170px, sp, 330px);
     max-width: 90%;
