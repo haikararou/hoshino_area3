@@ -2386,7 +2386,7 @@ list
 }
 .c-list-std__item {
   line-height: 1.6;
-  padding: 0.2rem 1rem 0.2rem 1rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   border-radius: clamp(5px, 0.4vw + 3.5px, 10px);
   border: 1px solid #E8E8D8;
   font-size: clamp(0.75rem, 0.18vw + 0.69375rem, 0.875rem);
@@ -4890,61 +4890,14 @@ tombo
 .p-tombo__feature {
   position: relative;
 }
-.p-tombo__feature::before {
-  content: "";
-  display: block;
-  aspect-ratio: 167/161;
-  width: clamp(80px, 6.93vw + 54px, 167px);
-  background: url();
-  background: url(../img/tombo/oniyamma.png) no-repeat center center/contain;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  margin-left: -44vw;
-  top: -5.5vw;
-}
 .p-tombo__feature .count02 .feature_img {
   position: relative;
-}
-.p-tombo__feature .count02 .feature_img:before {
-  content: "";
-  display: block;
-  aspect-ratio: 127/181;
-  width: clamp(60px, 5.34vw + 40px, 127px);
-  background: url();
-  background: url(../img/tombo/usubaki.png) no-repeat center center/contain;
-  position: absolute;
-  right: 0;
-  top: clamp(-85px, -3.19vw - 33px, -45px);
 }
 .p-tombo__feature .count03 .feature_img {
   position: relative;
 }
-.p-tombo__feature .count03 .feature_img:before {
-  content: "";
-  display: block;
-  aspect-ratio: 156/162;
-  width: clamp(60px, 7.65vw + 31.3px, 156px);
-  background: url();
-  background: url(../img/tombo/tagane.png) no-repeat center center/contain;
-  position: absolute;
-  left: 1vw;
-  bottom: clamp(-85px, -4.46vw - 12.3px, -29px);
-}
 .p-tombo__feature .count04 .feature_img {
   position: relative;
-}
-.p-tombo__feature .count04 .feature_img:before {
-  content: "";
-  display: block;
-  aspect-ratio: 162/156;
-  width: clamp(60px, 8.13vw + 29.5px, 162px);
-  background: url();
-  background: url(../img/tombo/shiokara.png) no-repeat center center/contain;
-  position: absolute;
-  right: 1vw;
-  bottom: clamp(-85px, -3.67vw - 25.2px, -39px);
 }
 .p-tombo__after .l-container--primary {
   background: #FFF;
@@ -4955,49 +4908,39 @@ tombo
 .p-tombo__intro::before {
   content: "";
   display: block;
-  aspect-ratio: 156/159;
+  aspect-ratio: 272/165;
   width: clamp(80px, 4.14vw + 64.5px, 132px);
   background: url();
-  background: url(../img/tombo/ooruriboshi02.png) no-repeat center center/contain;
+  background: url(../img/tombo/asagi.png) no-repeat center center/contain;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  margin-left: -20vw;
-  bottom: clamp(-62px, -1.35vw - 40px, -45px);
+  margin-left: 30vw;
+  top: 40px;
+}
+@media screen and (min-width: 960px) {
+  .p-tombo__intro::before {
+    margin-left: -30vw;
+  }
 }
 .p-tombo__guide {
   position: relative;
+  padding-bottom: clamp(160px, 7.97vw + 130.1px, 260px);
 }
-.p-tombo__guide::before {
+.p-tombo__guide::after {
   content: "";
   display: block;
-  aspect-ratio: 168/156;
-  width: clamp(80px, 4.14vw + 64.5px, 132px);
+  aspect-ratio: 163/151;
+  width: clamp(100px, 2.39vw + 91px, 130px);
   background: url();
   background: url(../img/tombo/ooruriboshi.png) no-repeat center center/contain;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  margin-left: 20vw;
-  top: clamp(-62px, -2.39vw - 23px, -32px);
-}
-@media screen and (min-width: 768px) {
-  .p-tombo__guide::after {
-    content: "";
-    display: block;
-    aspect-ratio: 163/151;
-    width: clamp(120px, 3.43vw + 107.1px, 163px);
-    background: url();
-    background: url(../img/tombo/akiakane_y.png) no-repeat center center/contain;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-    margin-left: -33vw;
-    top: 38vw;
-  }
+  margin-left: -10vw;
+  bottom: 40px;
 }
 @media screen and (min-width: 960px) {
   .p-tombo__notices h2 {
@@ -7131,7 +7074,7 @@ home
     padding-bottom: clamp(24px, 2.78vw + 2.7px, 48px);
   }
   .home .map-area02 {
-    aspect-ratio: 585/826;
+    aspect-ratio: 585/880;
   }
   .home .map-area03 {
     max-width: auto;
@@ -7169,8 +7112,7 @@ home
   letter-spacing: 0.5rem;
 }
 .p-home__lead {
-  padding: 3rem 0 120px;
-  background: url(../img/top/illust_03.png) no-repeat 100% calc(100% - 50px)/24vw;
+  padding: 0 0 120px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7191,11 +7133,11 @@ home
   width: clamp(190px, 25.45vw + 94.5px, 290px);
   height: clamp(210px, 13.99vw + 157.6px, 265px);
   display: block;
-  background: url(../img/top/illust_02.png) no-repeat 0 0;
+  background: url(../img/top/illust_02.png) no-repeat 0 0/contain;
   background-size: clamp(190px, 25.45vw + 94.5px, 290px);
   position: absolute;
   left: -5.3vw;
-  top: 4vw;
+  top: -7vw;
 }
 @media screen and (min-width: 768px) {
   .p-home__lead::before {
@@ -7204,29 +7146,35 @@ home
 }
 @media screen and (min-width: 768px) {
   .p-home__lead {
+    padding: 0 0 180px;
     background: url(../img/top/illust_03.png) no-repeat 100% calc(100% - 50px)/12vw;
   }
   .p-home__lead::before {
     content: "";
-    width: 390px;
+    width: 340px;
     height: 354px;
-    background: url(../img/top/illust_02.png) no-repeat 0 0/390px;
+    background: url(../img/top/illust_02.png) no-repeat 0 0/contain;
     left: -8.2vw;
-    top: 90px;
+    top: 180px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-home__lead {
+    padding: 5rem 0 180px;
   }
 }
 @media screen and (min-width: 1160px) {
   .p-home__lead {
-    padding: 8rem 0;
+    padding: 0 0 8rem 0;
     background: url(../img/top/illust_03.png) no-repeat calc(100% - 3vw) calc(100% - 8rem)/9vw;
   }
   .p-home__lead::before {
     content: "";
-    width: 390px;
+    width: 340px;
     height: 354px;
-    background: url(../img/top/illust_02.png) no-repeat 0 0/390px;
+    background: url(../img/top/illust_02.png) no-repeat 0 0/contain;
     left: -8.2vw;
-    top: 32px;
+    top: 50px;
   }
 }
 .p-home__lead-head {
@@ -7338,6 +7286,69 @@ home
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+  }
+}
+
+html:lang(en) .p-home_sansaku h2 {
+  font-size: clamp(1.5rem, 1.27vw + 1.20625rem, 2.5rem);
+  margin-bottom: 1em;
+  line-height: 1.5;
+  letter-spacing: 0rem;
+  padding-right: 8rem;
+}
+html:lang(en) .p-home__lead-head {
+  -webkit-writing-mode: unset;
+      -ms-writing-mode: unset;
+          writing-mode: unset;
+  font-size: clamp(1.25rem, 0.48vw + 1.1375rem, 1.625rem);
+  line-height: 1.6;
+  display: block;
+  padding-top: 0 !important;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  html:lang(en) .p-home__lead-head {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    text-orientation: unset;
+    text-align: left;
+  }
+}
+html:lang(en) .p-home__lead {
+  padding: 170px 0 120px;
+}
+@media screen and (min-width: 768px) {
+  html:lang(en) .p-home__lead {
+    padding: 180px 0 180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html:lang(en) .p-home__lead::before {
+    width: clamp(190px, 25.45vw + 94.5px, 290px);
+    height: clamp(210px, 13.99vw + 157.6px, 265px);
+    display: block;
+    background: url(../img/top/illust_02.png) no-repeat 0 0/contain;
+    background-size: clamp(190px, 25.45vw + 94.5px, 290px);
+    position: absolute;
+    left: -5.3vw;
+    top: -7vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  html:lang(en) .p-home__lead {
+    padding: 0px 0 180px;
+  }
+  html:lang(en) .p-home__lead::before {
+    top: 20vw;
+  }
+}
+@media screen and (min-width: 1160px) {
+  html:lang(en) .p-home__lead {
+    padding: 180px 0 180px;
+  }
+  html:lang(en) .p-home__lead::before {
+    top: 8vw;
   }
 }
 
@@ -7629,6 +7640,13 @@ home
     padding: 5rem 2.5rem 5rem 1rem;
   }
 }
+html:lang(en) .accordion_area .-block .-header {
+  font-size: clamp(1.25rem, 0.64vw + 1.1rem, 1.75rem);
+  text-orientation: unset;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .p-home-sp_accordion__item {
   border-top: 1px solid #E8E8D8;
   -webkit-transition: background 0.3s;
@@ -7765,8 +7783,8 @@ kv
   z-index: 1;
 }
 .p-kv__news .bbs ul {
-  -webkit-animation: flowing 30s linear infinite;
-          animation: flowing 30s linear infinite;
+  -webkit-animation: flowing 18s linear infinite;
+          animation: flowing 18s linear infinite;
   font-size: clamp(0.8125rem, 0.08vw + 0.79375rem, 0.875rem);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);

@@ -85,7 +85,8 @@ home
   }
   .home .map-area02 {
     //min-height: 71vw;
-    aspect-ratio: 585 / 826;
+    //aspect-ratio: 585 / 826;
+    aspect-ratio: 585 / 880;
   }
   .home .map-area03 {
     //min-height: 71vw;
@@ -123,45 +124,52 @@ home
   }
 
   &__lead {
-    padding: 3rem 0 120px;
-    background: url(../img/top/illust_03.png) no-repeat 100% calc(100% - 50px) / 24vw;
+    //padding: 3rem 0 120px;
+    padding: 0 0 120px;
+    //background: url(../img/top/illust_03.png) no-repeat 100% calc(100% - 50px) / 24vw;
     position: relative;
     &::before {
       content: "";
       @include inc.sizing(width, tab, 290px, sp, 190px);
       @include inc.sizing(height, tab, 265px, sp, 210px);
       display: block;
-      background: url(../img/top/illust_02.png) no-repeat 0 0;
+      background: url(../img/top/illust_02.png) no-repeat 0 0 / contain;
       @include inc.sizing(background-size, tab, 290px, sp, 190px);
       position: absolute;
       left: -5.3vw;
-      top: 4vw;
+      //top: 4vw;
+      top: -7vw;
       @include inc.mq(tab) {
         @include inc.sizing(top, full, 100px, tab, 100px);
       }
     }
     @include inc.mq(tab) {
       //padding: 5rem 0 180px;
+      padding: 0 0 180px;
       background: url(../img/top/illust_03.png) no-repeat 100% calc(100% - 50px) / 12vw;
       &::before {
         content: "";
-        width: 390px;
+        width: 340px;
         height: 354px;
-        background: url(../img/top/illust_02.png) no-repeat 0 0 / 390px;
+        background: url(../img/top/illust_02.png) no-repeat 0 0 / contain;
         left: -8.2vw;
-        top: 90px;
+        top: 180px;
       }
     }
+    @include inc.mq(lap) {
+      padding: 5rem 0 180px;
+    }
     @include inc.mq(lap-ll) {
-      padding: 8rem 0;
+      //padding: 8rem 0;
+      padding: 0 0 8rem 0;
       background: url(../img/top/illust_03.png) no-repeat calc(100% - 3vw) calc(100% - 8rem) / 9vw;
       &::before {
         content: "";
-        width: 390px;
+        width: 340px;
         height: 354px;
-        background: url(../img/top/illust_02.png) no-repeat 0 0 / 390px;
+        background: url(../img/top/illust_02.png) no-repeat 0 0 / contain;
         left: -8.2vw;
-        top: 32px;
+        top: 50px;
       }
     }
     display: flex;
@@ -236,6 +244,68 @@ home
     }
   }
 }
+
+html:lang(en) {
+  .p-home_sansaku {
+      h2 {
+        @include inc.sizingRem(font-size, full, 40px, sp, 24px);
+        margin-bottom: 1em;
+        line-height: 1.5;
+        letter-spacing: 0rem;
+        padding-right: 8rem;
+      }
+    }
+  .p-home__lead-head {
+    writing-mode: unset;
+    @include inc.sizingRem(font-size, full, 26px, sp, 20px);
+    line-height: 1.6;
+    display: block;
+    padding-top: 0!important;
+    text-align: right;
+    @include inc.mq(tab) {
+      writing-mode: unset;
+      text-orientation: unset;
+      text-align: left;
+    }
+  }
+  .p-home__lead {
+    padding: 170px 0 120px;
+    @include inc.mq(tab) {
+      padding: 180px 0 180px;
+    }
+    @include inc.mq(tab) {
+      &::before {
+        @include inc.sizing(width, tab, 290px, sp, 190px);
+      @include inc.sizing(height, tab, 265px, sp, 210px);
+      display: block;
+      background: url(../img/top/illust_02.png) no-repeat 0 0 / contain;
+      @include inc.sizing(background-size, tab, 290px, sp, 190px);
+      position: absolute;
+      left: -5.3vw;
+      //top: 4vw;
+      top: -7vw;
+      }
+    }
+    @include inc.mq(lap) {
+      padding: 0px 0 180px;
+      &::before {
+        top: 20vw;
+      }
+    }
+    @include inc.mq(lap-ll) {
+      padding: 180px 0 180px;
+      &::before {
+        top: 8vw;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 .p-home-list {
   display: flex;
@@ -485,6 +555,16 @@ home
         }
       }
     }
+  }
+}
+
+
+html:lang(en) {
+  .accordion_area .-block .-header {
+    @include inc.sizingRem(font-size, full, 28px, sp, 20px);
+    text-orientation: unset;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 

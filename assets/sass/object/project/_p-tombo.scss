@@ -156,72 +156,66 @@ tombo
 	}
 	&__feature {
 		position: relative;
-		&::before {
-			content: "";
-			display: block;
-			//width: 167px;
-			aspect-ratio: 167 / 161;
-			@include inc.sizing(width, full, 167px, sp, 80px);
-			background: url();
-			background: url(../img/tombo/oniyamma.png) no-repeat center center/contain;
-			position: absolute;
-			left: 50%;
-			transform: translate(-50%, 0%);
-			margin-left: -44vw;
-			top: -5.5vw;
-		}
+		// &::before {
+		// 	content: "";
+		// 	display: block;
+		// 	//width: 167px;
+		// 	aspect-ratio: 167 / 161;
+		// 	@include inc.sizing(width, full, 167px, sp, 80px);
+		// 	background: url();
+		// 	background: url(../img/tombo/oniyamma.png) no-repeat center center/contain;
+		// 	position: absolute;
+		// 	left: 50%;
+		// 	transform: translate(-50%, 0%);
+		// 	margin-left: -44vw;
+		// 	top: -5.5vw;
+		// }
 		.count02 {
 			.feature_img {
 				position: relative;
-				&:before {
-					content: "";
-					display: block;
-					//width: 127px;
-					aspect-ratio: 127 / 181;
-					@include inc.sizing(width, full, 127px, sp, 60px);
-					background: url();
-					background: url(../img/tombo/usubaki.png) no-repeat center center/contain;
-					position: absolute;
-					right: 0;
-					//top: -5vw;
-					@include inc.sizing(top, full, -85px, sp, -45px);
-				}
+				// &:before {
+				// 	content: "";
+				// 	display: block;
+				// 	aspect-ratio: 127 / 181;
+				// 	@include inc.sizing(width, full, 127px, sp, 60px);
+				// 	background: url();
+				// 	background: url(../img/tombo/usubaki.png) no-repeat center center/contain;
+				// 	position: absolute;
+				// 	right: 0;
+				// 	@include inc.sizing(top, full, -85px, sp, -45px);
+				// }
 			}
 		}
 		.count03 {
 			.feature_img {
 				position: relative;
-				&:before {
-					content: "";
-					display: block;
-					//width: 156px;
-					aspect-ratio: 156 / 162;
-					@include inc.sizing(width, full, 156px, sp, 60px);
-					background: url();
-					background: url(../img/tombo/tagane.png) no-repeat center center/contain;
-					position: absolute;
-					left: 1vw;
-					//top: -5vw;
-					@include inc.sizing(bottom, full, -85px, sp, -29px);
-				}
+				// &:before {
+				// 	content: "";
+				// 	display: block;
+				// 	aspect-ratio: 156 / 162;
+				// 	@include inc.sizing(width, full, 156px, sp, 60px);
+				// 	background: url();
+				// 	background: url(../img/tombo/tagane.png) no-repeat center center/contain;
+				// 	position: absolute;
+				// 	left: 1vw;
+				// 	@include inc.sizing(bottom, full, -85px, sp, -29px);
+				// }
 			}
 		}
 		.count04 {
 			.feature_img {
 				position: relative;
-				&:before {
-					content: "";
-					display: block;
-					//width: 162px;
-					aspect-ratio: 162 / 156;
-					@include inc.sizing(width, full, 162px, sp, 60px);
-					background: url();
-					background: url(../img/tombo/shiokara.png) no-repeat center center/contain;
-					position: absolute;
-					right: 1vw;
-					//top: -5vw;
-					@include inc.sizing(bottom, full, -85px, sp, -39px);
-				}
+				// &:before {
+				// 	content: "";
+				// 	display: block;
+				// 	aspect-ratio: 162 / 156;
+				// 	@include inc.sizing(width, full, 162px, sp, 60px);
+				// 	background: url();
+				// 	background: url(../img/tombo/shiokara.png) no-repeat center center/contain;
+				// 	position: absolute;
+				// 	right: 1vw;
+				// 	@include inc.sizing(bottom, full, -85px, sp, -39px);
+				// }
 			}
 		}
 	}
@@ -235,52 +229,54 @@ tombo
 		&::before {
 			content: "";
 			display: block;
-			//width: 132px;
-			aspect-ratio: 156 / 159;
+			aspect-ratio: 272 / 165;
 			@include inc.sizing(width, full, 132px, sp, 80px);
 			background: url();
-			background: url(../img/tombo/ooruriboshi02.png) no-repeat center center/contain;
+			background: url(../img/tombo/asagi.png) no-repeat center center/contain;
 			position: absolute;
 			left: 50%;
 			transform: translate(-50%, 0%);
-			margin-left: -20vw;
-			@include inc.sizing(bottom, full, -62px, sp, -45px);
+			margin-left: 30vw;
+			top: 40px;
+			@include inc.mq(lap) {
+				margin-left: -30vw;
+			}
+			//@include inc.sizing(bottom, full, -62px, sp, -45px);
 		}
 	}
 	&__guide {
 		position: relative;
-		&::before {
-			content: "";
-			display: block;
-			//width: 168px;
-			aspect-ratio: 168 / 156;
-			@include inc.sizing(width, full, 132px, sp, 80px);
-			background: url();
-			background: url(../img/tombo/ooruriboshi.png) no-repeat center center/contain;
-			position: absolute;
-			left: 50%;
-			transform: translate(-50%, 0%);
-			margin-left: 20vw;
-			@include inc.sizing(top, full, -62px, sp, -32px);
-		}
-
-		@include inc.mq(tab) {
+		@include inc.sizing(padding-bottom, full, 260px, sp, 160px);
+		// &::before {
+		// 	content: "";
+		// 	display: block;
+		// 	aspect-ratio: 168 / 156;
+		// 	@include inc.sizing(width, full, 132px, sp, 80px);
+		// 	background: url();
+		// 	background: url(../img/tombo/ooruriboshi.png) no-repeat center center/contain;
+		// 	position: absolute;
+		// 	left: 50%;
+		// 	transform: translate(-50%, 0%);
+		// 	margin-left: 20vw;
+		// 	@include inc.sizing(top, full, -62px, sp, -32px);
+		// }
+		//@include inc.mq(tab) {
 			&::after {
 				content: "";
 				display: block;
-				//width: 168px;
 				aspect-ratio: 163 / 151;
-				@include inc.sizing(width, full, 163px, sp, 120px);
+				@include inc.sizing(width, full, 130px, sp, 100px);
 				background: url();
-				background: url(../img/tombo/akiakane_y.png) no-repeat center center/contain;
+				//background: url(../img/tombo/akiakane_y.png) no-repeat center center/contain;
+				background: url(../img/tombo/ooruriboshi.png) no-repeat center center/contain;
 				position: absolute;
 				left: 50%;
 				transform: translate(-50%, 0%);
-				margin-left: -33vw;
-				top: 38vw;
-				//@include inc.sizing(top, full, -62px, sp, -32px);
+				margin-left: -10vw;
+				//top: 38vw;
+				bottom:40px;
 			}
-		}
+		//}
 	}
 	&__notices {
 		h2 {

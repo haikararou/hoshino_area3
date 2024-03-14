@@ -11,7 +11,7 @@ list
   &__item {
     line-height: 1.6;
     //padding:0 1rem;
-    padding:.2rem 1rem .2rem 1rem;
+    padding:.2rem .5rem .2rem .5rem;
     border-radius: inc.size(full, 10px, sp, 5px);
     border: 1px solid inc.$theme-color-yellow;
     @include inc.mq(tab) {
