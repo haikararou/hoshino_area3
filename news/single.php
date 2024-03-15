@@ -14,7 +14,7 @@ get_header(); ?>
 </div>
 
 <section class="l-spacer -pagetitile">
-	<div class="l-container--primary c-display-flex -between">
+	<div class="l-container--primary">
 		<h1 class="c-title-ex-large">
 			<span class="c-title-sub">
 			<?php

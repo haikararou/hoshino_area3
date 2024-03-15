@@ -10,7 +10,7 @@
 
 <?php get_template_part('news/list-important'); ?>
 
-<section class="l-spacer -medium -both">
+<section class="l-spacer -medium">
   <div class="l-container--primary">
     <h1 class="c-title-ex-large">駐車場</h1>
   </div>

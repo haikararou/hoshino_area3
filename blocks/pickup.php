@@ -1,4 +1,3 @@
-
 <?php
 $className = 'pickup';
 if( !empty($block['className']) ) {
@@ -7,10 +6,6 @@ if( !empty($block['className']) ) {
 if( !empty($block['align']) ) {
     $className .= ' align' . $block['align'];
 }
-// $rows = get_field('pickup');
-// $rows2 = get_field('info');
-// $rows3 = get_sub_field('link');
-// $noborder = get_field('noborder');
 ?>
 <section class="c-bg-yellow c-border-t l-contents-block__wrap">
 <div class="l-contents-block c-bg-white">

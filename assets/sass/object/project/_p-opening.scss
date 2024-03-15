@@ -186,72 +186,77 @@ th.p-opening--fixed02 {
 }
 
 
-// @media print{
-//   header,
-//   footer,
-//   .c-breadcrumb,
-//   .c-button-areamap {
-//       display: none;
-//   }
-//   .l-main {
-//       padding: 0;
-//   }
-//   .l-spacer.-medium {
-//       margin: 0;
-//       padding: 0;
-//   }
-//   .l-spacer.-medium.-both {
-//       padding: 0;
-//   }
-//   .p-opening--table {
-//       margin-top:32px;
-//   }
-//   .p-opening--scroll {
-//       overflow: initial;
-//       height: auto;
-//   }
-//   .p-opening--fixed01 {
-//     position: static;
-//     color: #000;
-//     background: none;
-//     min-width: none;
-//     &:before{
-//       display: none;
-//     }
-//     &:after{
-//         display: none;
-//     }
-//   }
-//   .p-opening--fixed02 {
-//     position: static;
-//     color: #000;
-//     background: none;
-//     min-width: none;
-//     &:before{
-//       display: none;
-//     }
-//   }
-//   .p-opening--fixed03 {
-//     position: static;
-//     color: #000;
-//     background: none;
-//     &:before{
-//       display: none;
-//     }
-//   }
-//   .p-opening--fixed04 {
-//     position: static;
-//     color: #000;
-//     background: none;
-//   }
-//   .c-list-category__item {
-//     background: none;
-//     color: #000;
-//   }
-//   .c-list-category__item.-act {
-//     background: none;
-//     color: #000 !important;
-//     border: 1px solid #000;
-//   }
-// }
+
+
+@media print{
+  header,
+  footer,
+  .c-breadcrumb,
+  .c-button-areamap,
+  h1,
+  .business-hours-tab,
+  .other-conts {
+      display: none;
+  }
+  .l-main {
+      padding: 0;
+  }
+  .l-spacer.-medium {
+      margin: 0;
+      padding: 0;
+  }
+  .l-spacer.-medium.-both {
+      padding: 0;
+  }
+  .p-opening--table {
+      margin-top:32px;
+  }
+  .p-opening--scroll {
+      overflow: initial;
+      height: auto;
+  }
+  .p-opening--fixed01 {
+    position: static;
+    color: #000;
+    background: none;
+    min-width: none;
+    &:before{
+      display: none;
+    }
+    &:after{
+        display: none;
+    }
+  }
+  .p-opening--fixed02 {
+    position: static;
+    color: #000;
+    background: none;
+    min-width: none;
+    &:before{
+      display: none;
+    }
+  }
+  .p-opening--fixed03 {
+    position: static;
+    color: #000;
+    background: none;
+    &:before{
+      display: none;
+    }
+  }
+  .p-opening--fixed04 {
+    position: static;
+    color: #000;
+    background: none;
+  }
+  .c-list-category__item {
+    background: none;
+    color: #000;
+  }
+  .c-list-category__item.-act {
+    background: none;
+    color: #000 !important;
+    border: 1px solid #000;
+  }
+}
 

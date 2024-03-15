@@ -78,6 +78,10 @@ kv
 			0% { transform:translateX(0); }
 			100% { transform:translateX(-100%); }
 		}
+		.bbs.-none ul {
+			animation: none;
+			transform: none;
+		}
 	}
 	&__lead {
 		.l-container--primary {

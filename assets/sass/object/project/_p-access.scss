@@ -133,7 +133,25 @@ height: 220px;
 	@include inc.sizingRem(font-size, full, 20px, sp, 12px);
 	line-height: 1.5;
 	a.-parking {
-		margin-top: 1rem
+		margin-top: 1rem;
+		&.c-button-block {
+			padding: 0 1em;
+			@include inc.mq(wsp) {
+				padding: 0 3em;
+			}
+			&.-parking span {
+				padding-left: 1rem;
+				@include inc.mq(wsp) {
+					padding-left: 0;
+				}
+				&:before {
+					left: 0px;
+					@include inc.mq(wsp) {
+						left: -16px;
+					}
+				}
+			}
+		}
 	}
 }
 .div2-1 span,
@@ -153,7 +171,7 @@ height: 220px;
 .div2-1 {
 	margin-bottom: 10px;
 	@include inc.mq(tab) {
-		margin-bottom: 0
+		margin-bottom: 0;
 	}
 }
 

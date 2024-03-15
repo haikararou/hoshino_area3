@@ -47,6 +47,9 @@ title
   @include inc.sizingRem(font-size, full, 20px, sp, 16px);
   margin-bottom: 1em;
   line-height: 1.4;
+  &.line2 {
+    line-height: 2;
+  }
   span {
     display: block;
     color: inc.$theme-color-gold;

@@ -19,7 +19,7 @@
 		<article class="l-contents">
 			<div class="l-contents__conts">
 
-				<section class="l-spacer -small -both">
+				<section class="l-spacer -small -both -no_top">
 					<p>軽井沢星野エリアは、豊かな自然と人々が共生する場所です。<br>
 					ここで過ごす人々や動植物を尊重し、皆が心地よく過ごせるようご協力をお願いします。</p>
 				</section>

@@ -9,7 +9,7 @@ post
     text-align: left;
     @include inc.sizingRem(font-size, lap, 12px, sp, 10px);
     @include inc.mq(lap) {
-      text-align: right;
+      //text-align: right;
       @include inc.sizingRem(font-size, full, 14px, lap, 12px);
     }
   }

@@ -19,7 +19,7 @@
 		<article class="l-contents">
 			<div class="l-contents__conts">
 
-				<section class="l-spacer -small -both">
+				<section class="l-spacer -small -both -no_top">
 					<p>バス乗降場および駐車場のご利用は、事前決済による完全予約制です。<br>
 					下記の利用条件をご確認の上、ご予約をお願いいたします。</p>
 				</section>

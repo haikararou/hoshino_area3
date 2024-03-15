@@ -28,6 +28,9 @@ spacer
     &.-both {
       @include inc.sizing(padding-bottom, full, 30px, sps, 16px);
     }
+    &.-no_top {
+      padding-top: 0;
+    }
     &.-s {
       @include inc.sizing(padding-top, full, 12px, sps, 6px);
       &.-both {

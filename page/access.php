@@ -53,23 +53,23 @@
               <p class="-mgB">カーナビ入力設定は、「長野県北佐久郡軽井沢町長倉2148」、<br>または「星野温泉 トンボの湯」で検索してください。</p>
             </div>
             <div class="-mgB-m">
-              <h3 class="c-title-small">上信越自動車道で東京方面からお越しのお客様</h3>
+              <h3 class="c-title-small">東京方面から（上信越自動車道）</h3>
               <div class="parent2">
                 <div class="div2-1">碓氷軽井沢IC</div>
                 <div class="div2-2"><span>約25分</span></div>
-                <div class="div2-3"><span>上信越自動車道</span>佐久平スマートIC<span>＊ETC専用<br>＊軽井沢町内渋滞時にお薦め</span></div>
+                <div class="div2-3">佐久平スマートIC<span>＊ETC専用<br>＊軽井沢町内渋滞時にお薦め</span></div>
                 <div class="div2-4"><span>約20分</span></div>
-                <div class="div2-5">星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
+                <div class="div2-5">星野エリア<br><a href="<?php echo home_url('/parking'); ?>" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
               </div>
             </div>
             <div class="-mgB-m">
-              <h3 class="c-title-small">上信越自動車道で長野方面からお越しのお客様</h3>
+              <h3 class="c-title-small">長野方面から（上信越自動車道）</h3>
               <div class="parent2">
                 <div class="div2-1">碓氷軽井沢IC</div>
                 <div class="div2-2"><span>約25分</span></div>
-                <div class="div2-3"><span>上信越自動車道</span>小諸IC</div>
+                <div class="div2-3">小諸IC</div>
                 <div class="div2-4"><span>約30分</span></div>
-                <div class="div2-5">星野エリア<br><a href="" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
+                <div class="div2-5">星野エリア<br><a href="<?php echo home_url('/parking'); ?>" class="c-button-block -yellow -parking"><span>駐車場</span></a></div>
               </div>
             </div>
             <div class="l-footer-important-news -mgB-s">
@@ -97,7 +97,7 @@
                 <a href="https://www.google.com/maps/place/36%C2%B020'35.5%22N+138%C2%B038'10.2%22E/@36.3431864,138.6361618,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3431864!4d138.6361618?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <h3 class="c-title-small"><span class="-black">軽井沢駅 → 星野エリア</span>JR軽井沢駅 北口1番のりば</h3>
+                <h3 class="c-title-small line2"><span class="tag-b -black000">軽井沢駅 → 星野エリア</span><br>JR軽井沢駅 北口1番のりば</h3>
                 <p>1番のりばから発車するバスは全て「星野温泉 トンボの湯」に停車します。</p>
                 <ul class="a-list">
                   <?php while (have_rows('bus_jr')) : the_row();
@@ -111,7 +111,7 @@
                 <div class="-bus-noriba">
                   <a href="https://www.google.com/maps/@36.3432916,138.636364,3a,75y,218.54h,75.24t/data=!3m6!1e1!3m4!1sVP-9Bhyi92-5U7U3Wx5GZA!2e0!7i16384!8i8192?authuser=0&entry=ttu" target="_blank">
                     <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/icon_bus_01.png"></i>
-                    <div>バスのりば<span>拡大して表示</span></div>
+                    <div>バスのりば<span>ストリートビューで確認</span></div>
                   </a>
                 </div>
 
@@ -123,7 +123,7 @@
                 <a href="https://www.google.com/maps/place/36%C2%B021'40.1%22N+138%C2%B035'19.4%22E/@36.3611238,138.5887211,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3611238!4d138.5887211?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <h3 class="c-title-small"><span class="-black">星野エリア → 軽井沢駅</span>星野温泉 トンボの湯 バス停</h3>
+                <h3 class="c-title-small line2"><span class="tag-b -black000">星野エリア → 軽井沢駅</span><br>星野温泉 トンボの湯 バス停</h3>
                 <ul class="a-list">
                   <?php while (have_rows('bus_onsen')) : the_row();
                   while (have_rows('pdf')) : the_row();
@@ -136,7 +136,7 @@
                 <div class="-bus-noriba">
                   <a href="https://www.google.com/maps/@36.3610828,138.5886665,3a,75y,67.12h,90t/data=!3m7!1e1!3m5!1saroWnukiwV4-SX41H_xa4w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DaroWnukiwV4-SX41H_xa4w%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D67.11876%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu" target="_blank">
                     <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/icon_bus_02.png"></i>
-                    <div>バスのりば<span>拡大して表示</span></div>
+                    <div>バスのりば<span>ストリートビューで確認</span></div>
                   </a>
                 </div>
               </div>
