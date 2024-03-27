@@ -201,10 +201,11 @@
   position: fixed;
   top: 0; left: 0; right: 0;
   margin: auto;
-  height: auto;
+  height: 100vh;
   max-height: 100%;
   overflow-y: scroll;
-  background: #FFF;
+  // background: #FFF;
+  background: inc.$theme-color-lightyellow;
   z-index: 99;
   
   @include inc.mq(tab) {

@@ -51,10 +51,14 @@ home
   padding-top: 32px;
   @include inc.sizing(padding-top, tab, 48px, sps, 32px);
   @include inc.sizing(padding-bottom, tab, 48px, sps, 32px);
-  @include inc.mq(tab) {
-    padding-left: 32px;
-    padding-right: 6vw;
+  @include inc.mq(sp2) {
+    max-width: 90%;
+    margin: 0 auto;
   }
+  // @include inc.mq(tab) {
+  //   padding-left: 32px;
+  //   padding-right: 6vw;
+  // }
 }
 .home .map-area03 {
   a.c-button-block {
@@ -303,9 +307,48 @@ html:lang(en) {
   }
 }
 
-
-
-
+html:lang(ja) {
+  .lang-ja { display: block; }
+  .lang-en { display: none; }
+  .lang-tw { display: none; }
+  .lang-cn { display: none; }
+  .lang-ko { display: none; }
+}
+html:lang(auto) {
+  .lang-ja { display: block; }
+  .lang-en { display: none; }
+  .lang-tw { display: none; }
+  .lang-cn { display: none; }
+  .lang-ko { display: none; }
+}
+html:lang(en) {
+  .lang-ja { display: none; }
+  .lang-en { display: block; }
+  .lang-tw { display: none; }
+  .lang-cn { display: none; }
+  .lang-ko { display: none; }
+}
+html:lang(zh-TW) {
+  .lang-ja { display: none; }
+  .lang-en { display: none; }
+  .lang-tw { display: block; }
+  .lang-cn { display: none; }
+  .lang-ko { display: none; }
+}
+html:lang(zh-CN) {
+  .lang-ja { display: none; }
+  .lang-en { display: none; }
+  .lang-tw { display: none; }
+  .lang-cn { display: block; }
+  .lang-ko { display: none; }
+}
+html:lang(ko) {
+  .lang-ja { display: none; }
+  .lang-en { display: none; }
+  .lang-tw { display: none; }
+  .lang-cn { display: none; }
+  .lang-ko { display: block; }
+}
 
 
 

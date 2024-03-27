@@ -46,12 +46,14 @@ $news_query = new WP_Query( $args );
                                 <h3 class="p-post-card__title"><?php the_title(); ?></h3>
                                 <?php
                                 $terms = get_the_terms($post->ID, 'news_cat');
+                                echo '<ul class="p-post-card__tag">';
                                 foreach($terms as $term){
                                 $term_name = $term->name;
-                                echo '<p class="p-post-card__info">';
+                                echo '<li>';
                                 echo $term_name;
-                                echo '</p>';
-                                break; };
+                                echo '</li>';
+                                };
+                                echo '</ul>';
                                 ?>
                                 <?php if(get_field('event_period')): ?><span>開催期間　<?php the_field('event_period'); ?></span><?php endif; ?>
                             </div>

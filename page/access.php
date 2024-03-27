@@ -54,7 +54,7 @@
             </div>
             <div class="-mgB-m">
               <h3 class="c-title-small">東京方面から（上信越自動車道）</h3>
-              <div class="parent2">
+              <div class="parent1">
                 <div class="div2-1">碓氷軽井沢IC</div>
                 <div class="div2-2"><span>約25分</span></div>
                 <div class="div2-3">佐久平スマートIC<span>＊ETC専用<br>＊軽井沢町内渋滞時にお薦め</span></div>
@@ -182,7 +182,7 @@
               </div>
               <div class="l-contents-2column__block -w-1_2  -fix">
                 <h2 class="c-title-small"><span class="tag-b">タクシー</span>近隣のタクシー会社に直接ご連絡ください。</h2>
-                <p class="">ますや交通（ TEL:<a href="tel:+81-267455223">0267-45-5223 ）<br>軽井沢観光タクシー（ TEL:<a href="tel:+81-267455408">0267-45-5408</a> ）<br>浅間観光タクシー（ TEL:<a href="tel:+81-267455264">0267-45-5264</a> ）</p>
+                <p class="">ますや交通（TEL:<a href="tel:0267-45-5223">0267-45-5223</a>）<br>軽井沢観光タクシー（TEL:<a href="tel:0267-45-5408">0267-45-5408</a>）<br>浅間観光タクシー（TEL:<a href="tel:0267-45-5264">0267-45-5264</a>）</p>
               </div>
             </div>
             <div class="l-footer-important-news l-spacer -medium -both c-border-t">

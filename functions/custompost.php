@@ -199,13 +199,13 @@ function create_post_type() {
 }
 
 //URLに「/archives/」が含まれていたら、取り除いてリダイレクト
-$now_addr = (empty($_SERVER["HTTPS"]) ? "http://" : "https://").$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
-if(preg_match("/\/archives\//s",$now_addr)){
-	$new_addr = preg_replace('/\/archives\//s', '/', $now_addr);
-	// リダイレクト(移動)
-	header( "Location: $new_addr" ) ;
-	exit;
-}
+// $now_addr = (empty($_SERVER["HTTPS"]) ? "http://" : "https://").$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
+// if(preg_match("/\/archives\//s",$now_addr)){
+// 	$new_addr = preg_replace('/\/archives\//s', '/', $now_addr);
+// 	// リダイレクト(移動)
+// 	header( "Location: $new_addr" ) ;
+// 	exit;
+// }
 
 
 

@@ -322,3 +322,16 @@ button
 p + .a-list {
 	margin-top: 1rem;
 }
+
+
+a[href^="tel:"] {
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+@include inc.mq(tab) {
+	a[href^="tel:"] {
+		text-decoration: none;
+		pointer-events: none;
+	}
+}
+

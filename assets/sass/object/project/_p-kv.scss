@@ -12,7 +12,7 @@ kv
 	}
 	&__news {
 		position: fixed;
-		z-index: 900;
+		z-index: 90;
 		bottom: 0;
 		background: inc.$base-color;
 		width: 100%;
@@ -35,7 +35,8 @@ kv
 				&:before {
 					content: "";
 					position: absolute;
-					top: 5px;
+					//top: 5px;
+					top: .3rem;
 					left: 0;
 					background: url(../img/common/icon-info.svg) no-repeat 0 50%;
 					background-size: 1em;

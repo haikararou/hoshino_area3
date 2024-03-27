@@ -97,15 +97,15 @@ opening
       align-items: center;
       justify-content: center;
       line-height: 1.7;
-      padding: 1em .5em;
-      background: inc.$theme-color-yellow;
+      padding: 1.5em .5em;
+      background: #FFF;
       border: 1px solid inc.$theme-color-yellow;
       border-bottom: 0;
       border-radius: inc.size(full, 10px, sp, 7px) inc.size(full, 10px, sp, 7px) 0 0;
       cursor: pointer;
       @include inc.sizingRem(font-size, full, 16px, sp, 12px);
       &.-active {
-        background: #FFF;
+        background: inc.$theme-color-yellow;
       }
   }
 
@@ -122,7 +122,7 @@ opening
 }
 #table01 thead,
 #table02 thead {
-  display: none;
+  //display: none;
 }
 .tab-2 {
   display: none;
@@ -132,6 +132,7 @@ opening
 }
 th.p-opening--fixed02 {
   width: 40%!important;
+  padding-left: 0;
 }
 @include inc.mq(tab) {
   #div-table01,

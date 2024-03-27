@@ -31,7 +31,7 @@ get_header(); ?>
 
   <div class="l-container--primary-ll">
     <section class="l-spacer -large -both">
-      <div class="facility-flex000000 lead-end000000 map-area">
+      <div class="facility-flex000000 lead-end map-area">
         <div class="facility-flex-txt00000 map-area01">
           <!-- <div class="home_txt"> -->
           <div class="p-home_sansaku">

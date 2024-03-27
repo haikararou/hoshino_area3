@@ -29,9 +29,26 @@
         <div class="l-spacer -em2">
           <p>「その瞬間の特等席へ。」がコンセプトの滞在型リゾート。<br>四季折々の最高の瞬間を体験していただくことで、訪れる人々を、日々の時間の流れから解き放ちます。<br>日本の原風景が鮮やかに蘇る谷の集落で、軽井沢の自然と歴史を感じながら、特別な滞在をお楽しみください。</p>
         </div>
-        <div class="l-spacer -em2">
+
+        <!-- <div class="l-spacer -em2">
+          <a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div> -->
+        <div class="l-spacer -em2 lang-ja">
           <a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
+        <div class="l-spacer -em2 lang-en">
+          <a href="https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-tw">
+          <a href="https://hoshinoya.com/karuizawa/zhcn/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-cn">
+          <a href="https://hoshinoya.com/karuizawa/zhtw/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-ko">
+          <a href="https://hoshinoresorts.com/ko/hotels/hoshinoyakaruizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+
       </div>
     </article>
   </div>
@@ -73,9 +90,25 @@
         <div class="l-spacer -em2">
           <p>自由気ままで「ルーズ」な滞在スタイルのホテル。<br>24時間オープンで持ち込み可能なパブリックスペース「TAMARIBA（タマリバ）」に、秘密基地のような部屋。<br>好きな時に、好きな場所で、好きなように過ごすことができます。</p>
         </div>
-        <div class="l-spacer -em2">
+        <!-- <div class="l-spacer -em2">
+          <a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div> -->
+        <div class="l-spacer -em2 lang-ja">
           <a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
+        <div class="l-spacer -em2 lang-en">
+          <a href="https://hoshinoresorts.com/en/hotels/beb5karuizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-tw">
+          <a href="https://hoshinoresorts.com/zh_cn/hotels/beb5karuizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-cn">
+          <a href="https://hoshinoresorts.com/zh_tw/hotels/beb5karuizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-ko">
+          <a href="https://hoshinoresorts.com/ko/hotels/beb5karuizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+
       </div>
     </article>
   </div>

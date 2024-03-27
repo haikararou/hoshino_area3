@@ -296,13 +296,19 @@ list
     }
   }
   dd + dt {
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+  div + dt {
+    margin-top: 30px;
+  }
+  dd + div {
+    margin-top: 30px;
   }
 }
 
-[data-class="wpcf7cf_group"] {
-  padding-top: 40px;
-}
+// [data-class="wpcf7cf_group"] {
+//   padding-top: 40px;
+// }
 
 
 .c-small-news {

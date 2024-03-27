@@ -512,7 +512,7 @@ $(window).on("load resize", function() {
       var objTop = $leadEnd.offset().top;
       scroll = $(window).scrollTop();
       
-      if(scroll >= objTop - winH) {
+      if(scroll >= objTop - (winH * 1.03)) {
         $('.p-kv__news').fadeOut();
       } else {
         $('.p-kv__news').fadeIn();

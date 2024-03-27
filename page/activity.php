@@ -66,13 +66,24 @@ $the_query = new WP_Query( $args );
 <?php endif; wp_reset_postdata(); ?>
 </div>
 
-
-        <div class="l-spacer -em2">
+        <!-- <div class="l-spacer -em2">
+          <a href="https://picchio.co.jp/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div> -->
+        <div class="l-spacer -em2 lang-ja">
           <a href="https://picchio.co.jp/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
-
-
-
+        <div class="l-spacer -em2 lang-en">
+          <a href="https://www.wildlife-picchio.com/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-tw">
+          <a href="https://picchio.co.jp/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-cn">
+          <a href="https://picchio.co.jp/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
+        <div class="l-spacer -em2 lang-ko">
+          <a href="https://picchio.co.jp/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+        </div>
 
       </div>
     </article>

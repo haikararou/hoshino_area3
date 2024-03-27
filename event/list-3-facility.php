@@ -53,7 +53,7 @@ $wp_query = new WP_Query( $args );
                             </div>
                             <div class="p-post-card__text">
                                 <h3 class="p-post-card__title"><?php the_title(); ?></h3>
-                                <?php if(get_field('event_period')): ?><p class="p-post-card__period">⚫︎開催中　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                                <?php if(get_field('event_period')): ?><p class="p-post-card__period">開催中　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                             </div>
                         </article>
                     </a>
@@ -95,7 +95,7 @@ $wp_query = new WP_Query( $args );
                             </div>
                             <div class="p-post-card__text">
                                 <h3 class="p-post-card__title"><?php the_title(); ?></h3>
-                                <?php if(get_field('event_period')): ?><p class="p-post-card__period">⚫︎近日開催　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                                <?php if(get_field('event_period')): ?><p class="p-post-card__period">近日開催　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                             </div>
                         </article>
                     </a>
@@ -157,7 +157,7 @@ $wp_query = new WP_Query( $args );
                             </div>
                             <div class="p-post-card__text">
                                 <h3 class="p-post-card__title"><?php the_title(); ?></h3>
-                                <?php if(get_field('event_period')): ?><p class="p-post-card__period">⚫︎近日開催　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
+                                <?php if(get_field('event_period')): ?><p class="p-post-card__period">近日開催　<span><?php the_field('event_period'); ?></span></p><?php endif; ?>
                                 <?php
                                     $terms4 = get_the_terms($post->ID, 'event_cat');
                                     echo '<p class="p-post-card__cat">';
