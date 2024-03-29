@@ -3354,7 +3354,7 @@ post
 .p-post-list {
   display: -ms-grid;
   display: grid;
-  gap: clamp(48px, 1.27vw + 11.3px, 64px) clamp(16px, 1.27vw + 11.3px, 32px);
+  gap: clamp(24px, 0.64vw + 21.6px, 32px);
 }
 @media screen and (min-width: 960px) {
   .p-post-list {
@@ -4215,6 +4215,7 @@ opening
   background: #FFF;
   border: 1px solid #E8E8D8;
   border-bottom: 0;
+  color: #aaa;
   border-radius: clamp(7px, 0.24vw + 6.1px, 10px) clamp(7px, 0.24vw + 6.1px, 10px) 0 0;
   cursor: pointer;
   font-size: clamp(0.75rem, 0.32vw + 0.675rem, 1rem);
@@ -4223,6 +4224,7 @@ opening
 .business-hours-tab #tab-2.-active,
 .business-hours-tab #tab-3.-active {
   background: #E8E8D8;
+  color: #000;
 }
 
 #div-table01,
@@ -4623,6 +4625,7 @@ post
 .p-entry ul {
   padding-left: 1.3em;
   width: clamp(330px, 86.51vw + 5.6px, 670px);
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -6594,8 +6597,8 @@ facility
 }
 
 .map_pin .pin_09 {
-  margin-top: 1.3%;
-  margin-left: -10.8%;
+  margin-top: 15.3%;
+  margin-left: -9.8%;
 }
 
 .map_pin .pin_10 {
@@ -7147,8 +7150,6 @@ home
   .home .map-area01 {
     padding-top: 48px;
     max-width: auto;
-    padding-left: 4vw;
-    padding-right: 4vw;
     border-top: none;
     display: -webkit-box;
     display: -ms-flexbox;

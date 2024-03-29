@@ -40,7 +40,7 @@
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity#picchio'); ?>" target="_blank">ピッキオ</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity#picchio'); ?>">ピッキオ</a></dt>
                 </div>
                 <div>
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</a></dt>
@@ -55,7 +55,7 @@
                   <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank"><em class="c-button-outerlink">ブレストンコート ユカワタン</em></a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェハングリースポット</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェ ハングリースポット</a></dt>
                 </div>
                 <div>
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a></dt>

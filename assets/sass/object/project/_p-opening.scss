@@ -101,11 +101,13 @@ opening
       background: #FFF;
       border: 1px solid inc.$theme-color-yellow;
       border-bottom: 0;
+      color: #aaa;
       border-radius: inc.size(full, 10px, sp, 7px) inc.size(full, 10px, sp, 7px) 0 0;
       cursor: pointer;
       @include inc.sizingRem(font-size, full, 16px, sp, 12px);
       &.-active {
         background: inc.$theme-color-yellow;
+        color: inc.$theme-color-black;
       }
   }
 

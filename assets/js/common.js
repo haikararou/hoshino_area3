@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (e)=> {
-   $('.js-loading').delay(500).fadeOut();
+   $('.js-loading').delay(1000).fadeOut();
 });
 
 $(window).on("load",function(){

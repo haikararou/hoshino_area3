@@ -51,12 +51,12 @@
           <li><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></li>
           <li><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></li>
 
-          <li><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li>
-          <!-- <li class="lang-ja"><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li>
+          <!-- <li><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li> -->
+          <li class="lang-ja"><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li>
           <li class="lang-en"><a href="https://www.wildlife-picchio.com/" target="_blank">ピッキオ</a></li>
           <li class="lang-tw"><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li>
           <li class="lang-cn"><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li>
-          <li class="lang-ko"><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li> -->
+          <li class="lang-ko"><a href="https://picchio.co.jp/" target="_blank">ピッキオ</a></li>
 
           <li><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</a></li>
           <li><a href="https://www.karuizawachurch.org/" target="_blank">軽井沢高原教会</a></li>
@@ -66,21 +66,21 @@
           <li><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a></li>
           <li><a href="http://www.besso-navi.com/" target="_blank">軽井沢 別荘Navi</a></li>
           <li class="no-arw"></li>
-          <li><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
-          <!-- <li class="lang-ja"><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
+          <!-- <li><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li> -->
+          <li class="lang-ja"><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
           <li class="lang-en"><a href="https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
-          <li class="lang-tw"><a href="https://hoshinoya.com/karuizawa/zhcn/" target="_blank">星のや軽井沢</a></li>
-          <li class="lang-cn"><a href="https://hoshinoya.com/karuizawa/zhtw/" target="_blank">星のや軽井沢</a></li>
-          <li class="lang-ko"><a href="https://hoshinoresorts.com/ko/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li> -->
+          <li class="lang-tw"><a href="https://hoshinoya.com/karuizawa/zhtw/" target="_blank">星のや軽井沢</a></li>
+          <li class="lang-cn"><a href="https://hoshinoya.com/karuizawa/zhcn/" target="_blank">星のや軽井沢</a></li>
+          <li class="lang-ko"><a href="https://hoshinoresorts.com/ko/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
 
           <li><a href="https://www.blestoncourt.com/" target="_blank">軽井沢ホテルブレストンコート</a></li>
 
-          <li><a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
-          <!-- <li class="lang-ja"><a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
+          <!-- <li><a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li> -->
+          <li class="lang-ja"><a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
           <li class="lang-en"><a href="https://hoshinoresorts.com/en/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
-          <li class="lang-tw"><a href="https://hoshinoresorts.com/zh_cn/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
-          <li class="lang-cn"><a href="https://hoshinoresorts.com/zh_tw/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
-          <li class="lang-ko"><a href="https://hoshinoresorts.com/ko/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li> -->
+          <li class="lang-tw"><a href="https://hoshinoresorts.com/zh_tw/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
+          <li class="lang-cn"><a href="https://hoshinoresorts.com/zh_cn/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
+          <li class="lang-ko"><a href="https://hoshinoresorts.com/ko/hotels/beb5karuizawa/" target="_blank">BEB5軽井沢</a></li>
         </ul>
       </nav>
     </div>

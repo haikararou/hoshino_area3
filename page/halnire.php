@@ -26,9 +26,8 @@
 	<section class="l-spacer harunire p-kv__lead">
 		<div class="l-container--primary">
 			<div class="harunire p-kv__lead__inner">
-				<h2 class="c-title-ex-small">軽井沢の日常が流れる<br>森の中の小さな街</h1>
+				<h2 class="c-title-ex-small">軽井沢の日常が流れる<br>森の中の小さな街</h2>
 				<p>「軽井沢の日常」をコンセプトにした、森の中の小さな街。ハルニレの木立の中、湯川の清流沿いに連なる建物を、ウッドデッキでつないでいます。豊かな自然と個性的なお店が、星野エリアでの一日を彩ります。</p>
-			</h2>
 		</div>
 	</section>
 
@@ -46,39 +45,44 @@
         <div class="l-contents--left-title__title">
           <h2 class="c-title-large -vertical">ショップリスト</h2>
           <ul class="c-list-std filter-list">
-          <?php
-                    $numposts = $wpdb->get_var("SELECT count(*) FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'shop'");
-                ?>
-                <?php if (0 < $numposts){
-                    $numposts = number_format($numposts);
-                }
-                ?>
-                    <li class="c-list-std__item active" data-filter="all"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて(<?php echo $numposts; ?>)</span></li>
-                    <?php
-					$terms = get_terms('shop_cat');
-                    $args = array(
-                      'exclude' => array(60), //除外したいタームのIDを指定。
-                    );
-                    $terms = get_terms('shop_cat', $args);
-                    foreach ($terms as $term ) {
-					$des_list .= '<li class="c-list-std__item '. $term-> slug .'" data-filter="'. $term-> slug .'"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
-					$des_list .= $term->name .'（'.$term->count.'）</span></li>';
-					}
-					echo $des_list; ?>
-          
-            <!-- <li class="c-list-std__item active" data-filter="all"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて</span></li>
-            <?php
-              $terms = get_terms('shop_cat');
-              $args = array(
-                'exclude' => array(60), //除外したいタームのIDを指定。
-              );
-              $terms = get_terms('shop_cat', $args);
-              foreach ($terms as $term ) {
-                $des_list .= '<li class="c-list-std__item '. $term-> slug .'" data-filter="'. $term-> slug .'"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
-                $des_list .= $term->name . '</span></li>';
-              }
-              echo $des_list;
-            ?> -->
+
+
+
+<?php $query = new WP_Query(
+  array(
+  'post_type' => 'shop', // カスタム投稿タイプのスラッグを指定
+  'posts_per_page' => -1, // 全件表示
+  'tax_query' => array(
+    array(
+    'taxonomy' => 'shop_cat', // タクソノミースラッグを指定
+    'field' => 'slug',
+    'terms' => 'halnire', // タームスラッグを指定
+    ),
+  ),
+  ) );
+?>
+<li class="c-list-std__item active" data-filter="all"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて(<?php echo $query->found_posts; ?>)</span></li>
+
+<?php
+$terms = get_terms('shop_cat');
+$args = array(
+'exclude' => array(60), //除外したいタームのIDを指定。
+);
+$terms = get_terms('shop_cat', $args);
+foreach ($terms as $term ) {
+$des_list .= '<li class="c-list-std__item '. $term-> slug .'" data-filter="'. $term-> slug .'"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
+$des_list .= $term->name;
+$des_list .= '（';
+$des_list .= $;
+$des_list .= $term-> slug;
+$des_list .= _query->found_posts;
+$des_list .= '）</span></li>';
+}
+echo $des_list; ?>
+
+
+
+
           </ul>
         </div>
         <div class="l-contents--left-title__conts">

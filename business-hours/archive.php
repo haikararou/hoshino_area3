@@ -81,7 +81,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/izumiya/" target="_blank"><div class="c-button-arrow">和泉屋 傳兵衛</a><span>菓子処</span></div></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/izumiya/"><div class="c-button-arrow">和泉屋 傳兵衛</a><span>菓子処</span></div></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'izumiya';
@@ -89,7 +89,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ilsogno/" target="_blank"><div class="c-button-arrow">イル・ソーニョ</a><span>イタリアン</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ilsogno/"><div class="c-button-arrow">イル・ソーニョ</a><span>イタリアン</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'ilsogno';
@@ -97,7 +97,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/garandou/" target="_blank"><div class="c-button-arrow">我蘭憧</a><span>木製品専門店</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/garandou/"><div class="c-button-arrow">我蘭憧</a><span>木製品専門店</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'garandou';
@@ -105,7 +105,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kawakamian/" target="_blank"><div class="c-button-arrow">せきれい橋 川上庵</a><span>そば・美酒・一品料理</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kawakamian/"><div class="c-button-arrow">川上庵</a><span>そば・美酒・一品料理</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'kawakamian';
@@ -113,7 +113,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kisurin/" target="_blank"><div class="c-button-arrow">希須林</a><span>中国家庭料理</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kisurin/"><div class="c-button-arrow">希須林</a><span>中国家庭料理</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'kisurin';
@@ -121,7 +121,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ju-kan/" target="_blank"><div class="c-button-arrow">ギャラリー樹環</a><span>セレクトギャラリー</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ju-kan/"><div class="c-button-arrow">ギャラリー樹環</a><span>セレクトギャラリー</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'ju-kan';
@@ -129,7 +129,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/crafyglanta/" target="_blank"><div class="c-button-arrow">CRAFY・glänta</a><span>手作り指輪工房</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/crafyglanta/"><div class="c-button-arrow">CRAFY・glänta</a><span>手作り指輪工房</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'crafyglanta';
@@ -137,7 +137,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kokoperi/" target="_blank"><div class="c-button-arrow">Karuizawa Vegetable ココぺリ</a><span>農産物・食料品・飲料</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kokoperi/"><div class="c-button-arrow">ココぺリ</a><span>農産物・食料品・飲料</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'kokoperi';
@@ -145,7 +145,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/sajilocafe/" target="_blank"><div class="c-button-arrow">サジロカフェ リンデン</a><span>カフェ・スパイス料理・雑貨</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/sajilocafe/"><div class="c-button-arrow">サジロカフェ</a><span>カフェ・スパイス料理・雑貨</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'sajilocafe';
@@ -153,7 +153,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/sawamura/" target="_blank"><div class="c-button-arrow">沢村</a><span>ベーカリー＆レストラン</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/sawamura/"><div class="c-button-arrow">沢村</a><span>ベーカリー＆レストラン</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'sawamura';
@@ -161,7 +161,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/cercle/" target="_blank"><div class="c-button-arrow">CERCLE wine&deli</a><span>レストラン＆デリ・ワイン</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/cercle/"><div class="c-button-arrow">CERCLE</a><span>レストラン＆デリ・ワイン</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'cercle';
@@ -169,7 +169,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/team7/" target="_blank"><div class="c-button-arrow">TEAM7 軽井沢</a><span>自然素材の家具・寝具・衣類</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/team7/"><div class="c-button-arrow">TEAM7</a><span>自然素材の家具・寝具・衣類</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'team7';
@@ -177,7 +177,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/natur/" target="_blank"><div class="c-button-arrow">NATUR TERRACE</a><span>北欧インテリア・手工芸</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/natur/"><div class="c-button-arrow">NATUR</a><span>北欧インテリア・手工芸</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'natur';
@@ -185,7 +185,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/nagaifarm/" target="_blank"><div class="c-button-arrow">HARVEST NAGAI FARM</a><span>ジェラート</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/nagaifarm/"><div class="c-button-arrow">NAGAI FARM</a><span>ジェラート</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'nagaifarm';
@@ -193,7 +193,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/maruyamacoffee/" target="_blank"><div class="c-button-arrow">丸山珈琲</a><span>カフェ＆ブックス</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/maruyamacoffee/"><div class="c-button-arrow">丸山珈琲</a><span>カフェ＆ブックス</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'maruyamacoffee';
@@ -201,7 +201,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/moriasobi/" target="_blank"><div class="c-button-arrow">モリアソビ</a><span>アウトドアリビング&ファニチャー</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/moriasobi/"><div class="c-button-arrow">モリアソビ</a><span>アウトドアリビング&ファニチャー</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'moriasobi';
@@ -247,7 +247,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/tombo-no-yu/" target="_blank"><div class="c-button-arrow">星野温泉 トンボの湯</a></div></th>
+                        <th class="p-opening--fixed02"><a href="<?php echo home_url(); ?>/tombo-no-yu/"><div class="c-button-arrow">星野温泉 トンボの湯</a></div></th>
                         <?php
                             global $shop_slug;
                             $shop_slug = 'tombo-no-yu';
@@ -255,7 +255,7 @@
                         ?>
                     </tr>
                     <tr>
-                        <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/sonmin-shokudo/" target="_blank"><div class="c-button-arrow">村民食堂</a></div></th>
+                        <th class="p-opening--fixed02"><a href="<?php echo home_url(); ?>/sonmin-shokudo/"><div class="c-button-arrow">村民食堂</a></div></th>
                         <?php
                             global $shop_slug;
                             $shop_slug = 'sonmin-shokudo';
@@ -263,7 +263,7 @@
                         ?>
                     </tr>
                     <tr>
-                        <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/hungryspot/" target="_blank"><div class="c-button-arrow">カフェ ハングリースポット</a></div></th>
+                        <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/hungryspot/"><div class="c-button-arrow">カフェ ハングリースポット</a></div></th>
                         <?php
                             global $shop_slug;
                             $shop_slug = 'hungryspot';
@@ -271,7 +271,7 @@
                         ?>
                     </tr>
                     <tr>
-                        <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ikarucafe/" target="_blank"><div class="c-button-arrow">イカルカフェ</a></div></th>
+                        <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/ikarucafe/"><div class="c-button-arrow">イカルカフェ</a></div></th>
                         <?php
                             global $shop_slug;
                             $shop_slug = 'ikarucafe';
@@ -279,7 +279,7 @@
                         ?>
                     </tr>
                     <tr>
-                        <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop'); ?>/kera-ike-icerink/" target="_blank"><div class="c-button-arrow">ケラ池スケートリンク</a></div></th>
+                        <th class="p-opening--fixed02"><a href="<?php echo home_url(); ?>/kera-ike-icerink/"><div class="c-button-arrow">ケラ池スケートリンク</a></div></th>
                         <?php
                             global $shop_slug;
                             $shop_slug = 'kera-ike-icerink';
@@ -298,19 +298,19 @@
             </section>
             <table class="p-opening--table">
                 <tr>
-                    <th><a href="https://yukawatan.blestoncourt.com/" target="_blank"><div class="c-button-arrow c-button-outerlink">ブレストンコート　ユカワタン</div></th>
+                    <th><a href="https://yukawatan.blestoncourt.com/" target="_blank"><div class="c-button-arrow c-button-outerlink">ブレストンコート　ユカワタン</div></a></th>
                 </tr>
                 <tr>
                     <th><a href="https://picchio.co.jp/" target="_blank"><div class="c-button-arrow c-button-outerlink">ピッキオ</div></th>
                 </tr>
                 <tr>
-                    <th><a href="http://www.besso-navi.com/" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢 別荘Navi</div></th>
+                    <th><a href="http://www.besso-navi.com/" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢 別荘Navi</div></a></th>
                 </tr>
                 <tr>
-                    <th><a href="https://www.karuizawachurch.org/" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢高原教会</div></th>
+                    <th><a href="https://www.karuizawachurch.org/" target="_blank"><div class="c-button-arrow c-button-outerlink">軽井沢高原教会</div></a></th>
                 </tr>
                 <tr>
-                    <th><a href="https://www.stonechurch.jp/" target="_blank"><div class="c-button-arrow c-button-outerlink">石の教会 内村鑑三記念堂</div></th>
+                    <th><a href="https://www.stonechurch.jp/" target="_blank"><div class="c-button-arrow c-button-outerlink">石の教会 内村鑑三記念堂</div></a></th>
                 </tr>
             </table>
         </div>

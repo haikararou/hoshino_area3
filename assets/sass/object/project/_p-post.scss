@@ -5,8 +5,8 @@ post
 -----------------------------------------------------*/
 .p-post-list {
   display: grid;
-  //@include inc.sizing(gap, full, 32px, sp, 16px);
-  gap: clamp(48px, 1.27vw + 11.3px, 64px) clamp(16px, 1.27vw + 11.3px, 32px);
+  @include inc.sizing(gap, full, 32px, sp, 24px);
+  //gap: clamp(48px, 1.27vw + 11.3px, 64px) clamp(12px, 1.27vw + 8px, 32px);
   
   @include inc.mq(lap) {
     grid-template-columns: repeat(3, minmax(0,1fr));

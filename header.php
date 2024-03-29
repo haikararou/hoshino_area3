@@ -5,6 +5,15 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+<!-- リマーケティング タグの Google コード -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWQFJF4');</script>
+<!-- End Google Tag Manager -->
+<!-- リマーケティング タグの Google コード -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
   <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?ISugzJK~YHU%3D&box=mVcnX52C2Ng%3D&aa=1&ab=2"></script>
@@ -45,7 +54,6 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/modaal.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/modaal.css">
-
 </head>
 
 <body <?php body_class('l-body'); ?> id="js-body">
