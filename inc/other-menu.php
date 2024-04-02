@@ -7,7 +7,7 @@
   <li class="c-other-menu__item"><a href="<?php echo home_url('/contact'); ?>">お問い合わせ</a></li>
   <li class="c-other-menu__item lang-ja"><a href="https://www.hoshinoresorts.com/privacy/" target="_blank">プライバシーポリシー</a></li>
   <li class="c-other-menu__item lang-en"><a href="https://www.hoshinoresorts.com/en/privacy/?redirect=yes" target="_blank">プライバシーポリシー</a></li>
-  <li class="c-other-menu__item lang-tw"><a href="https://www.hoshinoresorts.com/zh/privacy/?redirect=yes" target="_blank">プライバシーポリシー</a></li>
-  <li class="c-other-menu__item lang-cn"><a href="https://www.hoshinoresorts.com/ch/privacy/?redirect=yes" target="_blank">プライバシーポリシー</a></li>
+  <li class="c-other-menu__item lang-tw"><a href="https://www.hoshinoresorts.com/ch/privacy/?redirect=yes" target="_blank">プライバシーポリシー</a></li>
+  <li class="c-other-menu__item lang-cn"><a href="https://www.hoshinoresorts.com/zh/privacy/?redirect=yes" target="_blank">プライバシーポリシー</a></li>
   <li class="c-other-menu__item lang-ko"><a href="https://www.hoshinoresorts.com/kr/privacy/?redirect=yes" target="_blank">プライバシーポリシー</a></li>
 </ul>

@@ -48,6 +48,7 @@
 
 
 
+
 <?php $query = new WP_Query(
   array(
   'post_type' => 'shop', // カスタム投稿タイプのスラッグを指定
@@ -63,23 +64,11 @@
 ?>
 <li class="c-list-std__item active" data-filter="all"><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-all.svg" width="40" height="40" class="icon -shopicon">すべて(<?php echo $query->found_posts; ?>)</span></li>
 
-<?php
-$terms = get_terms('shop_cat');
-$args = array(
-'exclude' => array(60), //除外したいタームのIDを指定。
-);
-$terms = get_terms('shop_cat', $args);
-foreach ($terms as $term ) {
-$des_list .= '<li class="c-list-std__item '. $term-> slug .'" data-filter="'. $term-> slug .'"><span class="c-text-icon"><img src="'.get_template_directory_uri().'/assets/img/common/icon-'. $term-> slug .'.svg" width="40" height="40" class="icon -shopicon">';
-$des_list .= $term->name;
-$des_list .= '（';
-$des_list .= $;
-$des_list .= $term-> slug;
-$des_list .= _query->found_posts;
-$des_list .= '）</span></li>';
-}
-echo $des_list; ?>
-
+<li class="c-list-std__item restaurant" data-filter="restaurant"><span class="c-text-icon"><img src="https://www.hoshino-area.jp/wp-content/themes/hoshino-area/assets/img/common/icon-restaurant.svg" width="40" height="40" class="icon -shopicon">レストラン（6）</span></li>
+<li class="c-list-std__item cafe" data-filter="cafe"><span class="c-text-icon"><img src="https://www.hoshino-area.jp/wp-content/themes/hoshino-area/assets/img/common/icon-cafe.svg" width="40" height="40" class="icon -shopicon">カフェ（4）</span></li>
+<li class="c-list-std__item shop" data-filter="shop"><span class="c-text-icon"><img src="https://www.hoshino-area.jp/wp-content/themes/hoshino-area/assets/img/common/icon-shop.svg" width="40" height="40" class="icon -shopicon">ショップ（10）</span></li>
+<li class="c-list-std__item pet" data-filter="pet"><span class="c-text-icon"><img src="https://www.hoshino-area.jp/wp-content/themes/hoshino-area/assets/img/common/icon-pet.svg" width="40" height="40" class="icon -shopicon">ペット同伴可（11）</span></li>
+<li class="c-list-std__item takeout" data-filter="takeout"><span class="c-text-icon"><img src="https://www.hoshino-area.jp/wp-content/themes/hoshino-area/assets/img/common/icon-takeout.svg" width="40" height="40" class="icon -shopicon">テイクアウト可（9）</span></li>
 
 
 

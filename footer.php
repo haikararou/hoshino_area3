@@ -97,11 +97,11 @@
         <p class="l-footer__copyright">Copyright &copy; All rights reserved. Hoshino Resorts Inc.</p>
       </div>
       <div class="l-footer__logo lang-tw">
-        <a href="https://www.hoshinoresorts.com/zh/" class="logo" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
+        <a href="https://www.hoshinoresorts.com/ch/" class="logo" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
         <p class="l-footer__copyright">Copyright &copy; All rights reserved. Hoshino Resorts Inc.</p>
       </div>
       <div class="l-footer__logo lang-cn">
-        <a href="https://www.hoshinoresorts.com/ch/" class="logo" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
+        <a href="https://www.hoshinoresorts.com/zh/" class="logo" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-en.png" width="170" height="17" alt="Hoshino resorts"></a>
         <p class="l-footer__copyright">Copyright &copy; All rights reserved. Hoshino Resorts Inc.</p>
       </div>
       <div class="l-footer__logo lang-ko">

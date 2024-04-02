@@ -93,11 +93,12 @@
             </div>
             <div class="l-contents-2column -mgB-l">
               <div class="l-contents-2column__block -w-1_2">
+                <h3 class="c-title-small line2 area-sp"><span class="tag-b -black000">軽井沢駅 → 星野エリア</span></h3>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/bus_01.svg">
                 <a href="https://www.google.com/maps/place/36%C2%B020'35.5%22N+138%C2%B038'10.2%22E/@36.3431864,138.6361618,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3431864!4d138.6361618?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <h3 class="c-title-small line2"><span class="tag-b -black000">軽井沢駅 → 星野エリア</span><br>JR軽井沢駅 北口1番のりば</h3>
+                <h3 class="c-title-small line2"><span class="tag-b -black000 area-pc">軽井沢駅 → 星野エリア</span><br class="sp_b">JR軽井沢駅 北口1番のりば</h3>
                 <p>1番のりばから発車するバスは全て「星野温泉 トンボの湯」に停車します。</p>
                 <ul class="a-list">
                   <?php while (have_rows('bus_jr')) : the_row();
@@ -119,11 +120,12 @@
             </div>
             <div class="l-contents-2column -mgB">
               <div class="l-contents-2column__block -w-1_2">
+                <h3 class="c-title-small line2 area-sp"><span class="tag-b -black000">星野エリア → 軽井沢駅</span></h3>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/bus_02.svg">
                 <a href="https://www.google.com/maps/place/36%C2%B021'40.1%22N+138%C2%B035'19.4%22E/@36.3611238,138.5887211,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3611238!4d138.5887211?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
-                <h3 class="c-title-small line2"><span class="tag-b -black000">星野エリア → 軽井沢駅</span><br>星野温泉 トンボの湯 バス停</h3>
+                <h3 class="c-title-small line2"><span class="tag-b -black000 area-pc">星野エリア → 軽井沢駅</span><br class="sp_b">星野温泉 トンボの湯 バス停</h3>
                 <ul class="a-list">
                   <?php while (have_rows('bus_onsen')) : the_row();
                   while (have_rows('pdf')) : the_row();

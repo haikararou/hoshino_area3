@@ -43,8 +43,7 @@ $news_query = new WP_Query( $args );
                                 endforeach;
                                 } ?>
                                 <time class="p-post-card__date"><?php the_time('Y.m.d') ?></time>
-                                <h3 class="p-post-card__title"><?php the_title(); ?></h3>
-                                <?php if(get_field('event_period')): ?><span><?php the_field('event_period'); ?></span><?php endif; ?>
+                                <h3 class="p-post-card__title"><?php the_title(); ?><?php if(get_field('event_period')): ?><span><?php the_field('event_period'); ?></span><?php endif; ?></h3>
                                 <?php
                                 $terms = get_the_terms($post->ID, 'news_cat');
                                 echo '<ul class="p-post-card__tag">';
