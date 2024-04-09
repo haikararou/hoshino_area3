@@ -4252,7 +4252,7 @@ opening
 }
 
 th.p-opening--fixed02 {
-  width: 40% !important;
+  width: 20% !important;
   padding-left: 0;
 }
 
@@ -4273,9 +4273,6 @@ th.p-opening--fixed02 {
   }
   .tab-3 {
     display: table-cell;
-  }
-  th.p-opening--fixed02 {
-    width: 25% !important;
   }
 }
 .tab-cnt00 {
@@ -4312,6 +4309,14 @@ th.p-opening--fixed02 {
 }
 .tab-cnt01 li {
   width: 100%;
+}
+
+.p-opening--fixed01 {
+  width: 20% !important;
+}
+
+.p-opening--fixed04 {
+  width: auto !important;
 }
 
 @media print {
@@ -5347,10 +5352,12 @@ keraike
 }
 .keraike.p-kv__lead .l-container--primary {
   height: 80vh;
+  min-height: 600px;
 }
 @media screen and (min-width: 960px) {
   .keraike.p-kv__lead .l-container--primary {
     height: 90vh;
+    min-height: 660px;
   }
 }
 .keraike.p-kv__lead .l-container--primary .p-kv__lead__inner {

@@ -76,8 +76,10 @@ keraike
 	}
 	.l-container--primary {
 		height: 80vh;
+		min-height: 600px;
 		@include inc.mq(lap) {
 			height: 90vh;
+			min-height: 660px;
 		}
 		.p-kv__lead__inner {
 			padding-top: 7vw;

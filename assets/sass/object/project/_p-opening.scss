@@ -133,7 +133,8 @@ opening
   display: none;
 }
 th.p-opening--fixed02 {
-  width: 40%!important;
+  //width: 40%!important;
+  width: 20%!important;
   padding-left: 0;
 }
 @include inc.mq(tab) {
@@ -155,9 +156,11 @@ th.p-opening--fixed02 {
     display: table-cell;
   }
   th.p-opening--fixed02 {
-    width: 25%!important;
+    //width: 25%!important;
   }
 }
+
+
 
 .tab-cnt00 {
   display: flex;
@@ -189,6 +192,15 @@ th.p-opening--fixed02 {
 }
 
 
+.p-opening--fixed01 {
+  width: 20%!important;
+}
+.p-opening--fixed04 {
+  width: auto!important;
+}
+.p-opening--fixed04 + .p-opening--fixed04 {
+  // max-width: 40%!important;
+}
 
 
 @media print{
