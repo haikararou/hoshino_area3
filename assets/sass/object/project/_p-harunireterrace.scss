@@ -61,6 +61,7 @@ harunireterrace
 }
 
 .harunire.p-kv__lead {
+	overflow: hidden;
 	position: relative;
 	color: inc.$base-color;
 	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(25,34,3,1) 20%, rgba(25,34,3,1) 100%);
@@ -94,9 +95,9 @@ harunireterrace
 		bottom: 18vw
 	}
 	.l-container--primary {
-		height: 80vh;
+		height: 90vh;
 		@include inc.mq(lap) {
-			height: 90vh;
+			height: 95vh;
 		}
 		.p-kv__lead__inner {
 			padding-top: 7vw;

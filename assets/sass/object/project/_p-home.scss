@@ -119,7 +119,7 @@ home
       background: url(../img/top/illust_01.png) no-repeat 100% 0% / 23vw;
     }
     @include inc.mq(lap) {
-      background: url(../img/top/illust_01.png) no-repeat 100% 10px / 14vw;
+      background: url(../img/top/illust_01.png) no-repeat 100% 10px / 180px;
     }
     h2 {
       @include inc.sizingRem(font-size, full, 46px, sp, 24px);

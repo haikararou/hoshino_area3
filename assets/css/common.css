@@ -6910,6 +6910,7 @@ harunireterrace
 }
 
 .harunire.p-kv__lead {
+  overflow: hidden;
   position: relative;
   color: #FFF;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(20%, rgb(25, 34, 3)), to(rgb(25, 34, 3)));
@@ -6950,11 +6951,11 @@ harunireterrace
   bottom: 18vw;
 }
 .harunire.p-kv__lead .l-container--primary {
-  height: 80vh;
+  height: 90vh;
 }
 @media screen and (min-width: 960px) {
   .harunire.p-kv__lead .l-container--primary {
-    height: 90vh;
+    height: 95vh;
   }
 }
 .harunire.p-kv__lead .l-container--primary .p-kv__lead__inner {
@@ -7222,7 +7223,7 @@ home
 }
 @media screen and (min-width: 960px) {
   .p-home_sansaku {
-    background: url(../img/top/illust_01.png) no-repeat 100% 10px/14vw;
+    background: url(../img/top/illust_01.png) no-repeat 100% 10px/180px;
   }
 }
 .p-home_sansaku h2 {
