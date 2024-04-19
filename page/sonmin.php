@@ -40,12 +40,12 @@
 
 <section class="-sonmin-bg lead-end">
 
-	<?php if(have_rows('news')): ?>
+	<?php if(have_rows('news',117)): ?>
 	<section class="l-spacer -medium -both p-sonmin__news">
 		<div class="l-container--primary">
 			<h2 class="c-title-ex-small">村民食堂からの<br class="sp_b">お知らせ</h2>
 			<ul>
-			<?php while(have_rows('news')): the_row(); ?>
+			<?php while(have_rows('news',117)): the_row(); ?>
 				<li><?php the_sub_field('news_conts'); ?></li>
 			<?php endwhile; ?>
 			</ul>
@@ -55,7 +55,7 @@
 
 	<?php $title ="村民食堂の"; get_template_part('event/list-3-facility'); ?>
 
-	<?php if(have_rows('menu')): ?>
+	<?php if(have_rows('menu',117)): ?>
 	<section class="l-spacer -medium -both c-border-t l-contents--ribbon-title">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title -ribbon">
@@ -65,7 +65,7 @@
 				</div>
 				<?php endif; ?>
 				<div class="l-contents--left-title__conts">
-				<?php while(have_rows('menu')): the_row(); ?>
+				<?php while(have_rows('menu',117)): the_row(); ?>
 					<section class="l-contents-2column -pc-rl">
 						<div class="l-contents-2column__block -w-1_2--right2">
 							<?php if(get_sub_field('menu_img')) :?><img src="<?php the_sub_field('menu_img'); ?>"><?php endif; ?>
@@ -86,12 +86,12 @@
 	</section>
 	<?php endif; ?>
 
-	<?php if(have_rows('gallery')): ?>
+	<?php if(have_rows('gallery',117)): ?>
 	<section class="l-spacer -medium -both">
 		<div class="l-container--primary-scroll">
 			<div class="swiper p-gallery-slider js-gallery-slider l-container--primary-scroll__inner">
 				<div class="swiper-wrapper">
-				<?php while(have_rows('gallery')): the_row(); ?>
+				<?php while(have_rows('gallery',117)): the_row(); ?>
 					<div class="swiper-slide p-gallery-slider__slide">
 					<?php if(get_sub_field('gallery_img')) :?><img class="p-gallery-slider__img" src="<?php the_sub_field('gallery_img'); ?>"><?php endif; ?>
 						<?php if(get_sub_field('gallery_caption')) :?><p class="p-gallery-slider__caption"><?php the_sub_field('gallery_caption'); ?></p><?php endif; ?>

@@ -50,18 +50,17 @@
 				</ul>
 				<?php endif; ?>
 			</div>
-			
 		</div>
 	</section>
 
 	<?php $title ="ケラ池の"; get_template_part('event/list-3-facility'); ?>
 
-	<?php if(have_rows('feature')): ?>
+	<?php if(have_rows('feature',119)): ?>
 	<?php the_sub_field('sub_field_name'); ?>
 	<section class="l-spacer -medium -both c-border-t p-keraike__feature">
 		<div class="l-container--primary">
 			<h2 class="c-title-large">氷上に感じる季節の変化</h2>
-			<?php $i=1; while(have_rows('feature')): the_row(); ?>
+			<?php $i=1; while(have_rows('feature',119)): the_row(); ?>
 			<div class="l-spacer -medium count0<?php echo $i; ?>">
 				<article class="l-contents-2column <?php if ($i %2 == 0): ?>-pc-rl<?php else:?><?php endif; ?>">
 					<div class="l-contents-2column__block -w-1_2 feature_img">
@@ -81,8 +80,8 @@
 	</section>
 	<?php endif; ?>
 
-	<?php if(have_rows('rental')): ?>
-	<?php while(have_rows('rental')): the_row(); ?>
+	<?php if(have_rows('rental',119)): ?>
+	<?php while(have_rows('rental',119)): the_row(); ?>
 	<section class="l-contents-block__wrap p-keraike__notice">
 		<div class="l-contents-block c-bg-border">
 			<div class="l-contents-block__inner">
@@ -109,7 +108,7 @@
 
 
 
-	<?php if(have_rows('menu')): ?>
+	<?php if(have_rows('menu',119)): ?>
 	<section class="l-spacer -medium -both c-border-t l-contents--ribbon-title">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title -ribbon">
@@ -119,7 +118,7 @@
 				</div>
 				<?php endif; ?>
 				<div class="l-contents--left-title__conts">
-				<?php while(have_rows('menu')): the_row(); ?>
+				<?php while(have_rows('menu',119)): the_row(); ?>
 					<section class="l-contents-2column -pc-rl">
 						<div class="l-contents-2column__block -w-1_2--right2">
 							<?php if(get_sub_field('menu_img')) :?><img src="<?php the_sub_field('menu_img'); ?>"><?php endif; ?>
@@ -140,12 +139,12 @@
 	</section>
 	<?php endif; ?>
 
-	<?php if(have_rows('gallery')): ?>
+	<?php if(have_rows('gallery',119)): ?>
 	<section class="l-spacer -medium -both">
 		<div class="l-container--primary-scroll">
 			<div class="swiper p-gallery-slider js-gallery-slider l-container--primary-scroll__inner">
 				<div class="swiper-wrapper">
-				<?php while(have_rows('gallery')): the_row(); ?>
+				<?php while(have_rows('gallery',119)): the_row(); ?>
 					<div class="swiper-slide p-gallery-slider__slide">
 					<?php if(get_sub_field('gallery_img')) :?><img class="p-gallery-slider__img" src="<?php the_sub_field('gallery_img'); ?>"><?php endif; ?>
 						<?php if(get_sub_field('gallery_caption')) :?><p class="p-gallery-slider__caption"><?php the_sub_field('gallery_caption'); ?></p><?php endif; ?>
@@ -160,8 +159,8 @@
 
 
 
-	<?php if(have_rows('fun')): ?>
-	<?php while(have_rows('fun')): the_row(); ?>
+	<?php if(have_rows('fun',119)): ?>
+	<?php while(have_rows('fun',119)): the_row(); ?>
 	<section class="c-bg-yellow l-contents-block__wrap">
 		<div class="l-contents-block c-bg-white">
 			<div class="l-contents-block__inner">

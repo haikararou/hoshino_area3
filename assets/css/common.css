@@ -4115,6 +4115,7 @@ opening
 .p-opening--table {
   width: 100%;
   border-top: 1px solid #E2E2B9;
+  table-layout: fixed;
 }
 @media screen and (min-width: 520px) {
   .p-opening--table {

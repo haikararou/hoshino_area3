@@ -22,29 +22,20 @@
 			<ul class="c-list-kome">
 				<li class="c-list-kome__item">ご宿泊・ご婚礼につきましては以下よりお問い合わせください<br>
 
-				<!-- <a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>
-				　｜　<a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a> -->
-
-
 				<div class="lang-ja">
-					<a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>
-				　｜　<a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
+					<a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/inquiry/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>　｜　<a href="https://hoshinoresorts.com/ja/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
 				</div>
 				<div class="lang-en">
-					<a href="https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>
-				　｜　<a href="https://hoshinoresorts.com/en/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
+					<a href="https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/inquiry/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>　｜　<a href="https://hoshinoresorts.com/en/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
 				</div>
 				<div class="lang-tw">
-					<a href="https://hoshinoresorts.com/zh_tw/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>
-				　｜　<a href="https://hoshinoresorts.com/zh_tw/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
+					<a href="https://hoshinoresorts.com/zh_tw/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a><br><a href="https://www.blestoncourt.com/inquiry/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a><br><a href="https://hoshinoresorts.com/zh_tw/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
 				</div>
 				<div class="lang-cn">
-					<a href="https://hoshinoresorts.com/zh_cn/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>
-				　｜　<a href="https://hoshinoresorts.com/zh_cn/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
+					<a href="https://hoshinoresorts.com/zh_cn/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a><br><a href="https://www.blestoncourt.com/inquiry/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a><br><a href="https://hoshinoresorts.com/zh_cn/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
 				</div>
 				<div class="lang-ko">
-					<a href="https://hoshinoresorts.com/ko/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>
-				　｜　<a href="https://hoshinoresorts.com/ko/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
+					<a href="https://hoshinoresorts.com/ko/hotels/hoshinoyakaruizawa/" target="_blank" class="c-text-underline">星のや軽井沢</a>　｜　<a href="https://www.blestoncourt.com/inquiry/" target="_blank" class="c-text-underline">軽井沢ホテルブレストンコート</a>　｜　<a href="https://hoshinoresorts.com/ko/hotels/beb5karuizawa/" target="_blank" class="c-text-underline">BEB5軽井沢</a>
 				</div>
 
 				</li>

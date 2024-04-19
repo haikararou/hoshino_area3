@@ -39,12 +39,12 @@
 
 <section class="-tombo-bg lead-end">
 
-	<?php if(have_rows('news')): ?>
+	<?php if(have_rows('news',115)): ?>
 	<section class="l-spacer -medium -both p-tombo__news">
 		<div class="l-container--primary">
 			<h2 class="c-title-ex-small">トンボの湯からのお知らせ</h2>
 			<ul>
-			<?php while(have_rows('news')): the_row(); ?>
+			<?php while(have_rows('news',115)): the_row(); ?>
 				<li><?php the_sub_field('news_conts'); ?></li>
 			<?php endwhile; ?>
 			</ul>
@@ -54,12 +54,12 @@
 
 	<?php $title ="トンボの湯の"; get_template_part('event/list-3-facility'); ?>
 
-	<?php if(have_rows('feature')): ?>
+	<?php if(have_rows('feature',115)): ?>
 	<?php the_sub_field('sub_field_name'); ?>
 	<section class="l-spacer -medium -both c-border-t p-tombo__feature">
 		<div class="l-container--primary">
 			<h2 class="c-title-large">温泉の特徴</h2>
-			<?php $i=1; while(have_rows('feature')): the_row(); ?>
+			<?php $i=1; while(have_rows('feature',115)): the_row(); ?>
 			<div class="l-spacer -medium count0<?php echo $i; ?>">
 				<article class="l-contents-2column <?php if ($i %2 == 1): ?><?php else:?>-pc-rl<?php endif; ?>">
 					<div class="l-contents-2column__block -w-1_2 feature_img">
@@ -79,18 +79,18 @@
 	</section>
 	<?php endif; ?>
 
-	<?php if(have_rows('rental')): ?>
-	<?php while(have_rows('rental')): the_row(); ?>
+	<?php if(have_rows('rental',115)): ?>
+	<?php while(have_rows('rental',115)): the_row(); ?>
 	<section class="l-contents-block__wrap  p-tombo__notices">
 		<div class="l-contents-block c-bg-border">
 			<div class="l-contents-block__inner">
 				<div class="l-container--primary">
 					<article class="l-contents-2column">
 						<h2 class="c-title-medium"><?php the_sub_field('rental_title'); ?></h2>
-						<?php if(have_rows('rental_list')): ?>
+						<?php if(have_rows('rental_list',115)): ?>
 						<div class="l-contents--left-title__conts">
 							<ul class="c-list-dot">
-							<?php while(have_rows('rental_list')): the_row(); ?>
+							<?php while(have_rows('rental_list',115)): the_row(); ?>
 								<li class="c-list-dot__item"><?php the_sub_field('rental_list_li'); ?></li>
 							<?php endwhile; ?>
 							</ul>
@@ -104,7 +104,7 @@
 	<?php endwhile; ?>
 	<?php endif; ?>
 
-	<?php if(have_rows('menu')): ?>
+	<?php if(have_rows('menu',115)): ?>
 	<section class="l-spacer -medium -both c-border-t l-contents--ribbon-title">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title -ribbon">
@@ -114,7 +114,7 @@
 				</div>
 				<?php endif; ?>
 				<div class="l-contents--left-title__conts">
-				<?php while(have_rows('menu')): the_row(); ?>
+				<?php while(have_rows('menu',115)): the_row(); ?>
 					<section class="l-contents-2column -pc-rl">
 						<div class="l-contents-2column__block -w-1_2--right2">
 							<?php if(get_sub_field('menu_img')) :?><img src="<?php the_sub_field('menu_img'); ?>"><?php endif; ?>
@@ -135,12 +135,12 @@
 	</section>
 	<?php endif; ?>
 
-	<?php if(have_rows('gallery')): ?>
+	<?php if(have_rows('gallery',115)): ?>
 	<section class="l-spacer -medium -both">
 		<div class="l-container--primary-scroll">
 			<div class="swiper p-gallery-slider js-gallery-slider l-container--primary-scroll__inner">
 				<div class="swiper-wrapper">
-				<?php while(have_rows('gallery')): the_row(); ?>
+				<?php while(have_rows('gallery',115)): the_row(); ?>
 					<div class="swiper-slide p-gallery-slider__slide">
 					<?php if(get_sub_field('gallery_img')) :?><img class="p-gallery-slider__img" src="<?php the_sub_field('gallery_img'); ?>"><?php endif; ?>
 						<?php if(get_sub_field('gallery_caption')) :?><p class="p-gallery-slider__caption"><?php the_sub_field('gallery_caption'); ?></p><?php endif; ?>
@@ -152,7 +152,7 @@
 	</section>
 	<?php endif; ?>
 
-	<?php if(have_rows('onsen_info')): ?>
+	<?php if(have_rows('onsen_info',115)): ?>
 	<section class="l-spacer -large -both c-border-t p-tombo__intro">
 		<div class="l-container--primary">
 			<article class="l-contents--left-title">
@@ -161,7 +161,7 @@
 					<div class="l-contents-2column reverse">
 						<div class="l-contents-2column__block -w-1_2--right">
 							<dl class="c-list-dl">
-							<?php while(have_rows('onsen_info')): the_row(); ?>
+							<?php while(have_rows('onsen_info',115)): the_row(); ?>
 								<dt><?php the_sub_field('onsen_info_title'); ?></dt>
 								<dd><?php the_sub_field('onsen_info_txt'); ?></dd>
 							<?php endwhile; ?>
@@ -174,8 +174,8 @@
 	</section>
 	<?php endif; ?>
 
-	<?php if(have_rows('fun')): ?>
-	<?php while(have_rows('fun')): the_row(); ?>
+	<?php if(have_rows('fun',115)): ?>
+	<?php while(have_rows('fun',115)): the_row(); ?>
 	<section class="c-bg-yellow l-contents-block__wrap">
 		<div class="l-contents-block c-bg-white">
 			<div class="l-contents-block__inner">
@@ -183,8 +183,8 @@
 					<article class="l-contents--left-title l-spacer -medium -both">
 						<h2 class="c-title-large -vertical l-contents--left-title__title"><?php the_sub_field('fun_title'); ?></h2>
 						<div>
-							<?php if(have_rows('fun_conts')): ?>
-							<?php while(have_rows('fun_conts')): the_row(); ?>
+							<?php if(have_rows('fun_conts',115)): ?>
+							<?php while(have_rows('fun_conts',115)): the_row(); ?>
 							<div class="l-contents-2column">
 								<div class="l-contents-2column__block -w-1_2--left">
 								<?php if(get_sub_field('fun_conts_img')) :?><img src="<?php the_sub_field('fun_conts_img'); ?>"><?php endif; ?>
@@ -274,8 +274,8 @@
 									<?php endif; ?>
 									<?php wp_reset_query(); ?>
 								</dd>
-								<?php if(have_rows('biz-info')): ?>
-								<?php while(have_rows('biz-info')): the_row(); ?>
+								<?php if(have_rows('biz-info',115)): ?>
+								<?php while(have_rows('biz-info',115)): the_row(); ?>
 								<dt><?php the_sub_field('business-info_dt'); ?></dt>
 								<dd><?php the_sub_field('business-info_dd'); ?></dd>
 								<?php endwhile; ?>
@@ -288,8 +288,8 @@
 		</div>
 	</section>
 
-	<?php if(have_rows('notes')): ?>
-	<?php while(have_rows('notes')): the_row(); ?>
+	<?php if(have_rows('notes',115)): ?>
+	<?php while(have_rows('notes',115)): the_row(); ?>
 	<section class="l-contents-block__wrap  p-tombo__notices">
 		<div class="l-contents-block c-bg-border">
 			<div class="l-contents-block__inner">
