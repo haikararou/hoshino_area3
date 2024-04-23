@@ -51,11 +51,11 @@
 
 <?php $query = new WP_Query(
   array(
-  'post_type' => 'shop', // カスタム投稿タイプのスラッグを指定
+  'post_type' => 'harunireterrace', // カスタム投稿タイプのスラッグを指定
   'posts_per_page' => -1, // 全件表示
   'tax_query' => array(
     array(
-    'taxonomy' => 'shop_cat', // タクソノミースラッグを指定
+    'taxonomy' => 'harunireterrace_cat', // タクソノミースラッグを指定
     'field' => 'slug',
     'terms' => 'halnire', // タームスラッグを指定
     ),
@@ -77,11 +77,11 @@
         <div class="l-contents--left-title__conts">
           <?php
           $args = array(
-            'post_type' => 'shop',
+            'post_type' => 'harunireterrace',
             'posts_per_page' => -1,
             'tax_query' => array(
               array(
-                'taxonomy' => 'shop_cat', //タクソノミーを指定
+                'taxonomy' => 'harunireterrace_cat', //タクソノミーを指定
                 'field' => 'slug', //ターム名をスラッグで指定する
                 'terms' => 'halnire', //表示したいタームをスラッグで指定
                 'operator' => 'IN'
@@ -94,7 +94,7 @@
           <ul class="p-restaurant-list filter-item">
               <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
               <?php
-              $terms = get_the_terms($post->ID, 'shop_cat');
+              $terms = get_the_terms($post->ID, 'harunireterrace_cat');
               echo '<li data-item="[';
               foreach($terms as $term){
               echo "'";
@@ -131,11 +131,11 @@
     </div>
   </section>
 
-<div class="l-spacer">
+<!-- <div class="l-spacer">
   <div class="l-container--wide">
     <?php get_template_part('inc/breadcrumb'); ?>
   </div>
-</div>
+</div> -->
 
 </div>
 

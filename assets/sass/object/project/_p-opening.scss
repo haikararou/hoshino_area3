@@ -43,6 +43,9 @@ opening
       display: block;
       @include inc.sizingRem(font-size, full, 14px, sp, 12px);
     }
+    &.-nofix {
+      table-layout: auto;
+    }
   }
   &--fixed02 {
     border-right: 1px solid #E2E2B9;

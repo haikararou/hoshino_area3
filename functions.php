@@ -81,6 +81,9 @@ function get_custom_template( $page_template ) {
 	else if(is_singular('shop')) {
 	$page_template = dirname( __FILE__ ) . "/shop/single.php";
 	}
+	else if(is_singular('harunireterrace')) {
+		$page_template = dirname( __FILE__ ) . "/shop/single.php";
+	}
 
 	//archive
 	else if(is_post_type_archive('news')){
@@ -94,6 +97,9 @@ function get_custom_template( $page_template ) {
 	}
 	else if(is_post_type_archive('shop')){
 	$page_template = dirname( __FILE__ ) . "/shop/archive.php";
+	}
+	else if(is_post_type_archive('harunireterrace')){
+		$page_template = dirname( __FILE__ ) . "/shop/archive.php";
 	}
 
 	//taxonomy
@@ -109,6 +115,9 @@ function get_custom_template( $page_template ) {
 	else if(is_tax('shop_cat')){
 	$page_template = dirname( __FILE__ ) . "/shop/taxonomy.php";
 	}
+	else if(is_tax('harunireterrace_cat')){
+		$page_template = dirname( __FILE__ ) . "/shop/taxonomy.php";
+		}
 
 	return $page_template;
 	}

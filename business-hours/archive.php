@@ -296,7 +296,7 @@
             <section class="l-spacer -mgB-s">
             <p>その他の施設の営業時間は、以下の施設サイトでご確認ください。</p>
             </section>
-            <table class="p-opening--table">
+            <table class="p-opening--table -nofix">
                 <tr>
                     <th><a href="https://yukawatan.blestoncourt.com/" target="_blank"><div class="c-button-arrow c-button-outerlink">ブレストンコート　ユカワタン</div></a></th>
                 </tr>

@@ -158,8 +158,8 @@ function create_post_type() {
 		)
 	);
 
-		//カスタム投稿タイプを追加
-		register_post_type( 'shop', // 投稿タイプ名(スラッグ)
+	//カスタム投稿タイプを追加
+	register_post_type( 'shop', // 投稿タイプ名(スラッグ)
 		array(
 			'labels' => array(
 			'name' => __( 'ショップ＆レストラン' ), // 投稿タイプ名(表示名)
@@ -169,7 +169,7 @@ function create_post_type() {
 		'public' => true,
 		'menu_position' =>5,
 		'supports' => array('title', 'editor', 'thumbnail'), // この投稿タイプでサポートする機能。
-		'has_archive' => true,
+		'has_archive' => false,
 		'show_in_rest' => true,
 		'rewrite' => array(
 			'slug' => 'shop',//投稿タイプ名(スラッグ) アーカイブページのURLになります
@@ -190,6 +190,44 @@ function create_post_type() {
 			'show_in_rest' => true,
 			'rewrite' => array(
 				'slug' => 'shop/category', //書き換え後のスラッグ
+				//'with_front' => false //通常投稿のパーマリンク構造を引き継ぐかどうか (true/false)
+				'hierarchical' => true //階層化したURLを使用可能にする
+			)
+		)
+	);
+
+	//カスタム投稿タイプを追加
+	register_post_type( 'harunireterrace', // 投稿タイプ名(スラッグ)
+		array(
+			'labels' => array(
+			'name' => __( 'ハルニレテラス' ), // 投稿タイプ名(表示名)
+			'singular_name' => __( 'ハルニレテラス' )// 投稿タイプ名(表示名)
+		),
+		'menu_icon' => 'dashicons-clipboard',
+		'public' => true,
+		'menu_position' =>5,
+		'supports' => array('title', 'editor', 'thumbnail'), // この投稿タイプでサポートする機能。
+		'has_archive' => false,
+		'show_in_rest' => true,
+		'rewrite' => array(
+			'slug' => 'harunireterrace',//投稿タイプ名(スラッグ) アーカイブページのURLになります
+			'with_front' => false
+		)
+	)
+	);
+	register_taxonomy(
+		'harunireterrace_cat', //タクソノミー名
+		'harunireterrace', //カスタム投稿タイプ
+		array(
+			'hierarchical' => true,
+			'update_count_callback' => '_update_post_term_count',
+			'label' => 'ハルニレテラスのカテゴリ',// タクソノミー名（表示名）
+			'singular_label' => 'ハルニレテラスのカテゴリ',// タクソノミー名（表示名）
+			'public' => true,
+			'show_ui' => true,
+			'show_in_rest' => true,
+			'rewrite' => array(
+				'slug' => 'harunireterrace/category', //書き換え後のスラッグ
 				//'with_front' => false //通常投稿のパーマリンク構造を引き継ぐかどうか (true/false)
 				'hierarchical' => true //階層化したURLを使用可能にする
 			)
@@ -251,8 +289,12 @@ add_rewrite_rule('event/category/([^/]+)/page/([0-9]+)/?$', 'index.php?event_cat
 add_rewrite_rule('business-hours/category/([^/]+)/?$', 'index.php?business-hours_cat=$matches[1]', 'top');
 add_rewrite_rule('business-hours/category/([^/]+)/page/([0-9]+)/?$', 'index.php?business-hours_cat=$matches[1]&paged=$matches[2]', 'top');
 
-add_rewrite_rule('shop/category/([^/]+)/?$', 'index.php?shop_cat=$matches[1]', 'top');
-add_rewrite_rule('shop/category/([^/]+)/page/([0-9]+)/?$', 'index.php?shop_cat=$matches[1]&paged=$matches[2]', 'top');
+// add_rewrite_rule('shop/category/([^/]+)/?$', 'index.php?shop_cat=$matches[1]', 'top');
+// add_rewrite_rule('shop/category/([^/]+)/page/([0-9]+)/?$', 'index.php?shop_cat=$matches[1]&paged=$matches[2]', 'top');
+
+add_rewrite_rule('harunireterrace/category/([^/]+)/?$', 'index.php?harunireterrace_cat=$matches[1]', 'top');
+add_rewrite_rule('harunireterrace/category/([^/]+)/page/([0-9]+)/?$', 'index.php?harunireterrace_cat=$matches[1]&paged=$matches[2]', 'top');
+
 
 /*-----------------------------------------------------------------------------------
 	カスタム投稿のアーカイブページの記事数を設定する。
@@ -276,3 +318,25 @@ function SearchFilter($query) {
 	$query->set('post_type', array('post', 'page')); // arrayの中にカスタム投稿タイプ名を追加する。
 	}
 }
+
+
+
+
+function custom_rewrite_ikarucafe() {
+    add_rewrite_rule(
+        '^ikarucafe/?$',
+        'index.php?post_type=harunireterrace&p=2310',
+        'top'
+    );
+}
+add_action('init', 'custom_rewrite_ikarucafe');
+
+
+function custom_rewrite_hungryspot() {
+    add_rewrite_rule(
+        '^hungryspot/?$',
+        'index.php?post_type=harunireterrace&p=2326',
+        'top'
+    );
+}
+add_action('init', 'custom_rewrite_hungryspot');

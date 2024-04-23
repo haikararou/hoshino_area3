@@ -4152,6 +4152,9 @@ opening
   display: block;
   font-size: clamp(0.75rem, 0.16vw + 0.7125rem, 0.875rem);
 }
+.p-opening--table.-nofix {
+  table-layout: auto;
+}
 .p-opening--fixed02 {
   border-right: 1px solid #E2E2B9;
 }
