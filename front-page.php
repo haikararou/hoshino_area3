@@ -51,7 +51,7 @@ get_header(); ?>
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">温泉</a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop'); ?>">ショップ&amp;レストラン</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop-restaurant'); ?>">ショップ&amp;レストラン</a></dt>
                 </div>
                 <div>
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity'); ?>">アクティビティ</a></dt>

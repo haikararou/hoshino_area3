@@ -138,8 +138,11 @@ opening
 }
 th.p-opening--fixed02 {
   //width: 40%!important;
-  width: 20%!important;
+  width: 40%!important;
   padding-left: 0;
+  @include inc.mq(tab) {
+    width: 20%!important;
+  }
 }
 @include inc.mq(tab) {
   #div-table01,
@@ -197,7 +200,10 @@ th.p-opening--fixed02 {
 
 
 .p-opening--fixed01 {
-  width: 20%!important;
+  width: 40%!important;
+  @include inc.mq(tab) {
+    width: 20%!important;
+  }
 }
 .p-opening--fixed04 {
   width: auto!important;

@@ -62,8 +62,8 @@
           <li><a href="https://www.karuizawachurch.org/" target="_blank">軽井沢高原教会</a></li>
           <li><a href="https://www.stonechurch.jp/" target="_blank">石の教会 内村鑑三記念堂</a></li>
           <li><a href="https://yukawatan.blestoncourt.com/" target="_blank">ブレストンコート ユカワタン</a></li>
-          <li><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェ ハングリースポット</a></li>
-          <li><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a></li>
+          <li><a href="<?php echo home_url('/hungryspot'); ?>">カフェ ハングリースポット</a></li>
+          <li><a href="<?php echo home_url('/ikarucafe'); ?>">イカルカフェ</a></li>
           <li><a href="http://www.besso-navi.com/" target="_blank">軽井沢 別荘Navi</a></li>
           <li class="no-arw"></li>
           <!-- <li><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li> -->

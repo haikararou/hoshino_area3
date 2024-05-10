@@ -325,7 +325,7 @@ function SearchFilter($query) {
 function custom_rewrite_ikarucafe() {
     add_rewrite_rule(
         '^ikarucafe/?$',
-        'index.php?post_type=harunireterrace&p=2310',
+        'index.php?post_type=harunireterrace&p=2502',
         'top'
     );
 }
@@ -335,8 +335,9 @@ add_action('init', 'custom_rewrite_ikarucafe');
 function custom_rewrite_hungryspot() {
     add_rewrite_rule(
         '^hungryspot/?$',
-        'index.php?post_type=harunireterrace&p=2326',
+        'index.php?post_type=harunireterrace&p=2517',
         'top'
     );
 }
 add_action('init', 'custom_rewrite_hungryspot');
+

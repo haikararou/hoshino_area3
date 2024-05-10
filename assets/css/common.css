@@ -4256,8 +4256,13 @@ opening
 }
 
 th.p-opening--fixed02 {
-  width: 20% !important;
+  width: 40% !important;
   padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  th.p-opening--fixed02 {
+    width: 20% !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -4316,7 +4321,12 @@ th.p-opening--fixed02 {
 }
 
 .p-opening--fixed01 {
-  width: 20% !important;
+  width: 40% !important;
+}
+@media screen and (min-width: 768px) {
+  .p-opening--fixed01 {
+    width: 20% !important;
+  }
 }
 
 .p-opening--fixed04 {

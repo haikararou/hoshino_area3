@@ -55,10 +55,10 @@
                   <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank"><em class="c-button-outerlink">ブレストンコート ユカワタン</em></a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/hungryspot'); ?>">カフェ ハングリースポット</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/hungryspot'); ?>">カフェ ハングリースポット</a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/shop/ikarucafe'); ?>">イカルカフェ</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/ikarucafe'); ?>">イカルカフェ</a></dt>
                 </div>
                 <div>
                   <dt class="p-facility-list__dt facility-acd"><span>ホテル</span></dt>

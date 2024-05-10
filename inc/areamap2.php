@@ -2,12 +2,12 @@
 <defs><style>.cls-1{fill:#fff;opacity:0;stroke-width:0px;}</style></defs>
 <image width="1570" height="1954" xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/facility/map-facility.png"/>
 <a xlink:href="<?php echo home_url('/hotel#hoshinoya'); ?>"><rect id="hoshinoya" class="cls-1" x="1289.1" y="98.6" width="260.4" height="71.2"/></a>
-<a xlink:href="<?php echo home_url('/shop/hungryspot'); ?>"><rect id="hungryspot" class="cls-1" x="468" y="195.9" width="372.5" height="71.2"/></a>
+<a xlink:href="<?php echo home_url('/hungryspot'); ?>"><rect id="hungryspot" class="cls-1" x="468" y="195.9" width="372.5" height="71.2"/></a>
 <a xlink:href="<?php echo home_url('/tombo-no-yu'); ?>"><rect id="tombo" class="cls-1" x="510.3" y="76.2" width="343.6" height="71.2"/></a>
 <a xlink:href="http://www.besso-navi.com/" target="_blank"><rect id="besso-navi" class="cls-1" x="731.3" y="474.8" width="299.4" height="71.2"/></a>
 <a xlink:href="https://yukawatan.blestoncourt.com/" target="_blank"><rect id="yukawatan" class="cls-1" x="59.8" y="816.7" width="309.1" height="108.4"/></a>
 <a xlink:href="<?php echo home_url('/activity#picchio'); ?>"><rect id="picchio" class="cls-1" x="1167.8" y="809.7" width="357.4" height="52"/></a>
-<a xlink:href="<?php echo home_url('/shop/ikarucafe/'); ?>"><rect id="ikarucafe" class="cls-1" x="1167.8" y="863.7" width="357.4" height="52"/></a>
+<a xlink:href="<?php echo home_url('/ikarucafe'); ?>"><rect id="ikarucafe" class="cls-1" x="1167.8" y="863.7" width="357.4" height="52"/></a>
 <a xlink:href="<?php echo home_url('/activity#keraike'); ?>"><rect id="keraike" class="cls-1" x="1167.8" y="916.6" width="357.4" height="52"/></a>
 <a xlink:href="<?php echo home_url('/church#stonechurch'); ?>"><rect id="stonechurch" class="cls-1" x="55.2" y="954.8" width="280.2" height="108.4"/></a>
 <a xlink:href="<?php echo home_url('/harunireterrace'); ?>"><rect id="harunireterrace" class="cls-1" x="803.5" y="1097.5" width="288" height="62"/></a>
