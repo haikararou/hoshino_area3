@@ -57,7 +57,7 @@ $the_query = new WP_Query( $args );
 <dl class="c-list-news">
 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 <div class="c-list-news__item">
-<dt class="c-list-news__date"><?php the_time('Y.m.d') ?></dt>
+<dt class="c-list-news__date"><?php the_time('Y/m/d') ?></dt>
 <dt class="c-list-news__conts"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></dt>
 </a>
 </div>

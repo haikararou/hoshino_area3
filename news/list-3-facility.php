@@ -42,7 +42,7 @@ $news_query = new WP_Query( $args );
                                 if($term->parent) echo '<p class="p-post-card__cat">'.esc_html($term->name).'</p>';
                                 endforeach;
                                 } ?>
-                                <time class="p-post-card__date"><?php the_time('Y.m.d') ?></time>
+                                <time class="p-post-card__date"><?php the_time('Y/m/d') ?></time>
                                 <h3 class="p-post-card__title"><?php the_title(); ?><?php if(get_field('event_period')): ?><span><?php the_field('event_period'); ?></span><?php endif; ?></h3>
                                 <?php
                                 $terms = get_the_terms($post->ID, 'news_cat');

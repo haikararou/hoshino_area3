@@ -67,7 +67,7 @@
                 if($term->parent) echo '<p class="p-post-card__cat">'.esc_html($term->name).'</p>';
                 endforeach;
                 } ?>
-                <time class="p-post-card__date"><?php the_time('Y.m.d') ?></time>
+                <time class="p-post-card__date"><?php the_time('Y/m/d') ?></time>
                 <h3 class="p-post-card__title"><?php the_title(); ?></h3>
                 <p class="p-post-card__info">
                     <?php

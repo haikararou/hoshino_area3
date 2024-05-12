@@ -27,13 +27,13 @@ get_header(); ?>
 			<?php the_title(); ?><?php if(get_field('event_period')): ?><span><?php the_field('event_period'); ?></span><?php endif; ?>
 		</h1>
 		<div class="p-news-date">
-			<div><?php the_time('Y.m.d') ?></div>
+			<div><?php the_time('Y/m/d') ?></div>
 			<ul class="c-list-category -newsDate">
 				<?php
 				$terms = get_the_terms($post->ID, 'news_cat');
 				foreach($terms as $term){
 				$term_name = $term->name;
-				echo '<li><a href="./category/'. $term-> slug .'" class="c-list-category__item -act">';
+				echo '<li><a href="/news/category/'. $term-> slug .'" class="c-list-category__item -act">';
 				echo $term_name;
 				echo '</a></li>';
 				};
