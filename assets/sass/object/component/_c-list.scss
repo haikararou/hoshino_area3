@@ -109,6 +109,9 @@ list
     display: grid;
     grid-template-columns: 200px minmax(0, 1fr);
   }
+  &.small {
+    grid-template-columns: 100px minmax(0, 1fr);
+  }
   > dt {
     padding-top: 1em;
     line-height: 1.6;
