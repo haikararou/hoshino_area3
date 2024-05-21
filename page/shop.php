@@ -32,7 +32,7 @@
                     <?php
 					$terms = get_terms('harunireterrace_cat');
                     $args = array(
-                      'exclude' => array(60), //除外したいタームのIDを指定。
+                      'exclude' => array(127), //除外したいタームのIDを指定。
                     );
                     $terms = get_terms('harunireterrace_cat', $args);
                     foreach ($terms as $term ) {

@@ -34,7 +34,7 @@
         <div class="">
           <dl class="c-list-dl -mgB-s">
             <dt>駐車料金（P1-P3）</dt>
-            <dd>最初の30分　無料<br>以降1時間毎　300円（上限3,000円）<br><span class="c-text-small">*合計2,000円以上のご利用で入庫から2時間まで無料（対象店舗：トンボの湯、ハルニレテラス、村民食堂、ピッキオ）<br>*P6、P7、臨時駐車場は無料<br>*お会計時に、割引QRを発行</span></dd>
+            <dd>最初の30分　無料<br>以降1時間毎　300円（上限3,000円）<br><span class="c-text-small">*合計2,000円以上のご利用で入庫から2時間まで無料（対象店舗：トンボの湯、ハルニレテラス、村民食堂、ピッキオ）<br>*P6、P7、臨時駐車場は無料<br>*お会計時に、割引券を発行</span></dd>
             <dt>利用の流れ（P1-P3）</dt>
             <dd><ul class="c-list-dot">
               <li class="c-list-dot__item">入庫<br><span class="c-text-small">車両ナンバーをカメラが読み取り、ゲートバーが開きます。駐車券はありません。</span></li>
@@ -83,7 +83,13 @@
             </dl>
           </div>
 
-          <a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/parking-rules.pdf" target="_blank"><span class="c-button-arrow c-text-underline">駐車場管理規定（PDF）</span></a>
+          <?php $replacement = get_field('parking_pdf'); ?>
+          <?php if($replacement['parking_pdf_file']): ?>
+          <a href="<?php echo $replacement['parking_pdf_file']; ?>" target="_blank">
+            <span class="c-button-arrow c-text-underline"><?php echo $replacement['parking_pdf_txt']; ?></span>
+          </a>
+          <?php endif; ?>
+
         </div>
       </div>
     </article>

@@ -17,7 +17,8 @@ add_theme_support( 'post-thumbnails' );
 
 /* 【管理画面】管理画面カスタマイズ用CSSを読込 */
 function admin_css() {
-echo '<link rel="stylesheet" type="text/css" href="https://elb-hoshino-area-1086539244.ap-northeast-1.elb.amazonaws.com/wp-content/themes/hoshino-area/assets/css/editor-style.css">';
+// echo '<link rel="stylesheet" type="text/css" href="https://elb-hoshino-area-1086539244.ap-northeast-1.elb.amazonaws.com/wp-content/themes/hoshino-area/assets/css/editor-style.css">';
+echo '<link rel="stylesheet" type="text/css" href="https://admin.hoshino-area.jp/wp-content/themes/hoshino-area/assets/css/editor-style.css">';
 }
 add_action('admin_head', 'admin_css');
 
@@ -254,3 +255,9 @@ function my_acf_init_block_types() {
 
 
 
+//----------------------------------------------------
+// ACF オプションページの作成
+//----------------------------------------------------
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+}

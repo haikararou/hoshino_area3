@@ -10,18 +10,10 @@
 
 <section class="l-spacer -pagetitile">
   <div class="l-container--primary">
-    <h1 class="c-title-ex-large lang-ja">教会</h1>
-    <h1 class="c-title-ex-large lang-en">Church</h1>
-    <h1 class="c-title-ex-large lang-tw">教会</h1>
-    <h1 class="c-title-ex-large lang-cn">教会</h1>
-    <h1 class="c-title-ex-large lang-ko">教会</h1>
+    <h1 class="c-title-ex-large">教会</h1>
     <p>木立を抜けて丘をのぼっていくと、2つの教会に辿り着きます。日常から離れ、木洩れ陽に包まれて、ゆっくり深呼吸しませんか。</p>
   </div>
 </section>
-
-
-
-
 
 <section class="l-spacer -mgB-l" id="karuizawachurch">
   <div class="l-container--primary">
