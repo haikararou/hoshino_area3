@@ -47,6 +47,19 @@ home
   }
 }
 
+.home .p-110th {
+  @include inc.sizing(padding-bottom, full, 80px, sps, 32px);
+  max-width: 570px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: auto;
+
+  }
+}
+
 .home .map-area01 {
   padding-top: 32px;
   @include inc.sizing(padding-top, tab, 48px, sps, 32px);

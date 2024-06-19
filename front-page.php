@@ -22,15 +22,12 @@ get_header(); ?>
 
 <?php if(is_home() || is_front_page()): ?>
 
-    <!-- <div class="l-container--primary">
-      <div class="p-home_sansaku">
-        <h2 class="c-title-large">星野の森を、<br>散策しよう。</h2>
-        <p>豊かな自然に囲まれて、いつもよりも、歩調をゆるめて。<br>温泉、お食事、ショッピング、散策…思うままに、一日をお過ごしください。</p>
-      </div>
-    </div> -->
 
   <div class="l-container--primary-ll">
-    <section class="l-spacer -large -both">
+    <section class="l-spacer -medium -both">
+      <div class="p-110th">
+        <a href="https://www.hoshino-area.jp/110th" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/bnr_110th.png" alt=""></a>
+      </div>
       <div class="facility-flex000000 lead-end map-area">
         <div class="facility-flex-txt00000 map-area01">
           <!-- <div class="home_txt"> -->

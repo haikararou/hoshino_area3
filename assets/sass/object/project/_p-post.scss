@@ -132,6 +132,11 @@ post
       padding: 0.3em 0.8rem 0.5em;
       margin: 0!important;
       }
+    & + span {
+      @include inc.sizingRem(font-size, full, 13px, sp, 11px);
+      display: block;
+      margin-top: 8px;
+    }
   }
   &__period {
     @include inc.sizingRem(font-size, full, 14px, sp, 12px);

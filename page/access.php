@@ -94,7 +94,7 @@
             <div class="l-contents-2column -mgB-l">
               <div class="l-contents-2column__block -w-1_2">
                 <h3 class="c-title-small line2 area-sp"><span class="tag-b -black000">軽井沢駅 → 星野エリア</span></h3>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/bus_01.svg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/bus_03.svg">
                 <a href="https://www.google.com/maps/place/36%C2%B020'35.5%22N+138%C2%B038'10.2%22E/@36.3431864,138.6361618,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3431864!4d138.6361618?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">

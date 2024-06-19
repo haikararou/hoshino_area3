@@ -71,7 +71,7 @@
 					<div class="p-faq-list__item">
 						<dt class="p-faq-list__question">バイクはどこに駐車できますか？</dt>
 						<dd class="p-faq-list__answer">
-							<p>各駐車場付近にある駐輪場に駐車をお願いいたします。P1は村民食堂横、P2・P3は入口付近にございます。<br><br>
+							<p>各駐車場付近にある駐輪場に駐車をお願いいたします。P1は村民食堂横、P2・P3は入口付近にございます。<br>
               P1：入場ゲートを通らずに、入場ゲートまたは出場ゲートの脇から入場してください。駐車場内を通過して、『村民食堂』横の駐輪場をご利用ください。<br>
               P2・P3：駐車場ゲートの手前にある駐輪場をご利用ください。</p>
 						</dt>
@@ -79,7 +79,7 @@
 				</dl>
 				<dl class="p-faq-list">
 					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">キャンピングカーは駐車できますか？</dt>
+						<dt class="p-faq-list__question">キャンピングカー・マイクロバスは駐車できますか？</dt>
 						<dd class="p-faq-list__answer">
 							<p>積載物又は取付物を含めて全長5.5m、幅2.2m、高さ3.5mを超える車両は、ゲートのある駐車場にはご入場頂けません。お越しの際はP6をご利用ください。</p>
 						</dt>

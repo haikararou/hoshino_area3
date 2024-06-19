@@ -22,11 +22,11 @@
       <div class="l-contents-2column__block -w-1_2">
         <div class="sign_p">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/map2.svg">
-          <div class="sign_p1"><img src="http://cnt.parkingweb.jp/001/000000/000001/003177/001/0001parking_status.png"></div>
-          <div class="sign_p2"><img src="http://cnt.parkingweb.jp/001/000000/000001/003178/001/0001parking_status.png"></div>
-          <div class="sign_p3"><img src="http://cnt.parkingweb.jp/001/000000/000001/003179/001/0001parking_status.png"></div>
-          <div class="sign_p6"><img src="http://cnt.parkingweb.jp/001/000000/000001/003180/001/0001parking_status.png"></div>
-          <div class="sign_p7"><img src="http://cnt.parkingweb.jp/001/000000/000001/003181/001/0001parking_status.png"></div>
+          <div class="sign_p1"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/empty_bottom.png"></div>
+          <div class="sign_p2"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/full_left.png"></div>
+          <div class="sign_p3"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/full_left.png"></div>
+          <div class="sign_p6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/empty_right.png"></div>
+          <div class="sign_p7"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/empty_right.png"></div>
         </div>
       </div>
 
@@ -56,7 +56,7 @@
 
           <div class="-mgB-m c-border-4">
             <h3 class="c-title-small">満車予測時間帯</h3>
-            <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。<br>満車の場合は路上で待機せず、［P6］［P7］へお進みください。</p>
+            <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。<br>満車の場合は路上で待機せず、［P6］へお進みください。</p>
             <dl class="c-list-dl small">
             <dt>平日</dt>
             <dd>
@@ -105,9 +105,7 @@
 					<div class="p-faq-list__item">
 						<dt class="p-faq-list__question">バイクはどこに駐車できますか？</dt>
 						<dd class="p-faq-list__answer">
-							<p>各駐車場付近にある駐輪場に駐車をお願いいたします。P1は村民食堂横、P2・P3は入口付近にございます。<br><br>
-              P1：入場ゲートを通らずに、入場ゲートまたは出場ゲートの脇から入場してください。駐車場内を通過して、『村民食堂』横の駐輪場をご利用ください。<br>
-              P2・P3：駐車場ゲートの手前にある駐輪場をご利用ください。</p>
+							<p>各駐車場付近にある駐輪場に駐車をお願いいたします。P1は村民食堂横、P2・P3は入口付近にございます。</p>
 						</dt>
 					</div>
 				</dl>
@@ -115,7 +113,7 @@
 					<div class="p-faq-list__item">
 						<dt class="p-faq-list__question">キャンピングカー・マイクロバスは駐車できますか？</dt>
 						<dd class="p-faq-list__answer">
-							<p>積載物又は取付物を含めて全長5.5m、幅2.2m、高さ3.5mを超える車両は、ゲートのある駐車場にはご入場頂けません。お越しの際はP6またはP7をご利用ください。</p>
+							<p>積載物又は取付物を含めて全長5.5m、幅2.2m、高さ3.5mを超える車両は、ゲートのある駐車場にはご入場頂けません。お越しの際はP6をご利用ください。</p>
 						</dt>
 					</div>
 				</dl>
