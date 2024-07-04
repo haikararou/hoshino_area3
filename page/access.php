@@ -94,7 +94,7 @@
             <div class="l-contents-2column -mgB-l">
               <div class="l-contents-2column__block -w-1_2">
                 <h3 class="c-title-small line2 area-sp"><span class="tag-b -black000">軽井沢駅 → 星野エリア</span></h3>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/bus_03.svg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/bus_01.svg">
                 <a href="https://www.google.com/maps/place/36%C2%B020'35.5%22N+138%C2%B038'10.2%22E/@36.3431864,138.6361618,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3431864!4d138.6361618?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
@@ -121,7 +121,7 @@
             <div class="l-contents-2column -mgB">
               <div class="l-contents-2column__block -w-1_2">
                 <h3 class="c-title-small line2 area-sp"><span class="tag-b -black000">星野エリア → 軽井沢駅</span></h3>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/bus_02.svg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/bus_03.svg">
                 <a href="https://www.google.com/maps/place/36%C2%B021'40.1%22N+138%C2%B035'19.4%22E/@36.3611238,138.5887211,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.3611238!4d138.5887211?entry=ttu" target="_blank" class="noriba-map"><span class="c-button-arrow c-text-underline"></span>のりばをGoogle Mapで見る</a>
               </div>
               <div class="l-contents-2column__block -w-1_2">
@@ -199,8 +199,8 @@
             <div class="l-contents-2column">
               <div class="l-contents-2column__block -w-1_2">
                 <picture>
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/access/parking.svg">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/parking_sp.svg">
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/access/parking.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/parking_sp.png">
                 </picture>
               </div>
               <div class="l-contents-2column__block -w-1_2">
@@ -208,7 +208,9 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-bicycle.svg" width="28" height="28" class="icon -bicycle">
                   駐輪場（無料）　P1、P2、P3
                 </span></p>
-                <p>P1の駐輪場はP1の中にございます。一般車出口ゲートバーの脇からお入りください。</p>
+                <p>P1：入場ゲートを通らずに、入場ゲートまたは出場ゲートの脇から入場してください。駐車場内を通過して、『村民食堂』横の駐輪場をご利用ください。<br>
+                P2・P3：駐車場ゲートの手前にある駐輪場をご利用ください。</p>
+                <p class="red_box -mgB-s">バイクは、駐車場ではなく駐輪場に停めてください。駐車場のゲートからは進入できません。</p>
               </div>
             </div>
           </div><!--バイク・自転車-->

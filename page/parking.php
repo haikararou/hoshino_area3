@@ -20,43 +20,70 @@
   <div class="l-container--primary">
     <article class="l-contents-2column">
       <div class="l-contents-2column__block -w-1_2">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/map.svg">
+        <div class="sign_p">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/map2.png">
+          <div class="sign_p1"><img src="http://cnt.parkingweb.jp/001/000000/000001/003177/001/0001parking_status.png"></div>
+          <div class="sign_p2"><img src="http://cnt.parkingweb.jp/001/000000/000001/003178/001/0001parking_status.png"></div>
+          <div class="sign_p3"><img src="http://cnt.parkingweb.jp/001/000000/000001/003179/001/0001parking_status.png"></div>
+          <div class="sign_p6"><img src="http://cnt.parkingweb.jp/001/000000/000001/003180/001/0001parking_status.png"></div>
+          <div class="sign_p7"><img src="http://cnt.parkingweb.jp/001/000000/000001/003181/001/0001parking_status.png"></div>
+        </div>
+        <p class="l-spacer -em1 c-text-small">満空情報はリアルタイムで更新していますが、タイミングによって実際と異なる場合があります。<br>また、機器に不具合が発生した場合等は、正確な表示ができません。</p>
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
 
-        <div class="-mgB-m c-border-4">
-          <h3 class="c-title-small">満車予測時間帯</h3>
-          <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。満車の場合は路上で待機せず、次の駐車場へお進みください。</p>
-          <dl class="c-list-dl">
+      <div class="">
+          <dl class="c-list-dl -mgB-s">
+            <dt>駐車料金（P1-P3）</dt>
+            <dd>最初の30分　無料<br>以降1時間毎　300円（上限3,000円）<br><span class="c-text-small">*合計2,000円以上のご利用で入庫から2時間まで無料（対象店舗：トンボの湯、ハルニレテラス、村民食堂、ピッキオ）<br>*P6、P7、臨時駐車場は無料<br>*お会計時に、割引券を発行</span></dd>
+            <dt>利用の流れ（P1-P3）</dt>
+            <dd><ul class="c-list-dot">
+              <li class="c-list-dot__item">入庫<br><span class="c-text-small">車両ナンバーをカメラが読み取り、ゲートバーが開きます。駐車券はありません。</span></li>
+              <li class="c-list-dot__item">精算<br><span class="c-text-small">事前精算機にて車両ナンバー4桁をご入力の上、ご精算ください。無料時間内の場合も精算処理が必要です。</span></li>
+              <li class="c-list-dot__item">出庫<br><span class="c-text-small">精算後20分以内にご出庫ください。車両ナンバーをカメラが読み取り、ゲートバーが開きます。</span></li>
+            </ul></dd>
+            <dt>決済方法</dt>
+            <dd>現金の他、以下のキャッシュレス決済をご利用いただけます。
+            <ul class="c-list-dot">
+              <li class="c-list-dot__item">クレジットカード<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_01.png"></span></li>
+              <li class="c-list-dot__item">電子マネー<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_02.png"></span></li>
+              <!-- <li class="c-list-dot__item">コード払い<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_03.png"></span></li> -->
+            </ul>
+            </dd>
+            <dt>営業時間</dt>
+            <dd>7：00～23：00（店舗営業時間に準ずる）</dd>
+          </dl>
+          <div class="red_box -mgB-s">バイクは、駐車場ではなく駐輪場に停めてください。駐車場のゲートからは進入できません。</div>
+
+          <div class="-mgB-m c-border-4">
+            <h3 class="c-title-small">満車予測時間帯</h3>
+            <p class="-mgB-s">中軽井沢駅寄りの駐車場から混み合います。<br>満車の場合は路上で待機せず、［P6］［P7］へお進みください。</p>
+            <dl class="c-list-dl small">
             <dt>平日</dt>
             <dd>
-              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"> ハルニレテラス付近</span>11～14時頃<br>
-              <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"> トンボの湯・村民食堂付近</span>12～13時頃</p>
+              <span class="c-text-icon">
+                <div class="tw6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"></div>
+                <div>11～14時頃</div>
+              </span>
+              <span class="c-text-icon">
+                <div class="tw6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"></div>
+                <div>12～13時頃</div>
+              </span>
             </dd>
             <dt>土日祝</dt>
             <dd>
-              <p><span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"> ハルニレテラス付近</span>10～15時頃<br>
-              <span class="c-text-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"> トンボの湯・村民食堂付近</span>11～14時頃</p>
+              <span class="c-text-icon">
+                <div class="tw6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"></div>
+                <div>10～15時頃</div>
+              </span>
+              <span class="c-text-icon">
+                <div class="tw6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"></div>
+                <div>11～14時頃</div>
+              </span>
             </dd>
-          </dl>
-        </div>
-
-        <div class="">
-          <h3 class="c-title-small">駐車場概要</h3>
-          <dl class="c-list-dl -mgB-s">
-            <dt>駐車料金（P1-P3）</dt>
-            <dd>最初の30分　無料<br>以降1時間毎　300円（上限3,000円）<br>トンボの湯、ピッキオ、村民食堂、ハルニレテラス各店舗で合計2,000円以上ご利用いただくと、無料駐車時間を2時間まで延長します。</dd>
-            <dt>営業時間</dt>
-            <dd>7：00～23：00（店舗営業時間に準ずる）</dd>
-            <dt>ご案内事項</dt>
-            <dd><ul class="c-list-dot">
-              <li class="c-list-dot__item">駐車券を持ってお出かけください。</li>
-              <li class="c-list-dot__item">駐車券紛失の場合には、駐車券紛失料金3,000円申し受けます。</li>
-              <li class="c-list-dot__item">ご精算は現金（千円札、500、100、50、10円硬貨）にてお願いいたします。</li>
-            </ul></dd>
-          </dl>
-          <a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/02/parking-rules.pdf" target="_blank"><span class="c-button-arrow c-text-underline">駐車場管理規定（PDF）</span></a>
-        </div>
+            </dl>
+          </div>
+          <a href="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/2024/06/parking-rules.pdf" target="_blank"><span class="c-button-arrow c-text-underline">駐車場管理規定（PDF）</span></a>
       </div>
     </article>
   </div>
@@ -79,9 +106,9 @@
 				</dl>
 				<dl class="p-faq-list">
 					<div class="p-faq-list__item">
-						<dt class="p-faq-list__question">キャンピングカーは駐車できますか？</dt>
+						<dt class="p-faq-list__question">キャンピングカー・マイクロバスは駐車できますか？</dt>
 						<dd class="p-faq-list__answer">
-							<p>積載物又は取付物を含めて全長5.5m、幅2.2m、高さ3.5mを超える車両は、ゲートのある駐車場にはご入場頂けません。お越しの際はP6をご利用ください。</p>
+							<p>積載物又は取付物を含めて全長5.5m、幅2.2m、高さ3.5mを超える車両は、ゲートのある駐車場にはご入場頂けません。お越しの際はP6またはP7をご利用ください。</p>
 						</dt>
 					</div>
 				</dl>

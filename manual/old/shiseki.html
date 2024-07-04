@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>【川中島の戦い】総合サイト　【史跡をめぐる】WordPress更新マニュアル</title>
+  <link rel="stylesheet" type="text/css" media="screen, print" href="./shiseki/style.css" />
+</head>
+
+<body>
+  <div class="contents">
+    <h1><span>【川中島の戦い】総合サイト</span><br>【史跡をめぐる】WordPress更新マニュアル</h1>
+    <p>2024.3.15 更新</p>
+    <div align="right">
+      <form><input value="このページを印刷する" onclick="window.print()" type="button"></form>
+    </div>
+
+    <h2>メニュー</h2>
+    <ul>
+      <li><a href="index.html">共通操作</a></li>
+      <li><a href="event.html">イベント情報</a></li>
+      <li><a href="museum.html">デジタル博物館</a></li>
+      <li><a href="character.html">川中島の戦い・主要人物</a></li>
+      <li><a href="shiseki.html">史跡をめぐる</a></li>
+    </ul>
+
+    <!-- h3 -->
+    <h3 id="Explanation">史跡を登録する</h3>
+    <ol>
+      <li><strong>画面上部の「新規投稿を追加」をクリックします。</strong></li>
+
+      <li><strong>▼「史跡をめぐる」新規登録画面</strong><br>
+        <img src="./shiseki/img/edit_shiseki.png"><br>
+
+        <ol class="num">
+          <li><strong>ギャラリー</strong><br>
+            複数の写真を並べてアップロードします。<br>
+            <strong>「ギャラリー」の追加方法</strong><br>
+            <img src="./shiseki/img/block_gallery1.png" class="imgM"><br>
+            「＋」ボタンを押して「ギャラリー」をクリックします。<br>
+            <img src="./shiseki/img/block_gallery2.png" class="imgM"><br>
+            画像入力用のブロックが作成されるので、任意の画像を選択してください。<br><br>
+            ※画像の詳しいアップロード方法は<a href="index_operations.html#upload">こちら</a><br>
+            ※画像のリサイズ方法は<a href="index_operations.html#howto">こちら</a><br>
+            ※画像を３枚以上アップロードした際に一段の写真を2枚ずつにレイアウト変更する方法は<a href="#photo_column">こちら</a>
+          </li>
+          <li><strong>「岡澤先生の史跡解説」</strong><br>
+            岡澤先生の史跡解説がある場合は、新たにブロックを挿入します。<br>
+            <strong>「岡澤先生の史跡解説」の追加方法</strong><br>
+            <img src="./shiseki/img/block_teacher1.png" class="imgM"><br>
+            「＋」ボタンを押して「先生の史跡解説」をクリックします。<br>
+            <img src="./shiseki/img/block_teacher2.png" class="imgM"><br>
+            「見出し」に【岡澤先生の史跡解説】、「自由ブロック」には本文を入力します。<br>
+            <img src="./shiseki/img/block_teacher3.png" class="imgM">
+          </li>
+          <li><strong>ふりがな</strong><br>
+            史跡名のふりがなを入力します。五十音別史跡一覧用のふりがなです。<br>
+            <img src="./shiseki/img/block_kana.png" class="imgM">
+          </li>
+          <li><strong>カテゴリー</strong><br>
+            該当するカテゴリーにチェックを入れます。各史跡にカテゴリーが表示されます。<br>
+            <img src="./shiseki/img/block_category.png" class="imgM">
+          </li>
+          <li><strong>公開<span class="attention">*</span>（必須）</strong><br>
+            青い「公開」ボタンを押してください。記事が公開されます。<br>
+            <span class="attention">公開日時が新しいものから順番にHP上に並びます。</span>
+          </li>  
+        </ol>
+      </li>
+      <li><strong>公開した「イベント情報」を編集・削除する</strong><br>
+        ※編集方法は<a href="index.html#re_edit">こちら</a>
+      </li>
+    </ol>
+
+
+    <!-- PHOTO COLUMN -->
+    <h3 id="photo_column" class="print_break">ギャラリーの一段の写真を２枚ずつにレイアウト変更する</h3>
+    <ol>
+      <li>画像の１枚をクリックし、メニューの一番左をクリックします。<br>
+        <img src="./shiseki/img/photo_column1.png" class="imgM">
+      </li>
+      <li>右側のブロックメニューにある「カラム」の数字を「２」に変更します。<br>
+        <img src="./shiseki/img/photo_column2.png" class="imgM">
+      </li>
+    </ol>
+
+
+    <!-- MAP -->
+    <h3 id="map">Googleマップを埋め込む</h3>
+    <ol>
+      <li><a href="https://www.google.com/maps" target="_blank">Googleマップ</a>を開きます。</li>
+      <li>施設名で検索し、該当施設の「共有」をクリックします。<br>
+        <img src="./shiseki/img/map_01.png" class="imgM">
+      </li>
+      <li>「地図を埋め込む」を選択し、「HTMLをコピー」をクリック<br>
+        <img src="./shiseki/img/map_02.png" class="imgM">
+      </li>
+      <li>新規投稿画面に戻り、「Googleマップ」の入力欄に貼り付けてください。</li>
+      <li>最後に、<pre>【&lt;iframe src=&quot;●●●●●●●●●&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; <br>referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;】</pre>内の【●●●●●●●●●】以外は削除してください。<br>
+        <span class="attention">※削除しないとGoogleマップがうまく表示されない可能性があります。</span><br>
+        <img src="./shiseki/img/map_03.png" class="imgM">
+      </li>
+    </ol>
+
+  </div>
+</body>
+</html>

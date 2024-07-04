@@ -9,7 +9,7 @@
 			<?php if(is_object_in_term($post->ID,'harunireterrace_cat','halnire')): ?>
 			<li class="c-breadcrumb__item"><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></li>
 			<?php else: ?>
-			<li class="c-breadcrumb__item"><a href="<?php echo home_url('/shop-restaurant'); ?>">ショップ＆レストラン</a></li>
+			<li class="c-breadcrumb__item"><a href="<?php echo home_url('/shop'); ?>">ショップ＆レストラン</a></li>
 			<?php endif; ?>
 			<li class="c-breadcrumb__item">イカルカフェ</li>
 		</ul>

@@ -6452,7 +6452,23 @@ access
 
 .sign_p1 {
   height: auto;
-  width: clamp(31px, 5.6vw + 10px, 53px);
+  width: clamp(39px, 3.56vw + 25.7px, 53px);
+  height: clamp(39px, 3.56vw + 25.7px, 53px);
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6464,17 +6480,39 @@ access
 @media screen and (min-width: 960px) {
   .sign_p1 {
     width: 10%;
+    height: unset;
   }
 }
 @media screen and (min-width: 1280px) {
   .sign_p1 {
     width: 8%;
+    height: unset;
   }
+}
+.sign_p1 img {
+  width: unset;
+  max-width: unset;
+  max-height: 100% !important;
 }
 
 .sign_p2 {
   height: auto;
   width: clamp(39px, 3.56vw + 25.7px, 53px);
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6497,6 +6535,21 @@ access
 .sign_p3 {
   height: auto;
   width: clamp(39px, 3.56vw + 25.7px, 53px);
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6519,6 +6572,21 @@ access
 .sign_p6 {
   height: auto;
   width: clamp(39px, 3.56vw + 25.7px, 53px);
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6551,6 +6619,21 @@ access
 .sign_p7 {
   height: auto;
   width: clamp(39px, 3.56vw + 25.7px, 53px);
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
   position: absolute;
   top: 50%;
   left: 50%;

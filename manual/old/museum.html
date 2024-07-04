@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>【川中島の戦い】総合サイト　【デジタル博物館】WordPress更新マニュアル</title>
+  <link rel="stylesheet" type="text/css" media="screen, print" href="./museum/style.css" />
+</head>
+
+<body>
+  <div class="contents">
+    <h1><span>【川中島の戦い】総合サイト</span><br>【デジタル博物館】WordPress更新マニュアル</h1>
+    <p>2024.3.15 更新</p>
+    <div align="right">
+      <form><input value="このページを印刷する" onclick="window.print()" type="button"></form>
+    </div>
+
+    <h2>メニュー</h2>
+    <ul>
+      <li><a href="index.html">共通操作</a></li>
+      <li><a href="event.html">イベント情報</a></li>
+      <li><a href="museum.html">デジタル博物館</a></li>
+      <li><a href="character.html">川中島の戦い・主要人物</a></li>
+      <li><a href="shiseki.html">史跡をめぐる</a></li>
+    </ul>
+
+    <!-- h3 -->
+    <h3 id="items">収蔵品を登録する</h3>
+    <ol>
+      <li><strong>画面上部の「新規投稿を追加」をクリックします。</strong></li>
+
+      <li><strong>▼「デジタル博物館」新規登録画面</strong><br>
+        <img src="./museum/img/edit_museum.png"><br>
+
+        <ol class="num">
+          <li><strong>収蔵品の注意書き</strong><br>
+            収蔵品のウェブページへのリンクを貼ります。<br><br>
+            <strong>長野市立博物館所蔵の場合</strong><br>
+            <img src="./museum/img/gallery_nagano1.png" class="imgM"><br>
+            <a href="https://jmapps.ne.jp/nagamuse/index.html">長野市立博物館の収蔵品検索画面</a>で、該当の所蔵品を検索します。<br>
+            <img src="./museum/img/gallery_nagano2.png" class="imgM"><br>
+            該当の収蔵品のURLをコピーします。<br>
+            <img src="./museum/img/gallery_nagano3.png" class="imgM"><br>
+            下記コードの【&quot;●●●●●●●●●●&quot;】内をコピーしたURLに書き換え、フォーム内に入力してください。<br>
+            <br>
+            <span class="attention">収蔵品：&lt;a href=&quot;●●●●●●●●●●&quot; target=&quot;_blank&quot; rel=&quot;noopener nofollow&quot;&gt;長野市立博物館&lt;/a&gt;</span><br><br>
+            <strong>真田宝物館所蔵の場合</strong><br>
+            <img src="./museum/img/gallery_sanada1.png" class="imgM"><br>
+            <a href="https://jmapps.ne.jp/sndhmt/index.html">真田宝物館の収蔵品検索画面</a>で、該当の収蔵品を検索します。<br>
+            <img src="./museum/img/gallery_sanada2.png" class="imgM"><br>
+            該当の収蔵品のURLをコピーします。<br>
+            <img src="./museum/img/gallery_sanada3.png" class="imgM"><br>
+            下記コードの【&quot;●●●●●●●●●●&quot;】内をコピーしたURLに書き換え、フォーム内に入力してください。<br>
+            <br>
+            <span class="attention">収蔵品：&lt;a href=&quot;●●●●●●●●●●&quot; target=&quot;_blank&quot; rel=&quot;noopener nofollow&quot;&gt;真田宝物館&lt;/a&gt;</span>
+          </li>
+          <li><strong>カテゴリー</strong><br>
+            該当するカテゴリーにチェックを入れます。各収蔵品にカテゴリーが表示されます。<br>
+            <img src="./museum/img/block_category.png" class="imgM">
+          </li>
+          <li><strong>アイキャッチ画像</strong><br>
+            アイキャッチ画像をアップロードします。各収蔵品1枚目の写真と、デジタル博物館の収蔵品一覧に表示されます。<br>
+            <strong>アイキャッチ画像の設定方法</strong><br>
+            <img src="./museum/img/block_icatch1.png" class="imgM"><br>
+            「アイキャッチ画像を設定」をクリックします。その後は画像のアップロード方法と同じです。<br>
+            ※画像の詳しいアップロード方法は<a href="index_operations.html#upload">こちら</a><br>
+            ※画像のリサイズ方法は<a href="index_operations.html#howto">こちら</a>
+          </li>
+          <li><strong>アイキャッチ画像の追加</strong><br>
+            収蔵品の写真が2枚以上ある場合はここから追加します。<br>
+            <img src="./museum/img/block_icatch2.png" class="imgM"><br>
+            「行を追加」をクリックし、画像をアップロードします。<br>
+            <img src="./museum/img/block_icatch3.png" class="imgM"><br>
+            既に追加した画像の前に表示する画像を追加する場合は「＋」を、追加した画像を削除したい場合は「-」をクリックしてください。
+          </li>
+        <li><strong>公開<span class="attention">*</span>（必須）</strong><br>
+            青い「公開」ボタンを押してください。記事が公開されます。<br>
+            <span class="attention">公開日時が新しいものから順番にHP上に並びます。</span>
+        </li>  
+        </ol>
+      </li>
+      <li><strong>公開した「イベント情報」を編集・削除する</strong><br>
+        ※編集方法は<a href="index.html#re_edit">こちら</a>
+      </li>
+    </ol>
+
+
+  </div>
+</body>
+</html>

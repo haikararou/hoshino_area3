@@ -368,18 +368,30 @@ display: block!important;
 }
 
 
-
 .sign_p {
 	position: relative;
 }
 .sign_p1 {
 	height: auto;
-	@include inc.sizing(width, tab, 53px, sp, 31px);
+	//@include inc.sizing(width, tab, 53px, sp, 35px);
+	@include inc.sizing(width, tab, 53px, sp, 39px);
+	@include inc.sizing(height, tab, 53px, sp, 39px);
+	aspect-ratio: 1 / 1;
+	display:flex; flex-direction:column; justify-content:center; align-items:center;
+	border: 1px solid red;
+	// @include inc.mq(lap) {
+	// 	width: 9%;
+	// }
+	// @include inc.mq(desk) {
+	// 	width: 7.3%;
+	// }
 	@include inc.mq(lap) {
 		width: 10%;
+		height: unset;
 	}
 	@include inc.mq(desk) {
 		width: 8%;
+		height: unset;
 	}
 	position: absolute;
 	top: 50%;
@@ -387,10 +399,18 @@ display: block!important;
 	margin-top: -25%;
 	margin-left: 7%;
 	transform: translate(-50%, -50%);
+	img {
+		width: unset;
+		max-width: unset;
+		max-height: 100%!important;
+	}
 }
 .sign_p2 {
 	height: auto;
 	@include inc.sizing(width, tab, 53px, sp, 39px);
+	aspect-ratio: 1 / 1;
+	display:flex; flex-direction:column; justify-content:center; align-items:center;
+	border: 1px solid red;
 	@include inc.mq(lap) {
 		width: 10%;
 	}
@@ -407,6 +427,9 @@ display: block!important;
 .sign_p3 {
 	height: auto;
 	@include inc.sizing(width, tab, 53px, sp, 39px);
+	aspect-ratio: 1 / 1;
+	display:flex; flex-direction:column; justify-content:center; align-items:center;
+	border: 1px solid red;
 	@include inc.mq(lap) {
 		width: 10%;
 	}
@@ -423,6 +446,9 @@ display: block!important;
 .sign_p6 {
 	height: auto;
 	@include inc.sizing(width, tab, 53px, sp, 39px);
+	aspect-ratio: 1 / 1;
+	display:flex; flex-direction:column; justify-content:center; align-items:center;
+	border: 1px solid red;
 	@include inc.mq(lap) {
 		width: 10%;
 	}
@@ -445,6 +471,9 @@ display: block!important;
 .sign_p7 {
 	height: auto;
 	@include inc.sizing(width, tab, 53px, sp, 39px);
+	aspect-ratio: 1 / 1;
+	display:flex; flex-direction:column; justify-content:center; align-items:center;
+	border: 1px solid red;
 	@include inc.mq(lap) {
 		width: 10%;
 	}
