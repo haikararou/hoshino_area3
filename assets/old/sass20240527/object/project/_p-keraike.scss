@@ -1,0 +1,234 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+keraike
+-----------------------------------------------------*/
+.-keraike-bg {
+	background: #DEE8E8;
+	.c-border-t {
+		border-color: inc.$base-color;
+	}
+	.c-list-dl {
+		border-color: inc.$base-color;
+		dt,
+		dd {
+			border-color: inc.$base-color;
+		}
+	}
+	.c-bg-yellow {
+		background: transparent;
+	}
+	.l-contents-block__wrap {
+		padding-top: 0 !important;
+	}
+	.c-bg-border {
+		border: 1px solid inc.$base-color;
+	}
+}
+
+.keraike.p-kv__logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	h1 {
+		max-width: 370px;
+		@include inc.sizing(margin-bottom, full, 60px, sp, 32px);
+	}
+	.c-button-block.-arrow::before {
+		transform: rotate(135deg);
+	}
+}
+
+.keraike.p-kv__lead {
+	position: relative;
+	color: inc.$base-color;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(39,57,57,1) 20%, rgba(39,57,57,1) 100%);
+	@include inc.mq(lap) {
+		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(39,57,57,1) 20%, rgba(39,57,57,1) 100%);
+	}
+	&::before {
+		content: "";
+		display: block;
+		aspect-ratio: 103 / 79;
+		@include inc.sizing(width, full, 103px, sp, 40px);
+		background: url();
+		background: url(../img/keraike/kareha1.png) no-repeat center center/contain;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		margin-left: -45vw;
+		bottom: -1.5vw;
+	}
+	&::after {
+		content: "";
+		display: block;
+		aspect-ratio: 284 / 276;
+		@include inc.sizing(width, full, 284px, sp, 100px);
+		background: url();
+		background: url(../img/keraike/yamagara.png) no-repeat center center/contain;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		margin-left: 32vw;
+		bottom: -3vw;
+	}
+	.l-container--primary {
+		height: 80vh;
+		min-height: 600px;
+		@include inc.mq(lap) {
+			height: 90vh;
+			min-height: 660px;
+		}
+		.p-kv__lead__inner {
+			padding-top: 7vw;
+			@include inc.mq(lap) {
+				padding-top: 3vw;
+			}
+		}
+	}
+}
+
+.p-keraike {
+	&__news {
+		.l-container--primary {
+			@include inc.mq(lap) {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+			}
+		}
+		h2 {
+			@include inc.sizing(font-size, full, 24px, sp, 17px);
+			line-height: 1.6;
+			margin-bottom: 1.5em;
+			@include inc.mq(lap) {
+				width: 29.365%;
+				margin-bottom: 0;
+			}
+		}
+		.newsR {
+			@include inc.mq(lap) {
+				width: 68.25%;
+				margin-top: .4em;
+			}
+		}
+		.news_txt{
+			width: 100%;
+			//margin-top: .4em;
+		}
+		ul {
+			@include inc.mq(lap) {
+				//width: 68.25%;
+				width: 100%;
+				//margin-top: .4em;
+			}
+			li {
+				position: relative;
+				padding-left: 1.2em;
+				line-height: 1.6;
+				&:before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 1em;
+					height: 1em;
+					content: "＊";
+				}
+				&:not(:last-child) {
+					margin-bottom: .5em;
+				}
+				& + li {
+					margin-top: .6rem;
+				}
+			}
+		}
+		.news_txt + ul {
+			margin-top: 1.5rem;
+			@include inc.mq(lap) {
+				margin-top: 2rem;
+			}
+		}
+	}
+	&__pickup {
+		// border-top: 1px solid inc.$base-color;
+		.-w-1_3 {
+			@include inc.mq(lap) {
+				width: 40%;
+			}
+		}
+		h2 {
+			@include inc.sizing(font-size, full, 24px, sp, 16px);
+			span {
+				color: inc.$main-text-color;
+				@include inc.sizing(font-size, full, 16px, sp, 12px);
+			}
+		}
+	}
+	&__notices {
+		h2 {
+			@include inc.mq(lap) {
+				width: 8em;
+			}
+		}
+		.l-contents--left-title__conts {
+			@include inc.mq(lap) {
+				width: calc(100% - 8em);
+			}
+		}
+	}
+	&__feature {
+		position: relative;
+		.count02 {
+			.feature_img {
+				position: relative;
+				&:before {
+					content: "";
+					display: block;
+					aspect-ratio: 92 / 83;
+					@include inc.sizing(width, full, 92px, sp, 40px);
+					background: url();
+					background: url(../img/keraike/kareha4.png) no-repeat center center/contain;
+					position: absolute;
+					right: 18vw;
+					@include inc.sizing(top, full, -40px, sp, -28px);
+				}
+			}
+		}
+		.count03 {
+			.feature_img {
+				position: relative;
+				&:before {
+					content: "";
+					display: block;
+					aspect-ratio: 73 / 88;
+					@include inc.sizing(width, full, 73px, sp, 40px);
+					background: url();
+					background: url(../img/keraike/kareha3.png) no-repeat center center/contain;
+					position: absolute;
+					left: 50%;
+					transform: translate(-50%, 0%);
+					margin-left: 32vw;
+					@include inc.sizing(bottom, full, -20px, sp, -8px);
+				}
+			}
+		}
+	}
+	&__guide {
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			aspect-ratio: 82 / 126;
+			@include inc.sizing(width, full, 64px, sp, 32px);
+			background: url();
+			background: url(../img/keraike/kareha2.png) no-repeat center center/contain;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0%);
+			margin-left: 30vw;
+			@include inc.sizing(top, full, -62px, sp, -24px);
+		}
+	}
+}

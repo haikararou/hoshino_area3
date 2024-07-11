@@ -1,0 +1,324 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+button
+-----------------------------------------------------*/
+.c-button-block {
+	display: inline-block;
+	border-radius: inc.size(full, 10px, sp, 5px);
+	@include inc.sizingRem(font-size, full, 16px, sp, 14px);
+	padding: 0 3em;
+	cursor: pointer;
+	height: 40px;
+	span {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		min-width: 3.3rem;
+	}
+	&[target="_blank"] {
+		span {
+			position: relative;
+			&::after {
+				content: '';
+				width: .8em;
+				height: .8em;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: .5em;
+				position: absolute;
+    			right: -20px;
+				color: inherit;
+				background: url(../img/common/icon-outer.svg) no-repeat center center / contain;
+			}
+		}
+	}
+	&.-arrow {
+		position: relative;
+		&::before {
+			content: '';
+			width: .4em;
+			height: .4em;
+			display: block;
+			position: absolute;
+			left: 1em;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			transform: rotate(45deg);
+			border-top: 1px solid currentColor;
+			border-right: 1px solid currentColor;
+		}
+		&.-left {
+			&::before {
+				transform: rotate(-135deg);
+			}
+		}
+		&.-right {
+			&::before {
+				left: auto;
+				right: 1em;
+			}
+		}
+	}
+	&.-icon {
+		padding: .75em .4em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		@include inc.mq(desk) {
+		justify-content: flex-start;
+			padding: .75em 1.5em;
+		}
+		i,
+		.icon {
+			width: 1em;
+			margin-right: .7em;
+			img { display: block;}
+		}
+	}
+	&.-white {
+		background: #FFF;
+	}
+	&.-lightyellow {
+		background: inc.$theme-color-lightyellow;
+	}
+	&.-yellow {
+		background: inc.$theme-color-yellow;
+	}
+	&.-fullsize {
+		width: 100%;
+	}
+	&.-more {
+		width: 100%;
+		@include inc.mq(tab) {
+			width: auto;
+			display: inline-block;
+		}
+	}
+	&.-pdf {
+		background-image: url("../img/common/icon-pdf.svg");
+		background-repeat: no-repeat;
+		background-position: 95% 50%;
+		background-size: 1.6875em 1em;
+		span {
+			&::after {
+				display: none;
+			}
+		}
+	}
+	&.-num {
+		width: 40px;
+		padding: 0;
+	}
+	&.-act {
+		background: inc.$theme-color-gold;
+		color: inc.$base-color;
+	}
+	&.-pagenavi {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	&.-submit {
+		background: inc.$theme-color-gold;
+		height: 66px;
+		width: 100%;
+		border: none;
+		color: inc.$base-color;
+		@include inc.sizingRem(font-size, full, 24px, sp, 18px);
+		//font-family: fot-tsukumin-pr6n, sans-serif;
+		&.-back {
+			width: 48%;
+			background: inc.$theme-color-lightyellow;
+			color: inc.$theme-color-black;
+		}
+		&.-submit2 {
+			width: 48%;
+			margin-left: 4%;
+		}
+	}
+	&.-parking {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		//width: 120px;
+		@include inc.mq(tab) {
+			width: auto;
+		}
+		.icon {
+			width: 1em;
+			margin-right: 0.7em;
+			display: none;
+			@include inc.mq(tab) {
+				display: block;
+			}
+			// img {
+			// 	display: block;
+			// }
+		}
+		span {
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				left: -16px;
+				top: 50%;
+				transform: translate(0%, -50%);
+				width: 12px;
+				height: 12px;
+				display: block;
+				background: url('/wp-content/themes/hoshino-area/assets/img/common/icon-parking.svg') no-repeat 50% 50% /contain;
+				margin-top: 1px;
+				@include inc.mq(tab) {
+					left: -20px;
+					width: 14px;
+					height: 14px;
+					margin-top: 1px;
+				}
+			}
+		}
+	}
+}
+
+.wp-pagenavi {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	@include inc.sizing(gap, full, 16px, sp, 6px);
+	.previouspostslink {
+		position: absolute;
+		left: 0;
+	}
+	.nextpostslink {
+		position: absolute;
+		right: 0;
+	}
+}
+
+.c-button-arrow {
+	padding-left: 1em;
+	
+	&::before {
+		content: '';
+		width: .4em;
+		height: .4em;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: .6em;
+		margin-left: -1em;
+		transform: rotate(45deg) translateY(-.1em);
+		border-top: 1px solid currentColor;
+		border-right: 1px solid currentColor;
+
+	}
+}
+
+.c-button-outerlink {
+	&::after {
+		content: '';
+		width: .8em;
+		height: .8em;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: .5em;
+		color: inherit;
+		background: url(../img/common/icon-outer.svg) no-repeat center center / contain;
+	}
+}
+
+.c-button-hamburger {
+	display: block;
+	background: inc.$theme-color-black;
+	position: relative;
+	border-radius: inc.size(full, 10px, sp, 5px);
+	width: inc.size(full, 105px, sp, 65px);
+	height: inc.size(tab, 47px, sp, 43px);
+	
+	position: fixed;
+	z-index: 999;
+	top: inc.size(full, 30px, sp, 5px);
+	right: inc.size(tab, 10px, sp, 5px);
+	margin: auto;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0;
+	cursor: pointer;
+	transition: background .3s;
+	
+ @include inc.mq(tab) {
+		position: relative;
+		top: auto;
+		right: auto;
+		height: 2.75em;
+	}
+	
+	&::before,
+	&::after {
+		content: '';
+		width: 1.5rem;
+		height: 1px;
+		background: #FFF;
+		display: block;
+		position: absolute;
+		inset: 0;
+		margin: auto;
+		transition: transform .3s, box-shadow .3s;
+	}
+	
+	&::before {
+		transform: translateY(-5px);
+		box-shadow: 0 5px 0 0 #FFF;
+	}
+	&::after {
+		transform: translateY(5px);
+	}
+	
+	
+	&.-open {
+		background: inc.$theme-color-darkyellow;
+		
+		&::before {
+			transform: rotate(45deg);
+			box-shadow: none;
+			box-shadow: 0 5px 0 0 transparent;
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.c-button-areamap {
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	z-index: 97;
+	text-align: center;
+	
+	&__text {
+		color: inc.$theme-color-darkyellow;
+		font-family: inc.$font-set-en;
+		font-display: swap;
+		font-size: inc.rem(11);
+		font-weight: 600;
+	}
+}
+
+.a-list {
+	li + li {
+		margin-top: .6rem;
+		display: inline-block;
+	}
+}
+p + .a-list {
+	margin-top: 1rem;
+}

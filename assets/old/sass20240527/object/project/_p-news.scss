@@ -1,0 +1,21 @@
+
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+post
+-----------------------------------------------------*/
+.p-news {
+  &-date {
+    text-align: left;
+    @include inc.sizingRem(font-size, lap, 12px, sp, 10px);
+    @include inc.mq(lap) {
+      //text-align: right;
+      @include inc.sizingRem(font-size, full, 14px, lap, 12px);
+    }
+  }
+  &-hero {
+    img {
+      width: 100%;
+    }
+  }
+}

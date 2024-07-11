@@ -41,7 +41,7 @@ get_header(); ?>
         </div>
         <div class="facility-flex-txt00000 map-area03">
           <div class="p-home_maplist">
-            <a href="/wp-content/uploads/2024/04/hoshinoareamap_2306-1.pdf" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a>
+            <a href="/wp-content/uploads/2024/07/hoshinoareamap_2407.pdf" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a>
             <dl class="p-facility-list">
               <div class="p-facility-list__item">
                 <div>

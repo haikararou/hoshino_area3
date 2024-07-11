@@ -1,0 +1,113 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+title
+-----------------------------------------------------*/
+.c-title-ex-large {
+  @include inc.sizingRem(font-size, full, 40px, sp, 24px);
+  margin-bottom: 1em;
+  line-height: 1.4;
+  span {
+    display: block;
+    color: inc.$theme-color-gold;
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    margin-bottom: .5rem;
+  }
+}
+.c-title-large {
+  @include inc.sizingRem(font-size, full, 32px, sp, 20px);
+  margin-bottom: 1em;
+  line-height: 1.4;
+  span {
+    display: block;
+    color: inc.$theme-color-gold;
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    margin-bottom: .5rem;
+  }
+  &.-vertical {
+    @include inc.mq(tab) {
+      white-space: nowrap;
+      writing-mode: vertical-rl;
+      font-feature-settings: initial;
+    }
+  }
+}
+.c-title-medium {
+  @include inc.sizingRem(font-size, full, 24px, sp, 18px);
+  margin-bottom: 1em;
+  line-height: 1.4;
+  span {
+    display: block;
+    color: inc.$theme-color-gold;
+    @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+    margin-bottom: .5rem;
+  }
+}
+.c-title-small {
+  @include inc.sizingRem(font-size, full, 20px, sp, 16px);
+  margin-bottom: 1em;
+  line-height: 1.4;
+  &.line2 {
+    line-height: 2;
+  }
+  span {
+    display: block;
+    color: inc.$theme-color-gold;
+    @include inc.sizingRem(font-size, full, 13px, sp, 11px);
+    margin-bottom: .5rem;
+    &.-black {
+      color: inc.$theme-color-black;
+    }
+    &.tag-b {
+      display: inline-block;
+      color: inc.$base-color;
+      background: inc.$theme-color-black;
+      line-height: 1;
+      text-align: center;
+      padding: .4rem 1rem;
+      border-radius: .8rem;
+      margin: 0 1rem 0 0;
+      vertical-align: bottom;
+    }
+  }
+}
+.c-title-icon {
+  padding-left: 1.5em;
+  display: flex;
+  line-height: 1;
+  .icon {
+    width: 1em;
+    height: 1em;
+    margin-left: -1.5em;
+    margin-right: .5em;
+    vertical-align: middle;
+    direction: inline-block;
+    object-fit: contain;
+  }
+}
+
+.c-title-gothic {
+  font-family: inc.$font-set-en;
+  font-display: swap;
+  font-weight: 400;
+  @include inc.sizingRem(font-size, full, 16px, sp, 14px);
+  @include inc.sizing(margin-bottom, full, 16px, sp, 8px);
+  display: block;
+}
+
+.c-title-sub {
+  color: inc.$theme-color-gold;
+  @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.-pagetitile {
+  @include inc.sizing(margin-bottom, full, 96px, sps, 48px);
+  .c-title-ex-large {
+    margin-bottom: .3em;
+    span {
+      margin-bottom: .5rem;
+    }
+  }
+}
