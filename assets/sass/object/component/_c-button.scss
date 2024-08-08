@@ -254,7 +254,7 @@ button
 	cursor: pointer;
 	transition: background .3s;
 	
- @include inc.mq(tab) {
+	@include inc.mq(tab) {
 		position: relative;
 		top: auto;
 		right: auto;
@@ -293,6 +293,42 @@ button
 		}
 		&::after {
 			transform: rotate(-45deg);
+		}
+	}
+}
+
+html:lang(en) {
+	.c-button-hamburger {
+		margin-top: 40px;
+		@include inc.mq(tab) {
+			margin-top: auto;
+		}
+	}
+}
+html:lang(zh-TW) {
+	.c-button-hamburger {
+		margin-top: 40px;
+		@include inc.mq(tab) {
+			margin-top: auto;
+		}
+	}
+}
+
+html:lang(zh-CN) {
+	.c-button-hamburger {
+		margin-top: 40px;
+		@include inc.mq(tab) {
+			margin-top: auto;
+		}
+	}
+}
+
+
+html:lang(ko) {
+	.c-button-hamburger {
+		margin-top: 40px;
+		@include inc.mq(tab) {
+			margin-top: auto;
 		}
 	}
 }

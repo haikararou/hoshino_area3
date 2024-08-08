@@ -28,14 +28,15 @@
           <div class="sign_p6"><img src="http://cnt.parkingweb.jp/001/000000/000001/003180/001/0001parking_status.png"></div>
           <div class="sign_p7"><img src="http://cnt.parkingweb.jp/001/000000/000001/003181/001/0001parking_status.png"></div>
         </div>
-        <p class="l-spacer -em1 c-text-small">満空情報はリアルタイムで更新していますが、タイミングによって実際と異なる場合があります。<br>また、機器に不具合が発生した場合等は、正確な表示ができません。</p>
+        <p class="l-spacer -em1 c-text-small">＊道路状況等により、右折入場をお断りすることがあります。</p>
+        <p class="l-spacer -em1 c-text-small">＊満空情報はリアルタイムで更新していますが、タイミングによって実際と異なる場合があります。また、機器に不具合が発生した場合等は、正確な表示ができません。</p>
       </div>
       <div class="l-contents-2column__block -w-1_2--left">
 
       <div class="">
           <dl class="c-list-dl -mgB-s">
             <dt>駐車料金（P1-P3）</dt>
-            <dd>最初の30分　無料<br>以降1時間毎　300円（上限3,000円）<br><span class="c-text-small">*合計2,000円以上のご利用で入庫から2時間まで無料（対象店舗：トンボの湯、ハルニレテラス、村民食堂、ピッキオ）<br>*P6、P7、臨時駐車場は無料<br>*お会計時に、割引券を発行</span></dd>
+            <dd class="Gtransltae">最初の30分　無料<br>以降1時間毎　300円（上限3,000円）<br><span class="c-text-small">*合計2,000円以上のご利用で入庫から2時間まで無料（対象店舗：トンボの湯、ハルニレテラス、村民食堂、ピッキオ）<br>*P6、P7、臨時駐車場は無料<br>*お会計時に、割引券を発行</span></dd>
             <dt>利用の流れ（P1-P3）</dt>
             <dd><ul class="c-list-dot">
               <li class="c-list-dot__item">入庫<br><span class="c-text-small">車両ナンバーをカメラが読み取り、ゲートバーが開きます。駐車券はありません。</span></li>
@@ -45,9 +46,9 @@
             <dt>決済方法</dt>
             <dd>現金の他、以下のキャッシュレス決済をご利用いただけます。
             <ul class="c-list-dot">
-              <li class="c-list-dot__item">クレジットカード<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_01.png"></span></li>
-              <li class="c-list-dot__item">電子マネー<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_02.png"></span></li>
-              <!-- <li class="c-list-dot__item">コード払い<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_03.png"></span></li> -->
+              <li class="c-list-dot__item">クレジットカード<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_01.png"></li>
+              <li class="c-list-dot__item">電子マネー<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_02.png"></li>
+              <li class="c-list-dot__item">コード払い<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/parking/approval_03.png"></li>
             </ul>
             </dd>
             <dt>営業時間</dt>
@@ -63,22 +64,22 @@
             <dd>
               <span class="c-text-icon">
                 <div class="tw6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"></div>
-                <div>11～14時頃</div>
+                <div class="Gtransltae">11～14時頃</div>
               </span>
               <span class="c-text-icon">
                 <div class="tw6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"></div>
-                <div>12～13時頃</div>
+                <div class="Gtransltae">12～13時頃</div>
               </span>
             </dd>
             <dt>土日祝</dt>
             <dd>
               <span class="c-text-icon">
                 <div class="tw6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_02.svg" width="28" height="28" class="icon2"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_03.svg" width="28" height="28" class="icon2"></div>
-                <div>10～15時頃</div>
+                <div class="Gtransltae">10～15時頃</div>
               </span>
               <span class="c-text-icon">
                 <div class="tw6"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking_01.svg" width="28" height="28" class="icon2"></div>
-                <div>11～14時頃</div>
+                <div class="Gtransltae">11～14時頃</div>
               </span>
             </dd>
             </dl>

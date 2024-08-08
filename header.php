@@ -58,7 +58,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body <?php body_class('l-body'); ?> id="js-body">
   <div id="loading" class="js-loading"></div>
+
   <header class="l-header" id="js-header">
+    <div class="lang-en"><div class="inaccuracies">This website has been translated using Google Translate, which may lead to inaccuracies.</div></div>
+    <div class="lang-tw"><div class="inaccuracies">This website has been translated using Google Translate, which may lead to inaccuracies.</div></div>
+    <div class="lang-cn"><div class="inaccuracies">This website has been translated using Google Translate, which may lead to inaccuracies.</div></div>
+    <div class="lang-ko"><div class="inaccuracies">This website has been translated using Google Translate, which may lead to inaccuracies.</div></div>
     <div class="l-header__top" id="js-fixed-header-sp">
       <a href="<?php echo home_url(); ?>">
         <p class="l-header-logo">

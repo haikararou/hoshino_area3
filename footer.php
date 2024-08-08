@@ -70,8 +70,8 @@
           <li class="lang-ja"><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
           <li class="lang-en"><a href="https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
           <li class="lang-tw"><a href="https://hoshinoresorts.com/zh_tw/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
-          <li class="lang-cn"><a href="https://hoshinoresorts.com/zh_cn/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
-          <li class="lang-ko"><a href="https://hoshinoresorts.com/ko/hotels/hoshinoyakaruizawa/" target="_blank">星のや軽井沢</a></li>
+          <li class="lang-cn"><a href="https://hoshinoresorts.com/zh_cn/brands/hoshinoya/" target="_blank">星のや軽井沢</a></li>
+          <li class="lang-ko"><a href="https://hoshinoresorts.com/ko/brands/hoshinoya/" target="_blank">星のや軽井沢</a></li>
 
           <li><a href="https://www.blestoncourt.com/" target="_blank">軽井沢ホテルブレストンコート</a></li>
 

@@ -44,6 +44,42 @@
 					</ul>
 				</section>
 
+
+				<section class="l-spacer -small -both">
+					<h2 class="c-title-medium">各店舗で利用可能なキャッシュレス決済</h2>
+					<h3 class="c-title-small">トンボの湯・村民食堂</h3>
+					<ul class="c-list-dot -mgB-s">
+						<li class="c-list-dot__item">クレジットカード<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_01.png"class="-approval"></li>
+						<li class="c-list-dot__item">電子マネー<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_02.png"class="-approval"></li>
+						<li class="c-list-dot__item">コード払い<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_03.png"class="-approval"></li>
+					</ul>
+					<h3 class="c-title-small">ハルニレテラス</h3>
+					<ul class="c-list-dot -mgB-s">
+						<li class="c-list-dot__item">クレジットカード<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_01.png"class="-approval"></li>
+						<li class="c-list-dot__item">電子マネー<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_02.png"class="-approval"></li>
+						<li class="c-list-dot__item">コード払い<br><span class="c-text-small">＊沢村、川上庵では、ご利用いただけません。</span><br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_06.png"class="-approval"></li>
+					</ul>
+					<h3 class="c-title-small">ピッキオ</h3>
+					<ul class="c-list-dot -mgB-s">
+						<li class="c-list-dot__item">クレジットカード<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_07.png"class="-approval"></li>
+						<li class="c-list-dot__item">電子マネー<br><span class="c-text-small">＊ご利用いただけません。</span></li>
+						<li class="c-list-dot__item">コード払い<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_09.png"class="-approval"></li>
+					</ul>
+				</section>
+
+				<section class="l-spacer -small -both">
+					<h2 class="c-title-medium">駐車場の事前精算機</h2>
+					<p>現金の他、以下のキャッシュレス決済をご利用いただけます。<br><a href="/parking/" class="c-text-underline">駐車場のご利用についてくわしくはこちらをご確認ください。</a></p>
+					<p>
+					<ul class="c-list-dot">
+						<li class="c-list-dot__item">クレジットカード<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_10.png"class="-approval"></li>
+						<li class="c-list-dot__item">電子マネー<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_11.png"class="-approval"></li>
+						<li class="c-list-dot__item">コード払い<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_12.png"class="-approval"></li>
+					</ul>
+					</p>
+				</section>
+
+
 				<section class="l-spacer -small -both" id="pet">
 					<h2 class="c-title-medium">ペットをお連れのお客様へ</h2>
 					<ul class="c-list-dot">

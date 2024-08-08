@@ -15,6 +15,19 @@
   pointer-events: none;
 }
 
+.inaccuracies {
+  background: #000;
+  color: #fff;
+  padding: 0 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 40px;
+  display:flex; flex-direction:column; justify-content:center;
+  @include inc.sizingRem(font-size, full, 16px, sp, 12px);
+}
 
 .l-header {
   width: 100%;
@@ -31,30 +44,99 @@
     height: auto;
   }
   &__top {
+    transition: .4s;
     min-height: 60px;
     @include inc.sizing(padding-top, full, 30px, sp, 10px);
     @include inc.sizing(padding-bottom, full, 30px, sp, 10px);
     @include inc.sizing(padding-left, full, 50px, sp, 16px);
     @include inc.sizing(padding-right, full, 50px, sp, 16px);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background: #FFF;
-    
     position: fixed;
     top: 0; left: 0; right: 0;
     margin: auto;
-    //z-index: 99;
-    
     @include inc.mq(tab) {
       position: relative;
       z-index: 100;
     }
-    
   }
 }
+
+html:lang(en) {
+  .l-header {
+    margin-top: 40px;
+    &__top {
+      top: 40px;
+      @include inc.mq(tab) {
+        top: 0px;
+      }
+    }
+  }
+  .-gmenu-open .l-header {
+    margin-top: 40px;
+    &__top {
+      top: 0px;
+    }
+  }
+}
+
+html:lang(zh-TW) {
+  .l-header {
+    margin-top: 40px;
+    &__top {
+      top: 40px;
+      @include inc.mq(tab) {
+        top: 0px;
+      }
+    }
+  }
+  .-gmenu-open .l-header {
+    margin-top: 40px;
+    &__top {
+      top: 0px;
+    }
+  }
+}
+
+html:lang(zh-CN) {
+  .l-header {
+    margin-top: 40px;
+    &__top {
+      top: 40px;
+      @include inc.mq(tab) {
+        top: 0px;
+      }
+    }
+  }
+  .-gmenu-open .l-header {
+    margin-top: 40px;
+    &__top {
+      top: 0px;
+    }
+  }
+}
+
+html:lang(ko) {
+  .l-header {
+    margin-top: 40px;
+    &__top {
+      top: 40px;
+      @include inc.mq(tab) {
+        top: 0px;
+      }
+    }
+  }
+  .-gmenu-open .l-header {
+    margin-top: 40px;
+    &__top {
+      top: 0px;
+    }
+  }
+}
+
 
 .page-template-halnire {
   .l-header {
@@ -282,8 +364,8 @@
       top: 0; left: 0; right: 0; 
       margin: auto;
     }
-    
   }
+
   
   
   &__primary {
@@ -328,6 +410,40 @@
     }
   }
 }
+
+
+html:lang(en) {
+  .l-header-menu.-fixed {
+    @include inc.mq(tab) {
+      top: 40px;
+    }
+  }
+}
+
+html:lang(zh-TW) {
+  .l-header-menu.-fixed {
+    @include inc.mq(tab) {
+      top: 40px;
+    }
+  }
+}
+
+html:lang(zh-CN) {
+  .l-header-menu.-fixed {
+    @include inc.mq(tab) {
+      top: 40px;
+    }
+  }
+}
+
+html:lang(ko) {
+  .l-header-menu.-fixed {
+    @include inc.mq(tab) {
+      top: 40px;
+    }
+  }
+}
+
 
 .l-header-drawer {
   display: none;

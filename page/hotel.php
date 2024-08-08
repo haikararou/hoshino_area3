@@ -43,10 +43,10 @@
           <a href="https://hoshinoresorts.com/zh_tw/hotels/hoshinoyakaruizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
         <div class="l-spacer -em2 lang-cn">
-          <a href="https://hoshinoresorts.com/zh_cn/hotels/hoshinoyakaruizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+          <a href="https://hoshinoresorts.com/zh_cn/brands/hoshinoya/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
         <div class="l-spacer -em2 lang-ko">
-          <a href="https://hoshinoresorts.com/ko/hotels/hoshinoyakaruizawa/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
+          <a href="https://hoshinoresorts.com/ko/brands/hoshinoya/" target="_blank" class="c-button-block -yellow -arrow -more"><span>施設サイト</span></a>
         </div>
 
       </div>

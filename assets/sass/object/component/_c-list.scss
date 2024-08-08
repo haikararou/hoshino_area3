@@ -52,6 +52,11 @@ list
   position: relative;
   &__item {
     line-height: 1.6;
+    // span {
+    //   margin-top: -.8rem;
+    //   display: block;
+    //   @include inc.sizingRem(font-size, tab, 12px, sps, 10px);
+    // }
     &::before {
       content: '・';
       position: absolute;
@@ -59,7 +64,7 @@ list
       line-height: 2;
     }
     &:not(:last-child) {
-      margin-bottom: .6em;
+      margin-bottom: 1rem;
     }
   }
 }
