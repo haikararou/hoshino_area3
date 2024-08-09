@@ -140,6 +140,9 @@ home
       line-height: 1.6;
       letter-spacing: .5rem;
     }
+    p {
+      letter-spacing: -0.05em;
+    }
   }
 
   &__lead {
@@ -259,6 +262,9 @@ home
         display: flex;
         flex-direction:column;
         justify-content: end;
+      }
+      p {
+        letter-spacing: -0.05em;
       }
     }
   }

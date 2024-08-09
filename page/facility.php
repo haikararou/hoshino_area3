@@ -34,16 +34,16 @@
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/tombo-no-yu'); ?>">星野温泉 トンボの湯</a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/harunireterrace'); ?>">ハルニレテラス</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/harunireterrace'); ?>"><span class="kerning">ハルニレテラス</span></a></dt>
                 </div>
                 <div>
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/sonmin-shokudo'); ?>">村民食堂</a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity#picchio'); ?>">ピッキオ</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/activity#picchio'); ?>"><span class="kerning">ピッキオ</span></a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池スケートリンク</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/kera-ike-icerink'); ?>">ケラ池<span class="kerning">スケートリンク</span></a></dt>
                 </div>
                 <div>
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church#karuizawachurch'); ?>">軽井沢高原教会</a></dt>
@@ -52,20 +52,20 @@
                   <dt class="p-facility-list__dt"><a href="<?php echo home_url('/church#stonechurch'); ?>">石の教会 内村鑑三記念堂</a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank"><em class="c-button-outerlink">ブレストンコート ユカワタン</em></a></dt>
+                  <dt class="p-facility-list__dt"><a href="https://yukawatan.blestoncourt.com/" target="_blank"><em class="c-button-outerlink"><span class="kerning">ブレストンコート ユカワタン</span></em></a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/hungryspot'); ?>">カフェ ハングリースポット</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/hungryspot'); ?>"><span class="kerning">カフェ ハングリースポット</span></a></dt>
                 </div>
                 <div>
-                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/ikarucafe'); ?>">イカルカフェ</a></dt>
+                  <dt class="p-facility-list__dt"><a href="<?php echo home_url('/ikarucafe'); ?>"><span class="kerning">イカルカフェ</span></a></dt>
                 </div>
                 <div>
                   <dt class="p-facility-list__dt facility-acd"><span>ホテル</span></dt>
                   <dd class="p-facility-list__dd">
                     <ul>
                       <li><a href="<?php echo home_url('/hotel#hoshinoya'); ?>">星のや軽井沢</a></li>
-                      <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢ホテルブレストンコート</a></li>
+                      <li><a href="<?php echo home_url('/hotel#hbc'); ?>">軽井沢<span class="kerning">ホテルブレストンコート</span></a></li>
                       <li><a href="<?php echo home_url('/hotel#beb5'); ?>">BEB5軽井沢</a></li>
                     </ul>
                   </dt>

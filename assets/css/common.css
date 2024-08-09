@@ -56,14 +56,18 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "palt";
   font-feature-settings: "palt";
-  font-family: TsukuMinPr6N-L, sans-serif;
+  font-family: Shippori Mincho, sans-serif;
+  letter-spacing: -0.01em;
   font-display: swap;
   font-weight: 300;
   font-style: normal;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  letter-spacing: 0.05em;
+}
+
+.kerning {
+  letter-spacing: -0.1em;
 }
 
 h1,
@@ -7715,6 +7719,9 @@ home
   line-height: 1.6;
   letter-spacing: 0.5rem;
 }
+.p-home_sansaku p {
+  letter-spacing: -0.05em;
+}
 .p-home__lead {
   padding: 0 0 120px;
   position: relative;
@@ -7891,6 +7898,9 @@ home
         -ms-flex-pack: end;
             justify-content: end;
   }
+}
+.p-home__lead-txt p {
+  letter-spacing: -0.05em;
 }
 
 html:lang(en) .p-home_sansaku h2 {

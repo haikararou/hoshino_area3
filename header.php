@@ -16,9 +16,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- リマーケティング タグの Google コード -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-  <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?ISugzJK~YHU%3D&box=mVcnX52C2Ng%3D&aa=1&ab=2"></script>
+  <!-- <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?ISugzJK~YHU%3D&box=mVcnX52C2Ng%3D&aa=1&ab=2"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 
 <?php if ( is_page('contact') ) : ?>
@@ -123,10 +126,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="l-header-menu" id="js-fixed-header-pc">
       <ul class="c-gmenu-primary l-header-menu__primary" id="js-header-menu-primary">
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/tombo-no-yu'); ?>" class="c-gmenu-primary__link">温泉</a></li>
-        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/shop-restaurant'); ?>" class="c-gmenu-primary__link">ショップ&amp;レストラン</a></li>
-        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/activity'); ?>" class="c-gmenu-primary__link">アクティビティ</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/shop-restaurant'); ?>" class="c-gmenu-primary__link"><span class="kerning">ショップ&amp;レストラン</span></a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/activity'); ?>" class="c-gmenu-primary__link"><span class="kerning">アクティビティ</span></a></li>
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/church'); ?>" class="c-gmenu-primary__link">教会</a></li>
-        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/hotel'); ?>" class="c-gmenu-primary__link">ホテル</a></li>
+        <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/hotel'); ?>" class="c-gmenu-primary__link"><span class="kerning">ホテル</span></a></li>
       </ul>
       
       <div class="c-gmenu-secondary l-header-menu__secondary">
