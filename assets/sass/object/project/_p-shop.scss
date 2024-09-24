@@ -96,3 +96,17 @@ post
   max-width: 270px;
   @include inc.sizing(width, tab, 270px, sp, 180px);
 }
+
+
+.page-template-shop {
+  .c-list-std {
+    .c-list-std__item {
+      .c-text-icon {
+        letter-spacing: -0.06rem;
+        @include inc.mq(tab) {
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
