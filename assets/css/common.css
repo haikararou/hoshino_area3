@@ -5763,6 +5763,9 @@ keraike
   margin-left: 30vw;
   top: clamp(-62px, -3.03vw - 12.6px, -24px);
 }
+.p-keraike__faq {
+  background: #fff;
+}
 
 /*
 access

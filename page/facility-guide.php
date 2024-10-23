@@ -59,7 +59,7 @@
 						<li class="c-list-dot__item">電子マネー<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_02.png"class="-approval"></li>
 						<li class="c-list-dot__item">コード払い<br><span class="c-text-small">＊沢村、川上庵では、ご利用いただけません。</span><br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_06.png"class="-approval"></li>
 					</ul>
-					<h3 class="c-title-small">ピッキオ</h3>
+					<h3 class="c-title-small">ピッキオ・ケラ池スケートリンク</h3>
 					<ul class="c-list-dot -mgB-s">
 						<li class="c-list-dot__item">クレジットカード<br><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility/approval_07.png"class="-approval"></li>
 						<li class="c-list-dot__item">電子マネー<br><span class="c-text-small">＊ご利用いただけません。</span></li>

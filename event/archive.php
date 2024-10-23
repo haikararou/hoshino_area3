@@ -34,7 +34,7 @@ $args = array(
         'key' => 'event_end',
         'value' => $today,
         'type'    => 'date',
-        'compare' => '>',
+        'compare' => '>=',
         ),
     ),
     'posts_per_page' => 3,

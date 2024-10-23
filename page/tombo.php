@@ -323,11 +323,11 @@
 						<h2 class="c-title-large -vertical l-contents--left-title__title">温泉の入り方</h2>
 						<div class="l-contents-2column">
 							<div class="l-contents-2column__block -w-1_2--left">
-								<div class="youtube lang-ja"><?php the_sub_field('how_to_youtube'); ?></div>
-								<div class="youtube lang-en"><?php the_sub_field('how_to_youtube_en'); ?></div>
-								<div class="youtube lang-tw"><?php the_sub_field('how_to_youtube_tw'); ?></div>
-								<div class="youtube lang-cn"><?php the_sub_field('how_to_youtube_cn'); ?></div>
-								<div class="youtube lang-ko"><?php the_sub_field('how_to_youtube_ko'); ?></div>
+								<div class="youtube lang-ja"><?php echo get_sub_field('how_to_youtube'); ?></div>
+								<div class="youtube lang-en"><?php echo get_sub_field('how_to_youtube_en'); ?></div>
+								<div class="youtube lang-tw"><?php echo get_sub_field('how_to_youtube_tw'); ?></div>
+								<div class="youtube lang-cn"><?php echo get_sub_field('how_to_youtube_cn'); ?></div>
+								<div class="youtube lang-ko"><?php echo get_sub_field('how_to_youtube_ko'); ?></div>
 							</div>
 							<div class="l-contents-2column__block -w-1_2--right">
 							<?php if(have_rows('how_to_list')): ?>

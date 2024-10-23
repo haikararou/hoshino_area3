@@ -37,21 +37,16 @@
 
 <section class="-keraike-bg lead-end">
 
+	<?php if(get_field('news_txt',119)) :?>
 	<section class="l-spacer -medium -both p-keraike__news">
 		<div class="l-container--primary">
 			<h2 class="c-title-ex-small">ケラ池スケートリンク<br class="sp_b">からのお知らせ</h2>
 			<div class="newsR">
 				<div class="news_txt"><?php the_field('news_txt'); ?></div>
-				<?php if(have_rows('news')): ?>
-				<ul>
-				<?php while(have_rows('news')): the_row(); ?>
-					<li><?php the_sub_field('news_conts'); ?></li>
-				<?php endwhile; ?>
-				</ul>
-				<?php endif; ?>
 			</div>
 		</div>
 	</section>
+	<?php endif; ?>
 
 	<?php $title ="ケラ池の"; get_template_part('event/list-3-facility'); ?>
 

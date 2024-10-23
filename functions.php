@@ -196,6 +196,56 @@ add_filter('acf/pre_load_post_id', 'fix_post_id_on_preview', 10, 2);
 
 
 
+/*-------------------------------------------*/
+/* 　カスタムフィールドもプレビューできるようにする ver2
+/*-------------------------------------------*/
+// function get_preview_id($postId) {
+// 	global $post;
+// 	$previewId = 0;
+// 	if (isset($_GET['preview']) && ($post->ID == $postId) && $_GET['preview'] == true && ($postId == url_to_postid($_SERVER['REQUEST_URI']))) {
+// 		$preview = wp_get_post_autosave($postId);
+// 		if ($preview != false) {
+// 			$previewId = $preview->ID;
+// 		}
+// 	}
+// 	return $previewId;
+// }
+
+// add_filter('get_post_metadata', function ($meta_value, $post_id, $meta_key, $single) {
+// 	if ($preview_id = get_preview_id($post_id)) {
+// 		if ($post_id != $preview_id) {
+// 			$meta_value = get_post_meta($preview_id, $meta_key, $single);
+// 		}
+// 	}
+// 	return $meta_value;
+// }, 10, 4);
+
+// add_action('wp_insert_post', function ($postId) {
+// 	global $wpdb;
+// 		if (wp_is_post_revision($postId)) {
+// 			if (count($_POST['fields']) != 0) {
+// 				foreach ($_POST['fields'] as $key => $value) {
+// 					$field = get_field($key);
+// 					if (!isset($field['name']) || !isset($field['key'])) continue;
+// 					if (count(get_metadata('post', $postId, $field['name'], $value)) != 0) {
+// 					update_metadata('post', $postId, $field['name'], $value);
+// 					update_metadata('post', $postId, "_" . $field['name'], $field['key']);
+// 					} else {
+// 						add_metadata('post', $postId, $field['name'], $value);
+// 						add_metadata('post', $postId, "_" . $field['name'], $field['key']);
+// 					}
+// 				}
+// 			}
+// 	do_action('save_preview_postmeta', $postId);
+// 	}
+// });
+
+
+
+
+
+
+
 /* ---------------------------------------------------------------------
 Lazy Blocksで勝手に出力されるdivをまとめて消す
 -------------------------------------------------------------------------*/
@@ -260,3 +310,15 @@ function my_acf_init_block_types() {
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page();
 }
+
+
+
+//----------------------------------------------------
+// ワードプレスで投稿が「更新に失敗しました」と表示される場合の対処
+//----------------------------------------------------
+
+// function add_migrate_scripts() {
+//     wp_deregister_script( 'jquery-migrate' );
+//     wp_enqueue_script('jquery-migrate', '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js', array(), NULL , true);
+// }
+// add_action('wp_enqueue_scripts', 'add_migrate_scripts');
