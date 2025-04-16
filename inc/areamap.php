@@ -21,7 +21,8 @@
 <div class="no00 no06"><a href="#mdl_26" class="mdl"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_pin_walk.svg" alt=""></a></div>
 
 <div class="txt txt_01">軽井沢<br>野鳥の森</span></div>
-
+<div class="txt txt_02">ハルニレテラス</span></div>
+<div class="txt txt_03"><i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/map_pin_walk.svg" alt=""></i><span>散策スポット</span></div>
 </div>
 
 <section id="mdl_01" class="hide-area">

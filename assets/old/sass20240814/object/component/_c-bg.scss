@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+bg
+-----------------------------------------------------*/
+.c-bg-white {
+  background: inc.$base-color;
+}
+.c-bg-yellow {
+  background: inc.$theme-color-lightyellow;
+}

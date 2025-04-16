@@ -95,6 +95,14 @@
 		<article class="l-contents--left-title -title-large">
 			<h2 class="c-title-large -vertical l-contents--left-title__title">よくある質問</h2>
 			<div class="l-contents--left-title__conts">
+        <dl class="p-faq-list">
+					<div class="p-faq-list__item">
+						<dt class="p-faq-list__question">EV充電器はありますか？</dt>
+						<dd class="p-faq-list__answer">
+							<p>P1内（入口先のスロープを上った段）に、200V/6kwが3基設置されています。充電カード又は専用アプリにてお支払いいただきます。他の車両が駐車している場合、満車で入場できない場合には、お使いいただけませんので、車室が空くまでお待ちください。</p>
+						</dt>
+					</div>
+				</dl>
 				<dl class="p-faq-list">
 					<div class="p-faq-list__item">
 						<dt class="p-faq-list__question">バイクはどこに駐車できますか？</dt>
@@ -105,12 +113,12 @@
 						</dt>
 					</div>
 				</dl>
-				<dl class="p-faq-list">
+        <dl class="p-faq-list">
 					<div class="p-faq-list__item">
 						<dt class="p-faq-list__question">キャンピングカー・マイクロバスは駐車できますか？</dt>
 						<dd class="p-faq-list__answer">
-							<p>積載物又は取付物を含めて全長5.5m、幅2.2m、高さ3.5mを超える車両は、常設の駐車場（P1、P2、P3、P6、P7）にご入場いただけません。お越しの際は、臨時駐車場（開場日のみ送迎車両あり）をご利用ください。<br>
-              ただし、団体バスでのご来場はご遠慮いただいておりますので、個人のお客様のご利用に限ります。</p>
+							<p>当施設では、以下のサイズを超える車両の駐車スペースはご用意しておりません。あらかじめご了承ください。<br>
+              全長5.5m、幅2.2m、高さ3.5m　＊積載物又は取付物を含む</p>
 						</dt>
 					</div>
 				</dl>

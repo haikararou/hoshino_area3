@@ -129,5 +129,23 @@ $(function(){
 });
 </script>
 <?php endif; ?>
+
+<?php if(is_singular('event') || is_singular('news')): ?>
+<script>
+const mySwiper = new Swiper('.swiper', {
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    waitForTransition: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+</script>
+<?php endif; ?>
+
 </body>
 </html>

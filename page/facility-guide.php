@@ -44,6 +44,25 @@
 					</ul>
 				</section>
 
+				<section class="l-spacer -small -both" id="pet">
+					<h2 class="c-title-medium">ペットをお連れのお客様へ</h2>
+					<ul class="c-list-dot">
+						<li class="c-list-dot__item">施設内ではペットから離れず、また、他のお客様へのご迷惑、危険が無いよう十分にご配慮ください。</li>
+						<li class="c-list-dot__item">必ずリードにつなぐ、またはキャリーバッグやペット専用カートをご利用ください。</li>
+						<li class="c-list-dot__item">排泄物の処理、建具破損、傷害などは、飼い主様の責任でご対処ください。</li>
+						<li class="c-list-dot__item">ペットに関するお客様同士のトラブルについては、当施設は一切責任を負いません。</li>
+					</ul>
+				</section>
+
+				<section class="l-spacer -small -both" id="photograph">
+					<h2 class="c-title-medium">撮影をされるお客様へ</h2>
+					<ul class="c-list-dot">
+						<li class="c-list-dot__item">長時間同じ場所を占拠したり、道を遮ったり、機材を放置するなど、他のお客様のご迷惑になるような行為はご遠慮ください。</li>
+						<li class="c-list-dot__item">営業・商業利用を目的とする、ロケーションフォト撮影・写真・ビデオ・映像等の撮影はお断りしております。</li>
+						<li class="c-list-dot__item">ドローンなどの小型無人機の飛行はご遠慮ください。</li>
+						<li class="c-list-dot__item">報道や取材を目的とする写真・ビデオ・映像等の撮影の場合は、申請が必要となりますので、事前にお問い合わせください。<a href="<?php echo home_url('/contact'); ?>" class="c-text-underline">お問い合わせはこちら</a></li>
+					</ul>
+				</section>
 
 				<section class="l-spacer -small -both">
 					<h2 class="c-title-medium">各店舗で利用可能なキャッシュレス決済</h2>
@@ -79,30 +98,10 @@
 					</p>
 				</section>
 
-
-				<section class="l-spacer -small -both" id="pet">
-					<h2 class="c-title-medium">ペットをお連れのお客様へ</h2>
-					<ul class="c-list-dot">
-						<li class="c-list-dot__item">施設内ではペットから離れず、また、他のお客様へのご迷惑、危険が無いよう十分にご配慮ください。</li>
-						<li class="c-list-dot__item">必ずリードにつなぐ、またはキャリーバッグやペット専用カートをご利用ください。</li>
-						<li class="c-list-dot__item">排泄物の処理、建具破損、傷害などは、飼い主様の責任でご対処ください。</li>
-						<li class="c-list-dot__item">ペットに関するお客様同士のトラブルについては、当施設は一切責任を負いません。</li>
-					</ul>
-				</section>
-
-				<section class="l-spacer -small -both" id="photograph">
-					<h2 class="c-title-medium">撮影をされるお客様へ</h2>
-					<ul class="c-list-dot">
-						<li class="c-list-dot__item">長時間同じ場所を占拠したり、道を遮ったり、機材を放置するなど、他のお客様のご迷惑になるような行為はご遠慮ください。</li>
-						<li class="c-list-dot__item">営業・商業利用を目的とする、ロケーションフォト撮影・写真・ビデオ・映像等の撮影はお断りしております。</li>
-						<li class="c-list-dot__item">ドローンなどの小型無人機の飛行はご遠慮ください。</li>
-						<li class="c-list-dot__item">報道や取材を目的とする写真・ビデオ・映像等の撮影の場合は、申請が必要となりますので、事前にお問い合わせください。<a href="<?php echo home_url('/contact'); ?>" class="c-text-underline">お問い合わせはこちら</a></li>
-					</ul>
-				</section>
-
-				<section class="l-spacer -small -both">
-					<h2 class="c-title-medium">団体バスでお越しのお客様へ</h2>
-					<p><a href="<?php echo home_url('/facility-guide/bus/'); ?>" class="c-text-underline">こちら</a>から注意事項をご確認ください。</p>
+				<section class="l-spacer -small -both" id="bus">
+					<h2 class="c-title-medium">大型車両でお越しのお客様へ</h2>
+					<p>当施設には、大型車両（キャンピングカーやバスなど）の駐停車スペースがございません。マイクロバスを含むバスでのご来場はお控えください。<br>
+					また、周辺道路等での駐停車は、交通の妨げとなります。近隣住民の方へのご迷惑にもなりますので、併せてご遠慮くださいますようお願いいたします。</p>
 				</section>
 
 			</div>

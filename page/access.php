@@ -99,7 +99,7 @@
               </div>
               <div class="l-contents-2column__block -w-1_2">
                 <h3 class="c-title-small line2"><span class="tag-b -black000 area-pc">軽井沢駅 → 星野エリア</span><br class="sp_b">JR軽井沢駅 北口1番のりば</h3>
-                <p>1番のりばから発車するバスは全て「星野温泉 トンボの湯」に停車します。</p>
+                <p>一部のバスは行先が異なりますので、ご乗車の際、乗車口付近の行先表示板に「星野温泉トンボの湯」と表示されていることをお確かめください。</p>
                 <ul class="a-list">
                   <?php while (have_rows('bus_jr')) : the_row();
                   while (have_rows('pdf')) : the_row();
@@ -155,6 +155,17 @@
                 <ul>
                   <li><a href="https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/access/" target="_blank" class="c-text-underline"><span>星のや軽井沢にご宿泊の方</span></a></li>
                   <li><a href="https://www.blestoncourt.com/access/shuttlebus/" target="_blank" class="c-text-underline"><span>ホテルブレストンコートにご来館の方</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="l-contents-2column c-border-t l-spacer -medium -s -both">
+              <div class="l-contents-2column__block -w-1_2">
+                <h3 class="c-title-small">東京からの高速バス</h3>
+                <p>西武観光バスの高速バス（千曲線）の一部が、中軽井沢駅、星野温泉 トンボの湯に停まります。</p>
+              </div>
+              <div class="l-contents-2column__block -w-1_2 senyou_bus">
+                <ul>
+                  <li><a href="https://www.seibubus.co.jp/sp/kousoku/line/" target="_blank" class="c-text-underline"><span>西武の高速バス</span></a></li>
                 </ul>
               </div>
             </div>

@@ -1,0 +1,72 @@
+@charset 'UTF-8';
+@use "../../inc/" as inc;
+/*
+text
+-----------------------------------------------------*/
+.c-text-right {
+  text-align: right;
+}
+.c-text-center {
+  text-align: center;
+}
+
+.c-text-darkyellow {
+  color: inc.$theme-color-darkyellow;
+}
+.c-text-gold {
+  color: inc.$theme-color-gold;
+}
+.c-text-small {
+  @include inc.sizingRem(font-size, full, 14px, sp, 12px);
+}
+.c-text-underline {
+  text-decoration: underline!important;
+  text-underline-offset: 0.2em;
+}
+
+.c-text-icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: contain;
+    &.-shopicon {
+      @include inc.sizing(width, full, 40px, sp, 24px);
+      @include inc.sizing(height, full, 40px, sp, 24px);
+      // width: 40px;
+      // height: 40px;
+    }
+  }
+  .icon2 {
+    display: inline-block;
+    vertical-align: middle;
+    //margin-right: .5em;
+    width: 2.5em;
+    height: 1.5em;
+    object-fit: contain;
+  }
+  .tw6 {
+    width: 6rem;
+  }
+}
+
+
+br.sp_a {
+  display: block;
+  @include inc.mq(wsp) {
+    display: none;
+  }
+}
+
+br.sp_b {
+  display: none;
+  @include inc.mq(lap) {
+    display: block;
+  }
+}

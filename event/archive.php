@@ -37,7 +37,7 @@ $args = array(
         'compare' => '>=',
         ),
     ),
-    'posts_per_page' => 3,
+    'posts_per_page' => 0,
 );
 $wp_query = new WP_Query( $args );
 ?>

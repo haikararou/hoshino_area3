@@ -24,13 +24,41 @@ echo '<div class="l-contents-2column and-border pickup ';
 <?php
 echo '">';
 echo '<div class="l-contents-2column__block -w-1_2">';
+?>
+
+<?php if(get_sub_field('carousel')): ?>
+    <?php // ACF Gallery Field の表示
+    $images = get_sub_field('carousel'); // フィールド名の指定
+    if( $images ):
+    ?>
+    <div class="carousel-ul swiper">
+    <ul class="swiper-wrapper">
+    <?php foreach( $images as $image ): // ループ処理の開始 ?>
+        <li class="swiper-slide">
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <div class="swiper-pagination"></div>
+    </div>
+    <?php endif; ?>
+<?php else: ?>
+<?php
 echo '<img decoding="async" src="';
 ?>
-<?php the_sub_field('img'); ?>
+    <?php the_sub_field('img'); ?>
 <?php
-echo '" alt=""></div>';
+echo '" alt="">';
+?>
+<?php endif; ?>
+
+<?php
+echo '</div>';
 echo '<div class="l-contents-2column__block -w-1_2">';
 ?>
+
+
+
 <?php if(get_sub_field('title')): ?>
 <?php echo '<h2 class="c-title-medium"><span>'; ?>
 <?php the_sub_field('campaign'); ?>
@@ -91,5 +119,3 @@ echo '</div></div>';
 </div>
 </div>
 </section>
-
-

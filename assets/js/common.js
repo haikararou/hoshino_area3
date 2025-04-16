@@ -424,48 +424,109 @@ $(function(){
 
 
 //営業時間タブ切り替え
-$(window).on("load resize",function(){
-  if(window.matchMedia("(max-width:768px)").matches){
-    $(function(){
-      $('.tab-1').css({display:'table-cell'});
-      $('.tab-2').css({display:'none',border:'none'});
-      $('.tab-3').css({display:'none',border:'none'});
-      $('#tab-1').click(function(){
-        $('#tab-1').addClass('-active');
-        $('#tab-2').removeClass('-active');
-        $('#tab-3').removeClass('-active');
-        $('.tab-1').css({display:'table-cell'});
-        $('.tab-2').css({display:'none',border:'none'});
-        $('.tab-3').css({display:'none',border:'none'});
-      });
-      $('#tab-2').click(function(){
-        $('#tab-1').removeClass('-active');
-        $('#tab-2').addClass('-active');
-        $('#tab-3').removeClass('-active');
-        $('.tab-1').css({display:'none'});
-        $('.tab-2').css({display:'table-cell',border:'none'});
-        $('.tab-3').css({display:'none',border:'none'});
-      });
-      $('#tab-3').click(function(){
-        $('#tab-1').removeClass('-active');
-        $('#tab-2').removeClass('-active');
-        $('#tab-3').addClass('-active');
-        $('.tab-1').css({display:'none'});
-        $('.tab-2').css({display:'none',border:'none'});
-        $('.tab-3').css({display:'table-cell',border:'none'});
-      });
-    });
-  }else{
-    $(function(){
-      $('#tab-1').addClass('-active');
-      $('#tab-2').removeClass('-active');
-      $('#tab-3').removeClass('-active');
-      $('.tab-1').css({display:'table-cell'});
-      $('.tab-2').css({display:'table-cell'});
-      $('.tab-3').css({display:'table-cell'});
-    });
+// グローバルな状態を保持する変数
+let currentTab = 'tab-1';
+
+// 初期化とリサイズのハンドリング
+$(window).on("load resize", function() {
+  const isMobile = window.matchMedia("(max-width:768px)").matches;
+  
+  if (isMobile) {
+    initializeMobileView();
+  } else {
+    initializeDesktopView();
   }
 });
+
+// モバイルビューの初期化
+function initializeMobileView() {
+  // 一度だけタブクリックイベントをバインド
+  if (!$('#tab-1').data('events-bound')) {
+    bindTabEvents();
+    $('#tab-1').data('events-bound', true);
+  }
+  
+  // 現在のタブの状態を反映
+  updateTabDisplay(currentTab);
+}
+
+// デスクトップビューの初期化
+function initializeDesktopView() {
+  $('#tab-1').addClass('-active');
+  $('#tab-2, #tab-3').removeClass('-active');
+  $('.tab-1, .tab-2, .tab-3').css({
+    display: 'table-cell'
+  });
+}
+
+// タブクリックイベントのバインド
+function bindTabEvents() {
+  $('#tab-1, #tab-2, #tab-3').click(function() {
+    const clickedTab = $(this).attr('id');
+    currentTab = clickedTab; // グローバル状態を更新
+    updateTabDisplay(clickedTab);
+  });
+}
+
+// タブ表示の更新
+function updateTabDisplay(activeTab) {
+  // すべてのタブから active クラスを削除
+  $('#tab-1, #tab-2, #tab-3').removeClass('-active');
+  
+  // すべてのコンテンツを非表示
+  $('.tab-1, .tab-2, .tab-3').css({
+    display: 'none',
+    border: 'none'
+  });
+  
+  // クリックされたタブとそのコンテンツのみ表示
+  $(`#${activeTab}`).addClass('-active');
+  $(`.${activeTab}`).css({
+    display: 'table-cell'
+  });
+}
+// $(window).on("load resize",function(){
+//   if(window.matchMedia("(max-width:768px)").matches){
+//     $(function(){
+//       $('.tab-1').css({display:'table-cell'});
+//       $('.tab-2').css({display:'none',border:'none'});
+//       $('.tab-3').css({display:'none',border:'none'});
+//       $('#tab-1').click(function(){
+//         $('#tab-1').addClass('-active');
+//         $('#tab-2').removeClass('-active');
+//         $('#tab-3').removeClass('-active');
+//         $('.tab-1').css({display:'table-cell'});
+//         $('.tab-2').css({display:'none',border:'none'});
+//         $('.tab-3').css({display:'none',border:'none'});
+//       });
+//       $('#tab-2').click(function(){
+//         $('#tab-1').removeClass('-active');
+//         $('#tab-2').addClass('-active');
+//         $('#tab-3').removeClass('-active');
+//         $('.tab-1').css({display:'none'});
+//         $('.tab-2').css({display:'table-cell',border:'none'});
+//         $('.tab-3').css({display:'none',border:'none'});
+//       });
+//       $('#tab-3').click(function(){
+//         $('#tab-1').removeClass('-active');
+//         $('#tab-2').removeClass('-active');
+//         $('#tab-3').addClass('-active');
+//         $('.tab-1').css({display:'none'});
+//         $('.tab-2').css({display:'none',border:'none'});
+//         $('.tab-3').css({display:'table-cell',border:'none'});
+//       });
+//     });
+//   }else{
+//     $(function(){
+//       $('#tab-1').addClass('-active');
+//       $('#tab-2').removeClass('-active');
+//       $('#tab-3').removeClass('-active');
+//       $('.tab-1').css({display:'table-cell'});
+//       $('.tab-2').css({display:'table-cell'});
+//       $('.tab-3').css({display:'table-cell'});
+//     });
+//   }
+// });
 
 $(window).on("load resize",function(){
   var tab = $('.business-hours-tab ul li').length;

@@ -224,3 +224,25 @@ post
   width: 100%;
   height: 100%;
 }
+
+
+.carousel-ul.swiper {
+  .swiper-wrapper {
+    transition-timing-function:linear;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-slide {
+    list-style-type: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  opacity: 1!important;
+  background: #E8E8D8!important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1!important;
+  background: #000!important;
+}

@@ -104,7 +104,7 @@ post
   ul {
     padding-left: 1.3em;
     @include inc.sizing(width, tab, 670px, sp, 330px);
-    max-width: 90%;
+    //max-width: 90%;
     @include inc.mq(tab) {
       max-width: 670px;
       width: 100%;
@@ -164,7 +164,8 @@ post
   ul + h2,
   ol + h2,
   .c-border + h2,
-  .wp-block-image + h2 {
+  .wp-block-image + h2,
+  div + h2 {
     margin-top: 4rem;
   }
   h2 + h3,
@@ -174,7 +175,8 @@ post
   h2 + ul,
   h2 + ol,
   h2 + .c-border,
-  h2 + .wp-block-image {
+  h2 + .wp-block-image,
+  h2 + div {
     margin-top: 2.5rem;
   }
 
@@ -184,7 +186,8 @@ post
   h3 + ul,
   h3 + ol,
   h3 + .c-border,
-  h3 + .wp-block-image {
+  h3 + .wp-block-image,
+  h3 + div {
     margin-top: 2.5rem;
   }
 
@@ -193,7 +196,8 @@ post
   h4 + ul,
   h4 + ol,
   h4 + .c-border,
-  h4 + .wp-block-image {
+  h4 + .wp-block-image,
+  h4 + div {
     margin-top: 2.5rem;
   }
 
@@ -202,9 +206,18 @@ post
   p + ul,
   p + ol,
   p + .c-border,
-  p + .wp-block-image {
+  p + .wp-block-image,
+  p + div {
     margin-top: 2rem;
   }
+
+  div + p,
+  div + dl,
+  div + ul,
+  div + ol,
+  div + .c-border,
+  div + .wp-block-image,
+  div + div,
 
   dl + p,
   dl + dl,
@@ -212,6 +225,7 @@ post
   dl + ol,
   dl + .c-border,
   dl + .wp-block-image,
+  dl + div,
 
   ul + p,
   ul + dl,
@@ -219,6 +233,7 @@ post
   ul + ol,
   ul + .c-border,
   ul + .wp-block-image,
+  ul + div,
 
   ol + p,
   ol + dl,
@@ -226,23 +241,28 @@ post
   ol + ol,
   ol + .c-border,
   ol + .wp-block-image,
+  ol + div,
+
 
   .c-border + p,
   .c-border + dl,
   .c-border + ul,
   .c-border + ol,
   .c-border + .wp-block-image,
+  .c-border + div,
 
   .wp-block-image + p,
   .wp-block-image + dl,
   .wp-block-image + ul,
   .wp-block-image + ol,
-  .wp-block-image + .wp-block-image {
+  .wp-block-image + .wp-block-image,
+  .wp-block-image + div {
     margin-top: 2rem;
   }
   p + h3.wp-block-heading,
   section + h3.wp-block-heading,
-  .wp-block-image + h3.wp-block-heading {
+  .wp-block-image + h3.wp-block-heading,
+  .div + h3.wp-block-heading {
     margin-top: 4rem;
   }
   .and-border + .and-border {
@@ -293,6 +313,36 @@ post
   .-break-w {
     max-width: none;
   }
+
+  .carousel-ul.swiper {
+    @include inc.sizing(width, tab, 670px, sp, 330px);
+    //max-width: 90%;
+    @include inc.mq(tab) {
+      max-width: 670px;
+      width: 100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    .swiper-wrapper {
+      transition-timing-function:linear;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-slide {
+      list-style-type: none;
+    }
+  }
+  
+  .swiper-pagination-bullet {
+    opacity: 1!important;
+    background: #E8E8D8!important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1!important;
+    background: #000!important;
+  }
+
 }
 
 

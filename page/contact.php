@@ -39,7 +39,7 @@
 				</div>
 
 				</li>
-				<li class="c-list-kome__item">団体バスでのご利用は<a href="<?php echo home_url('/facility-guide/bus'); ?>" class="c-text-underline">こちら</a></li>
+				<li class="c-list-kome__item">団体バスでのご利用は<a href="<?php echo home_url('/facility-guide#bus'); ?>" class="c-text-underline">こちら</a></li>
 				<li class="c-list-kome__item">採用についてのお問合せは<a href="<?php echo home_url('/area-recruit'); ?>" class="c-text-underline">こちら</a></li>
 				<li class="c-list-kome__item">ポップアップショップやイベントの出店のご希望は現在承っておりません。</li>
 			</ul>

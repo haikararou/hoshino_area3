@@ -70,6 +70,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo-ja.svg" width="215" height="26" alt="軽井沢星野エリア" class="l-header-logo__ja">
         </p>
       </a>
+    
       <div class="l-header-menu__tertiary">
         <?php get_template_part('inc/today'); ?>
 
@@ -127,9 +128,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/church'); ?>" class="c-gmenu-primary__link">教会</a></li>
         <li class="c-gmenu-primary__item"><a href="<?php echo home_url('/hotel'); ?>" class="c-gmenu-primary__link"><span class="kerning">ホテル</span></a></li>
       </ul>
-      
       <div class="c-gmenu-secondary l-header-menu__secondary">
-        <a href="<?php echo home_url('/areamap'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-map.svg"></i>施設を探す</a>
+        <a href="<?php echo home_url('/areamap'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn" style="letter-spacing: -.2rem;"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-map.svg"></i>エリアマップ</a>
         <a href="<?php echo home_url('/business-hours'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-clock.svg"></i>営業時間</a>
         <a href="<?php echo home_url('/parking'); ?>" class="c-button-block -white -icon c-gmenu-secondary__blockbtn"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icon-parking.svg"></i>駐車場</a>
         </ul>

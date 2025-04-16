@@ -34,8 +34,9 @@
                     'compare' => '>=',
                     ),
                     ),
-                    'posts_per_page' => 2,
+                    'posts_per_page' => 3,
                 );
+                $count = 0;
                 $wp_query = new WP_Query( $args );
                 if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(); $count++;
             ?>
@@ -44,7 +45,6 @@
             </ul>
         </div>
     </section>
-
 
     <section class="l-spacer -mgB-m">
         <div class="l-container--primary">
@@ -68,8 +68,9 @@
                             'compare' => '>=',
                             ),
                             ),
-                            'posts_per_page' => 2,
+                            'posts_per_page' => 3,
                         );
+                        $cut = 0;
                         $wp_query = new WP_Query( $args );
                         if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(); $cut++
                     ?>
@@ -93,14 +94,6 @@
                     <?php
                         global $shop_slug;
                         $shop_slug = 'ilsogno';
-                        get_template_part('inc/opening');
-                    ?>
-                </tr>
-                <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop-restaurant'); ?>/garandou/"><div class="c-button-arrow">我蘭憧</a><span>木製品専門店</span></div></th>
-                    <?php
-                        global $shop_slug;
-                        $shop_slug = 'garandou';
                         get_template_part('inc/opening');
                     ?>
                 </tr>
@@ -161,7 +154,7 @@
                     ?>
                 </tr>
                 <tr>
-                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop-restaurant'); ?>/cercle/"><div class="c-button-arrow">CERCLE</a><span>レストラン＆デリ・ワイン</span></div></th>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop-restaurant'); ?>/cercle/"><div class="c-button-arrow">CERCLE</a><span>ワイン＆デリ</span></div></th>
                     <?php
                         global $shop_slug;
                         $shop_slug = 'cercle';
@@ -189,6 +182,14 @@
                     <?php
                         global $shop_slug;
                         $shop_slug = 'nagaifarm';
+                        get_template_part('inc/opening');
+                    ?>
+                </tr>
+                <tr>
+                    <th class="p-opening--fixed02"><a href="<?php echo home_url('/shop-restaurant'); ?>/hygge-by-oc/"><div class="c-button-arrow">Hygge by ØC</a><span>カフェ・クレープ</span></div></th>
+                    <?php
+                        global $shop_slug;
+                        $shop_slug = 'hygge-by-oc';
                         get_template_part('inc/opening');
                     ?>
                 </tr>
@@ -234,8 +235,9 @@
                             'compare' => '>=',
                             ),
                             ),
-                            'posts_per_page' => 2,
+                            'posts_per_page' => 3,
                         );
+                        $cut2 = 0;
                         $wp_query = new WP_Query( $args );
                         if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(); $cut2++
                     ?>

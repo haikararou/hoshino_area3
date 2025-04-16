@@ -25,9 +25,6 @@ get_header(); ?>
 
   <div class="l-container--primary-ll">
     <section class="l-spacer -medium -both">
-      <div class="p-110th">
-        <a href="https://www.hoshino-area.jp/110th" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/bnr_110th.png" alt=""></a>
-      </div>
       <div class="facility-flex000000 lead-end map-area">
         <div class="facility-flex-txt00000 map-area01">
           <!-- <div class="home_txt"> -->
@@ -41,7 +38,7 @@ get_header(); ?>
         </div>
         <div class="facility-flex-txt00000 map-area03">
           <div class="p-home_maplist">
-            <a href="/wp-content/uploads/2024/07/hoshinoareamap_2407.pdf" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a>
+            <a href="/wp-content/uploads/2024/12/hoshinoareamap_2412.pdf" class="c-button-block -lightyellow -arrow -pdf" target="_blank"><span>エリアマップダウンロード</span></a>
             <dl class="p-facility-list">
               <div class="p-facility-list__item">
                 <div>
@@ -73,7 +70,7 @@ get_header(); ?>
       <section class="l-footer-map l-footer-buttonlink">
         <h2 class="l-footer-buttonlink__title"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ttl-area-map.svg" alt="軽井沢 星野エリアマップ" width="172" height="133"></h2>
         <p class="l-footer-map__text">Karuizawa Hoshino Area Map</p>
-        <button class="c-button-block -white -arrow l-footer-buttonlink__button">施設を探す</button>
+        <button class="c-button-block -white -arrow l-footer-buttonlink__button">エリアマップ</button>
       </section>
     </a>
     <a href="" class="u-transparent">

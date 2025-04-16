@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+main
+-----------------------------------------------------*/
+main {
+    @include inc.sizing(padding-top, wsp, 111px, sp, 90px);
+    @include inc.mq(wsp) {
+        @include inc.sizing(padding-top, lap, 132px, wsp, 111px);
+    }
+    @include inc.mq(lap) {
+        @include inc.sizing(padding-top, full, 152px, lap, 132px);
+    }
+}
+
+html:lang(en) {
+	main {
+        @include inc.sizing(padding-top, wsp, 151px, sp, 130px);
+        @include inc.mq(wsp) {
+            @include inc.sizing(padding-top, lap, 172px, wsp, 151px);
+        }
+        @include inc.mq(lap) {
+            @include inc.sizing(padding-top, full, 192px, lap, 172px);
+        }
+    }
+}
+html:lang(zh-TW) {
+	main {
+        @include inc.sizing(padding-top, wsp, 151px, sp, 130px);
+        @include inc.mq(wsp) {
+            @include inc.sizing(padding-top, lap, 172px, wsp, 151px);
+        }
+        @include inc.mq(lap) {
+            @include inc.sizing(padding-top, full, 192px, lap, 172px);
+        }
+    }
+}
+
+html:lang(zh-CN) {
+	main {
+        @include inc.sizing(padding-top, wsp, 151px, sp, 130px);
+        @include inc.mq(wsp) {
+            @include inc.sizing(padding-top, lap, 172px, wsp, 151px);
+        }
+        @include inc.mq(lap) {
+            @include inc.sizing(padding-top, full, 192px, lap, 172px);
+        }
+    }
+}
+
+
+html:lang(ko) {
+	main {
+        @include inc.sizing(padding-top, wsp, 151px, sp, 130px);
+        @include inc.mq(wsp) {
+            @include inc.sizing(padding-top, lap, 172px, wsp, 151px);
+        }
+        @include inc.mq(lap) {
+            @include inc.sizing(padding-top, full, 192px, lap, 172px);
+        }
+    }
+}
+
+
+.l-main {
+    @include inc.sizing(padding-bottom, full, 190px, sp, 80px);
+    &.-cxl {
+        padding-bottom: 0;
+    }
+}

@@ -112,40 +112,37 @@ $wp_query = new WP_Query( $args );
 </section>
 <?php else: ?>
 
+    <?php
+$args = array(
+    'post_type' => 'event',
+    'post_status' => 'publish',
+    'meta_value'    => $today,
+    'meta_key'      => 'event_start',
+    'meta_compare'  => '>',
+    'posts_per_page' => 3,
+    'orderby' => 'meta_value',
+    'order'=> 'ASC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'event_place',
+        'field' => 'slug',
+        'terms' => $slug,
+        'operator' => 'IN'
+        ),
+    )
+);
+$wp_query = new WP_Query( $args );
 
-
-
-
-    <?php if ( $wp_query->have_posts() ): ?>
-
-    <section class="l-spacer -medium -both c-border-t">
+// 投稿があるかチェック
+if ( $wp_query->have_posts() ):
+?>
+<!-- 投稿がある場合のみ、このセクションを表示 -->
+<section class="l-spacer -medium -both c-border-t">
     <div class="l-container--primary">
         <article class="l-contents--left-title">
             <h2 class="c-title-large -vertical l-contents--left-title__title"><span><?php echo $title; ?></span>イベント</h2>
             <div class="l-contents--left-title__conts">
             <ul class="p-post-tate">
-            <?php
-            $args = array(
-                'post_type' => 'event',
-                'post_status' => 'publish',
-                'meta_value'    => $today,// dateで現在の日時を取得
-                'meta_key'      => 'event_start',
-                'meta_compare'  => '>',// meta_valueとmeta_keyを比較して過去の場合のみ表示
-                'posts_per_page' => 3,
-                'orderby' => 'meta_value',// 並び順の基準の指定。この場合は'meta_key'で指定したフィールドの値
-                'order'=> 'ASC',
-                'tax_query' => array(
-                    array(
-                    'taxonomy' => 'event_cat', //タクソノミーを指定
-                    'field' => 'slug', //ターム名をスラッグで指定する
-                    'terms' => $slug, //表示したいタームをスラッグで指定
-                    'operator' => 'IN'
-                    ),
-                )
-            );
-            $wp_query = new WP_Query( $args );
-            ?>
-            <?php if ( $wp_query->have_posts() ): ?>
             <?php while ( $wp_query->have_posts() ): $wp_query->the_post(); ?>
                 <li class="p-post-tate__item">
                     <a href="<?php the_permalink(); ?>">
@@ -174,20 +171,18 @@ $wp_query = new WP_Query( $args );
                     </a>
                 </li>
             <?php endwhile; ?>
-            <?php else: endif; ?>
-            <?php wp_reset_query(); ?>
             </ul>
             <div class="l-spacer -em3 p-post-list__item__more">
             <p><a href="<?php echo home_url('/event'); ?>" class="c-button-block -lightyellow -arrow -more"><span>星野エリアのイベント一覧</span></a></p>
             </div>
+            </div>
         </article>
     </div>
 </section>
-
-
-
-<?php endif; ?>
-
+<?php
+endif;
+wp_reset_query();
+?>
 
 
 <?php endif; ?>

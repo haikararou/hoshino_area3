@@ -85,7 +85,7 @@
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
           <h3 class="c-title-large">BEB5軽井沢</h3>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hotel/logo_beb5.jpg">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hotel/logo_beb5_2.jpg">
         </div>
         <div class="l-spacer -em2">
           <p>自由気ままで「ルーズ」な滞在スタイルのホテル。<br>24時間オープンで持ち込み可能なパブリックスペース「TAMARIBA（タマリバ）」に、秘密基地のような部屋。<br>好きな時に、好きな場所で、好きなように過ごすことができます。</p>
