@@ -24,7 +24,7 @@
       <div class="l-contents-2column__block -w-1_2--left">
         <div class="p-activity--title">
           <h3 class="c-title-large">星のや軽井沢</h3>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hotel/logo_hoshinoya.jpg">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hotel/karuizawa_kamon_yoko_2025.jpg">
         </div>
         <div class="l-spacer -em2">
           <p>「その瞬間の特等席へ。」をコンセプトとする星のや。<br>四季折々の最高の瞬間を体験していただくことで、訪れる人々を、日々の時間の流れから解き放ちます。<br>日本の原風景が鮮やかに蘇る谷の集落で、軽井沢の自然と歴史を感じながら、特別な滞在をお楽しみください。</p>

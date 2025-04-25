@@ -147,5 +147,9 @@ const mySwiper = new Swiper('.swiper', {
 </script>
 <?php endif; ?>
 
+<?php if(is_page('sonmin-shokudo')): ?>
+<script src="https://airwait.jp/js/corporate/airwait.js" data-airwait="key:Z9YafwI1UYjzaeMfFIYMGmv41YZvGftR" enable-log charset="utf-8"></script>
+<?php endif; ?>
+
 </body>
 </html>

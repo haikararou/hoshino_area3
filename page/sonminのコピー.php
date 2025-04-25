@@ -48,17 +48,31 @@
 			<?php while(have_rows('news',117)): the_row(); ?>
 				<li><?php the_sub_field('news_conts'); ?></li>
 			<?php endwhile; ?>
-			<div>
+			<div style="display: none;">
 				<div class="-airwait">
 					<div class="-inner">
-						<h3>現在の受付状況</h3>
+						<h3 class="c-title-small">ウェイティング状況</h3>
 						<div data-airwait="storeId:KR00281289">
 							<div data-airwait-type="レストラン">
-								待ち組数：<span data-airwait="detailedWaitCount">--</span>組 / 待ち時間：<span data-airwait="detailedWaitTime">--</span><br>
-								<span class="-caption">受付外のときは、「-」と表示されます。</span>
+								待ち組数：<span data-airwait="detailedWaitCount">--</span>組<br>
+								待ち時間：<span data-airwait="detailedWaitTime">--</span><br>
+								<span class="-caption">受付を行っていないときは、「-」と表示されます。</span>
 							</div>
+							<!-- <div data-airwait-type="テーブル席">
+								<span>テーブル席</span><br>
+								待ち組数：<span data-airwait="detailedWaitCount">--</span>組<br>
+								待ち時間：<span data-airwait="detailedWaitTime">--</span><br>
+							</div> -->
 						</div>
 					</div>
+					<!-- <div class="-inner">
+						<div data-airwait="storeId:KR00281289">
+							<span data-airwait="storeName">--</span><br>
+							待ち組数：<span data-airwait="waitCount">--</span>組<br>
+							待ち時間：<span data-airwait="waitTime">--</span><br>
+							呼出中の最大番号：<span data-airwait="maxCallingNumber">--</span>番<br>
+						</div>
+					</div> -->
 				</div>
 			</div>
 			</ul>

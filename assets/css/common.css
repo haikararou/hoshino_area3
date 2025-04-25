@@ -5595,6 +5595,36 @@ sonmin
   }
 }
 
+.-airwait {
+  margin: 1.5rem 0 0 0;
+}
+.-airwait .-inner {
+  line-height: 2rem;
+  font-size: clamp(16px, 0.16vw + 15.4px, 18px);
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+}
+.-airwait .-inner .sp-none {
+  display: none;
+}
+@media screen and (min-width: 520px) {
+  .-airwait .-inner .sp-none {
+    display: block;
+  }
+}
+.-airwait .-inner h3 {
+  font-size: clamp(1rem, 0.16vw + 0.9625rem, 1.125rem);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.-airwait .-inner .-caption {
+  font-size: clamp(13px, 0.08vw + 12.7px, 14px);
+  line-height: 1.6;
+  display: block;
+  margin-top: 0.5rem;
+}
+
 /*
 keraike
 -----------------------------------------------------*/

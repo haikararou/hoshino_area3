@@ -185,3 +185,31 @@ sonmin
 		}
 	}
 }
+
+.-airwait {
+	margin: 1.5rem 0 0 0;
+	.-inner {
+		line-height: 2rem;
+		@include inc.sizing(font-size, full, 18px, sp, 16px);
+		display: inline-block;
+		padding: 1rem 2rem;
+		background: rgba(255, 255, 255, .7);
+		.sp-none {
+			display: none;
+			@include inc.mq(wsp) {
+				display: block;
+			}
+		}
+		h3 {
+			@include inc.sizingRem(font-size, full, 18px, sp, 16px);
+			margin-bottom: 1rem;
+			line-height: 1;
+		}
+		.-caption {
+			@include inc.sizing(font-size, full, 14px, sp, 13px);
+			line-height: 1.6;
+			display: block;
+			margin-top: .5rem;
+		}
+	}
+}
